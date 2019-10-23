@@ -4,7 +4,7 @@ seo-title: Adobe Places的发行说明。
 description: Adobe Places的发行说明。
 seo-description: Adobe Places的发行说明。
 translation-type: tm+mt
-source-git-commit: 60d72318db5f19646bca8870cec33979934593a7
+source-git-commit: a9aacd39be486195159b163b2c5969cb8b82b51b
 
 ---
 
@@ -183,7 +183,7 @@ iOS Places Monitor 1.0.0
 
 iOS的地点监视器的初始版本。
 
-地点监视器管理操作系统级位置API并直接与地点扩展通信。 安装这两个扩展后，客户可以在其应用程序中进行开箱即用的区域监控。 有关“地点监视器”的详细信息，请参阅“地 [点监视器”扩展](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)。
+地点监视器管理操作系统级位置API并直接与地点扩展通信。 安装这两个扩展后，客户可以在其应用程序中进行开箱即用的区域监控。 有关“地点监视器”的详细信息，请参阅“地 [点监视器”扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ## 2019 年 2 月 28 日
 
@@ -212,7 +212,7 @@ iOS的地点监视器的初始版本。
 * 在POI进入或退出时触发的规则事件。
 * 创建指向用户当前POI的数据元素。
 
-有关“地点”扩展的详细信息，请参 [阅“地点”扩展](/help/configure-places-in-the sdk/places-extension/places-extension.md)。
+有关“地点”扩展的详细信息，请参阅“地 [点”扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 #### Places API
 
@@ -224,7 +224,7 @@ iOS的地点监视器的初始版本。
 
    Python实用程序随API提供。
 
-有关Places API的详细信息，请参阅 [Places web服务](/help/places-rest-apis/places-web-services.md)。
+有关Places API的详细信息，请参阅 [Places web服务](/help/places-web-service-api/places-web-services.md)。
 
 ### 即将推出
 

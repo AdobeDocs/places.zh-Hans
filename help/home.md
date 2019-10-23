@@ -4,7 +4,7 @@ seo-title: Adobe Places概述
 description: 'Adobe Places是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 seo-description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ---
 
@@ -30,13 +30,19 @@ Places允许您实现以下目标：
 * 通过将受众档案与位置上下文结合使用，根据线下行为细分受众。
 * 在相关时，以店内体验为目标。
 
+## 为Brandon的“地点介绍”视频添加占位符
+
+## 地点使用案例
+
+通过
+
 ## 放置组件
 
 地点包括以下组件：
 
 * **Places web服务**
 
-   您可以使用REST API创建和管理POI。 有关REST API的详细信息，请参阅 [放置Web服务](/help/places-rest-apis/api-usage/api-usage.md)。
+   您可以使用Places REST API创建和管理POI。 有关REST API的详细信息，请参 [阅管理库](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md) 和 [管理POI](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md)。
 
 * **地点UI**
 
@@ -44,7 +50,7 @@ Places允许您实现以下目标：
 
 * **Places SDK**
 
-   用于在移动应用程序中集成位置上下文的多平台移动API界面。 有关SDK的详细信息，请参阅 [Places扩展](/help/configure-places-in-the-sdk/places-extension/places-extension.md)。
+   用于在移动应用程序中集成位置上下文的多平台移动API界面。 有关SDK的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 * **地点规则**
 
@@ -52,7 +58,7 @@ Places允许您实现以下目标：
 
 * **地点监视器**
 
-   多平台移动SDK，可嵌入到移动应用程序中以自动监视用户的位置更改并触发Places规则。 有关详细信息，请参 [阅“地点监视器”扩展](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)。
+   多平台移动SDK，可嵌入到移动应用程序中以自动监视用户的位置更改并触发Places规则。 有关详细信息，请参 [阅“地点监视器”扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ## 术语
 
@@ -87,23 +93,3 @@ Places允许您实现以下目标：
 * The **Experience Cloud ID** service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud.
 
    For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
-
-## 了解地点UI
-
-要访问Places UI，请在浏览器中转到 [Places UI](https://places.adobe.com) ，然后使用您的Adobe ID登录。
-
-以下是帮助您熟悉UI的一些基本信息：
-
-* 在右上角，您可以单击按钮来创建库、POI和筛选搜索。
-* 在屏幕的右下角，有一些按钮用于放大和缩小，以当前位置为中心，以及在地图视图和卫星视图之 **[!UICONTROL Find Me]**&#x200B;间切换。
-* 双击可放大，或单击并拖动可重新进入映射。
-* 您还可以使用箭头键滚动映射。
-
-![](assets/location-services.png)
-
-
-## 地点工作流
-
-以下是Places工作流的高级视图：
-
-![](/help/assets/places-workflow-diagram-lc-1.png)

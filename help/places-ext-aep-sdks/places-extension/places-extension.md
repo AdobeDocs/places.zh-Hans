@@ -4,7 +4,7 @@ seo-title: 地点扩展
 description: “地点”扩展允许您根据用户的位置采取行动。
 seo-description: “地点”扩展允许您根据用户的位置采取行动。
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 ## 在Adobe Experience Platform Launch中安装Places扩展
 
 1. 在Experience Platform Launch中，单击选项 **[!UICONTROL Extensions]** 卡。
-2. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩 **[!UICONTROL Adobe Places]** 展名并单击 **[!UICONTROL Install]**。
+2. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩 **[!UICONTROL Places]** 展名并单击 **[!UICONTROL Install]**。
 3. 选择要在此属性中使用的地点库。 这些库将在您的应用程序中访问。
 4. 单击 **[!UICONTROL Save]**。
 
@@ -26,7 +26,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 
    有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobelaunch.com/launch-reference/publishing)。
 
-### 配置Places扩展 {#configure-places-extension}
+### Configure the Places extension {#configure-places-extension}
 
 ![](//help/assets/places-extension.png)
 

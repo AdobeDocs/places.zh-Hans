@@ -4,14 +4,14 @@ seo-title: Adobe Experience Platform Places
 description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 seo-description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 ---
 
 
 # 概述 {#home}
 
-Adobe Experience Platform Places是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 Places是一种地理位置服务，它使移动应用程序开发人员能通过使用丰富且易于使用的SDK界面以及灵活的兴趣点数据库(POI)来了解位置上下文。
+Adobe Experience Platform Places(Places)是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 Places是一种地理位置服务，它使移动应用程序开发人员能通过使用丰富且易于使用的SDK界面以及灵活的兴趣点数据库(POI)来了解位置上下文。
 
 Places允许您实现以下目标：
 

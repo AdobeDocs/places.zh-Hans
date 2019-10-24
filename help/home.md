@@ -1,17 +1,17 @@
 ---
-title: Adobe Places概述
-seo-title: Adobe Places概述
-description: 'Adobe Places是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
+title: Adobe Experience Platform Places
+seo-title: Adobe Experience Platform Places
+description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 seo-description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
 
 # 概述 {#home}
 
-Adobe Places是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 Places是一种地理位置服务，它使移动应用程序开发人员能通过使用丰富且易于使用的SDK界面以及灵活的兴趣点数据库(POI)来了解位置上下文。
+Adobe Experience Platform Places是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 Places是一种地理位置服务，它使移动应用程序开发人员能通过使用丰富且易于使用的SDK界面以及灵活的兴趣点数据库(POI)来了解位置上下文。
 
 Places允许您实现以下目标：
 
@@ -92,4 +92,4 @@ Places允许您实现以下目标：
 
 * The **Experience Cloud ID** service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud.
 
-   For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
+   有关详细信息，请参阅 [概述](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html)。

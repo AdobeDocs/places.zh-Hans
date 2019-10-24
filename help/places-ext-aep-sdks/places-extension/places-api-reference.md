@@ -4,7 +4,7 @@ seo-title: Places API参考
 description: 有关Places中API引用的信息。
 seo-description: 有关Places中API引用的信息。
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```java
 public static void processGeofence(final Geofence geofence, final int transitionType);
@@ -50,7 +50,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
         List<Geofence> geofences = geofencingEvent.getTriggeringGeofences();
 
         if (geofences.size() > 0) {
-          // Call Adobe Places API to process information
+          // Call the Places API to process information
           Places.processGeofence(geofences.get(0), geofencingEvent.getGeofenceTransition());
         }
     }
@@ -63,7 +63,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```objectivec
 + (void) processRegionEvent: (nonnull CLRegion*) region forRegionEventType: (ACPRegionEventType) eventType;
@@ -71,7 +71,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 
 ```objectivec
@@ -107,7 +107,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
     protected void onHandleIntent(Intent intent) {
         GeofencingEvent geofencingEvent = GeofencingEvent.fromIntent(intent);
-        // Call Adobe Places API to process information
+        // Call the Places API to process information
         Places.processGeofenceEvent(geofencingEvent);
     }
 }
@@ -119,7 +119,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### GetEncorredPointsOfInterest(Android)
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 **语法**
 
@@ -130,7 +130,7 @@ public static void getNearbyPointsOfInterest(final Location location,
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```java
 Places.getNearbyPlaces(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
@@ -169,7 +169,7 @@ Places.getNearbyPlaces(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>()
 
 ### GetCurrentPointsOfInterest(Android)
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 **语法**
 
@@ -179,7 +179,7 @@ public static void getCurrentPointsOfInterest(final AdobeCallback<List<PlacesPOI
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```java
 Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
@@ -195,7 +195,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```objectivec
 + (void) getCurrentPointsOfInterest: (nullable void (^) (NSArray<ACPPlacesPoi*>* _Nullable userWithinPoi)) callback;
@@ -203,7 +203,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```objectivec
 [ACPPlaces getCurrentPointsOfInterest:^(NSArray<ACPPlacesPoi*>* userWithinPoi) {
@@ -226,7 +226,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```java
 public static void getLastKnownLocation(final AdobeCallback<Location> callback);
@@ -234,7 +234,7 @@ public static void getLastKnownLocation(final AdobeCallback<Location> callback);
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```java
 Places.getLastKnownLocation(new AdobeCallback<Location>() {
@@ -250,7 +250,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```objectivec
 + (void) getLastKnownLocation: (nullable void (^) (CLLocation* _Nullable lastLocation)) callback;
@@ -258,7 +258,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```objectivec
 [ACPPlaces getLastKnownLocation:^(CLLocation* lastLocation) {
@@ -276,7 +276,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```java
 public static void clear();
@@ -284,7 +284,7 @@ public static void clear();
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```java
 Places.clear();
@@ -296,7 +296,7 @@ Places.clear();
 
 **语法**
 
-下面是这种方法对应的语法：
+以下是此方法的语法：
 
 ```objectivec
 + (void) clear;
@@ -304,7 +304,7 @@ Places.clear();
 
 **示例**
 
-以下是这种方法的代码示例：
+以下是此方法的代码示例：
 
 ```objectivec
 [ACPPlaces clear];

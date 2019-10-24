@@ -4,7 +4,7 @@ seo-title: 在“地点”UI中管理库
 description: 使用Places UI管理库。
 seo-description: 使用Places UI管理库。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ## 创建库
 
-1. 使用您的Adobe ID登录Adobe Places。
+1. 使用您的Adobe ID登录到地点。
 2. 在右上方，单击 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 单击 **[!UICONTROL New]**。
 4. 键入名称。
@@ -33,13 +33,13 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ## 在“地点”UI中更改库的等级
 
-1. 使用您的Adobe ID登录到Adobe Places。
+1. 使用您的Adobe ID登录到地点。
 2. 在右上方，单击 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 单击库名称左侧的图标，并将库拖动到新排名。
 
 ## 重命名库
 
-1. 使用您的Adobe ID登录到Adobe Places。
+1. 使用您的Adobe ID登录到地点。
 2. 在右上方，单击 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 找到要删除的库。
 4. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL Rename]**。
@@ -47,7 +47,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ## 删除库
 
-1. 使用您的Adobe ID登录到Adobe Places。
+1. 使用您的Adobe ID登录到地点。
 2. 在右上方，单击 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 找到要删除的库。
 4. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL Delete]**。

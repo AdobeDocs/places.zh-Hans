@@ -4,7 +4,7 @@ seo-title: 在地点UI中管理POI
 description: 使用Places UI管理POI。
 seo-description: 使用Places UI管理POI。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -37,7 +37,7 @@ Geoffences是一种POI类型，它在数据库中使用以下键定义：
 ## 编辑POI
 
 1. 使用您的Adobe ID登录到地点。
-1. 使用您的Adobe ID登录Adobe Places Service。
+1. 使用您的Adobe ID登录Places Service。
 1. 在右上方，单击与项目符号列表类似的图标。
 1. 找到要编辑的POI。
 1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL View Details]**。
@@ -46,14 +46,14 @@ Geoffences是一种POI类型，它在数据库中使用以下键定义：
 ## 删除POI
 
 1. 使用您的Adobe ID登录到地点。
-1. 使用您的Adobe ID登录Adobe Places Service。
+1. 使用您的Adobe ID登录Places Service。
 1. 在右上方，单击与项目符号列表类似的图标。
 1. 找到要删除的POI。
 1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL Delete]**。
 
 ## 按城市、州／省、国家／地区或元数据过滤POI
 
-1. 使用您的Adobe ID登录Adobe Places Service。
+1. 使用您的Adobe ID登录Places Service。
 1. 在右上方，单击筛选图标。
 1. 可以通过以下方式之一过滤POI:
 

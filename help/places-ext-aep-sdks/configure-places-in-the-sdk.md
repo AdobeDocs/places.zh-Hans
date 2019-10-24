@@ -4,7 +4,7 @@ seo-title: 使用Places扩展配置SDK
 description: '您可以使用“地点”扩展配置SDK，以在移动应用程序中启用位置感知。 '
 seo-description: '您可以使用“地点”扩展配置SDK，以在移动应用程序中启用位置感知。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -19,15 +19,15 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 
 1. 在启动项中配置“地点”扩展。
 
-   有关详细信息，请参 *阅在Launch中配置地点扩展*。
+   有关详细信息，请参 *阅在Launch in* Places extension中配置Places扩展 [](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 1. 将Places扩展添加到您的移动应用程序。
 
-   有关详细信息，请参 *阅将Places扩展添加到应用程序*。
+   有关详细信息，请参 *阅在Places扩展中将Places扩展添加到应用*[程序中](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 1. 使用移动核心扩展注册地点。
 
-   有关详细信息，请参 *阅使用Mobile核心注册Adobe Places*。
+   有关详细信息，请参 *阅在Places扩展中使用Mobile核心*[注册地点](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 ## 配置地点监视器扩展
 

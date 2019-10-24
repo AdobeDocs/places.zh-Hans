@@ -1,17 +1,17 @@
 ---
-title: 发行说明
+title: Adobe Experience Platform Places发行说明
 seo-title: Adobe Experience Platform Places的发行说明。
 description: Adobe Experience Platform Places的发行说明。
 seo-description: Adobe Experience Platform Places的发行说明。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 ---
 
 
 # 发行说明 {#release-notes}
 
-以下是Places的发行说明：
+以下是Adobe Experience Platform Places(Places)的发行说明：
 
 ## 2019 年 10 月 9 日
 

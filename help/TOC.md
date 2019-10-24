@@ -1,16 +1,16 @@
 ---
-product: 地点
+product: Adobe Experience Platform Places
 audience: 最终用户
-user-guide-title: Adobe Places帮助
+user-guide-title: Adobe Experience Platform Places帮助
 translation-type: tm+mt
-source-git-commit: cc5162bd71a22eec1ca8645a351e11695fd5eb16
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
 
-# Adobe Places帮助 {#using}
+# Adobe Experience Platform Places帮助 {#using}
 
-+ [Adobe Places概述](home.md)
++ [Adobe Experience Platform Places概述](home.md)
 + [发行说明](release-notes.md)
 + [入门指南](getting-started.md)
 + 地点目标点管理界面 {#poi-mgmt-ui}

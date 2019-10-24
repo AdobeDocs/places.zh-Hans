@@ -4,7 +4,7 @@ seo-title: 创建目标点 (POI)
 description: 使用Places UI创建POI。
 seo-description: 使用Places UI创建POI。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 目标点(POI)是地图上您感兴趣的位置或点。 酒店可包括咖啡馆、餐馆等场所。
 
-1. 使用您的Adobe ID登录到Adobe Places。
+1. 使用您的Adobe ID登录到地点。
 2. 在右上方，单击与项目符号列表类似的图标，然后单击 **[!UICONTROL New]**。
 3. 键入POI的名称。
 4. 选择或添加库。

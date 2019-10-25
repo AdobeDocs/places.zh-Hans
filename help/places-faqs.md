@@ -1,17 +1,17 @@
 ---
-title: 地点常见问题解答
-seo-title: 地点常见问题解答
-description: 本主题提供了有关Places的一些常见问题的其他信息。
-seo-description: 本主题提供了有关Places的一些常见问题的其他信息。
+title: 常见问题解答
+seo-title: 常见问题解答
+description: 本主题提供了有关某些常见问题的其他信息。
+seo-description: 本主题提供了有关某些常见问题的其他信息。
 translation-type: tm+mt
-source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
+source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
 ---
 
 
-# 地点常见问题解答
+# 常见问题解答
 
-以下是有关Places的一些信息和常见问题解答。
+以下是有关位置服务的一些信息和常见问题解答。
 
 ## 大小和可靠性
 
@@ -25,7 +25,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
 如果设备离开区域时操作系统无法传送退出事件，则SDK更安全地只忽略退出事件。 如果SDK制作退出事件，而该事件未由操作系统触发，则可能会在设备接近POI的时间段之外，对退出事件进行充分处理。
 
-## 将用户添加到地点和体验平台启动项 {#adding-user-launch-places}
+## 将用户添加到位置服务和Experience Platform启动项 {#adding-user-launch-places}
 
 要允许用户访问 [启动服务UI](https://places.adobe.com)，他们需要以用户身份添加到管理控制台中的Places Core Service。 要允许用户访问Experience Platform Launch、配置移动属性以及使用Adobe Experience Platform SDK的地点，需要将他们添加到Admin Console中的Experience Platform Launch中，并为其授予以下Experience Platform Launch权限：
 
@@ -37,15 +37,15 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
    * 管理环境
 * 根据公司权限管理属性权限
 
-如果这是您第一次添加用户，请完成以下步骤以将用户添加到Experience Platform Launch and Places。 如果您之前已经添加了用户，则可能会显示多个配置文件，因此请确保您选择了正确的配置文件。
+如果这是您第一次添加用户，请完成以下步骤以将用户添加到Experience Platform Launch and Location Service。 如果您之前已经添加了用户，则可能会显示多个配置文件，因此请确保您选择了正确的配置文件。
 
 >[!IMPORTANT]
 >
 >只有组织管理员才能访问Admin Console并添加用户。
 
-### 1.验证是否配置了Places和Experience Platform Launch
+### 1.验证位置服务和体验平台启动是否已配置
 
-要验证是否配置了Places和Experience Platform Launch，请执行以下操作：
+要验证是否已配置位置服务和Experience Platform Launch，请执行以下操作：
 
 1. 登录您的Experience cloud组织。
 1. 在右上方，单击Experience Cloud Shell切换程序。
@@ -70,7 +70,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
    ![](/help/assets/places_provisioned1.png)
 
-   如果显示了这些设置，则表示您的组织已配置了地点和体验平台启动项。 如果未显示，则需要为您的组织配置这些组件。
+   如果显示了这些设置，则表示已为您的组织配置了位置服务和体验平台启动。 如果未显示，则需要为您的组织配置这些组件。
 
    >[!IMPORTANT]
    >
@@ -111,17 +111,17 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
 >[!IMPORTANT]
 >
->对于“地点”，存在默认的配置文件，但您不必添加任何权限。
+>对于位置服务，存在默认配置文件，但您不必添加任何权限。
 
 您已成功地将权限添加到您创建的配置文件。
 
-### 3.将用户或开发人员添加到您的Places和Experience Platform Launch配置文件
+### 3.将用户或开发人员添加到您的位置服务和Experience Platform启动配置文件
 
-您可以将用户和／或开发人员添加到您的Places和Experience Platform Launch配置文件。
+您可以将用户和／或开发人员添加到您的位置服务和Experience Platform Launch配置文件中。
 
 ### 添加用户
 
-要将用户添加到您的地点和体验平台启动配置文件，请执行以下操作：
+要将用户添加到您的位置服务和Experience Platform启动配置文件，请执行以下操作：
 
 1. 将用户添加到Experience Platform启动配置文件。
 
@@ -149,7 +149,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
    >[!TIP]
    >
-   >目前，所有Places用户都具有相同的权限，因此您无需编辑权限。
+   >当前，所有位置服务用户都具有相同的权限，因此您无需编辑权限。
 
    a.在卡 **[!UICONTROL Places Core Services]** 上验证以下内容：
 
@@ -169,7 +169,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
 ### 添加开发人员
 
-对于还需要访问Places REST API的用户，您需要将他们添加为开发人员。
+对于需要访问Web服务API的用户，您需要将他们添加为开发人员。
 
 要添加开发人员，请执行以下操作：
 

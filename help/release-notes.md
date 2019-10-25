@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platform Places发行说明
-seo-title: Adobe Experience Platform Places的发行说明。
-description: Adobe Experience Platform Places的发行说明。
-seo-description: Adobe Experience Platform Places的发行说明。
+title: 发行说明
+seo-title: 发行说明
+description: Adobe Experience Platform Location service的发行说明。
+seo-description: Adobe Experience Platform Location service的发行说明。
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # 发行说明 {#release-notes}
 
-以下是Adobe Experience Platform Places(Places)的发行说明：
+以下是发行说明：
 
 ## 2019 年 10 月 9 日
 
@@ -31,7 +31,7 @@ source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 此版本中进行了以下更新：
 
-### 地点UI更新
+### UI更新
 
 以下是对地点UI的更新列表：
 
@@ -54,7 +54,7 @@ source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 此版本中进行了以下更新：
 
-### Places Monitor Launch Extension 2.0.0
+### 监视启动扩展2.0.0
 
 * 更新了Places Monitor 2.0的Android和iOS安装说明。
 
@@ -72,7 +72,7 @@ source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
    新API: `public static void stop (final boolean clearData);`
 
-* 更新了Places API的使用 `getNearbyPointsOfInterest` 以更有效地处理错误方案。
+* 更新了API的使用 `getNearbyPointsOfInterest` ，以更有效地处理错误方案。
 
 ## 2019 年 7 月 25 日
 
@@ -195,12 +195,12 @@ iOS的地点监视器的初始版本。
 
 以下是此版本的主要功能：
 
-#### 地点UI
+#### 位置服务UI
 
 我们发布了管理UI，您可以在其中查看和管理您的兴趣点(POI)。 您还可以将POI组织到库中。 除了标准元数据（如城市、州／省和类别）之外，我们还支持向POI添加自定义元数据的功能。
 
-* 要查看地点UI，请转到 [https://places.adobe.com](https://places.adobe.com)。
-* 要开始使用Places UI，请参阅快 [速入门](/help/getting-started.md)。
+* 要查看UI，请转到 [https://places.adobe.com](https://places.adobe.com)。
+* 要开始使用UI，请参阅 [入门](/help/getting-started.md)。
 
 #### 地点扩展
 
@@ -224,7 +224,7 @@ iOS的地点监视器的初始版本。
 
    Python实用程序随API提供。
 
-有关Places API的详细信息，请参阅 [Places web服务](/help/places-web-service-api/places-web-services.md)。
+有关Places API的详细信息，请参 [阅Web服务API](/help/web-service-api/places-web-services.md)。
 
 ### 即将推出
 

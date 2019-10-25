@@ -1,35 +1,35 @@
 ---
 title: 入门指南
 seo-title: 入门指南
-description: Places 快速入门.
-seo-description: Places 快速入门.
+description: 位置服务快速入门。
+seo-description: 位置服务快速入门。
 translation-type: tm+mt
-source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # 入门指南 {#getting-started}
 
-以下是帮助您开始使用Places的视频：
+以下是帮助您开始使用位置服务的视频：
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
-要使用地点，请完成以下任务：
+要使用位置服务，请完成以下任务：
 
-## 1.设置为使用Places
+## 1.设置为使用位置服务
 
-Places需要与您的常规Adobe Experience Platform配置上下文一起使用特殊的配置上下文。
+位置服务需要与您的常规Adobe Experience Platform配置上下文一起使用特殊的配置上下文。
 
 要进行配置，请完成以下任务：
 
-* 在Admin Console中，确保您的组织已配置了地点。
+* 在Admin Console中，确保您的组织已配置位置服务。
 
-   如果您不是Adobe管理员，请与管理员联系，以确保在Admin Console中放置上下文。
+   如果您不是Adobe管理员，请与管理员联系以确保Admin Console中的位置服务上下文。
 
-* 确保在Admin Console的“地点”和“体验平台启动”产品上下文下列为用户。
+* 确保在Admin Console中的位置服务和体验平台启动产品上下文下列为用户。
 
-   有关详细信息，请参 *阅将用户添加到Experience Platform Launch和Places in* Places常见 [问题解答](/help/places-faqs.md)。
+   有关详细信息，请参 *阅常见问题解答中的将用户添加到Experience Platform Launch* 和 [位置服务](/help/places-faqs.md)。
 
 * 确保在安装了Places扩展的Experience Platform Launch中配置了移动应用程序属性。
 
@@ -49,7 +49,7 @@ Places需要与您的常规Adobe Experience Platform配置上下文一起使用�
 
 * 使用Web服务。
 
-   有关详细信息，请参 [阅放置Web服务](/help/places-web-service-api/places-web-services.md)。
+   有关详细信息，请参 [阅Web服务API](/help/web-service-api/places-web-services.md)。
 
 * 使用Places UI。
 

@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Places
 description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 seo-description: '地点是了解移动用户参与度的重要背景。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
@@ -42,7 +42,7 @@ Places允许您实现以下目标：
 
 * **Places web服务**
 
-   您可以使用Places REST API创建和管理POI。 有关REST API的详细信息，请参 [阅管理库](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md) 和 [管理POI](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md)。
+   您可以使用Places REST API创建和管理POI。 有关REST API的详细信息，请参 [阅管理库](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) 和 [管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
 * **地点UI**
 

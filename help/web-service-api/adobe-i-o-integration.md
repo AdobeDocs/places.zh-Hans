@@ -4,12 +4,32 @@ seo-title: Adobe I/O集成概述
 description: 有关创建Adobe I/O集成的信息。
 seo-description: 有关创建Adobe I/O集成的信息。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ---
 
 
-# Adobe I/O集成概述 {#adobeio-integration}
+# Adobe I/O集成 {#adobeio-integration}
+
+此信息会向您展示如何创建Adobe I/O和Places集成。
+
+## 用户访问的先决条件
+
+向贵组织的系统管理员确认以下任务已完成：
+
+* “放置核心服务”会显示在您组织的管理控制台中。
+* 您已添加到组织。
+* 您已作为用户添加到组织中放置核心服务。
+
+   有关详细信息，请参 *阅常见问题解答中的将用户或开发人员添加到您的位置服务和Experience Platform Launch配置文件*[中](/help/places-faqs.md)。
+
+* 您已作为开发人员添加到您组织中的Places Core Service。
+
+   有关添加开发人员的详细信息，请参 *阅常见问题解答中的将用户或开发人员添加到您的位置服务和Experience Platform Launch配置文件*[中](/help/places-faqs.md)。
+
+   有关开发人员角色的详细信息，请参阅管 [理开发人员](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
+
+### REST API请求
 
 对Places REST API的每个请求都需要以下项：
 
@@ -19,8 +39,6 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 与Adobe I/O的集成提供了这些项，以及使用JSON web令牌(JWT)请求承载令牌的方法。
 
-## 其他信息
-
 * 有关JWT的详细信息，请参 [阅JSON web令牌简介](https://jwt.io/introduction/)。
 * 要为Places创建集成，请参阅下 *面的创建Places集成* 部分。
 * 要了解API密钥集成、生成JWT和公钥证书，请参阅 [Adobe I/O身份验证概述](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)。
@@ -29,7 +47,7 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 >
 >如果您无法登录到Adobe I/O控制台，或者如果“创建集成”页面上不提供Experience Platform Location Service *，请参阅* Web服务API概述中的组织要求 **[](/help/web-service-api/places-web-services.md)。
 
-## 创建Places集成 {#create-places-integration}
+## 创建Places集成
 
 要创建地点集成，请完成以下任务：
 
@@ -75,7 +93,7 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 以下视频将指导您完成生成键对的过程：
 
-![](/help/assets/places_integration_video.gif)
+![集成视频](/help/assets/places_integration_video.gif)
 
 ### 在Adobe I/O控制台中创建地点集成
 
@@ -125,4 +143,3 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 >[!IMPORTANT]
 >
 >Adobe访问令牌的有 **效期仅为** 24小时，因此请保存示例CURL命令（第5步）。 如果访问令牌不再有效，您需要再次生成该令牌。
-

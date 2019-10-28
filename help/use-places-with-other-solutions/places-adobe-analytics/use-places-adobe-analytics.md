@@ -4,15 +4,13 @@ seo-title: 将地点数据发送到Adobe Analytics
 description: 本节提供有关如何将地点数据发送到Analytics的信息。
 seo-description: '本节提供有关如何将地点数据发送到Analytics的信息。 '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
 
 # 将地点数据发送到Adobe Analytics {#places-data-analytics}
 
-
-（Steve的视频占位符。）
 
 >[!IMPORTANT]
 >

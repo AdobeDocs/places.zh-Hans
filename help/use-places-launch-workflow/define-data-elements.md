@@ -4,7 +4,7 @@ seo-title: 定义数据元素
 description: 本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。
 seo-description: '本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
 
 ---
 
@@ -30,10 +30,10 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 每个POI都包含以下数据引用：
 
 * **[!UICONTROL Category]**:POI的类别
-* **[!IUICONTROL 城市]**:POI市
+* **[!UICONTROL City]**:POI市
 * **[!UICONTROL Country]**:国家／地区
-* **[UICONTROL Latitude]**:POI的纬度
-* **[UICONTROL经度]**:POI的经度
+* **[!UICONTROL Latitude]**:POI的纬度
+* **[!UICONTROL Longitude]**:POI的经度
 * **[!UICONTROL Metadata]**:POI的自定义元数据
 * **[!UICONTROL Name]**:POI地区
 * **[!UICONTROL Radius]**:POI的radius

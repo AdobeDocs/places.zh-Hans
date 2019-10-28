@@ -4,14 +4,12 @@ seo-title: 包含位置服务的应用程序内消息
 description: 本节提供有关如何在Campaign standard中将推送消息与Campaign standard中的应用程序内消息结合使用的信息。
 seo-description: '本节提供有关如何在Campaign standard中将“Push messaging in Campaign Standard”（营销活动标准中的推送消息）与应用程序内消息结合使用的信息。 '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
 
 # 与位置服务的应用程序内消息传递 {#in-app-messages-loc-service}
-
-（Ivan的视频。）
 
 此信息可帮助您了解如何使用Adobe Experience Platform Location service信息发送应用程序内消息或本地通知。
 

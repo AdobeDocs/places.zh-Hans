@@ -4,7 +4,7 @@ seo-title: Adobe I/O集成概述
 description: 有关创建Adobe I/O集成的信息。
 seo-description: 有关创建Adobe I/O集成的信息。
 translation-type: tm+mt
-source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
+source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
 
 ---
 
@@ -100,25 +100,31 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 要创建Places集成，请执行以下操作：
 
 1. 转到 [https://console.adobe.io](https://console.adobe.io) ，然后使用您的Adobe ID登录。
-2. 如果您有权访问多个Experience cloud组织，请从左侧的下拉列表中选择该组织。
-3. 单击 **[!UICONTROL New Integration]**。
-4. 选择 **[!UICONTROL Access an API]** 并单击 **[!UICONTROL Continue]**。
+2. 在“快 **速开始** ”部分，单击 **创建集成**。
+3. 选择 **[!UICONTROL Access an API]** 并单击 **[!UICONTROL Continue]**。
+
+   **[!UICONTROL Access an API]** 是默认位置。
+
+4. 如果您有权访问多个Experience cloud组织，请从右上方的下拉列表中选择该组织。
 5. 在下 **[!UICONTROL Experience Cloud]**&#x200B;面，选 **[!UICONTROL Places]** 择要集成到的Adobe服务，然后单击 **[!UICONTROL Continue]**。
 6. 选择 **[!UICONTROL New integration]** 并单击 **[!UICONTROL Continue]**。
-7. 在创建 *新集成屏幕中* ，输入名称和说明。
+7. 在创建新集成屏幕中，输入名称和说明。
 8. 将您在上面创 `xxxx_public.crt` 建的文件拖放到放置 **[!UICONTROL Public keys certificates]** 区域。
-9. At the bottom of the page, click **[!UICONTROL Create integration]**.
-10. 几秒钟后，在“集成已创 *建”屏幕中* ，确认显示以下消息：
+9. 选择产品配置。
+
+   如果不确定要选择哪个配置文件，请与系统管理员联系。
+10. At the bottom of the page, click **[!UICONTROL Create integration]**.
+11. 几秒钟后，在“集成已创 *建”屏幕中* ，确认显示以下消息：
 
    `Your integration has been created.`
 
-11. 单击 **[!UICONTROL Continue to integration details]**。
+12. 将显示集成详细信息页面，其顶部是集成名称。
 
-   此时将显示您与API密钥、组织ID、技术帐户ID集成的概述，以及有关集成的其他详细信息。
+   该选 **[!UICONTROL Overview]** 项卡默认显示，并显示API密钥、组织ID、技术帐户ID以及有关集成的其他详细信息。
 
 ### 记录组织ID和API密钥
 
-1. 在选项卡 **[!UICONTROL Services]** 上，确认显 **[!UICONTROL Places]** 示该选项卡。
+1. 在集成详细信息页面上，单击 **[!UICONTROL Services]** 选项卡并确认显 **[!UICONTROL Places]** 示在下方 **[!UICONTROL Configured Services]**。
 2. 在选 **[!UICONTROL Overview]** 项卡上，找到并记录API密钥（客户端ID）和组织ID。
 
    每个Places REST API请求都需要这些ID。
@@ -127,7 +133,7 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ### 生成JWT令牌
 
-在选 **[!UICONTROL JWT]** 项卡上，Adobe I/O控制台允许您通过生成JWT并提供交换URL来测试集成。
+在集成详细信息页面上，单 **[!UICONTROL JWT]** 击选项卡，以便通过生成JWT并提供交换URL来测试集成。
 
 要生成JWT令牌，请执行以下操作：
 
@@ -142,4 +148,4 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 >[!IMPORTANT]
 >
->Adobe访问令牌的有 **效期仅为** 24小时，因此请保存示例CURL命令（第5步）。 如果访问令牌不再有效，您需要再次生成该令牌。
+>Adobe访问令牌的有 **效期仅为** 24小时，因此请保存示例CURL命令（第5步）。 如果访问令牌不再有效，您需要重新生成该令牌。

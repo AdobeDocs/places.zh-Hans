@@ -4,7 +4,7 @@ seo-title: 包含位置服务的应用程序内消息
 description: 本节提供有关如何在Campaign standard中将推送消息与Campaign standard中的应用程序内消息结合使用的信息。
 seo-description: '本节提供有关如何在Campaign standard中将“Push messaging in Campaign Standard”（营销活动标准中的推送消息）与应用程序内消息结合使用的信息。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
@@ -54,6 +54,4 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 将位置服务与Adobe Campaign standard结合使用，为您提供了一个功能强大的工具，根据地理围栏条目和退出情况将消息细分并定向给用户。 这种简单的集成为构建更个性化、更符合情境的使用案例打开了大门。
 
-## 在Campaign standard中基于地点元数据创建不同的触发器
-
-（此信息是否即将发布？）
+>[!VIDEO](https://www.youtube.com/watch?v=ikiTTQw9c-o)

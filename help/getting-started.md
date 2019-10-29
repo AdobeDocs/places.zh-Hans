@@ -4,53 +4,48 @@ seo-title: 入门指南
 description: 位置服务快速入门。
 seo-description: 位置服务快速入门。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
 
 ---
 
 
 # 入门指南 {#getting-started}
 
-以下是帮助您开始使用位置服务的视频：
+下面是一个帮助视频，用于获取位置服务的概述：
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
 要使用位置服务，请完成以下任务：
 
-## 1.设置为使用位置服务
+## 1.确保您的用户配置为使用位置服务
 
-位置服务需要与您的常规Adobe Experience Platform配置上下文一起使用特殊的配置上下文。
-
-要进行配置，请完成以下任务：
-
-* 在Admin Console中，确保您的组织已配置位置服务。
-
-   如果您不是Adobe管理员，请与管理员联系以确保Admin Console中的位置服务上下文。
+位置服务产品上下文适用于所有Experience cloud组织。
 
 * 确保在Admin Console中的位置服务和体验平台启动产品上下文下列为用户。
 
    有关详细信息，请参 *阅常见问题解答中的将用户添加到Experience Platform Launch* 和 [位置服务](/help/places-faqs.md)。
 
-* 确保在安装了Places扩展的Experience Platform Launch中配置了移动应用程序属性。
+* 确保在Experience Platform Launch中将Places扩展安装在您的移动应用程序属性上。
 
-   有关详细信息，请参阅 [地点扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+   要对您的地域围栏使用Adobe提供的区域监视，请安装Places Monitor扩展。 有关详细信息，请参阅 [放置监视器扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
-* 如果您的公司有多个Adobe组织，请确保您始终选择为“地点”配置的组织。
 
-   这允许您添加POI和库。
+## 2.创建POI
 
-## 2.配置“地点”扩展和“地点监视器”扩展
+兴趣点(POI)是您为组织创建的地理围栏，您可以通过以下方式之一创建POI:
 
-有关配置“地点”扩展和“监视器”扩展的详细信息，请参 [阅“地点”扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md) 和“ [地点监视器”扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+* 使用位置服务用户界面。
 
-## 3.创建库和POI
+   有关详细信息，请参 [阅Places service概述](/help/poi-mgmt-ui/places-services-overview.md)。
 
-您可以通过以下方式之一创建库和POI:
-
-* 使用Web服务。
+* 使用Places web服务中的API。
 
    有关详细信息，请参 [阅Web服务API](/help/web-service-api/places-web-services.md)。
 
-* 使用Places UI。
 
-   有关详细信息，请参 [阅位置UI](/help/poi-mgmt-ui/places-services-overview.md)。
+## 3.配置“地点”扩展和“地点监视器”扩展
+
+有关配置“地点”扩展和“监视”扩展的详细信息，请参阅以下信息：
+
+* [地点扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)
+* [放置监视器扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。

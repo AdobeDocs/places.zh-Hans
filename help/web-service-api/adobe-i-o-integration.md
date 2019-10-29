@@ -4,12 +4,12 @@ seo-title: Adobe I/O集成概述
 description: 有关创建Adobe I/O集成的信息。
 seo-description: 有关创建Adobe I/O集成的信息。
 translation-type: tm+mt
-source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
-# Adobe I/O集成 {#adobeio-integration}
+# 集成概述和先决条件 {#integration-prereqs}
 
 此信息会向您展示如何创建Adobe I/O和Places集成。
 

@@ -1,69 +1,86 @@
 ---
-title: 应用程序内消息传递
-seo-title: 应用程序内消息传递
+title: 应用程序内通知
+seo-title: 应用程序内通知
 description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
 seo-description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
 translation-type: tm+mt
-source-git-commit: 7985943cef606525401983c4c80862c277f41bf0
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
 # 应用程序内通知(#places-push-messaging)
 
-如何配置应用程序内消息以从Places事件触发；消息必须位于Analytics点击中。
+以下信息向您显示如何配置应用程序内消息以从“地点”事件触发。
+
+>[!IMPORTANT]
+>
+>消息必须位于Analytics点击中。
 
 ## 应用程序内消息
 
-AMS允许您使用发送到Analytics的位置数据作为应用程序内消息的触发事件和／或条件。 从SDK触发触发器后，应用程序内消息可立即实时显示给用户，无需等待Analytics处理数据。
+Mobile services允许您使用发送到Analytics的位置数据作为应用程序内消息的触发事件和／或条件。 如果从SDK触发应用程序内消息并且无需等待Analytics处理数据，则触发器一旦发生，消息就可以实时显示。
 
-本地通知：应用程序内消息传递有3种不同类型：
+### 本地通知消息
+
+以下是可用的应用程序内消息传递类型列表：
 
 * 全屏消息
 * 警报
-* 本地通知。
+* 本地通知消息
 
-这些类型符合应用程序内消息的条件，因为它们是由SDK触发的，但必须注意，当应用程序不在前台时，本地通知的外观和感觉就像推送通知一样。 本地通知是在应用程序处于后台时向用户发送进入或退出POI的实时通知的极好选项。 请参阅Places Monitor扩展文档以了解位置监视(https://placesdocs.com/places-services-by-adobe-documentation/configure-places-in-the-sdk/places-monitor-extension)。
+这些类型是应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉就像推送通知一样，因为当应用程序处于后台时，它们会显示。 当用户在应用程序处于后台时进入或退出POI时，这些通知也会发送实时通知。 有关详细信息，请参 [阅“地点监视器扩展”。](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
 
 ### 先决条件
 
-* 了解如何在AMS中发送和创建应用程序内消息以及触发器的工作方式。
+在开始之前，您会了解如何在Mobile services中发送和创建应用程序内消息以及触发器的工作方式。 For more information, see [Create an in-app message.](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
 
-   有关更多信息，请参阅[创建应用程序内消息](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)。
+##  Experience Platform Launch 中的规则
 
+您可以创建启动规则，这些规则将要用作应用程序内消息触发规则一部分的数据发送到Analytics。 您可以根据用例，将Launch规则中“地点”扩展中的数据用作事件和／或条件。
 
-## 在Experience Platform Launch中创建规则
+* 使用位置数据作为触发事件。
 
-创建启动规则，该规则将正确的数据发送到Analytics，以便能够作为应用程序内消息触发规则的一部分使用。 您可以根据用例，将Launch规则中“地点”扩展中的数据用作事件和／或条件。
+   例如，当用户进入POI时，您可以将数据发送到Analytics。
 
-* 使用位置数据作为触发事件。 例如，如果要在用户进入POI时向Analytics发送数据。
+* 将位置数据用作触发事件的条件。
 
-* 将位置数据用作触发事件的条件。 例如，如果您在位置服务中为不同POI的天气创建了自定义元数据标记，则可以将该元数据用作您的规则条件的参数，如下所示。 尽管可以将此条件用于前面所述的POI条目事件，但也可以将它用作任何事件的上下文。
+   例如，如果您在位置服务中为不同POI的天气创建了自定义元数据标记，则可以将该元数据用作规则条件的参数。 虽然可以将此条件与前面所述的POI条目事件一起使用，但也可以将该条件用作任何事件的上下文。
 
-使用正确的事件和条件参数设置规则后，通过配置将数据发送到Analytics的操作，完成规则配置。 为此，请执行以下操作：
+在使用正确的事件和条件参数设置规则后，通过配置将数据发送到Analytics的操作来完成规则配置。
 
-* 选择Adobe Analytics作为扩展
-* 选择“跟踪”作为操作类型
-* 确定操作的名称
-* 设置与活动一起发送的上下文数据。 使用上下文数据界面将启动数据元素映射到要发送到Analytics的键名。
+## 创建操作
 
-请注意，可以设置Analytics处理规则来获取此上下文数据。 如有需要，请参阅分析处理规则(https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)例如，此操作将以上下文的形式在点名中发送，以描述要发送到Analytics的POIentry事件。
+为此，请执行以下操作：
+
+1. 选择 **扩展。[!UICONTROL Adobe Analytics]**
+1. 在下 **[!UICONTROL Action type]** 拉列表中，选择 **[!UICONTROL Track.]**
+1. 键入操作的名称。
+1. 在右侧窗格中， **[!UICONTROL Context Data]**&#x200B;选择键和值对，以设置将发送到Analytics的上下文数据。
+
+例如，您可以选择 **[!UICONTROL poiname]** 作为键和**[!UICONTROL `{%%Last Entered POI Name}`。]
+
+>[!TIP]
+>
+>可以设置分析处理规则来获取此上下文数据。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在创建操作 *的示例中*，操作将作为上下文发送，以描述 `poiname` 要发送到Analytics的POIentry事件。
 
 ![创建操作](/help/assets/configure-action.png)
 
-下面是一个示例，说明完成的规则的外观。
+以下是完整规则的示例：
 
 ![完整规则](/help/assets/create-a-rule.png)
 
-## 在AMS中创建应用程序内消息：
+## 在AMS中创建应用程序内消息。
 
-您将使用来自位置服务的数据作为触发器参数的一部分来创建消息的受众。
+作为触发器参数的一部分，您可以通过以下方式之一使用位置服务中的数据为消息创建受众：
 
-* 使用特定于位置的操作，如进入或退出
-* 使用作为上下文数据发送的POI元数据缩小受众的目标范围。 这可以与特定位置的操作（如条目）一起使用，也可以用作启动项或按钮单击等其他事件的上下文。
+* 使用特定于位置的操作，如进入或退出。
+* 使用作为上下文数据发送的POI元数据缩小受众的目标范围。
 
-   下面是一个示例，说明如何为欢迎用户设置应用程序内消息，这些用户在名称中输入的POI中包含“Adobe”:
+   此选项可与特定位置的操作（如条目）一起使用，也可用作启动项或按钮单击等其他事件的上下文。
+
+   下面是一个如何为欢迎用户配置应用程序内消息的示例，这些用户输入名 **[!UICONTROL Adobe]** 称中包含POI:
 
    ![触发参数](/help/assets/trigger-parameters.png)
 
-* 在AMS触发器和特征中的“地点”标题中找到的参数不能用于位置服务中的数据。 这些参数用于在AMS中创建的传统Places数据库。
+* Mobile services中“触发器”和“ *特征* ”页面的“地点”标题中的参数不处理来自位置服务的数据。 这些参数仅适用于在Mobile services中创建的传统Places数据库。

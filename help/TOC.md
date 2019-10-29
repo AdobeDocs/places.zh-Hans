@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: 最终用户
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
+source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
 ---
 
@@ -66,10 +66,10 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
    + Adobe Analytics {#places-adobe-analytics}
       + [将位置服务数据发送到Adobe Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [在Adobe Analytics中运行包含位置服务数据的报告](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
-   + 用于消息传递的移动服务 {#places-mobile-svcs-messaging}
-      + [用于消息传递的移动服务](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
-      + [推送消息](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
-      + [应用程序内消息传递](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
+   + Adobe Mobile Services {#places-mobile-svcs-messaging}
+      + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
+      + [推送通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
+      + [应用程序内通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
       + [推送通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [应用程序内消息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)

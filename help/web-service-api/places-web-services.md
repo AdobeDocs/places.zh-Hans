@@ -4,7 +4,7 @@ seo-title: 'Web服务API概述 '
 description: Places是一套服务，使Adobe客户能更轻松地在正确的时间和地点将Adobe Experience cloud和Adobe Experience Platform解决方案与位置数据以及恰当的体验结合在一起。
 seo-description: Places是一套服务，使Adobe客户能更轻松地在正确的时间和地点将Adobe Experience cloud和Adobe Experience Platform解决方案与位置数据以及恰当的体验结合在一起。
 translation-type: tm+mt
-source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
+source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
 
 ---
 
@@ -29,11 +29,11 @@ Places REST API允许您以编程方式使用单位的POI。 这些API允许您�
 
 * 您的组织中设置了地点，并且您以用户身份拥有相应的访问权限。
 
-   有关详细信息，请参阅下 *面的组织要求* 一节。
+   有关详细信息，请参阅集 *成概述和先决条件中* ，用 [户访问的先决条件](/help/web-service-api/adobe-i-o-integration.md)。
 
 * 在您的组织中设置Places后，您便有权访问，为Places创建Adobe集成。
 
-   有关详细信息，请参 *阅在* Adobe I/O集成概述中创建Places集成 [](/help/web-service-api/adobe-i-o-integration.md)。
+   有关详细信息，请参 *阅集成概述和先决条件* , [中的创建地点集成](/help/web-service-api/adobe-i-o-integration.md)。
 
 其他信息:
 

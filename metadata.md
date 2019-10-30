@@ -10,7 +10,7 @@ tutorials-url: https://experienceleague.adobe.com/
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
 index: true
 translation-type: tm+mt
-source-git-commit: 35353d02b791bcb234a45b612b0bc481b604afdf
+source-git-commit: 8b9b84a12c40e93ecd1aea1cee5d44c37dc439e8
 
 ---
 
@@ -31,7 +31,7 @@ metadata.md 文件包括可传递给存储库中用户指南 TOC.md 文件的存
 | tutorials-title | 教程不合适时鲜少使用 |
 | tutorials-url | 指向视频教程的链接 -- helpx 教程或 KT 教程 |
 | mini-toc-levels | 确定右侧边栏中显示的标题级别数量。默认为 2 |
-| git-repo | 指定协作存储库的位置。将 github.com 镜像用于面向公众的文档 |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | index | 对于软启动，请设置 index=no |
 
 在 TOC.md 文件中

@@ -4,7 +4,7 @@ seo-title: 将地点数据发送到Adobe Analytics
 description: 本节提供有关如何将地点数据发送到Analytics的信息。
 seo-description: '本节提供有关如何将地点数据发送到Analytics的信息。 '
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 5. 单击 **[!UICONTROL Keep Changes]**。
 
-   !["选择活动"](/help/assets/ad-setEvent.png)
+   !["选择活动"](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.添加条件
@@ -62,7 +62,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 5. 单击 **[!UICONTROL Keep Changes]**。
 
-   !["设置条件"](/help/assets/ad-setCondition.png)
+   !["设置条件"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 
 ## 4.定义操作
@@ -81,13 +81,13 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
    在以下示例中，将向 `TrackAction` Analytics发送一个调用，其中其他上下文数据与触发此条目事 `poi.name` 件的POI的名称相等：
 
-   ![“设置操作”](/help/assets/ad-setAction.png)
+   ![“设置操作”](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5.保存规则并重新构建您的属性
 
 完成配置后，请验证您的规则是否如下图所示：
 
-![“规则已创建”](/help/assets/ad-ruleComplete.png)
+![“规则已创建”](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. 单击 **[!UICONTROL Save]**。
 

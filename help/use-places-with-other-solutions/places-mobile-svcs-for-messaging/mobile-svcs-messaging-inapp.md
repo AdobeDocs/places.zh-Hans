@@ -4,7 +4,7 @@ seo-title: 应用程序内通知
 description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
 seo-description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -29,7 +29,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 * 警报
 * 本地通知消息
 
-这些类型是应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉就像推送通知一样，因为当应用程序处于后台时，它们会显示。 当用户在应用程序处于后台时进入或退出POI时，这些通知也会发送实时通知。 有关详细信息，请参 [阅“地点监视器扩展”。](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
+这些类型是应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉就像推送通知一样，因为当应用程序处于后台时，它们会显示。 当用户在应用程序处于后台时进入或退出POI时，这些通知也会发送实时通知。 有关详细信息，请参 [阅“地点监视器扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)”。
 
 ### 先决条件
 
@@ -51,18 +51,18 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 ## 创建操作
 
-为此，请执行以下操作：
+要创建操作，请执行以下操作：
 
 1. 选择 **扩展。[!UICONTROL Adobe Analytics]**
 1. 在下 **[!UICONTROL Action type]** 拉列表中，选择 **[!UICONTROL Track.]**
 1. 键入操作的名称。
-1. 在右侧窗格中， **[!UICONTROL Context Data]**&#x200B;选择键和值对，以设置将发送到Analytics的上下文数据。
+1. 在右侧窗格中， **[!UICONTROL Context Data]**&#x200B;选择键值对以设置将发送到Analytics的上下文数据。
 
-例如，您可以选择 **[!UICONTROL poiname]** 作为键和**[!UICONTROL `{%%Last Entered POI Name}`。]
+例如，您可以选择 `poiname` 作为键和 `{%%Last Entered POI Name}` 作为值。
 
 >[!TIP]
 >
->可以设置分析处理规则来获取此上下文数据。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在创建操作 *的示例中*，操作将作为上下文发送，以描述 `poiname` 要发送到Analytics的POIentry事件。
+>可以设置分析处理规则来获取此上下文数据。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在创建操作 *的示例中*`poiname` ，操作将作为上下文发送，以描述要发送到Analytics的POI条目事件。
 
 ![创建操作](/help/assets/configure-action.png)
 
@@ -70,7 +70,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 ![完整规则](/help/assets/create-a-rule.png)
 
-## 在AMS中创建应用程序内消息。
+## 在Mobile services中创建应用程序内消息
 
 作为触发器参数的一部分，您可以通过以下方式之一使用位置服务中的数据为消息创建受众：
 
@@ -83,4 +83,6 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
    ![触发参数](/help/assets/trigger-parameters.png)
 
-* Mobile services中“触发器”和“ *特征* ”页面的“地点”标题中的参数不处理来自位置服务的数据。 这些参数仅适用于在Mobile services中创建的传统Places数据库。
+* Mobile services中“触发器”和“ *特征* ”页面的“地点”标题中的参数不处理来自位置服务的数据。
+
+   这些参数仅适用于在Mobile services中创建的传统Places数据库。

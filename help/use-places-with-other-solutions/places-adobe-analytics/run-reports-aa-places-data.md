@@ -4,7 +4,7 @@ seo-title: 在Adobe Analytics中运行包含Places数据的报告
 description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
 seo-description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 现在，您可以确定要为此规则包含的触发器。 在此示例中，触发器基于所有调 `TrackAction` 用。 配置活动后，单击 **[!UICONTROL Keep Changes]**。
 
-![“创建活动”](/help/assets/ad-setEvent.png)
+![“创建活动”](/help/assets/pt-selectEvent.png)
 
 
 ## 2.添加条件
@@ -60,7 +60,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 5. 单击 **[!UICONTROL Keep Changes]**。
 
-!["创建条件"](/help/assets/ad-setCondition.png)
+!["创建条件"](/help/assets/pt-setCondition.png)
 
 ## 3.定义操作
 

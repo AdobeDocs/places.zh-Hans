@@ -1,21 +1,23 @@
 ---
-title: '使用无活动区域监视的地点 '
-seo-title: '使用无活动区域监视的地点 '
-description: 本节提供有关如何在不进行活动区域监视的情况下使用地点的信息。
-seo-description: 本节提供有关如何使用地点而不进行活动区域监视的信息。
+title: '使用位置服务，无需主动区域监控 '
+seo-title: '使用位置服务，无需主动区域监控 '
+description: 本节提供有关如何使用位置服务地点而无需活动区域监视的信息。
+seo-description: 本节提供有关如何使用位置服务而不进行活动区域监视的信息。
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# 使用无活动区域监视的地点 {#use-places-without-active-monitoring}
+# 使用位置服务，无需主动区域监控 {#use-places-without-active-monitoring}
 
-您的应用程序的使用案例可能不需要进行活动区域监视。 Adobe Places仍可用于将用户的位置数据与其他Experience Platform产品集成。
+应用程序的用例可能不需要活动区域监视。 Adobe Places仍可用于将用户的位置数据与其他Experience Platform产品集成。
 
 本节介绍如何仅在收集用户位置（经度和纬度）时完成POI会员资格检查。
 
-****&#x200B;入门项目：开发人员将使用目标平台操作系统提供的API收集设备位置。
+## 先决条件
+
+开发人员将使用目标平台操作系统提供的API收集设备位置。
 
 >[!TIP]
 >
@@ -80,7 +82,6 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
     }
 }
 ```
-
 
 ### Objective-C
 
@@ -229,9 +230,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## 完整的示例实施
 
-以下代码示例显示如何检索设备的当前位置、触发必要事件以及确保一次访问时不会获得同一位置的多个条目：
+下面的代码示例向您显示如何检索设备的当前位置、触发必要事件以及确保一次访问时不会获得同一位置的多个条目。
 
 >[!IMPORTANT]
+>
+>
 这些片段只 **是示例** 。 开发人员必须确定他们希望如何实现该功能，并且决策应考虑目标操作系统建议的最佳实践。
 
 ### Android

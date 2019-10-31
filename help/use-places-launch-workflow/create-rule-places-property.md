@@ -4,14 +4,14 @@ seo-title: 为您的地点属性创建规则
 description: 'Places SDK会跟踪当前位置，监视围绕当前位置配置的POI，并跟踪这些POI的进入和退出事件。 '
 seo-description: 'Places SDK会跟踪当前位置，监视围绕当前位置配置的POI，并跟踪这些POI的进入和退出事件。 '
 translation-type: tm+mt
-source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
 # 创建进入和退出规则 {#create-entry-exit-rules}
 
-在移动应用程序中安装了地点和地点监视器扩展后，您可以在Adobe Experience Platform Launch中创建规则，这些规则是触发或条件化的位置数据，包括地点进入和退出事件。
+在移动应用程序中安装地点和地点监视器扩展后，您可以在Adobe Experience Platform Launch中创建规则，这些规则是触发或条件化的位置数据，包括位置进入和退出事件。
 
 ## 规则
 
@@ -54,7 +54,7 @@ Places SDK保持以下状态：
 
 >[!CAUTION]
 >
->此示例假定您已创建了美国所有咖啡店的POI库。 有关创建POI和库的详细信息，请参 [阅创建POI](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/managing-pois-in-the-places-ui#create-a-poi)[和创建库](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/manage-libraries#create-a-library)。
+>此示例假定您已创建了美国所有咖啡店的POI库。 有关创建POI和库的详细信息，请参 [阅管理多个库中的创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)*和创建库*[（英文）](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)。
 
 以下过程是如何创建规则的示例，当您进入旧金山的咖啡店时，该规则会将帖子发送回Slack。
 
@@ -128,6 +128,6 @@ Places SDK保持以下状态：
 
 ### 超越进出境的思考
 
-在Launch中使用Places地理围栏条目和退出来触发规则非常强大，但您也可以将位置数据用作其他事件触发的条件。 例如，您可能拥有一个Mobile Core Track Action事件触发器，该触发器根据应用程序内的特定trackAction调用事件准备触发。 根据此事件，您可以在执行操作之前为事件添加其他位置条件。 例如，在发生购买事件时打开应用程序内调查，但 `trackAction` 仅在用户的当前位 **置包含特定** “位置服务”元数据时打开。
+在Experience Platform Launch中使用位置服务地理围栏条目和退出来触发规则的功能极其强大，但您也可以将位置数据用作其他事件触发的条件。 例如，您可能拥有一个Mobile Core Track Action事件触发器，该触发器根据应用程序内的特定trackAction调用事件准备触发。 根据此事件，您可以在执行操作之前为事件添加其他位置条件。 例如，在发生购买事件时打开应用程序内调查，但 `trackAction` 仅在用户的当前位 **置包含特定** “位置服务”元数据时打开。
 
 ![创建条件](/help/assets/places-condition.png)

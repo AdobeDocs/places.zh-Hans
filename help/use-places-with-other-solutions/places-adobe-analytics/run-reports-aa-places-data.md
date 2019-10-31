@@ -4,7 +4,7 @@ seo-title: 在Adobe Analytics中运行包含Places数据的报告
 description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
 seo-description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
    * 如果此属性没有现有规则，则 **[!UICONTROL Create New Rule]** 按钮将位于屏幕中间。
    * 如果您的属性有规则， **[!UICONTROL Create New Rule]** 则按钮将位于屏幕的右上方。
 
-## 1.选择活动
+## 2.选择活动
 
 1. 为您的规则指定一个有意义的名称，以便在您的规则列表中轻松识别该规则。
 
@@ -42,7 +42,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 ![“创建活动”](/help/assets/pt-selectEvent.png)
 
 
-## 2.添加条件
+## 3.添加条件
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 !["创建条件"](/help/assets/pt-setCondition.png)
 
-## 3.定义操作
+## 4.定义操作
 
 1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL Add]**。
 
@@ -80,7 +80,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ![“创建操作”](/help/assets/pt-setAction.png)
 
-## 4.保存规则并重新构建您的属性
+## 5.保存规则并重新构建您的属性
 
 完成配置后，请验证您的规则是否如下图所示：
 

@@ -4,7 +4,7 @@ seo-title: 将地点数据发送到Adobe Analytics
 description: 本节提供有关如何将地点数据发送到Analytics的信息。
 seo-description: '本节提供有关如何将地点数据发送到Analytics的信息。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 >[!IMPORTANT]
 >
->本文档假定您已在应用程序中实施了Places。 有关实施Places的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本节假定您已在应用程序中实施了地点。 有关实施Places的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 在Places发送进入和退出事件后，您可以在Experience Platform Launch中创建规则，将Places数据发送到Adobe Analytics。 要创建此类型的规则，请在启动项中选择您的属性，然后完成以下步骤：
 
@@ -24,12 +24,14 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
    请牢记以下信息：
 
-   * 如果此属性没有现有规则，则按钮将位于屏幕中间。
-   * 如果您的属性有规则，则按钮将位于屏幕的右上角。
+   * 如果此属性没有现有规则，则 **[!UICONTROL Create New Rule]** 按钮将位于屏幕中间。
+   * 如果您的属性有规则， **[!UICONTROL Create New Rule]** 则按钮将位于屏幕的右上方。
 
 ## 2.选择活动
 
-1. 为您的规则指定一个有意义的名称，以便在您的规则列表中轻松识别该规则。 在此示例中，该规则名为“将数 **据发送到分析”**。
+1. 为规则键入有意义的名称。
+
+   这样，规则在您的规则列表中就能很容易识别。 在此示例中，该规则被命名 **[!UICONTROL Send Data to Analytics]**。
 
 2. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
@@ -46,8 +48,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 >[!IMPORTANT]
 >
->如果要向规则中添加条件，请完成此步骤。 否则，请跳到 *下面的定义操作* 。
-
+>完成此步骤，将条件添加到规则。 否则，请跳到 *下面的定义操作* 。
 
 在此示例中，创建了一个条件，该条件使规则仅在当前POI的名称等于时触发 **[!UICONTROL My POI]**。
 
@@ -57,7 +58,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 3. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Name]**。
 
-4. 在右侧的窗口中，在文本字段中输入 **[!UICONTROL My POI]**。
+4. 在右侧窗格的文本字段中，输入 **[!UICONTROL My POI]**。
 
 5. 单击 **[!UICONTROL Keep Changes]**。
 
@@ -72,20 +73,21 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 3. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Track]**。
 
-4. 在右侧窗格中，添加要发送到Analytics的操作或状态。 您还可以选择向此请求添加任何其他上下文数据。 请记住，您可以使用数据元素从SDK动态获取此数据。
+4. 在右侧窗格中，添加要发送到Analytics的操作或状态。
+
+   您还可以选择向此请求添加任何其他上下文数据。 请记住，您可以使用数据元素从SDK动态获取此数据。
 
 5. 单击 **[!UICONTROL Keep Changes]**。
 
-在以下示例中，将 `TrackAction` 向Analytics发送一个调用，其中 **poi.name** 的其他上下文数据与触发此条目事件的POI的名称相等：
+   在以下示例中，将向 `TrackAction` Analytics发送一个调用，其中其他上下文数据与触发此条目事 `poi.name` 件的POI的名称相等：
 
-![“设置操作”](/help/assets/pt-setAction.png)
+   ![“设置操作”](/help/assets/pt-setAction.png)
 
 ## 5.保存规则并重新构建您的属性
 
 完成配置后，请验证您的规则是否如下图所示：
 
 ![“规则已创建”](/help/assets/pt-ruleComplete.png)
-
 
 1. 单击 **[!UICONTROL Save]**。
 

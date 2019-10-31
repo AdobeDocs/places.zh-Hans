@@ -4,12 +4,12 @@ seo-title: 在“地点”UI中管理库
 description: 使用Places UI管理库。
 seo-description: 使用Places UI管理库。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# 在“地点”UI中管理库 {#manage-libraries-places-ui}
+# Manage libraries {#manage-libraries-places-ui}
 
 图书馆是POI的集合。 库中最多可有150,000个POI，每个Experience cloud组织最多可有100个库。
 

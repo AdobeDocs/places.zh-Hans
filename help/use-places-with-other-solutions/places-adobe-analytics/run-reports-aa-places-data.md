@@ -4,7 +4,7 @@ seo-title: 在Adobe Analytics中运行包含Places数据的报告
 description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
 seo-description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -22,14 +22,14 @@ source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
 1. 在选项卡 **[!UICONTROL Rules]** 上，单击 **[!UICONTROL Create New Rule]**。
 
    请牢记以下信息：
-   * 如果此属性没有现有规则，则按钮将位于屏幕中间。
-   * 如果您的属性有规则，则按钮将位于屏幕的右上角。
+   * 如果此属性没有现有规则，则 **[!UICONTROL Create New Rule]** 按钮将位于屏幕中间。
+   * 如果您的属性有规则， **[!UICONTROL Create New Rule]** 则按钮将位于屏幕的右上方。
 
 ## 1.选择活动
 
 1. 为您的规则指定一个有意义的名称，以便在您的规则列表中轻松识别该规则。
 
-   在此示例中，该规则被命名为“将地 **点数据附加到分析跟踪操作事件”**。
+   在此示例中，该规则被命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
 
 2. 在部分 **[!UICONTROL Events]** 下，单击 **[!UICONTROL Add]**。
 
@@ -46,7 +46,7 @@ source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
 
 >[!IMPORTANT]
 >
->如果要向规则中添加条件，请完成此步骤。 否则，请跳到下面 *的定义操作* 部分。
+>完成此过程，将条件添加到规则。 否则，请跳到下面 *的定义操作* 部分。
 
 在此示例中，创建了一个条件，该条件导致规则仅为AT&amp;T客户触发。
 

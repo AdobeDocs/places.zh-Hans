@@ -4,14 +4,14 @@ seo-title: 推送通知
 description: 本节将向您介绍如何将地点与推送通知一起使用。
 seo-description: 本节将向您介绍如何将地点与推送通知一起使用。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
 
 # 推送通知(#places-push-messaging)
 
-Mobile services允许您向Adobe Analytics区段发送推送通知。 在位置服务中，您可以通过受众与您的POI的历史交互来细分推送消息的受众。 例如，您可以向过去30天内在某家商店中的用户发送消息。
+Mobile services允许您向Adobe Analytics区段发送推送通知。 在位置服务中，您可以使用受众与POI的历史交互来为您的推送消息细分受众。 例如，您可以向过去30天内在某家商店中的用户发送消息。
 
 在开始之前，请确保您已完成以下任务：
 
@@ -36,4 +36,3 @@ Mobile services允许您向Adobe Analytics区段发送推送通知。 在位置�
 * 在该部 **[!UICONTROL Custom Segment]** 分中，使用可用的自定义区段参数构建受众。
 
 ![设置推送消息](/help/assets/push-set-up.png)
-

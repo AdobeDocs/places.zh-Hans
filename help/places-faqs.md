@@ -4,7 +4,7 @@ seo-title: 常见问题解答
 description: 本主题提供了有关某些常见问题的其他信息。
 seo-description: 本主题提供了有关某些常见问题的其他信息。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -91,7 +91,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
       如果您之前已将用户添加到Experience Platform Launch，则可能会看到列出多个配置文件。
 
-2. 选择正确的配置文件：
+1. 选择正确的配置文件：
 
    a.单击默认配置文件的名称。
 
@@ -145,7 +145,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
    g.单击 **[!UICONTROL Save]**。
 
-2. 将用户添加到 **[!UICONTROL Places Core Services]**。
+1. 将用户添加到 **[!UICONTROL Places Core Services]**。
 
    >[!TIP]
    >

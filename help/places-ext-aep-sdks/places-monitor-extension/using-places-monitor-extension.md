@@ -4,7 +4,7 @@ seo-title: 使用地点监视器扩展
 description: 有关如何安装、配置和使用Places Monitor扩展的信息。
 seo-description: '有关如何安装、配置和使用Places Monitor扩展的信息。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,9 +16,9 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 ## 在Experience Platform Launch中安装Places Monitor扩展
 
 1. 在Experience Platform Launch中，单击选项 **[!UICONTROL Extensions]** 卡。
-2. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩展 **[!UICONTROL Places Monitor]** 名，然后单击“ **安装”**。
-3. 单击 **[!UICONTROL Save]**。
-4. 按照发布过程更新SDK配置。
+1. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩展 **[!UICONTROL Places Monitor]** 名，然后单击“ **安装”**。
+1. 单击 **[!UICONTROL Save]**。
+1. 按照发布过程更新SDK配置。
 
 ### 配置地点监视器扩展 {#configure-places-monitor-extension}
 
@@ -38,7 +38,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 
 1. 使用应用程序的Gradle文件将Places Monitor扩展和Places扩展添加到您的项目。
 
-2. 在Gradle文件中还包括最新的Google Location服务。
+1. 在Gradle文件中还包括最新的Google Location服务。
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -47,7 +47,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-3. 在应用程序的主活动中导入“地点监视器”扩展。
+1. 在应用程序的主活动中导入“地点监视器”扩展。
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
@@ -58,7 +58,7 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 在iOS中，完成以下步骤：
 
 1. 通过添加，通过Cocoapod将库添 `Podfile` 加到项目 `pod 'ACPPlacesMonitor'`。
-2. 导入地点和地点监视器库：
+1. 导入地点和地点监视器库：
 
 #### Objective-C
 

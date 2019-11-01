@@ -4,7 +4,7 @@ seo-title: 测试和验证地点
 description: 本节提供有关如何测试和验证地点的信息。
 seo-description: 本节提供有关如何测试和验证地点的信息。
 translation-type: tm+mt
-source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
+source-git-commit: 181185d441a6a4740b2e8770adcb71e81e2e816e
 
 ---
 
@@ -33,8 +33,8 @@ source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
 | 5 | 确认已为测试配置了正确的环境。 启动环境ID应与您的启动开发环境相匹配。 | 已确认 |
 | 6 | 为要测试的每个POI创建GPX文件。 GPX文件可在本地开发环境中用于模拟位置条目。 有关创建和使用GPX文件的信息，请参阅以下内容：用于 <br>[iOS模拟器的GPX文件[已关闭]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.](https://mapstogpx.com/mobiledev.php)<br>[phpLOCATION在移动应用程序中测试](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | 将在应用程序项目中创建并加载GPX文件。 |
 | 7 | 无需执行任何其他操作，您应能够从Android studio或XCode启动应用程序并查看相应的警报以请求对跟踪位置的访问。 单击“始 *终允许* ”权限。<br><br>我们建议您使用连接到计算机的实际设备而不是使用设备模拟器。 | 位置请求提示应在通过IDE加载的应用程序上显示 |
-| 8 | 在“位置”权限被接受后，在应用程序控制台中，您应当看到指示已调 `ACPExtensionEventName : requestgetnearbyplaces`用的消息。 在XCode或Android Studio中的不同位置之间切换应为特定POI生成条目事件 | `ACPExtensionEventName : requestgetnearbyplaces` 应当在模拟不同位置时显示。 |
-| 9 | 如果您选择的位置靠近附近的POI，则监视器扩展会从当前位置开始监视20个最接近的POI。 控制台中的消息将类似于以下内容： `[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Received a new list of POIs from Places:`. | 在XCode或Android Studio中的不同位置之间切换应为特定POI生成条目事件。 |
+| 8 | 接受“位置”权限后。 Places SDK将检索设备的当前位置，而Places Monitor扩展将从当前位置开始监视20个最接近的POI | 请参阅表下的日志示例。 |
+| 9 | 在XCode或Android Studio中的不同位置之间切换应为特定POI生成条目事件。 进入POI时应使用以下日志。 | 请参阅表下的日志示例。 |
 | 10 | 在您看到“地点监视器”找到附近的POI后，您应该通过发送位置ping来测试。 在Launch中，创建一个新规则，该规则使用Places扩展根据地域围栏条目触发。 然后，使用Mobile Core发送回发，以创建新操作。 创建Slack Webhook应用程序可帮助您查看位置条目和退出。 有关创建Slack Webhook应用程序的信息，请参阅使 [用传入的Webhook发送消息。](https://api.slack.com/messaging/webhooks) |  |
 | 10a | 在Launch中，确保为Places扩展添加了数据元素，包括：当前 <br>POI名<br>称当前POI<br>longLast Entered<br>nameLastEntered<br>LatEntered<br><br><br><br><br>LongLastExistedName退出LastLastLastLastLastLastLastLastEmastamp |  |
 | 10b | 使用“事件=地点”→“进入POI”创建新规则 |  |
@@ -71,3 +71,47 @@ source-git-commit: 39374c1457d33f4cd4014c78fb8daaaa59e5d62d
 | 19 | 在仅启用蜂窝和关闭wifi的情况下进行测试。 |  |
 | 20 | 在打开蜂窝和wifi的情况下进行测试。 |  |
 |  | **SUMMARY POINT** <br>On-site测试应与开发测试紧密匹配。 请记住，在确定用户位置时可能会出现一些环境因素，例如在POI地理围栏中停留的时间、蜂窝信号的可用性以及附近wifi接入点的强度。 |  |
+
+## 日志示例
+
+**** 第8步：位置更新期间需要iOS和Android日志
+
+**iOS**
+
+```
+[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Authorization status changed: Always
+[AdobeExperienceSDK DEBUG <Places>]: Requesting 20 nearby POIs for device location (<lat>, <longitude>)
+[AdobeExperienceSDK DEBUG <Places>]: Response from Places Query Service contained <n> nearby POIs
+[AdobeExperienceSDK DEBUG <com.adobe.placesMonitor>]: Received a new list of POIs from Places: (
+<ACPPlacePoi: 0x600002b75a40> Name: <poi name>; ID:<poi id>; Center: (<lat>, <long>); Radius: <radius>
+..
+..)   
+```
+
+**Android**
+
+```
+PlacesMonitor - All location settings are satisfied to monitor location
+PlacesMonitor - PlacesMonitorInternal : New location obtained: <latitude> <longitude> Attempting to get the near by pois
+PlacesExtension - Dispatching nearby places event with n POIs
+PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
+PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
+PlacesMonitor - Attempting to Monitor POI with id <poi id> name <poi name> latitude <lat> longitude <longitude>
+...
+...
+PlacesMonitor - Successfully added n fences for monitoring
+```
+
+**** 第9步：事件期间需要iOS和Android日志
+
+**iOS**
+
+```
+[AdobeExperienceSDK TRACE <Places>]: Dispatching Places region entry event for place ID <poiId>
+```
+
+**Android**
+
+```
+PlacesExtension -  Dispatching Places Region Event for <poi name> with eventType entry
+```

@@ -4,7 +4,7 @@ seo-title: 将地点数据发送到Adobe Analytics
 description: 本节提供有关如何将地点数据发送到Analytics的信息。
 seo-description: '本节提供有关如何将地点数据发送到Analytics的信息。 '
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -33,13 +33,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
    这样，规则在您的规则列表中就能很容易识别。 在此示例中，该规则被命名 **[!UICONTROL Send Data to Analytics]**。
 
-2. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
-3. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places]**。
+1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places]**。
 
-4. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Enter POI]**。
+1. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Enter POI]**。
 
-5. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**。
 
    !["选择活动"](/help/assets/ad-setEvent_use-analytics-data.png)
 
@@ -54,13 +54,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 在部分 **[!UICONTROL Conditions]** 下，单击 **[!UICONTROL Add]**。
 
-2. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places]**。
+1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places]**。
 
-3. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Name]**。
+1. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Name]**。
 
-4. 在右侧窗格的文本字段中，输入 **[!UICONTROL My POI]**。
+1. 在右侧窗格的文本字段中，输入 **[!UICONTROL My POI]**。
 
-5. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**。
 
    !["设置条件"](/help/assets/ad-setCondition_use-analytics-data.png)
 
@@ -69,15 +69,15 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL Add]**。
 
-2. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Adobe Analytics]**。
+1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Adobe Analytics]**。
 
-3. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Track]**。
+1. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Track]**。
 
-4. 在右侧窗格中，添加要发送到Analytics的操作或状态。
+1. 在右侧窗格中，添加要发送到Analytics的操作或状态。
 
    您还可以选择向此请求添加任何其他上下文数据。 请记住，您可以使用数据元素从SDK动态获取此数据。
 
-5. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**。
 
    在以下示例中，将向 `TrackAction` Analytics发送一个调用，其中其他上下文数据与触发此条目事 `poi.name` 件的POI的名称相等：
 
@@ -91,5 +91,5 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 单击 **[!UICONTROL Save]**。
 
-2. 重新构建您的启动项属性并将其部署到正确的环境。
+1. 重新构建您的启动项属性并将其部署到正确的环境。
 

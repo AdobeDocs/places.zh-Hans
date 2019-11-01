@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 seo-description: '本节提供有关如何将位置服务与Adobe Target结合使用的信息。 '
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -30,13 +30,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
    在此示例中，该规则被命名 **[!UICONTROL Attach Places Data to Target Content Requested]**。
 
-2. 在部分 **[!UICONTROL Events]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Events]** 下，单击 **[!UICONTROL Add]**。
 
-3. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Adobe Target]**。
+1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Adobe Target]**。
 
-4. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Content Requested]**。
+1. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Content Requested]**。
 
-5. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**。
 
 ![添加活动](/help/assets/ad-setEvent_target.png)
 
@@ -50,13 +50,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 在部分 **[!UICONTROL Conditions]** 下，单击 **[!UICONTROL Add]**。
 
-2. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
 
-3. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Launches]**。
+1. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Launches]**。
 
-4. 在右侧窗格上，修改下拉列表和数字控件，使条件显示为 **[!UICONTROL用户启动的应用程序大于或等于5次**。
+1. 在右侧窗格上，修改下拉列表和数字控件，使条件显示为 **[!UICONTROL用户启动的应用程序大于或等于5次**。
 
-5. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**。
 
 ![添加活动](/help/assets/ad-setCondition_target.png)
 
@@ -64,13 +64,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL Add]**。
 
-2. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
 
-3. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Attach Data]**。
+1. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Attach Data]**。
 
-4. 在右侧窗格的字 **[!UICONTROL JSON Payload]** 段中，键入要添加到此活动的数据。
+1. 在右侧窗格的字 **[!UICONTROL JSON Payload]** 段中，键入要添加到此活动的数据。
 
-5. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**。
 
 在右侧窗格上，您可以添加自由形式JSON有效负荷，在侦听此事件的扩展收到该事件之前，将数据添加到SDK事件。
 
@@ -92,4 +92,4 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 单击 **[!UICONTROL Save]**。
 
-2. 重新构建您的启动项属性并将其部署到正确的环境。
+1. 重新构建您的启动项属性并将其部署到正确的环境。

@@ -4,7 +4,7 @@ seo-title: 地点扩展
 description: “地点”扩展允许您根据用户的位置采取行动。
 seo-description: “地点”扩展允许您根据用户的位置采取行动。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,13 +16,13 @@ source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 ## 在Adobe Experience Platform Launch中安装Places扩展
 
 1. 在Experience Platform Launch中，单击选项 **[!UICONTROL Extensions]** 卡。
-2. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩 **[!UICONTROL Places]** 展名并单击 **[!UICONTROL Install]**。
-3. 选择要在此属性中使用的地点库。 这些库将在您的应用程序中访问。
-4. 单击 **[!UICONTROL Save]**。
+1. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩 **[!UICONTROL Places]** 展名并单击 **[!UICONTROL Install]**。
+1. 选择要在此属性中使用的地点库。 这些库将在您的应用程序中访问。
+1. 单击 **[!UICONTROL Save]**。
 
    单击时， **[!UICONTROL Save]** Experience Platform SDK会在您选择的库中搜索Places Services中的POI。 在您构建应用程序时，库下载中不包括POI数据，但基于位置的POI子集在运行时下载到最终用户的设备，并基于用户的GPS坐标。
 
-5. 完成发布过程以更新SDK配置。
+1. 完成发布过程以更新SDK配置。
 
    有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobelaunch.com/launch-reference/publishing)。
 
@@ -45,7 +45,7 @@ source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-2. 在应用程序的主活动中导入“地点”扩展。
+1. 在应用程序的主活动中导入“地点”扩展。
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -65,13 +65,13 @@ source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
    或者，如果您不使用Cocoapod，则可以从Github上的发布页面手动包含Mobile core和 [Places库](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
 
-2. 更新您的Cocopad:
+1. 更新您的Cocopad:
 
    ```objective-c
    pod update
    ```
 
-3. 打开Xcode，在AppDelegate类中，导入核心和地点标题：
+1. 打开Xcode，在AppDelegate类中，导入核心和地点标题：
 
    **Objective-C**
 

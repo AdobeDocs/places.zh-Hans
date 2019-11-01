@@ -4,7 +4,7 @@ seo-title: 定义数据元素
 description: 本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。
 seo-description: '本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。 '
 translation-type: tm+mt
-source-git-commit: 5d438fdd712c85101d546ed82f8ad155010cfb91
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -44,17 +44,17 @@ source-git-commit: 5d438fdd712c85101d546ed82f8ad155010cfb91
 
 1. 在应用程序的“属性”页面中，单击选 **[!UICONTROL Data Elements]** 项卡。
 
-2. 单击 **[!UICONTROL Create New Data Element]**。
+1. 单击 **[!UICONTROL Create New Data Element]**。
 
-3. 在已安装的扩展列表中，查找 **[!UICONTROL Places]**。
+1. 在已安装的扩展列表中，查找 **[!UICONTROL Places]**。
 
-4. 在下拉 **[!UICONTROL Data Element Type]** 列表中，为此数据元素选择数据引用。
+1. 在下拉 **[!UICONTROL Data Element Type]** 列表中，为此数据元素选择数据引用。
 
-5. 选择POI目标。
+1. 选择POI目标。
 
-6. 如果此数据元素是自定义元数据引用，请选择元数据键。
+1. 如果此数据元素是自定义元数据引用，请选择元数据键。
 
-7. 键入数据元素的名称，然后单击 **[!UICONTROL Save]**。
+1. 键入数据元素的名称，然后单击 **[!UICONTROL Save]**。
 
    ![创建数据元素](/help/assets/create-de-7-v3.png)
 

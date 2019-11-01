@@ -4,7 +4,7 @@ seo-title: 包含位置服务的应用程序内消息
 description: 本节提供有关如何在Campaign standard中将推送消息与Campaign standard中的应用程序内消息结合使用的信息。
 seo-description: '本节提供有关如何在Campaign standard中将“Push messaging in Campaign Standard”（营销活动标准中的推送消息）与应用程序内消息结合使用的信息。 '
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -29,9 +29,9 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 ## 根据地理围栏进入或退出发送应用程序内消息
 
 1. 在您的Adobe Campaign standard实例中，单击 **[!UICONTROL Create In-App message]**。
-2. 对于消息类型，选择 **[!UICONTROL Target all users of a Mobile application]**。
-3. 单击 **[!UICONTROL Next]** 并键入常规详细信息。
-4. 在左侧窗格中，验证是否可以使用与位置服务相关的各种触发器。
+1. 对于消息类型，选择 **[!UICONTROL Target all users of a Mobile application]**。
+1. 单击 **[!UICONTROL Next]** 并键入常规详细信息。
+1. 在左侧窗格中，验证是否可以使用与位置服务相关的各种触发器。
 
    * 如果用户已输入POI地理围栏，则可以选择显示应用程序内消息。
    * 您还可以使用在位置服务UI中定义的元数据来筛选受众。
@@ -39,7 +39,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
    ![“应用程序内消息放置元数据”](/help/assets/last-entered-vacation.png)
 
-5. 单击以 **[!UICONTROL Next]** 完成创建要交付的应用程序内消息。
+1. 单击以 **[!UICONTROL Next]** 完成创建要交付的应用程序内消息。
 
    ![“创建活动”](/help/assets/prepare-ACS.png)
 

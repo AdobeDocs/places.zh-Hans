@@ -4,7 +4,7 @@ seo-title: 使用您自己的显示器
 description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
 seo-description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -23,16 +23,15 @@ source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 1. 将从iOS的核心位置服务获取的位置更新传递到Places扩展。
 
-1. 使用 `getNearbyPointsOfInterest` Places扩展API获取当前位 *置*`ACPPlacesPoi` 周围的n个对象的数组。
+1. 使用 `getNearbyPointsOfInterest` Places扩展API获取当前位 `ACPPlacesPoi` 置周围的对象数组。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }
-   ```
-
+   }```
+   
 1. 从获取的对象中提取信 `ACPPlacesPOI` 息并开始监控这些POI。
 
    ```objective-c

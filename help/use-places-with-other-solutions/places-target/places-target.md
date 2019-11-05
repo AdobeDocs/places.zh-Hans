@@ -2,9 +2,9 @@
 title: Adobe Target
 seo-title: Adobe Target
 description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
-seo-description: '本节提供有关如何将位置服务与Adobe Target结合使用的信息。 '
+seo-description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -54,7 +54,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Launches]**。
 
-1. 在右侧窗格上，修改下拉列表和数字控件，使条件显示为 **[!UICONTROL用户启动的应用程序大于或等于5次**。
+1. 在右侧窗格中，修改下拉列表和数字控件，以便该条件读取 **[!UICONTROL User has launched the app greater than or equal to 5 times]**。
 
 1. 单击 **[!UICONTROL Keep Changes]**。
 
@@ -76,11 +76,11 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 在以下示例中， `poiCity` 将值 `poiName` 添加到Target事 **[!UICONTROL mboxparameters]** 件中处理的每个请求中。 新键的值由SDK在该事件处理时动态确定。
 
->[!TIP
->]
+>[!TIP]
+>
 >此JSON有效负荷对对象使用特殊记 `request` 号。 在原始事件中， `request` 是一组匿名对象。 使用“附加数据”将数据附加到数组中的所有对象时，已知包含数组的键上的记号会导致有效负荷应用于该数组中的所有对象。 `[*]`
 >
->对于数 `request[*]` 组中的每个对象，可以将符号朗读为_ `request` for。
+>对于数 `request[*]` 组中的每个对象， _可以朗读的记号`request`。_
 
 ![添加活动](/help/assets/ad-setAction_target.png)
 

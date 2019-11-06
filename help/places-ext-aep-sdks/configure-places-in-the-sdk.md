@@ -4,14 +4,14 @@ seo-title: 使用Places扩展配置SDK
 description: '您可以使用“地点”扩展配置SDK，以在移动应用程序中启用位置感知。 '
 seo-description: '您可以使用“地点”扩展配置SDK，以在移动应用程序中启用位置感知。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 61256ee0f01775bf09a3aee06b6e7253527fc383
 
 ---
 
 
 # 使用Places扩展配置SDK {#configure-sdk-places-extension}
 
-要在移动应用程序中启用位置感知，请使用Places扩展和Places Monitoring扩展（可选）配置SDK。 有关包括SDK配置在内的更多信息，请参 [阅Places（测试版）扩展](/help/configure-places-in-the sdk/places-extension/places-extension.md)。
+要在移动应用程序中启用位置感知，请使用 Places 扩展和 Places Monitoring 扩展（可选）配置 SDK。For more information including SDK configuration, see [Places (Beta) extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 ## 配置Places扩展
 

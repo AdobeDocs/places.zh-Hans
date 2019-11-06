@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 seo-description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 translation-type: tm+mt
-source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
+source-git-commit: 2169bcdc5957c2542dd11875223ea96c3d10b0bc
 
 ---
 
@@ -88,7 +88,7 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 完成配置后，请验证您的规则是否如下图所示：
 
-![完整规则](/help/assets/ad-ruleComplete_target.png)
+![完整规则](/help/assets/ad-ruleComplete-target.png)
 
 1. 单击 **[!UICONTROL Save]**。
 

@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 seo-description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 translation-type: tm+mt
-source-git-commit: 2169bcdc5957c2542dd11875223ea96c3d10b0bc
+source-git-commit: 27f4e5397caf14e24bcbc4a2d276647e72a6d115
 
 ---
 
@@ -82,7 +82,7 @@ source-git-commit: 2169bcdc5957c2542dd11875223ea96c3d10b0bc
 >
 >对于数 `request[*]` 组中的每个对象， _可以朗读的记号`request`。_
 
-![定义操作](/help/assets/ad-setAction_target.png)
+![定义操作](/help/assets/ad-setAction-target.png)
 
 ## 5.保存规则并重新构建您的属性
 

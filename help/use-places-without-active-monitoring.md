@@ -1,10 +1,10 @@
 ---
-title: '使用位置服务，无需主动区域监控 '
-seo-title: '使用位置服务，无需主动区域监控 '
+title: 使用位置服务，无需主动区域监控
+seo-title: 使用位置服务，无需主动区域监控
 description: 本节提供有关如何使用位置服务地点而无需活动区域监视的信息。
 seo-description: 本节提供有关如何使用位置服务而不进行活动区域监视的信息。
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -68,17 +68,18 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
         // ask the Places SDK for the 10 nearest Points of Interest based on the user's location
         Places.getNearbyPointsOfInterest(currentLocation, 10,
-                new AdobeCallback<List<PlacesPOI>>() {
-                    @Override
-                    public void call(List<PlacesPOI> pois) {
-                        // pois is the 10 nearest POIs based on the location
-                    }
-                }, new AdobeCallback<PlacesRequestError>() {
-                    @Override
-                    public void call(PlacesRequestError placesRequestError) {
-                        // Look for the placesRequestError and handle the error accordingly
-                    }
-                });
+            new AdobeCallback<List<PlacesPOI>>() {
+                @Override
+                public void call(List<PlacesPOI> pois) {
+                    // pois is the 10 nearest POIs based on the location
+                }
+            }, new AdobeCallback<PlacesRequestError>() {
+                @Override
+                public void call(PlacesRequestError placesRequestError) {
+                    // Look for the placesRequestError and handle the error accordingly
+                }
+            }
+        );
     }
 }
 ```
@@ -122,8 +123,8 @@ SDK会返回附近POI的列表，包括用户当前是否在每个POI中。 如�
 >[!IMPORTANT]
 >
 >要防止您的应用程序在一次访问中触发多个条目事件，请保留您知道用户输入的区域的列表。 处理来自SDK的附近POI的响应时，仅当该区域不在您的列表中时，才触发条目事件。
-
-在以下代码示例中， `NSUserDefaults` 使用(iOS) `SharedPreferences` 和(Android):
+>
+>在以下代码示例 `NSUserDefaults` 中，(iOS)和 `SharedPreferences` (Android)用于管理区域列表：
 
 ### Android
 
@@ -265,18 +266,19 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
         // ask the Places SDK for the 10 nearest Points of Interest based on the user's location
         Places.getNearbyPointsOfInterest(currentLocation, 10,
-                new AdobeCallback<List<PlacesPOI>>() {
-                    @Override
-                    public void call(List<PlacesPOI> pois) {
-                        // pois is the 10 nearest POIs based on the location
-                        handleUpdatedPOIs(pois);
-                    }
-                }, new AdobeCallback<PlacesRequestError>() {
-                    @Override
-                    public void call(PlacesRequestError placesRequestError) {
-                        // Look for the placesRequestError and handle the error accordingly
-                    }
-                });
+            new AdobeCallback<List<PlacesPOI>>() {
+                @Override
+                public void call(List<PlacesPOI> pois) {
+                    // pois is the 10 nearest POIs based on the location
+                    handleUpdatedPOIs(pois);
+                }
+            }, new AdobeCallback<PlacesRequestError>() {
+                @Override
+                public void call(PlacesRequestError placesRequestError) {
+                    // Look for the placesRequestError and handle the error accordingly
+                }
+            }
+        );
     }
 
     void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {

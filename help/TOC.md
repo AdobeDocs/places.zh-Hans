@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: 最终用户
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -48,8 +48,8 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
             + [删除多个POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [查询API](web-service-api/api-usage/query-apis.md)
 + 移动SDK的扩展 {#places-ext-aep-sdks}
-   + 地点扩展 {#places-extension}
-      + [地点扩展](places-ext-aep-sdks/places-extension/places-extension.md)
+   + Places 扩展 {#places-extension}
+      + [Places 扩展](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Places API参考](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [地点活动引用](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [自定义地点对象](places-ext-aep-sdks/places-extension/cust-places-objects.md)
@@ -64,8 +64,8 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
    + [创建进入和退出规则](use-places-launch-workflow/create-rule-places-property.md)
 + 将位置服务与其他Adobe解决方案结合使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [将位置服务数据发送到Adobe Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [在Adobe Analytics中运行包含位置服务数据的报告](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [将POI进入和退出数据发送到Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
+      + [将位置上下文添加到Analytics请求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [推送通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)

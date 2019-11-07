@@ -4,7 +4,7 @@ seo-title: 使用您自己的显示器
 description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
 seo-description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
 translation-type: tm+mt
-source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -30,8 +30,9 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }```
-   
+   }
+   ```
+
 1. 从获取的对象中提取信 `ACPPlacesPOI` 息并开始监控这些POI。
 
    ```objective-c
@@ -42,13 +43,14 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
        for (ACPPlacesPoi * currentRegion in newGeoFences) {
            // make the circular region
            CLLocationCoordinate2D center = CLLocationCoordinate2DMake(currentRegion.latitude, currentRegion.longitude);
-           CLCircularRegion* currentCLRegion = [[CLCircularRegion alloc] initWithCenter:center                                                                                                                              radius:currentRegion.radius                                                                                                                    identifier:currentRegion.identifier];
+           CLCircularRegion* currentCLRegion = [[CLCircularRegion alloc] initWithCenter:center
+                                                                                 radius:currentRegion.radius
+                                                                             identifier:currentRegion.identifier];
            currentCLRegion.notifyOnExit = YES;
            currentCLRegion.notifyOnEntry = YES;
    
            // start monitoring the new region
            [_locationManager startMonitoringForRegion:currentCLRegion];
-   
        }
    }
    ```
@@ -57,23 +59,22 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 1. 将从Google play服务或Android位置服务获取的位置更新传递到Places Extension。
 
-1. 使用 `getNearbyPointsOfInterest` Places Extension API获取当前位置周围 `PlacesPoi` 的n个对象的列表。
+1. 使用 `getNearbyPointsOfInterest` Places Extension API获取当前位 `PlacesPoi` 置周围的对象列表。
 
    ```java
-       LocationCallback callback = new LocationCallback() {
-               @Override
-               public void onLocationResult(LocationResult locationResult) {
-                   super.onLocationResult(locationResult);
+   LocationCallback callback = new LocationCallback() {
+       @Override
+       public void onLocationResult(LocationResult locationResult) {
+           super.onLocationResult(locationResult);
    
-                   Places.getNearbyPointsOfInterest(currentLocation, 10, new            AdobeCallback<List<PlacesPOI>>() {
+           Places.getNearbyPointsOfInterest(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
                @Override
-               public void call(List<PlacesPOI> pois)
+               public void call(List<PlacesPOI> pois) {
                    starMonitoringGeofence(pois);
                }
            });
-   
-               }
-           };
+       }
+   };
    ```
 
 1. 从获取的对象中提取数 `PlacesPOI` 据并开始监控这些POI。
@@ -82,21 +83,21 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
        // check for location permission
        for (PlacesPOI poi : nearByPOIs) {
-               final Geofence fence = new Geofence.Builder()
+           final Geofence fence = new Geofence.Builder()
                .setRequestId(poi.getIdentifier())
                .setCircularRegion(poi.getLatitude(), poi.getLongitude(), poi.getRadius())
                .setExpirationDuration(Geofence.NEVER_EXPIRE)
                .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER |
                                    Geofence.GEOFENCE_TRANSITION_EXIT)
                .build();
-               geofences.add(fence);
-           }
+           geofences.add(fence);
+       }
    
-           GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
-           builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
-           builder.addGeofences(geofences);
-           builder.build();
-           geofencingClient.addGeofences(builder.build(), geoFencePendingIntent)
+       GeofencingRequest.Builder builder = new GeofencingRequest.Builder();
+       builder.setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER);
+       builder.addGeofences(geofences);
+       builder.build();
+       geofencingClient.addGeofences(builder.build(), geoFencePendingIntent)
    }
    ```
 
@@ -120,5 +121,30 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 - (void) locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
     [ACPPlaces processRegionEvent:region forRegionEventType:ACPRegionEventTypeExit];
+}
+```
+
+### Android
+
+在Android中，在Geofence广播 `processGeofence` 接收器中调用方法以及相应的转换事件。 您可能希望整理收到的地理围栏列表，以防止重复的登入／退出。
+
+```java
+void onGeofenceReceived(final Intent intent) {
+    // do appropriate validation steps for the intent
+    ...
+
+    // get GeofencingEvent from intent
+    GeofencingEvent geoEvent = GeofencingEvent.fromIntent(intent);
+
+    // get the transition type (entry or exit)
+    int transitionType = geoEvent.getGeofenceTransition();
+
+    // validate your geoEvent and get the necessary Geofences from the list
+    List<Geofence> myGeofences = geoEvent.getTriggeringGeofences();
+
+    // process region events for your geofences
+    for (Geofence geofence : myGeofences) {
+        Places.processGeofence(geofence, transitionType);
+    }
 }
 ```

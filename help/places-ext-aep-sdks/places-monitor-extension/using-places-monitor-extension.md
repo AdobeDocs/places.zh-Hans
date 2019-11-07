@@ -2,9 +2,9 @@
 title: 使用地点监视器扩展
 seo-title: 使用地点监视器扩展
 description: 有关如何安装、配置和使用Places Monitor扩展的信息。
-seo-description: '有关如何安装、配置和使用Places Monitor扩展的信息。 '
+seo-description: 有关如何安装、配置和使用Places Monitor扩展的信息。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ## 在Experience Platform Launch中安装Places Monitor扩展
 
-1. 在Experience Platform Launch中，单击选项 **[!UICONTROL Extensions]** 卡。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩展 **[!UICONTROL Places Monitor]** 名，然后单击“ **安装”**。
 1. 单击 **[!UICONTROL Save]**。
 1. 按照发布过程更新SDK配置。
@@ -107,7 +107,9 @@ public class MobileApp extends Application {
 }
 ```
 
-**** 重要说明：地点监视取决于地点扩展。 手动安装Places Monitor扩展时，请确保还将库添 `places.aar` 加到项目中。
+>[!IMPORTANT]
+>
+>地点监视取决于地点扩展。 手动安装 Places Monitor 扩展时，请确保同时将 `places.aar` 库添加到项目中。
 
 ## iOS
 
@@ -125,7 +127,7 @@ public class MobileApp extends Application {
         [ACPPlacesMonitor start];
     }];
 
-    return YES; 
+    return YES;
 }
 ```
 
@@ -140,7 +142,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         // do other initialization required for the SDK
         ACPPlacesMonitor.start()
     })
-    
+
     // Override point for customization after application launch.        
     return true
 }
@@ -148,7 +150,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 >[!IMPORTANT]
 >
->地点监视取决于地点扩展。 手动安装“地点监视器”扩展时，请确保还将库添 `libACPPlaces_iOS.a` 加到项目中。
+>地点监视取决于地点扩展。 When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
 ## 向清单添加权限
@@ -163,7 +165,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     // Only for Android apps targeting API level 29 and above
-  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> 
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
   <application>        
     ...    
   </application>
@@ -189,4 +191,3 @@ iOS支持将位置事件交付到已暂停或不再运行的应用程序。 要�
 >如果您的应用程序支持iOS 10及更早版本， `NSLocationAlwaysUsageDescription` 则该键也是必需的。
 
 ![](/help/assets/using-the-places-monitor_2.png)
-

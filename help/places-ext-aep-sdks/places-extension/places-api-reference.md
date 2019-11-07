@@ -4,7 +4,7 @@ seo-title: Places API参考
 description: 有关Places中API引用的信息。
 seo-description: 有关Places中API引用的信息。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: 69173bdbd1a69ae1b75ba70e775a4603d1f1b8fc
 
 ---
 
@@ -115,7 +115,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ## 检索附近的目标点
 
-返回回调中附近POI的有序列表。
+返回回调中附近POI的有序列表。 如果生成的网络调用出现问题，此方法的重载版本将返回错误代码。
 
 ### GetEncorredPointsOfInterest(Android)
 
@@ -124,8 +124,12 @@ public class GeofenceTransitionsIntentService extends IntentService {
 **语法**
 
 ```java
-public static void getNearbyPointsOfInterest(final Location location,
-    final int limit, final AdobeCallback<List<PlacesPOI>> callback);
+public static void getNearbyPointsOfInterest(final Location location, final int limit,
+                                             final AdobeCallback<List<PlacesPOI>> callback);
+
+public static void getNearbyPointsOfInterest(final Location location, final int limit,
+                                             final AdobeCallback<List<PlacesPOI>> callback,
+                                             final AdobeCallback<PlacesRequestError> errorCallback);
 ```
 
 **示例**
@@ -133,13 +137,31 @@ public static void getNearbyPointsOfInterest(final Location location,
 以下是此方法的代码示例：
 
 ```java
-Places.getNearbyPlaces(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
+// getNearbyPointsOfInterest without an error callback
+Places.getNearbyPointsOfInterest(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>() {
     @Override
     public void call(List<PlacesPOI> pois) {
         // do required processing with the returned nearbyPoi array
         startMonitoringPois(pois);
     }
 });
+
+// getNearbyPointsOfInterest with an error callback
+Places.getNearbyPointsOfInterest(currentLocation, 10,
+    new AdobeCallback<List<PlacesPOI>>() {
+        @Override
+        public void call(List<PlacesPOI> pois) {
+            // do required processing with the returned nearbyPoi array
+            startMonitoringPois(pois);
+        }
+    }, new AdobeCallback<PlacesRequestError>() {
+        @Override
+        public void call(PlacesRequestError placesRequestError) {
+            // look for the placesRequestError and handle the error accordingly
+            handleError(placesRequestError);
+        }
+    }
+);
 ```
 
 ### GetEncorredPointsOfInterest(iOS)
@@ -150,17 +172,34 @@ Places.getNearbyPlaces(currentLocation, 10, new AdobeCallback<List<PlacesPOI>>()
 + (void) getNearbyPointsOfInterest: (nonnull CLLocation*) currentLocation
                              limit: (NSUInteger) limit
                           callback: (nullable void (^) (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi)) callback;
+
++ (void) getNearbyPointsOfInterest: (nonnull CLLocation*) currentLocation
+                             limit: (NSUInteger) limit
+                          callback: (nullable void (^) (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi)) callback
+                     errorCallback: (nullable void (^) (ACPPlacesRequestError result)) errorCallback;
 ```
 
 **示例**
 
 ```objectivec
+// getNearbyPointsOfInterest without an error callback
 [ACPPlaces getNearbyPointsOfInterest:location
                                limit:10     
                             callback:^(NSArray<ACPPlacesPoi*>* nearbyPoi) {
     // do required processing with the returned nearbyPoi array
     [self startMonitoringPois:nearbyPOI];
 }];
+
+// getNearbyPointsOfInterest with an error callback
+[ACPPlaces getNearbyPointsOfInterest:location limit:10
+    callback:^(NSArray<ACPPlacesPoi *> * _Nullable nearbyPoi) {
+        // do required processing with the returned nearbyPoi array
+        [self startMonitoringPois:nearbyPOI];
+    } errorCallback:^(ACPPlacesRequestError result) {
+        // look for the error and handle accordingly
+        [self handleError:result];
+    }
+];
 ```
 
 ## 检索当前设备关注点

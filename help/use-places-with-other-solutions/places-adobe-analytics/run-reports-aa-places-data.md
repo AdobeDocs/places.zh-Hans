@@ -1,15 +1,15 @@
 ---
-title: 在Adobe Analytics中运行包含Places数据的报告
-seo-title: 在Adobe Analytics中运行包含Places数据的报告
-description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
-seo-description: 本节提供有关如何在包含地点数据的Analytics中运行报告的信息。
+title: 将位置上下文添加到Analytics请求
+seo-title: 将位置上下文添加到Analytics请求
+description: 本节提供有关如何向Analytics请求添加位置上下文的信息。
+seo-description: 本节提供有关如何向Analytics请求添加位置上下文的信息。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# 在Adobe Analytics中运行包含Places数据的报告 {#run-reports-aa-locserv-data}
+# 将位置上下文添加到Analytics请求 {#run-reports-aa-locserv-data}
 
 >[!IMPORTANT]
 >

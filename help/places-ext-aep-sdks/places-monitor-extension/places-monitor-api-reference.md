@@ -1,10 +1,10 @@
 ---
 title: Places Monitor API参考
 seo-title: Places Monitor API参考
-description: '地点监视器的API列表。 '
+description: 地点监视器的API列表。
 seo-description: '地点监视器的API列表。  '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
@@ -323,7 +323,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
-   使用此枚举可请求位置服务，即使应用程序处于后台也是如此。 您必须在应 `NSLocationAlwaysUsageDescription` 用程 `NSLocationWhenInUseUsageDescription` 序的Info.plist中包含和键。 这些键定义将在用户提示期间显示的文本。 有关详细信息，请参阅 [Apple有关Requestalwaysauthorization的文档](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
+   使用此枚举可请求位置服务，即使应用程序处于后台也是如此。 您必须在应 `NSLocationAlwaysUsageDescription` 用程 `NSLocationWhenInUseUsageDescription` 序的Info.plist中包含和键。 这些键定义将在用户提示期间显示的文本。 有关详细信息，请参阅 [Apple的requestAlwaysAuthorization文档](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
 
 `ACPPlacesRequestAuthorizationLevelAlways` 是默认的请求授权值。
 
@@ -336,7 +336,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 #### 语法
 
 ```objective-c
-+ (void) setRequestAuthorizationLevel: (ACPPlacesRequestAuthorizationLevel) requestAuthorizationLevel
++ (void) setRequestAuthorizationLevel: (ACPPlacesRequestAuthorizationLevel) requestAuthorizationLevel;
 ```
 
 #### 示例
@@ -354,7 +354,7 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 ```objective-c
 // set the request authorization level
-[ACPPlacesMonitor setRequestAuthorizationLevel: ACPPlacesRequestAuthorizationLevelAlways]
+[ACPPlacesMonitor setRequestAuthorizationLevel: ACPPlacesRequestAuthorizationLevelAlways];
 ```
 
 ## 监视模式（仅限iOS）

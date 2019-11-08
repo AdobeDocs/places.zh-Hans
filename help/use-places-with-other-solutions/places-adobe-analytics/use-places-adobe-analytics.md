@@ -1,15 +1,15 @@
 ---
-title: 将地点数据发送到Adobe Analytics
-seo-title: 将地点数据发送到Adobe Analytics
-description: 本节提供有关如何将地点数据发送到Analytics的信息。
-seo-description: 本节提供有关如何将地点数据发送到Analytics的信息。
+title: 将POI进入和退出数据发送到Analytics
+seo-title: 将POI进入和退出数据发送到Analytics
+description: 本节提供有关如何将POI进入和退出数据发送到Analytics的信息。
+seo-description: 本节提供有关如何将POI进入和退出数据发送到Analytics的信息。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# 将地点数据发送到Adobe Analytics {#places-data-analytics}
+# 将POI进入和退出数据发送到Analytics {#places-data-analytics}
 
 
 >[!IMPORTANT]

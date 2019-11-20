@@ -4,7 +4,7 @@ seo-title: 批量上传POI
 description: 本节提供有关如何批量上传POI的信息。
 seo-description: 本节提供有关如何批量上传POI的信息。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 * `radius`
 
-   介于10和2000之间的值。
+   介于10到20,000之间的值。
 
 ### 列值
 

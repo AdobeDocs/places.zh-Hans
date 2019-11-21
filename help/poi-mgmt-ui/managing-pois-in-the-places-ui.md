@@ -4,12 +4,12 @@ seo-title: 管理现有POI
 description: 在位置服务UI中，您可以编辑、删除或过滤现有POI。
 seo-description: 在位置服务UI中，您可以编辑、删除或过滤现有POI。
 translation-type: tm+mt
-source-git-commit: 32c670773421406591ba85a628760553ce6ad840
+source-git-commit: 8d6b796326c5fbb3f2af996766fc9c05046ec653
 
 ---
 
 
-# 管理现有POI
+# 管理现有POI {#managing-existing-pois}
 
 POI和库是使用Places UI在Places数据库中创建和管理的。
 

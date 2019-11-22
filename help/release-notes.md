@@ -4,12 +4,21 @@ seo-title: 发行说明
 description: Adobe Experience Platform Location service的发行说明。
 seo-description: Adobe Experience Platform Location service的发行说明。
 translation-type: tm+mt
-source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
+source-git-commit: 7fd44ab0135ec77f4b235cc65b943b40d535717c
 
 ---
 
 
 # 发行说明 {#release-notes}
+
+## 2019 年 11 月 22 日
+
+* **PlacesMonitor 2.1.1**
+
+   * **Android**
+
+      * 监视器现在可识别Android设备的引导，并根据设备的当前位置（如果需要）向操作系统再次注册地理围栏。
+      * 修复了有时导致进入／退出事件被丢弃的竞赛条件。
 
 ## 2019 年 10 月 9 日
 
@@ -141,7 +150,7 @@ source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
 
 此版本中进行了以下更新：
 
-**Android Places 1.1.0**
+**Android Places 1.2.0**
 
 * 添加了用于处理单个地理围栏的新API。
 * 用于防止多个连续进入事件的错误修复。
@@ -156,7 +165,7 @@ Places Monitor for android的初始版本。
 
 ## 2019 年 5 月 2 日
 
-**Android Places 1.1.0**
+**Android Places 1.2.0**
 
 * 为getNearByPlaces引入了一个新的API，它有一个errorCallback，用指示错误原因的errorCode进行调用。
 * 现在，“地点”扩展将事件排队，直到获得配置。
@@ -210,7 +219,7 @@ iOS的地点监视器的初始版本。
 * 在POI进入或退出时触发的规则事件。
 * 创建指向用户当前POI的数据元素。
 
-有关“地点”扩展的详细信息，请参阅“地 [点”扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### Places API
 

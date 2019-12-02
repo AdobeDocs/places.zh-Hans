@@ -4,12 +4,12 @@ seo-title: Adobe Target
 description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 seo-description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 translation-type: tm+mt
-source-git-commit: 27f4e5397caf14e24bcbc4a2d276647e72a6d115
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# Adobe Target {#places-target}
+# 将位置服务与Adobe Target结合使用 {#places-target}
 
 本文档假定您已在应用程序中实现了“地点”扩展。 如果您需要实施Places扩展的帮助，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 

@@ -4,12 +4,12 @@ seo-title: 推送通知
 description: 本节提供有关如何在Campaign standard中将地点与推送通知一起使用的信息。
 seo-description: '本节提供有关如何在Campaign standard中将地点与推送通知一起使用的信息。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# 使用Experience Platform Location service推送通知 {#push-notifications}
+# 通过位置服务推送通知 {#push-notifications}
 
 在本指南中，我们将介绍如何使用历史地理位置信息来定位通过Adobe Campaign standard提供的推送通知。
 
@@ -33,7 +33,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 要创建数据元素，请执行以下操作：
 
-1. 在Experience Platform Launch移动属性中，单击选项卡， **[!UICONTROL Data Elements]** 然后单击“ **[!UICONTROLA添加数据元素”]**。
+1. 在Experience Platform Launch移动属性中，单击选项卡， **[!UICONTROL Data Elements]** 然后单击“添 **[!UICONTROLA加数据元素”]**。
 1. 在下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places]**。
 1. 从下 **[!UICONTROL Data Element Type]** 拉列表中，选择 **[!UICONTROL Name]**。
 1. 在右侧窗格中，您可以选择 **[!UICONTROL Current POI]** 检索用户当前所在的POI的名称。
@@ -42,7 +42,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    ![“Campaign Standard中的推送消息”](/help/assets/ACS_Push1.png)
 
-1. 重复上述步骤1-4，为“上次输入的POI纬度 *”、“上次输入的POI经度”*、“上次输入的POI *经度”和“上次输入的POI半径”创建数据元素***。
+1. Repeat the steps 1-4 above and create data elements for *Last Entered POI Latitude*, *Last Entered POI Longitude*, and *Last Entered POI Radius*.
 
 除了位置服务的数据元素之外，请确保为App ID和 *Experience Cloud ID创建Mobile Core**数据元素*。
 
@@ -120,7 +120,7 @@ Experience Platform Launch中的规则允许您基于事件触发器创建复杂
 
    如果看不到计数更新，则可能已输入POI名称，其中没有设备触发了条目。 在这种情况下，使用Slack web挂钩将变得很有价值，因为您可以看到来自各种测试设备的POI条目列表。
 1. 您可以拖出其他POI位置过滤器，以在消息中包含多个POI。
-1. 单击 **[!UICONTROL Next]** 以完成创建要传送的推送通知。
+1. Click **[!UICONTROL Next]** to finish creating the push notification for delivery.
 
    ![“ACS中的推送消息3”](/help/assets/ACS_push3.html)
 

@@ -4,14 +4,14 @@ seo-title: Analytics Workspace中位置数据的报告
 description: 本节提供有关如何在Analytics Workspace中报告位置数据的信息。
 seo-description: 本节提供有关如何在Analytics Workspace中报告位置数据的信息。
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
 # Analytics Workspace中位置数据的报告 {#places-in-workspace}
 
-本文档展示了如何在Analytics Workspace中报告位置数据的示例。 每个步骤都将包含一个高级摘要，其详细信息通过参考其他文档页面提供。
+本文档展示了如何在Analytics Workspace中报告位置数据的示例。 每个步骤都将包含一个高级摘要，其详细信息通过引用其他文档页面来提供。
 
 ## 先决条件
 

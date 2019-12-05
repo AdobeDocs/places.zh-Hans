@@ -1,10 +1,8 @@
 ---
 title: 管理POI概述
-seo-title: 管理POI概述
 description: '了解POI并使用POI。 '
-seo-description: '了解POI并使用POI。 '
 translation-type: tm+mt
-source-git-commit: e204958ac3acbf5fb45d2347987f35557be70e43
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

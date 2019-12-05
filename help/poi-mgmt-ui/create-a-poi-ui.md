@@ -1,10 +1,8 @@
 ---
 title: 创建目标点 (POI)
-seo-title: 创建目标点 (POI)
 description: 使用Places UI创建POI。
-seo-description: 使用Places UI创建POI。
 translation-type: tm+mt
-source-git-commit: 58218dac5df3fdb1ff660368af52e43409f99c95
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

@@ -1,10 +1,8 @@
 ---
 title: 推送通知
-seo-title: 推送通知
 description: 本节提供有关如何在Campaign standard中将地点与推送通知一起使用的信息。
-seo-description: '本节提供有关如何在Campaign standard中将地点与推送通知一起使用的信息。 '
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

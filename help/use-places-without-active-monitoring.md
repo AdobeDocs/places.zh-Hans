@@ -1,10 +1,8 @@
 ---
 title: 使用位置服务，无需主动区域监控
-seo-title: 使用位置服务，无需主动区域监控
 description: 本节提供有关如何使用位置服务地点而无需活动区域监视的信息。
-seo-description: 本节提供有关如何使用位置服务而不进行活动区域监视的信息。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -235,8 +233,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 >[!IMPORTANT]
 >
->
-这些片段只 **是示例** 。 开发人员必须确定他们希望如何实现该功能，并且决策应考虑目标操作系统建议的最佳实践。
+>这些片段只 **是示例** 。 开发人员必须确定他们希望如何实现该功能，并且决策应考虑目标操作系统建议的最佳实践。
 
 ### Android
 

@@ -4,12 +4,14 @@ seo-title: Adobe Experience Platform Location Service
 description: '位置服务是了解移动用户参与度的重要上下文。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 seo-description: '位置服务是了解移动用户参与度的重要上下文。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: 9fd6c1fdd740a021d7612aa33693c392bff53994
+source-git-commit: ecb059400d9203884faab6fd2f627251eeaeea38
 
 ---
 
 
 # Adobe Experience Platform Location service概述 {#home}
+
+![“Adobe Experience Platform Location Service”](/help/assets/LocationHeader.png)
 
 位置是了解和吸引移动用户的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。
 
@@ -44,7 +46,7 @@ Adobe Experience Platform Location Service（位置服务）是一项地理位�
 
    在地图上可视化POI以了解空间上下文并添加／编辑POI及其自定义元数据。
 
-* **地点扩展**
+* **Places 扩展**
 
    用于在移动应用程序中集成位置上下文的多平台移动API界面。 有关SDK的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
@@ -72,20 +74,20 @@ Adobe Experience Platform Location Service（位置服务）是一项地理位�
 
    该POI类型是通过发射低功率蓝牙信号来表示位置的物理设备。 信标支持即将在未来版本中推出。
 
-* 库 **是** POI的集合，这些POI被分组以将规则轻松附加到集合而不是一个POI。
+* **库**&#x200B;是 POI 集合，POI 经过分组，可以轻松地将规则与一组 POI 关联起来，而不是一个 POI。
 
 * 扩 **展是** Experience Platform Launch扩展，它是在移动应用程序中集成Places SDK所必需的。
 
    与其他移动SDK一起使用的扩展，用于向体验添加位置上下文。
 
-* 组 **织是** Adobe实体，可在Adobe Experience cloud中识别您的公司。
+* **组织**&#x200B;是一个 Adobe 实体，用于在 Adobe Experience Cloud 中标识您的公司。
 
    通常，组织是您的公司名称。 但是，公司可以拥有多个组织。 组织管理员可以配置组和用户，并配置单点登录功能。
 
-* orgID **是** Adobe Experience platform中代表您的组织的ID。
+* **orgID** 是在 Adobe Experience Platform 中代表您组织的 ID。
 
    有关详细信息，请参 [阅查找您的组织ID](https://forums.adobe.com/thread/2339895)。
 
 * The **Experience Cloud ID** service provides a universal, persistent ID that identifies your visitors across all the solutions in the Experience Cloud.
 
-   有关详细信息，请参阅 [概述](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html)。
+   For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).

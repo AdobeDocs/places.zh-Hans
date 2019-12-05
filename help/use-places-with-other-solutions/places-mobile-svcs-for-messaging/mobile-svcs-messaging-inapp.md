@@ -1,10 +1,8 @@
 ---
 title: 应用程序内通知
-seo-title: 应用程序内通知
 description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
-seo-description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -62,7 +60,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 >[!TIP]
 >
->可以设置分析处理规则来获取此上下文数据。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在创建操作 *的示例中*`poiname` ，操作将作为上下文发送，以描述要发送到Analytics的POI条目事件。
+>可以设置分析处理规则来获取此上下文数据。 有关更多信息，请参阅[处理规则](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)。在创建操作 *的示例中*`poiname` ，操作将作为上下文发送，以描述要发送到Analytics的POI条目事件。
 
 ![创建操作](/help/assets/configure-action.png)
 

@@ -4,7 +4,7 @@ seo-title: 入门指南
 description: 位置服务快速入门。
 seo-description: 位置服务快速入门。
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 66472aa1800bcf36fb1d7f7129da70a573f355ab
 
 ---
 
@@ -27,10 +27,6 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
    有关详细信息，请参 *阅常见问题解答中的将用户添加到Experience Platform Launch* 和 [位置服务](/help/places-faqs.md)。
 
-* 确保在Experience Platform Launch中将Places扩展安装在您的移动应用程序属性上。
-
-   要对您的地域围栏使用Adobe提供的区域监视，请安装Places Monitor扩展。 有关详细信息，请参阅 [放置监视器扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
-
 
 ### 2.创建POI
 
@@ -49,5 +45,5 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
 有关配置“地点”扩展和“监视”扩展的详细信息，请参阅以下信息：
 
-* [地点扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)
+* [Places 扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)
 * [放置监视器扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。

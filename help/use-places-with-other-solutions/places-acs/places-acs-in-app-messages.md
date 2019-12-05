@@ -1,10 +1,8 @@
 ---
 title: 包含位置服务的应用程序内消息
-seo-title: 包含位置服务的应用程序内消息
 description: 本节提供有关如何在Campaign standard中将推送消息与Campaign standard中的应用程序内消息结合使用的信息。
-seo-description: '本节提供有关如何在Campaign standard中将“Push messaging in Campaign Standard”（营销活动标准中的推送消息）与应用程序内消息结合使用的信息。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -39,7 +37,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    ![“应用程序内消息放置元数据”](/help/assets/last-entered-vacation.png)
 
-1. 单击以 **[!UICONTROL Next]** 完成创建要交付的应用程序内消息。
+1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
 
    ![“创建活动”](/help/assets/prepare-ACS.png)
 

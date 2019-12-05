@@ -1,10 +1,8 @@
 ---
 title: 批量上传POI
-seo-title: 批量上传POI
 description: 本节提供有关如何批量上传POI的信息。
-seo-description: 本节提供有关如何批量上传POI的信息。
 translation-type: tm+mt
-source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

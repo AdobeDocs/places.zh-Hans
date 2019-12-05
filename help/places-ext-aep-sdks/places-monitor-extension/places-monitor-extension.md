@@ -1,10 +1,8 @@
 ---
 title: Places Monitor扩展
-seo-title: Places Monitor扩展
 description: “地点监视器”扩展处理与操作系统的交互，以注册和监视最接近用户的POI。
-seo-description: '“地点监视器”扩展处理与操作系统的交互，以注册和监视最接近用户的POI。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

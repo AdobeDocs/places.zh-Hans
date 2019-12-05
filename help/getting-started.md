@@ -4,7 +4,7 @@ seo-title: 入门指南
 description: 位置服务快速入门。
 seo-description: 位置服务快速入门。
 translation-type: tm+mt
-source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
+source-git-commit: 879c367ea24d8bd0e1f5595a88a97bb1ff47c6da
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
 
 * 确保在Admin Console中的位置服务和体验平台启动产品上下文下列为用户。
 
-   有关详细信息，请参 *阅获取对位置服务的访问权限中的将用户添加到Experience Platform Launch*[和位置服务](/help/places-gain-access.md)。
+   有关详细信息，请参 *阅常见问题解答中的将用户添加到Experience Platform Launch* 和 [位置服务](/help/places-gain-access.md)。
 
 
 ### 2.创建POI

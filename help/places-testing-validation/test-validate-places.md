@@ -1,10 +1,8 @@
 ---
 title: 测试和验证地点
-seo-title: 测试和验证地点
 description: 本节提供有关如何测试和验证地点的信息。
-seo-description: 本节提供有关如何测试和验证地点的信息。
 translation-type: tm+mt
-source-git-commit: 181185d441a6a4740b2e8770adcb71e81e2e816e
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

@@ -1,10 +1,8 @@
 ---
 title: 将元数据与POI结合使用
-seo-title: 将元数据与POI结合使用
 description: 本节提供有关如何将元数据与POI结合使用的信息和策略。
-seo-description: '本节提供有关如何将元数据与POI结合使用的信息和策略。 '
 translation-type: tm+mt
-source-git-commit: 6a01c7c2c573baf572fdc27f47f8fc62322cfd02
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

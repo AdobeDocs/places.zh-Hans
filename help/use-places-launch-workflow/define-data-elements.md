@@ -1,10 +1,8 @@
 ---
 title: 定义数据元素
-seo-title: 定义数据元素
 description: 本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。
-seo-description: '本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

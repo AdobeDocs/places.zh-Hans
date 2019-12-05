@@ -1,10 +1,8 @@
 ---
 title: 用例
-seo-title: Places的用例。
 description: 本主题包含有关Places用例的详细信息。
-seo-description: 本主题包含有关Places用例的详细信息。
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

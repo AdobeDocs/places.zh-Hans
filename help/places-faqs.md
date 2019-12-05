@@ -1,10 +1,8 @@
 ---
 title: 常见问题解答
-seo-title: 常见问题解答
 description: 本主题提供了有关某些常见问题的其他信息。
-seo-description: 本主题提供了有关某些常见问题的其他信息。
 translation-type: tm+mt
-source-git-commit: f4b8bccc154df346e67ef17295d7c6b42c68b26d
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

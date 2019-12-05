@@ -1,10 +1,8 @@
 ---
 title: 将地点与Mobile services结合使用以进行消息传递
-seo-title: 将地点与Mobile services结合使用以进行消息传递
 description: 本节将向您介绍如何将Places与Mobile services结合使用以进行消息传递。
-seo-description: 本节将向您介绍如何将Places与Mobile services结合使用以进行消息传递。
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

@@ -1,10 +1,8 @@
 ---
 title: 体验平台使用地点数据启动数据元素
-seo-title: 体验平台使用地点数据启动数据元素
 description: '数据元素是数据字典（或数据映射）的构建块。 '
-seo-description: '数据元素是数据字典（或数据映射）的构建块。 '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

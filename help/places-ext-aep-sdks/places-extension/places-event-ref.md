@@ -1,10 +1,8 @@
 ---
 title: 地点活动引用
-seo-title: 地点活动引用
 description: '由“地点”扩展处理的事件列表。 '
-seo-description: '由“地点”扩展处理的事件列表。  '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

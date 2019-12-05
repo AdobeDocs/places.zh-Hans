@@ -1,10 +1,8 @@
 ---
 title: 使用地点监视器扩展
-seo-title: 使用地点监视器扩展
 description: 有关如何安装、配置和使用Places Monitor扩展的信息。
-seo-description: 有关如何安装、配置和使用Places Monitor扩展的信息。
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

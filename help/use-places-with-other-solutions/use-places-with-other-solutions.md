@@ -1,10 +1,8 @@
 ---
 title: 将位置服务与其他Adobe解决方案结合使用
-seo-title: 将位置服务与其他Adobe解决方案结合使用
 description: 本节将向您介绍如何将位置服务与其他Adobe解决方案结合使用。
-seo-description: 本节将向您介绍如何将位置服务与其他Adobe解决方案结合使用。
 translation-type: tm+mt
-source-git-commit: 299afc48c5962c3180578d5352b97096ad0395dc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

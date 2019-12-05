@@ -1,8 +1,14 @@
 ---
-source-git-commit: 9b5ed11499da580e48ae27affda238ce6d91f435
+title: 访问Adobe Experience Platform Location Service
+seo-title: 访问Adobe Experience Platform Location Service
+description: 本节提供有关如何将用户添加到位置服务和Experience Platform Launch的信息，以便用户能够访问位置服务。
+seo-description: 本节提供有关如何将用户添加到位置服务和Experience Platform Launch的信息，以便用户能够访问位置服务。
 translation-type: tm+mt
+source-git-commit: 1b4482c8e4cf825c0182421fe00f8b86b411c11b
 
 ---
+
+
 # 访问Adobe Experience Platform Location Service {#adding-user-launch-places}
 
 您可以从 [Adobe Experience Cloud主页上的快速访问菜单访问平台位置服务](https://experience.adobe.com)。

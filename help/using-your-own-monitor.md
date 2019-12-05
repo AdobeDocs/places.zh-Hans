@@ -1,10 +1,8 @@
 ---
 title: 使用您自己的显示器
-seo-title: 使用您自己的显示器
 description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
-seo-description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

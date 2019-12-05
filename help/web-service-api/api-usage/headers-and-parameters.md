@@ -1,10 +1,8 @@
 ---
 title: 标题和参数
-seo-title: 标题和参数
 description: Places REST API中可用的标题和参数。
-seo-description: Places REST API中可用的标题和参数。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -45,7 +43,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 | `location` | POI的类型和坐标阵列 | 数组（混合） | 不适用 | both | `"location": {"type": "Point", "coordinates": [-122.201007, 37.604713]` |
 | `type` | POI类型 | 字符串 | 当前仅支持“Point” | 两者，请求中必需 | `"type": "Point"` |
 | `coordinates` | POI的经度和纬度阵列 | 数组（浮点） | 经度：-180至180,latitude -85至85 | 两者，请求中必需 | `"coordinates": [-122.201007, 37.604713]` |
-| `radius` | POI周围环形几何的大小 | 浮动 | 10 - 2000米 | 两者，请求中必需 | `"radius": 100` |
+| `radius` | POI周围圆形几何的大小 | 浮动 | 10 - 2000米 | 两者，请求中必需 | `"radius": 100` |
 | `country` | POI的国家／地区 | 字符串 | 32 个字符 | both, optional* | `"country": "United States"` |
 | `state` | POI的状态 | 字符串 | 32 个字符 | both, optional* | `"state": "California"` |
 | `city` | POI的城市 | 字符串 | 32 个字符 | both, optional* | `"city": "San Jose"` |

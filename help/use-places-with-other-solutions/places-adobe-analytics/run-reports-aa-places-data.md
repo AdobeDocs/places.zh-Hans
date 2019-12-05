@@ -1,10 +1,8 @@
 ---
 title: 将位置上下文添加到Analytics请求
-seo-title: 将位置上下文添加到Analytics请求
 description: 本节提供有关如何向Analytics请求添加位置上下文的信息。
-seo-description: 本节提供有关如何向Analytics请求添加位置上下文的信息。
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

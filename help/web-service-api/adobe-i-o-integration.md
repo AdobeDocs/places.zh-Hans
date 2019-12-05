@@ -1,10 +1,8 @@
 ---
 title: Adobe I/O集成概述
-seo-title: Adobe I/O集成概述
 description: 有关创建Adobe I/O集成的信息。
-seo-description: 有关创建Adobe I/O集成的信息。
 translation-type: tm+mt
-source-git-commit: ec2b0f8ba94cecc5709d4d700490913978454ef1
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -106,7 +104,7 @@ source-git-commit: ec2b0f8ba94cecc5709d4d700490913978454ef1
    **[!UICONTROL Access an API]** 是默认位置。
 
 1. 如果您有权访问多个Experience cloud组织，请从右上方的下拉列表中选择该组织。
-1. 在下 **[!UICONTROL Experience Cloud]**&#x200B;面，选 **[!UICONTROL Places]** 择要集成到的Adobe服务，然后单击 **[!UICONTROL Continue]**。
+1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
 1. 选择 **[!UICONTROL New integration]** 并单击 **[!UICONTROL Continue]**。
 1. 在创建新集成屏幕中，输入名称和说明。
 1. 将您在上面创 `xxxx_public.crt` 建的文件拖放到放置 **[!UICONTROL Public keys certificates]** 区域。
@@ -138,9 +136,9 @@ source-git-commit: ec2b0f8ba94cecc5709d4d700490913978454ef1
 要生成JWT令牌，请执行以下操作：
 
 1. 在文本编辑器中，打开您 `private.key` 在上面创建的文件。
-1. 在选 **[!UICONTROL JWT]** 项卡上，复制密钥的内容并将其粘贴到字 **[!UICONTROL Paste private key]** 段中。
+1. On the **[!UICONTROL JWT]** tab, copy the contents of the key and paste it in the **[!UICONTROL Paste private key]** field.
 1. 单击 **[!UICONTROL Generate JWT]**。
-1. 在部分 **[!UICONTROL Sample CURL command]** 中，单击并 **[!UICONTROL Copy]** 将内容粘贴到命令提示符或终端窗口中。
+1. In the **[!UICONTROL Sample CURL command]** section, click **[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
 1. 通过按键盘运 **[!UICONTROL Enter]** 行命令。
 1. 找到 `"token_type": "bearer"` 和 `"access_token"` 值。
 

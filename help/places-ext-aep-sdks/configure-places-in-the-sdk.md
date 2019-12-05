@@ -1,10 +1,8 @@
 ---
 title: 使用Places扩展配置SDK
-seo-title: 使用Places扩展配置SDK
 description: '您可以使用“地点”扩展配置SDK，以在移动应用程序中启用位置感知。 '
-seo-description: '您可以使用“地点”扩展配置SDK，以在移动应用程序中启用位置感知。 '
 translation-type: tm+mt
-source-git-commit: 61256ee0f01775bf09a3aee06b6e7253527fc383
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

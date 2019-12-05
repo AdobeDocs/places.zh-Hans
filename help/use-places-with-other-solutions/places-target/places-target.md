@@ -1,10 +1,8 @@
 ---
 title: Adobe Target
-seo-title: Adobe Target
 description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
-seo-description: 本节提供有关如何将位置服务与Adobe Target结合使用的信息。
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

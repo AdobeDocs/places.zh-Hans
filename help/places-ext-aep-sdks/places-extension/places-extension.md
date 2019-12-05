@@ -1,21 +1,19 @@
 ---
-title: 地点扩展
-seo-title: 地点扩展
+title: Places 扩展
 description: “地点”扩展允许您根据用户的位置采取行动。
-seo-description: “地点”扩展允许您根据用户的位置采取行动。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
 
-# 地点扩展 {#places-extension}
+# Places 扩展 {#places-extension}
 
 “地点”扩展允许您根据用户的位置采取行动。 此扩展是Places Query Service API的接口。 通过侦听包含GPS坐标和地理区域事件的事件，此扩展将调度由规则引擎处理的新事件。 Places扩展还检索并提供从API检索的应用程序数据的最近POI的列表。 由API返回的区域存储在缓存和持久化中，这允许有限的脱机处理。
 
 ## 在Adobe Experience Platform Launch中安装Places扩展
 
-1. 在Experience Platform Launch中，单击选项 **[!UICONTROL Extensions]** 卡。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩 **[!UICONTROL Places]** 展名并单击 **[!UICONTROL Install]**。
 1. 选择要在此属性中使用的地点库。 这些库将在您的应用程序中访问。
 1. 单击 **[!UICONTROL Save]**。

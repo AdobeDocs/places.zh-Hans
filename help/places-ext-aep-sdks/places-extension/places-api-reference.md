@@ -1,10 +1,8 @@
 ---
 title: Places API参考
-seo-title: Places API参考
 description: 有关Places中API引用的信息。
-seo-description: 有关Places中API引用的信息。
 translation-type: tm+mt
-source-git-commit: 379278f7677d7d3cdc697d78c54693d0a3c62e02
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 

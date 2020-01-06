@@ -17,11 +17,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.创建规则
 
-1. 在选项卡 **[!UICONTROL Rules]** 上，单击 **[!UICONTROL Create New Rule]**。
+1. 在选项卡 **[!UICONTROL Rules]**上，单击**[!UICONTROL Create New Rule]**。
 
    请牢记以下信息：
-   * 如果此属性没有现有规则，则 **[!UICONTROL Create New Rule]** 按钮将位于屏幕中间。
-   * 如果您的属性有规则， **[!UICONTROL Create New Rule]** 则按钮将位于屏幕的右上方。
+   * 如果此属性没有现有规则，则 **[!UICONTROL Create New Rule]**按钮将位于屏幕中间。
+   * 如果您的属性有规则， **[!UICONTROL Create New Rule]**则按钮将位于屏幕的右上方。
 
 ## 2.选择活动
 
@@ -29,11 +29,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    在此示例中，该规则被命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
 
-1. 在部分 **[!UICONTROL Events]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Events]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Mobile Core]**。
 
-1. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Track Action]**。
+1. 从下 **[!UICONTROL Event Type]**拉列表中，选择**[!UICONTROL Track Action]**。
 
 现在，您可以确定要为此规则包含的触发器。 在此示例中，触发器基于所有调 `TrackAction` 用。 配置活动后，单击 **[!UICONTROL Keep Changes]**。
 
@@ -48,27 +48,27 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此示例中，创建了一个条件，该条件导致规则仅为AT&amp;T客户触发。
 
-1. 在部分 **[!UICONTROL Conditions]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Conditions]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTORL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTORL  Mobile Core]**。
 
-1. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Carrier Name]**。
+1. 从下 **[!UICONTROL Condition Type]**拉列表中，选择**[!UICONTROL Carrier Name]**。
 
-1. 在右侧的窗口中，选中该复选 **[!UICONTROL AT&T]** 框。
+1. 在右侧的窗口中，选中该复选 **[!UICONTROL AT&T]**框。
 
 1. 单击 **[!UICONTROL Keep Changes]**。
 
-!["创建条件"](/help/assets/ad-setCondition_use-analytics-data.png)
+![&quot;创建条件&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.定义操作
 
-1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Actions]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Mobile Core]**。
 
-1. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Attach Data]**。
+1. 从下 **[!UICONTROL Action Type]**拉列表中，选择**[!UICONTROL Attach Data]**。
 
-1. 在右侧窗格的字 **[!UICONTROL JSON Payload]** 段中，键入要添加到此活动的数据。
+1. 在右侧窗格的字 **[!UICONTROL JSON Payload]**段中，键入要添加到此活动的数据。
 
 1. 单击 **[!UICONTROL Keep Changes]**。
 
@@ -84,6 +84,6 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![“规则已经完成。”](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
-1. 单击 **[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]**
 
 1. 重新构建您的启动项属性并将其部署到正确的环境。

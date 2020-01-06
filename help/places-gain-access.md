@@ -1,13 +1,12 @@
 ---
-title: 访问Adobe Experience Platform Location Service
+title: '访问Adobe Experience Platform Location Service '
 description: 本节提供有关如何将用户添加到位置服务和Experience Platform Launch的信息，以便用户能够访问位置服务。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
 
 ---
 
-
-# 访问Adobe Experience Platform Location Service {#adding-user-launch-places}
+# 获取对位置服务的访问权限 {#adding-user-launch-places}
 
 您可以从 [Adobe Experience Cloud主页上的快速访问菜单访问平台位置服务](https://experience.adobe.com)。
 如果您的用户ID具有访问权限，您将看到位置服务图标，如下所示：
@@ -47,11 +46,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    ![外壳切换器](/help/assets/places_shell_switcher1.png)
 
-1. 在 **[!UICONTROL Platform]** 下，单击 **[!UICONTROL Administration]**。
+1. 在 **[!UICONTROL Platform]**下，单击**[!UICONTROL Administration]**。
 
    如果列表中未 **显示** “管理”，则您不是管理员。 要完成此过程，必须与组织管理员联系。
 
-1. 在Experience cloud管理页面的卡片上，单 **[!UICONTROL Admin Console]** 击该页面 **[!UICONTROL Take me there]**。
+1. 在Experience cloud管理页面的卡片上，单 **[!UICONTROL Admin Console]**击该页面**[!UICONTROL Take me there]**。
 
 1. 在管理控制台中，如果您有权访问多个组织，请确认在页面的右上方选择了正确的组织。
 
@@ -61,7 +60,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    >
    >如果您无权访问某个组织，则表示您无权访问该组织。
 
-1. 验证显示的 **[!UICONTROL Adobe Experience Platform Launch]** 和 **[!UICONTROL Places Core Services]** 卡。
+1. 验证显示的 **[!UICONTROL Adobe Experience Platform Launch]**和**[!UICONTROL Places Core Services]** 卡。
 
    ![](/help/assets/places_provisioned1.png)
 
@@ -87,9 +86,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    a.单击默认配置文件的名称。
 
-   b.单击选 **[!UICONTROL Permissions]** 项卡。
+   b.单击选 **[!UICONTROL Permissions]**项卡。
 
-   c.单击 **[!UICONTROL Edit]** 旁边的 **[!UICONTROL Property Rights]**。
+   c.单击 **[!UICONTROL Edit]**旁边的**[!UICONTROL Property Rights]**。
 
    d.在左窗格中，单击 **[!UICONTROL + Add all]**。
 
@@ -119,7 +118,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    a.在菜单栏中，单击 **[!UICONTROL Overview]**。
 
-   b.在卡 **[!UICONTROL Adobe Experience Platform Launch]** 上验证以下内容：
+   b.在卡 **[!UICONTROL Adobe Experience Platform Launch]**上验证以下内容：
 
    * 卡的底部显示两个点。
    * 左边的圆点是黑色的。
@@ -131,9 +130,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    e.完成以下步骤之一：
 
-   * 如果要添加新用户，请单 **[!UICONTROL New user]**&#x200B;击，然后输入用户的名和姓。
+   * 如果要添加新用户，请单 **[!UICONTROL New user]**击，然后输入用户的名和姓。
    * 如果要添加现有用户，请单击显示的用户名。
-   f.在下拉 **[!UICONTROL Please select a profile for this product]** 列表中，选择您之前编辑的配置文件。
+   f.在下拉 **[!UICONTROL Please select a profile for this product]**列表中，选择您之前编辑的配置文件。
 
    g.单击 **[!UICONTROL Save]**。
 
@@ -143,7 +142,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    >
    >当前，所有位置服务用户都具有相同的权限，因此您无需编辑权限。
 
-   a.在卡 **[!UICONTROL Places Core Services]** 上验证以下内容：
+   a.在卡 **[!UICONTROL Places Core Services]**上验证以下内容：
 
    * 卡的底部显示两个点。
    * 左边的圆点是黑色的。
@@ -153,9 +152,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    d.完成以下步骤之一：
 
-   * 如果要添加新用户，请单 **[!UICONTROL New user]**&#x200B;击，然后输入用户的名和姓。
+   * 如果要添加新用户，请单 **[!UICONTROL New user]**击，然后输入用户的名和姓。
    * 如果要添加现有用户，请单击显示的用户名。
-   e.在下拉 **[!UICONTROL Please select a profile for this product]** 列表中，选择地点配置文件。
+   e.在下拉 **[!UICONTROL Please select a profile for this product]**列表中，选择地点配置文件。
 
    f.单击 **[!UICONTROL Save]**。
 
@@ -165,10 +164,10 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 要添加开发人员，请执行以下操作：
 
-1. 在卡 **[!UICONTROL Places Core Services]** 上验证以下内容：
+1. 在卡 **[!UICONTROL Places Core Services]**上验证以下内容：
 
    * 卡的底部显示两个点。
-   * 单击右侧的圆点，以 **[!UICONTROL Assign Developers]** 便显示在卡的底部。
+   * 单击右侧的圆点，以 **[!UICONTROL Assign Developers]**便显示在卡的底部。
 
 1. 单击 **[!UICONTROL + Assign Developers]**。
 
@@ -176,10 +175,10 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 完成以下步骤之一：
 
-   * 如果要添加新用户，请单 **[!UICONTROL New user]** 击并输入用户的名和姓。
+   * 如果要添加新用户，请单 **[!UICONTROL New user]**击并输入用户的名和姓。
    * 如果要添加现有用户，请单击显示的用户名。
 
-1. 在下拉 **[!UICONTROL Please select a profile for this product]** 列表中，选择位置服务配置文件。
+1. 在下拉 **[!UICONTROL Please select a profile for this product]**列表中，选择位置服务配置文件。
 
 1. 单击&#x200B;**保存**。
 

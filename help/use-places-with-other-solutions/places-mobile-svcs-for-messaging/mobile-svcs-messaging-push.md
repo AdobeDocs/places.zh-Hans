@@ -27,10 +27,10 @@ Mobile services允许您向Adobe Analytics区段发送推送通知。 在位置�
 
 ## 发送通知
 
-在创 **[!UICONTROL Audience]** 建推送通 *知工作流的选项卡上* ，可以通过以下方式之一为此消息创建受众：
+在创 **[!UICONTROL Audience]**建推送通&#x200B;*知工作流的选项卡上*，可以通过以下方式之一为此消息创建受众：
 
-* 在下拉 **[!UICONTROL Analytics Segments]** 列表中，选择之前创建的Adobe Analytics区段。
+* 在下拉 **[!UICONTROL Analytics Segments]**列表中，选择之前创建的Adobe Analytics区段。
 
-* 在该部 **[!UICONTROL Custom Segment]** 分中，使用可用的自定义区段参数构建受众。
+* 在该部 **[!UICONTROL Custom Segment]**分中，使用可用的自定义区段参数构建受众。
 
 ![设置推送消息](/help/assets/push-set-up.png)

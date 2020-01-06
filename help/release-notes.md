@@ -171,7 +171,7 @@ Places Monitor for android的初始版本。
 
 ## 2019 年 5 月 2 日
 
-**Android Places 1.2.0**
+**Android Places 1.1.0**
 
 * 为getNearByPlaces引入了一个新的API，它有一个errorCallback，用指示错误原因的errorCode进行调用。
 * 现在，“地点”扩展将事件排队，直到获得配置。

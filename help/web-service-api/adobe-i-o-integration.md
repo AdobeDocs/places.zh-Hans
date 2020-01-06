@@ -55,7 +55,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 要生成您自己的自签名密钥，请执行以下操作：
 
-1. 在终端窗口中，复制并粘贴以下每行，然后在粘贴每 **[!UICONTROL Enter]** 行后按：
+1. 在终端窗口中，复制并粘贴以下每行，然后在粘贴每 **[!UICONTROL Enter]**行后按：
 
    ```text
       mkdir keys
@@ -87,7 +87,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 导览至文件和文 `.key` 件所 `.crt` 在的目录。
 
-   例如，在iOS中，转到 **[!UICONTROL Macintosh HD]** &gt; **[!UICONTROL users]** &gt; **[!UICONTROL (your user name)]** &gt; **[!UICONTROL Keys]**。
+   例如，在iOS中，转到 **[!UICONTROL Macintosh HD]**>**[!UICONTROL users]** > **[!UICONTROL (your user name)]**>**[!UICONTROL Keys]**。
 
 以下视频将指导您完成生成键对的过程：
 
@@ -99,15 +99,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 转到 [https://console.adobe.io](https://console.adobe.io) ，然后使用您的Adobe ID登录。
 1. 在“快 **速入门** ”部分，单击 **创建集成**。
-1. 选择 **[!UICONTROL Access an API]** 并单击 **[!UICONTROL Continue]**。
+1. 选择 **[!UICONTROL Access an API]**并单击**[!UICONTROL Continue]**。
 
-   **[!UICONTROL Access an API]** 是默认位置。
+   **[!UICONTROL Access an API]**是默认位置。
 
 1. 如果您有权访问多个Experience cloud组织，请从右上方的下拉列表中选择该组织。
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
-1. 选择 **[!UICONTROL New integration]** 并单击 **[!UICONTROL Continue]**。
+1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
+1. 选择 **[!UICONTROL New integration]**并单击**[!UICONTROL Continue]**。
 1. 在创建新集成屏幕中，输入名称和说明。
-1. 将您在上面创 `xxxx_public.crt` 建的文件拖放到放置 **[!UICONTROL Public keys certificates]** 区域。
+1. 将您在上面创 `xxxx_public.crt` 建的文件拖放到放置 **[!UICONTROL Public keys certificates]**区域。
 1. 选择产品配置。
 
    如果不确定要选择哪个配置文件，请与系统管理员联系。
@@ -118,12 +118,12 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 将显示集成详细信息页面，其顶部是集成名称。
 
-   该选 **[!UICONTROL Overview]** 项卡默认显示，并显示API密钥、组织ID、技术帐户ID以及有关集成的其他详细信息。
+   该选 **[!UICONTROL Overview]**项卡默认显示，并显示API密钥、组织ID、技术帐户ID以及有关集成的其他详细信息。
 
 ### 记录组织ID和API密钥
 
-1. 在集成详细信息页面上，单击 **[!UICONTROL Services]** 选项卡并确认显 **[!UICONTROL Places]** 示在下方 **[!UICONTROL Configured Services]**。
-1. 在选 **[!UICONTROL Overview]** 项卡上，找到并记录API密钥（客户端ID）和组织ID。
+1. 在集成详细信息页面上，单击 **[!UICONTROL Services]**选项卡并确认显**[!UICONTROL Places]** 示在下方 **[!UICONTROL Configured Services]**。
+1. 在选 **[!UICONTROL Overview]**项卡上，找到并记录API密钥（客户端ID）和组织ID。
 
    每个Places REST API请求都需要这些ID。
 
@@ -131,15 +131,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ### 生成JWT令牌
 
-在集成详细信息页面上，单 **[!UICONTROL JWT]** 击选项卡，以便通过生成JWT并提供交换URL来测试集成。
+在集成详细信息页面上，单 **[!UICONTROL JWT]**击选项卡，以便通过生成JWT并提供交换URL来测试集成。
 
 要生成JWT令牌，请执行以下操作：
 
 1. 在文本编辑器中，打开您 `private.key` 在上面创建的文件。
-1. On the **[!UICONTROL JWT]** tab, copy the contents of the key and paste it in the **[!UICONTROL Paste private key]** field.
+1. On the **[!UICONTROL JWT]**tab, copy the contents of the key and paste it in the**[!UICONTROL Paste private key]** field.
 1. 单击 **[!UICONTROL Generate JWT]**。
-1. In the **[!UICONTROL Sample CURL command]** section, click **[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
-1. 通过按键盘运 **[!UICONTROL Enter]** 行命令。
+1. In the **[!UICONTROL Sample CURL command]**section, click**[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
+1. 通过按键盘运 **[!UICONTROL Enter]**行命令。
 1. 找到 `"token_type": "bearer"` 和 `"access_token"` 值。
 
    承载访问令牌的值是您将在Places API请求中使用的值。

@@ -28,7 +28,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 在您的Adobe Campaign standard实例中，单击 **[!UICONTROL Create In-App message]**。
 1. 对于消息类型，选择 **[!UICONTROL Target all users of a Mobile application]**。
-1. 单击 **[!UICONTROL Next]** 并键入常规详细信息。
+1. 单击 **[!UICONTROL Next]**并键入常规详细信息。
 1. 在左侧窗格中，验证是否可以使用与位置服务相关的各种触发器。
 
    * 如果用户已输入POI地理围栏，则可以选择显示应用程序内消息。
@@ -37,7 +37,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    ![“应用程序内消息放置元数据”](/help/assets/last-entered-vacation.png)
 
-1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
+1. Click the **[!UICONTROL Next]**to finish creating the In-app message for delivery.
 
    ![“创建活动”](/help/assets/prepare-ACS.png)
 

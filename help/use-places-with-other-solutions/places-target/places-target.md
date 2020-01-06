@@ -15,7 +15,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.创建规则
 
-1. 在选项卡 **[!UICONTROL Rules]** 上，单击 **[!UICONTROL Create New Rule]**。
+1. 在选项卡 **[!UICONTROL Rules]**上，单击**[!UICONTROL Create New Rule]**。
 
    请牢记以下信息：
 
@@ -28,11 +28,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    在此示例中，该规则被命名 **[!UICONTROL Attach Places Data to Target Content Requested]**。
 
-1. 在部分 **[!UICONTROL Events]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Events]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Adobe Target]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Adobe Target]**。
 
-1. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Content Requested]**。
+1. 从下 **[!UICONTROL Event Type]**拉列表中，选择**[!UICONTROL Content Requested]**。
 
 1. 单击 **[!UICONTROL Keep Changes]**。
 
@@ -46,11 +46,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在以下示例中，创建了一个条件，该条件使规则仅为启动应用程序五次或多次的用户触发。
 
-1. 在部分 **[!UICONTROL Conditions]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Conditions]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Mobile Core]**。
 
-1. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Launches]**。
+1. 从下 **[!UICONTROL Condition Type]**拉列表中，选择**[!UICONTROL Launches]**。
 
 1. 在右侧窗格中，修改下拉列表和数字控件，以便该条件读取 **[!UICONTROL User has launched the app greater than or equal to 5 times]**。
 
@@ -60,19 +60,19 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 4.定义操作
 
-1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL Add]**。
+1. 在部分 **[!UICONTROL Actions]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Mobile Core]**。
 
-1. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Attach Data]**。
+1. 从下 **[!UICONTROL Action Type]**拉列表中，选择**[!UICONTROL Attach Data]**。
 
-1. 在右侧窗格的字 **[!UICONTROL JSON Payload]** 段中，键入要添加到此活动的数据。
+1. 在右侧窗格的字 **[!UICONTROL JSON Payload]**段中，键入要添加到此活动的数据。
 
 1. 单击 **[!UICONTROL Keep Changes]**。
 
 在右侧窗格上，您可以添加自由形式JSON有效负荷，在侦听此事件的扩展收到该事件之前，将数据添加到SDK事件。
 
-在以下示例中， `poiCity` 将值 `poiName` 添加到Target事 **[!UICONTROL mboxparameters]** 件中处理的每个请求中。 新键的值由SDK在该事件处理时动态确定。
+在以下示例中， `poiCity` 将值 `poiName` 添加到Target事 **[!UICONTROL mboxparameters]**件中处理的每个请求中。 新键的值由SDK在该事件处理时动态确定。
 
 >[!TIP]
 >
@@ -88,6 +88,6 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![完整规则](/help/assets/ad-ruleComplete-target.png)
 
-1. 单击 **[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL Save]**
 
 1. 重新构建您的启动项属性并将其部署到正确的环境。

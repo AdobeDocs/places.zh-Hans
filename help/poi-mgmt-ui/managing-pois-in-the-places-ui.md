@@ -17,7 +17,7 @@ POI和库是使用Places UI在Places数据库中创建和管理的。
 1. 使用您的Adobe ID登录Places Service。
 1. 在右上方，单击与项目符号列表类似的图标。
 1. 找到要编辑的POI。
-1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL View Details]**。
+1. 单击 **[!UICONTROL ...]**并选择**[!UICONTROL View Details]**。
 1. 更新信息并单击 **[!UICONTROL Save]**。
 
 ## 删除POI
@@ -26,7 +26,7 @@ POI和库是使用Places UI在Places数据库中创建和管理的。
 1. 使用您的Adobe ID登录Places Service。
 1. 在右上方，单击与项目符号列表类似的图标。
 1. 找到要删除的POI。
-1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL Delete]**。
+1. 单击 **[!UICONTROL ...]**并选择**[!UICONTROL Delete]**。
 
 ## 按城市、州／省、国家／地区或元数据过滤POI
 
@@ -42,11 +42,11 @@ POI和库是使用Places UI在Places数据库中创建和管理的。
 
    * 按属性：
 
-      a.在属性下拉列表中，选择 **[!UICONTROL Country]**、 **[!UICONTROL State]**&#x200B;或 **[!UICONTROL City]**。
+      a.在属性下拉列表中，选择 **[!UICONTROL Country]**、**[!UICONTROL State]**&#x200B;或 **[!UICONTROL City]**。
 
       b.在下一行中，输入一个值。
 
-      例如，您可以选择并 **[!UICONTROL State]** 键入 **[!UICONTROL California]**。
+      例如，您可以选择并 **[!UICONTROL State]**键入**[!UICONTROL California]**。
 
    * 使用元数据：
 

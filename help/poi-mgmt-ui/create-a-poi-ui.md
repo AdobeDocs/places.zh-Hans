@@ -27,7 +27,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    1. 为图标选择一种颜色。
    1. 指定POI的类别。
 
-1. 展开该 **[!UICONTROL Location]** 部分。
+1. Expand the **[!UICONTROL Location]**section.
 
    1. 键入地址。
    1. 键入城市。
@@ -37,7 +37,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    1. 单击 **[!UICONTROL Drop Pin on Map]**。
    如果您不知道确切的纬度和经度，则放下针脚很有用。
 
-1. 展开该 **[!UICONTROL Metadata]** 部分并单击 **[!UICONTROL Add Metadata]**。
+1. 展开该 **[!UICONTROL Metadata]**部分并单击**[!UICONTROL Add Metadata]**。
 
    元数据可以帮助您进一步定义一个位置，并可用于其他Adobe解决方案工作流程中，以进一步优化受众。
 

@@ -51,10 +51,10 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 要创建操作，请执行以下操作：
 
-1. 选择 **扩展。[!UICONTROL Adobe Analytics]**
-1. 在下 **[!UICONTROL Action type]** 拉列表中，选择 **[!UICONTROL Track.]**
+1. 选择 **[!UICONTROL Adobe Analytics]**扩展。
+1. 在下 **[!UICONTROL Action type]**拉列表中，选择**[!UICONTROL Track.]**
 1. 键入操作的名称。
-1. 在右侧窗格中， **[!UICONTROL Context Data]**&#x200B;选择键值对以设置将发送到Analytics的上下文数据。
+1. 在右侧窗格中， **[!UICONTROL Context Data]**选择键值对以设置将发送到Analytics的上下文数据。
 
 例如，您可以选择 `poiname` 作为键和 `{%%Last Entered POI Name}` 作为值。
 
@@ -77,7 +77,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
    此选项可与特定位置的操作（如条目）一起使用，也可用作启动项或按钮单击等其他事件的上下文。
 
-   下面是一个如何为欢迎用户配置应用程序内消息的示例，这些用户输入名 **[!UICONTROL Adobe]** 称中包含POI:
+   下面是一个如何为欢迎用户配置应用程序内消息的示例，这些用户输入名 **[!UICONTROL Adobe]**称中包含POI:
 
    ![触发参数](/help/assets/trigger-parameters.png)
 

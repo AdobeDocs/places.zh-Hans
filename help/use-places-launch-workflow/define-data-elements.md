@@ -40,13 +40,13 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ### 创建数据元素
 
-1. 在应用程序的“属性”页面中，单击选 **[!UICONTROL Data Elements]** 项卡。
+1. 在应用程序的“属性”页面中，单击选 **[!UICONTROL Data Elements]**项卡。
 
 1. 单击 **[!UICONTROL Create New Data Element]**。
 
 1. 在已安装的扩展列表中，查找 **[!UICONTROL Places]**。
 
-1. 在下拉 **[!UICONTROL Data Element Type]** 列表中，为此数据元素选择数据引用。
+1. 在下拉 **[!UICONTROL Data Element Type]**列表中，为此数据元素选择数据引用。
 
 1. 选择POI目标。
 
@@ -63,8 +63,8 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![使用数据元素](/help/assets/use-de-v2.png)
 
-如果规则组件中不存在数据元素选取器，则可以通过将数据元素名称与令牌一起打包来使用数据元 **[!UICONTROL %%]** 素。
-例如，如果数据元素名称为， **[!UICONTROL Last POI City]**&#x200B;则可以向文本输 **[!UICONTROL LAST POI City]** 入添加内容。
+如果规则组件中不存在数据元素选取器，则可以通过将数据元素名称与令牌一起打包来使用数据元 **[!UICONTROL %%]**素。
+例如，如果数据元素名称为，**[!UICONTROL Last POI City]**&#x200B;则可以向文本输 **[!UICONTROL LAST POI City]**入添加内容。
 
 
 ## 发布数据元素

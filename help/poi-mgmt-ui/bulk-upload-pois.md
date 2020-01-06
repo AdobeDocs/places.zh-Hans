@@ -92,7 +92,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    b.保存更改。
 
 1. 在终端窗口中，导航到该目 `…/places-scripts/import/` 录。
-1. 输入 `python ./places_import.py` 并按 **[!UICONTROL enter]** (**[!UICONTROL return]**)键。
+1. 输入 `python ./places_import.py` 并按 **[!UICONTROL enter]**(**[!UICONTROL return]**)键。
 
 
 ## 预导入CSV检查

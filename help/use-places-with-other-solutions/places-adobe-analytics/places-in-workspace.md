@@ -28,9 +28,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此示例中，规则的操作为Analytics请求定义了以下值：
 
-* **[!UICONTROL Action]** 提供值 **[!UICONTROL Places Entry]**。
+* **[!UICONTROL Action]**提供值**[!UICONTROL Places Entry]**。
 
-* 上下文数据键 **[!UICONTROL poi.name]** 被设置为数据元素的值 **[!UICONTROL {%%POI Name%%}]**。
+* 上下文数据键 **[!UICONTROL poi.name]**被设置为数据元素的值**[!UICONTROL {%%POI Name%%}]**。
 
 ![“设置操作”](/help/assets/pt-setAction.png)
 
@@ -38,7 +38,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 要映射上下文数据（在步骤1中发送），必须首先为Analytics报表包创建变量。 有关在Analytics中创建变量的详细信息，请参 [阅Conversion variables \(eVars\)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
 
-在此示例中，已创建并命 **[!UICONTROL Evar2]**&#x200B;名转换变量 **[!UICONTROL Places POI Name]**。 需要为要在报告中显示的每个位置变量创建其他变量。
+在此示例中，已创建并命 **[!UICONTROL Evar2]**名转换变量**[!UICONTROL Places POI Name]**。 需要为要在报告中显示的每个位置变量创建其他变量。
 
 ![“创建分析变量”](/help/assets/aa-evar.png)
 
@@ -46,7 +46,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 需要此步骤才能将上下文数据（步骤1）映射到Analytics变量（步骤2）。 For more information on creating processing rules, see [Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-在此示例中，已创建处理规则以将上下文数据值映射到 **[!UICONTROL poi.name]** 中 **[!UICONTROL Places POI Name \(eVar2\)]**。 需要为创建的每个位置变量创建其他处理规则。
+在此示例中，已创建处理规则以将上下文数据值映射到 **[!UICONTROL poi.name]**中**[!UICONTROL Places POI Name \(eVar2\)]**。 需要为创建的每个位置变量创建其他处理规则。
 
 ![“创建处理规则”](/help/assets/aa-processing-rule.png)
 
@@ -56,9 +56,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此示例中，报表具有以下设置：
 
-* Metric - **[!UICONTROL Occurrences]**
+* 量度 - **[!UICONTROL Occurrences]**
 
-* Dimension - **[!UICONTROL Action Name]**
+* 维度 - **[!UICONTROL Action Name]**
 
    * 按维度细分- **[!UICONTROL Places POI Name]**
 

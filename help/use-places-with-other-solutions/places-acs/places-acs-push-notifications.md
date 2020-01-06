@@ -31,12 +31,12 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 要创建数据元素，请执行以下操作：
 
-1. 在Experience Platform Launch移动属性中，单击选项卡， **[!UICONTROL Data Elements]** 然后单击“添 **[!UICONTROLA加数据元素”]**。
-1. 在下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places]**。
-1. 从下 **[!UICONTROL Data Element Type]** 拉列表中，选择 **[!UICONTROL Name]**。
-1. 在右侧窗格中，您可以选择 **[!UICONTROL Current POI]** 检索用户当前所在的POI的名称。
+1. 在Experience Platform Launch移动属性中，单击选项卡， **[!UICONTROL Data Elements]**然后单击“添**[!UICONTROLA&#x200B;加数据元素”]**。
+1. 在下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places]**。
+1. 从下 **[!UICONTROL Data Element Type]**拉列表中，选择**[!UICONTROL Name]**。
+1. 在右侧窗格中，您可以选择 **[!UICONTROL Current POI]**检索用户当前所在的POI的名称。
 
-   **[!UICONTROL Last Entered]** 检索用户上次输入的POI的名称，并 **[!UICONTROL Last Exited]** 提供用户上次离开的POI的名称。 在此示例中，我们将选 **[!UICONTROL Last Entered]** 择并键入数据元素的名称，如并 **[!UICONTROL Last Entered POI Name]** 单击 **[!UICONTROL Save]**。
+   **[!UICONTROL Last Entered]**检索用户上次输入的POI的名称，并**[!UICONTROL Last Exited]** 提供用户上次离开的POI的名称。 在此示例中，我们将选 **[!UICONTROL Last Entered]**择并键入数据元素的名称，如并**[!UICONTROL Last Entered POI Name]** 单击 **[!UICONTROL Save]**。
 
    ![“Campaign Standard中的推送消息”](/help/assets/ACS_Push1.png)
 
@@ -48,18 +48,18 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 Experience Platform Launch中的规则允许您基于事件触发器创建复杂的多解决方案工作流。 利用规则，您可以创建新规则或修改现有规则，并将更新动态部署到移动应用程序。 在以下示例中，当用户进入一个地理围栏的POI时，将触发该规则。 触发规则后，将向Campaign Standard发送更新，以根据Experience Cloud ID为特定用户记录特定POI的条目。
 
-1. 在Launch移动属性中，单击选 **[!UICONTROL Rules]** 项卡上的 **[!UICONTROL Add Rule]**。
-1. 在部分 **[!UICONTROL Events]** 下，单击并 **[!UICONTROL +]** 选择 **[!UICONTROL Places]** 作为扩展名。
-1. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
+1. 在Launch移动属性中，单击选 **[!UICONTROL Rules]**项卡上的**[!UICONTROL Add Rule]**。
+1. 在部分 **[!UICONTROL Events]**下，单击并**[!UICONTROL +]** 选择 **[!UICONTROL Places]**作为扩展名。
+1. For the **[!UICONTROL Event Type]**, select**[!UICONTROL Enter POI]**.
 1. 将规则命名为，例如， **用户输入POI**。
 1. 单击 **[!UICONTROL Keep Changes]**。
-1. 将部分 **[!UICONTROL Conditions]** 留空。
+1. 将部分 **[!UICONTROL Conditions]**留空。
 
    此部分允许您过滤或限制此规则何时触发。
 
-1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL +]**。
-1. 在下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Mobile Core]** 并在下 **[!UICONTROL Action Type]** 拉列表中选择 **[!UICONTROL Send Postback]**。
-1. 在中， **[!UICONTROL URL]**&#x200B;您需要构建您的Campaign standard位置端点。
+1. 在部分 **[!UICONTROL Actions]**下，单击**[!UICONTROL +]**。
+1. 在下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Mobile Core]** 并在下 **[!UICONTROL Action Type]**拉列表中选择**[!UICONTROL Send Postback]**。
+1. 在中， **[!UICONTROL URL]**您需要构建您的Campaign standard位置端点。
 
    URL应类似于 `https:///rest/head/mobileAppV5//locations/`。
 确保使用您之前为Campaign服务器和pKey创建的正确数据元素。
@@ -80,7 +80,7 @@ Experience Platform Launch中的规则允许您基于事件触发器创建复杂
    ```
 
 1. 确保使用您在上一节中创建的数据元素。
-1. 在中 **[!UICONTROL Content Type]**&#x200B;键入 **[!UICONTROL application/json]**。
+1. 在中 **[!UICONTROL Content Type]**键入**[!UICONTROL application/json]**。
 1. 单击 **[!UICONTROL Keep Changes]**。
 
 >[!IMPORTANT]
@@ -97,14 +97,14 @@ Experience Platform Launch中的规则允许您基于事件触发器创建复杂
 
 1. 在您的Adobe Campaign standard实例中，单击 **[!UICONTROL Create Push Notification]**。
 1. 对于推送通知类型，请选择 **[!UICONTROL Send push to Campaign profiles]**。
-1. 单击 **[!UICONTROL Next]** 并键入常规详细信息。
-1. 在“受众”屏幕上，单 **[!UICONTROL Count]** 击以确定将发送推送通知的估计用户数。
+1. 单击 **[!UICONTROL Next]**并键入常规详细信息。
+1. 在“受众”屏幕上，单 **[!UICONTROL Count]**击以确定将发送推送通知的估计用户数。
 
    >[!TIP]
    >
    >在本例中，计数将为3，因为有三台已安装的设备正在测试应用程序。
 
-1. 在左侧窗格中，展开选 **[!UICONTROL Profile]** 项卡，然后将滤镜拖 **[!UICONTROL POI location]** 动到主区域。
+1. 在左侧窗格中，展开选 **[!UICONTROL Profile]**项卡，然后将滤镜拖**[!UICONTROL POI location]** 动到主区域。
 1. 在POI过滤器窗口中，输入要定位的POI的确切名称。
 
    >[!TIP]
@@ -118,7 +118,7 @@ Experience Platform Launch中的规则允许您基于事件触发器创建复杂
 
    如果看不到计数更新，则可能已输入POI名称，其中没有设备触发了条目。 在这种情况下，使用Slack web挂钩将变得很有价值，因为您可以看到来自各种测试设备的POI条目列表。
 1. 您可以拖出其他POI位置过滤器，以在消息中包含多个POI。
-1. Click **[!UICONTROL Next]** to finish creating the push notification for delivery.
+1. Click **[!UICONTROL Next]**to finish creating the push notification for delivery.
 
    ![“ACS中的推送消息3”](/help/assets/ACS_push3.html)
 

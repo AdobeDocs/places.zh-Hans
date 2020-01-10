@@ -2,7 +2,7 @@
 title: Places API参考
 description: 有关Places中API引用的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 23437e28bdfb12f664481d22f9f6df0ba6c30329
 
 ---
 
@@ -351,7 +351,28 @@ Places.clear();
 
 ### setAuthorizationStatus(Android)
 
-即将推出
+*从Places v1.4.0开始提供*
+
+在“地点”扩展中设置授权状态。
+
+提供的状态存储在“地点”共享状态中，仅供参考。
+调用此方法不会影响此设备的实际位置授权状态。
+
+**语法**
+
+以下是此方法的语法：
+
+```java
+public static void setAuthorizationStatus(final PlacesAuthorizationStatus status);
+```
+
+**示例**
+
+以下是此方法的代码示例：
+
+```java
+Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
+```
 
 ### setAuthorizationStatus(iOS)
 

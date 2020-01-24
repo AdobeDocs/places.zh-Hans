@@ -2,7 +2,7 @@
 title: 定义数据元素
 description: 本节提供有关如何在Experience Platform Launch for Places中创建、使用和发布数据元素的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * **[!UICONTROL Latitude]**:POI的纬度
 * **[!UICONTROL Longitude]**:POI的经度
 * **[!UICONTROL Metadata]**:POI的自定义元数据
-* **[!UICONTROL Name]**:POI地区
+* **[!UICONTROL Name]**:POI的名称
 * **[!UICONTROL Radius]**:POI的radius
 * **[!UICONTROL Region ID]**:POI的ID
 * **[!UICONTROL Region/State]**:POI的地区、省或州

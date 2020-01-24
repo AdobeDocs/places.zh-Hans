@@ -2,14 +2,14 @@
 title: Adobe I/O集成概述
 description: 有关创建Adobe I/O集成的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
 # 集成概述和先决条件 {#integration-prereqs}
 
-此信息会向您展示如何创建Adobe I/O和Places集成。
+此信息会向您展示如何创建Adobe I/O和Places service集成。
 
 ## 用户访问的先决条件
 
@@ -19,17 +19,17 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * 您已添加到组织。
 * 您已作为用户添加到组织中放置核心服务。
 
-   有关详细信息，请参 *阅常见问题解答中的将用户或开发人员添加到您的位置服务和Experience Platform Launch配置文件*[中](/help/places-faqs.md)。
+   有关详细信息，请参 *阅获取对Places service的访问权限中的将用户或开发人员添加到Places Service and Experience Platform Launch配置文件*[中](/help/places-gain-access.md)。
 
 * 您已作为开发人员添加到您组织中的Places Core Service。
 
-   有关添加开发人员的详细信息，请参 *阅常见问题解答中的将用户或开发人员添加到您的位置服务和Experience Platform Launch配置文件*[中](/help/places-faqs.md)。
+   有关添加开发人员的详细信 *息，请参阅获取对Places service的访问权限中的将用户或开发人员添加到您的Places Service and Experience Platform Launch配置文件*[中](/help/places-gain-access.md)。
 
    有关开发人员角色的详细信息，请参阅管 [理开发人员](https://helpx.adobe.com/enterprise/using/manage-developers.html)。
 
 ### REST API请求
 
-对Places REST API的每个请求都需要以下项：
+对Places Service REST API的每个请求都需要以下项：
 
 * 组织ID
 * API密钥
@@ -38,20 +38,20 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 与Adobe I/O的集成提供了这些项，以及使用JSON web令牌(JWT)请求承载令牌的方法。
 
 * 有关JWT的详细信息，请参 [阅JSON web令牌简介](https://jwt.io/introduction/)。
-* 要为Places创建集成，请参阅下 *面的创建Places集成* 部分。
+* 要创建Places service的集成，请参阅下 *面的创建Places service集成部分* 。
 * 要了解API密钥集成、生成JWT和公钥证书，请参阅 [Adobe I/O身份验证概述](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)。
 
 >[!IMPORTANT]
 >
->如果您无法登录到Adobe I/O控制台，或者如果“创建集成”页面上不提供Experience Platform Location Service *，请参阅* Web服务API概述中的组织要求 **[](/help/web-service-api/places-web-services.md)。
+>如果无法登录到Adobe I/O控制台，或者如果“创建集成”页面上不提供“放置服务”选项 *，请参阅* Web服务API概述中的组织要求 **[](/help/web-service-api/places-web-services.md)。
 
-## 创建Places集成
+## 创建Places service集成
 
-要创建地点集成，请完成以下任务：
+要创建Places service集成，请完成以下任务：
 
 ### 生成公钥和私钥对
 
-要创建Places集成，您需要一个公共密钥对和一个私钥对。 可以购买这些对，也可以生成您自己的自签名密钥。
+要创建Places service集成，您需要一个公共密钥对和一个私钥对。 可以购买这些对，也可以生成您自己的自签名密钥。
 
 要生成您自己的自签名密钥，请执行以下操作：
 
@@ -87,15 +87,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 导览至文件和文 `.key` 件所 `.crt` 在的目录。
 
-   例如，在iOS中，转到 **[!UICONTROL Macintosh HD]**>**[!UICONTROL users]** > **[!UICONTROL (your user name)]**>**[!UICONTROL Keys]**。
+   例如，在MacOS中，转到 **[!UICONTROL Macintosh HD]**>**[!UICONTROL users]** > **[!UICONTROL (your user name)]**>**[!UICONTROL Keys]**。
 
 以下视频将指导您完成生成键对的过程：
 
 ![集成视频](/help/assets/places_integration_video.gif)
 
-### 在Adobe I/O控制台中创建地点集成
+### 在Adobe I/O控制台中创建Places service集成
 
-要创建Places集成，请执行以下操作：
+要创建Places service集成，请执行以下操作：
 
 1. 转到 [https://console.adobe.io](https://console.adobe.io) ，然后使用您的Adobe ID登录。
 1. 在“快 **速入门** ”部分，单击 **创建集成**。
@@ -104,7 +104,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    **[!UICONTROL Access an API]**是默认位置。
 
 1. 如果您有权访问多个Experience cloud组织，请从右上方的下拉列表中选择该组织。
-1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
+1. Under **[!UICONTROL Experience Cloud]**, select**[!UICONTROL Places Service]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
 1. 选择 **[!UICONTROL New integration]**并单击**[!UICONTROL Continue]**。
 1. 在创建新集成屏幕中，输入名称和说明。
 1. 将您在上面创 `xxxx_public.crt` 建的文件拖放到放置 **[!UICONTROL Public keys certificates]**区域。
@@ -122,10 +122,10 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ### 记录组织ID和API密钥
 
-1. 在集成详细信息页面上，单击 **[!UICONTROL Services]**选项卡并确认显**[!UICONTROL Places]** 示在下方 **[!UICONTROL Configured Services]**。
+1. 在集成详细信息页面上，单击 **[!UICONTROL Services]**选项卡并确认显**[!UICONTROL Places Service]** 示在下方 **[!UICONTROL Configured Services]**。
 1. 在选 **[!UICONTROL Overview]**项卡上，找到并记录API密钥（客户端ID）和组织ID。
 
-   每个Places REST API请求都需要这些ID。
+   每个Places Service REST API请求都需要这些ID。
 
 ![](/help/assets/places_orgid_api-key.png)
 
@@ -142,7 +142,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 1. 通过按键盘运 **[!UICONTROL Enter]**行命令。
 1. 找到 `"token_type": "bearer"` 和 `"access_token"` 值。
 
-   承载访问令牌的值是您将在Places API请求中使用的值。
+   承载访问令牌的值是您将在Places Service API请求中使用的值。
 
 >[!IMPORTANT]
 >

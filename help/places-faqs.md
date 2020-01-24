@@ -2,14 +2,14 @@
 title: 常见问题解答
 description: 本主题提供了有关某些常见问题的其他信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 常见问题解答
 
-以下是有关位置服务的一些信息和常见问题解答。
+以下是有关Places service的一些信息和常见问题解答。
 
 ## 大小和可靠性
 

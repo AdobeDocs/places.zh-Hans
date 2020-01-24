@@ -2,18 +2,18 @@
 title: Places API参考
 description: 有关Places中API引用的信息。
 translation-type: tm+mt
-source-git-commit: 23437e28bdfb12f664481d22f9f6df0ba6c30329
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # Places API参考 {#places-api-reference}
 
-以下是有关Places中API引用的信息：
+以下是有关Places扩展中API引用的信息：
 
 ## 处理区域事件
 
-当设备跨越应用程序预定义的地点区域边界时，区域和事件类型将传递给SDK进行处理。
+当设备跨越应用程序的某个预定义地点服务区域边界时，区域和事件类型将传递到SDK以进行处理。
 
 ### ProcessGeofence(Android)
 
@@ -309,7 +309,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 ### 清除(Android)
 
-清除处于共享状态、本地存储和内存中的“地点”的客户端数据。
+清除处于共享状态、本地存储和内存中的Places扩展的客户端数据。
 
 **语法**
 
@@ -329,7 +329,7 @@ Places.clear();
 
 ### clear(iOS)
 
-清除处于共享状态、本地存储和内存中的“地点”的客户端数据。
+清除处于共享状态、本地存储和内存中的Places扩展的客户端数据。
 
 **语法**
 

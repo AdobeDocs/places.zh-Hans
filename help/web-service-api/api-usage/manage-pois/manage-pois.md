@@ -2,14 +2,14 @@
 title: 管理POI概述
 description: '了解POI并使用POI。 '
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 管理POI概述 {#manage-pois}
 
-您可以使用Places REST API完成以下任务：
+您可以使用Places Service REST API完成以下任务：
 
 * [创建目标点 (POI)](/help/web-service-api/api-usage/manage-pois/create-a-poi.md)
 * [阅读POI](/help/web-service-api/api-usage/manage-pois/read-a-poi.md)

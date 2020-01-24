@@ -2,7 +2,7 @@
 title: Places 扩展
 description: “地点”扩展允许您根据用户的位置采取行动。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 完成发布过程以更新SDK配置。
 
-   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobelaunch.com/launch-reference/publishing)。
+   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -61,7 +61,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您不使用Cocoapod，则可以从Github上的发布页面手动包含Mobile core和 [Places库](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
+   或者，如果您不使用Cocoapod，则可以从Github上的发布页面手动包含Mobile Core和 [Places库](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
 
 1. 更新您的Cocopad:
 
@@ -85,13 +85,13 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    import ACPPlaces
    ```
 
-### 使用移动核心注册地点 {#register-places-mobile-core}
+### 使用Mobile Core注册Places扩展 {#register-places-mobile-core}
 
-您需要在Android和iOS中使用Mobile Core注册地点。
+您需要在Android和iOS中使用Mobile core注册Places扩展。
 
 #### Android
 
-在您的应用程序方 `OnCreate` 法中注册位置服务扩展：
+在您的应用程序方 `OnCreate` 法中注册Places扩展：
 
 ```java
 public class PlacesTestApp extends Application {
@@ -137,10 +137,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## 配置密钥
 
-要在运行时以编程方式更新SDK配置，请使用以下信息更改您的Places配置值。 有关详细信息，请参 [阅配置API参考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
+要在运行时以编程方式更新SDK配置，请使用以下信息更改Places扩展配置值。 有关详细信息，请参 [阅配置API参考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
 
 | 键 | 必需 | 描述 |
 | :--- | :--- | :--- |
-| `places.libraries` | 是 | 放置移动应用程序的库。 它指定移动应用程序支持的库ID和库名称。 |
-| `places.endpoint` | 是 | 默认的Experience Platform Location Query service端点，用于获取有关库和POI的信息。 |
+| `places.libraries` | 是 | 为移动应用程序放置扩展库。 它指定移动应用程序支持的库ID和库名称。 |
+| `places.endpoint` | 是 | 默认的Places Query service端点，用于获取有关库和POI的信息。 |
 

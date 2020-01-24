@@ -1,15 +1,15 @@
 ---
-title: 为您的地点属性创建规则
+title: 为Places service属性创建规则
 description: 'Places SDK会跟踪当前位置，监视围绕当前位置配置的POI，并跟踪这些POI的进入和退出事件。 '
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
 # 创建进入和退出规则 {#create-entry-exit-rules}
 
-在移动应用程序中安装地点和地点监视器扩展后，您可以在Adobe Experience Platform Launch中创建规则，这些规则是触发或条件化的位置数据，包括位置进入和退出事件。
+在移动应用程序中安装了Places扩展和Places Monitor扩展后，您可以在Adobe Experience Platform Launch中创建规则，这些规则是触发或条件化的位置数据，包括位置进入和退出事件。
 
 ## 规则
 
@@ -19,14 +19,14 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * （可选）条件
 * 一个或多个操作
 
-### 地点活动
+### 地点服务活动
 
-Places提供了以下事件，您可以在其中运行规则：
+Places service提供以下事件，您可以运行规则：
 
 * **输入POI**，该POI由客户进入您配置的POI时的Places SDK触发。
 * **退出POI**，客户退出您配置的POI时，由Places SDK触发。
 
-### 地点条件
+### 地点服务条件
 
 条件定义了与事件关联的数据或该实例中某个扩展的共享状态必须满足的条件，才能执行操作。 例如，您可以设置条件，以触发仅在旧金山市进入咖啡店的操作。
 
@@ -39,7 +39,7 @@ Places SDK保持以下状态：
 每个POI都包含以下数据元素：
 
 * ID
-* 名称:
+* 名称
 * 纬度／经度
 * 半径
 * 元数据，如城市、国家／地区、州／省、类别
@@ -73,10 +73,10 @@ Places SDK保持以下状态：
 1. 键入名称，例如“当 **前咖啡店名称”**。
 1. 在“扩 **展** ”下拉列表中，选择“ **地点——测试版”**。
 1. 在&#x200B;**数据元素**&#x200B;中，选择&#x200B;**城市**。
-1. 在右窗格中，选择“当 **前POI”**。
+1. 在右侧窗格中，选择“ **当前POI”**。
 1. 单击&#x200B;**保存**。
 
-### 在Experience Platform Launch for Places中创建规则
+### 在Experience Platform Launch for Places service中创建规则
 
 ![创建规则](/help/assets/placesrule.png)
 
@@ -122,10 +122,10 @@ Places SDK保持以下状态：
 
 ### 发布规则
 
-1. 要激活规则，您必须发布该规则。 有关在Experience Platform Launch中发布规则的详细信息，请参阅发 [布](https://docs.adobelaunch.com/launch-reference/publishing)。
+1. 要激活规则，您必须发布该规则。 有关在Experience Platform Launch中发布规则的详细信息，请参阅发 [布](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
 
 ### 超越进出境的思考
 
-在Experience Platform Launch中使用位置服务地理围栏条目和退出来触发规则的功能极其强大，但您也可以将位置数据用作其他事件触发的条件。 例如，您可能拥有一个Mobile Core Track Action事件触发器，该触发器根据应用程序内的特定trackAction调用事件准备触发。 根据此事件，您可以在执行操作之前为事件添加其他位置条件。 例如，在发生购买事件时打开应用程序内调查，但 `trackAction` 仅在用户的当前位 **置包含特定** “位置服务”元数据时打开。
+在Experience Platform Launch中使用Places Service地理围栏条目和退出来触发规则非常强大，但您也可以将位置数据用作其他事件触发的条件。 例如，您可能拥有一个Mobile Core Track Action事件触发器，该触发器根据应用程序内的特定trackAction调用事件准备触发。 根据此事件，您可以在执行操作之前为事件添加其他位置条件。 例如，在发生购买事件时打开应用程序内调查，但 `trackAction` 仅在用户的当前位 **置包括特定** Places service元数据时打开。
 
 ![创建条件](/help/assets/places-condition.png)

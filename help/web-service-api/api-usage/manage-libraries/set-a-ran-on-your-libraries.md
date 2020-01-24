@@ -2,12 +2,12 @@
 title: 在库上设置排名
 description: 使用Places REST API在库上设置排名。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 在库上设置排名
+# 在库上设置排名 {#set-rank-on-libraries}
 
 一种PUT方法，它允许您在所有库上设置排名顺序。
 

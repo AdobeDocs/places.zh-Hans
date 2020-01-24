@@ -1,8 +1,8 @@
 ---
 title: 管理现有POI
-description: 在位置服务UI中，您可以编辑、删除或过滤现有POI。
+description: 在“地点服务”UI中，您可以编辑、删除或过滤现有POI。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -32,7 +32,7 @@ POI和库是使用Places UI在Places数据库中创建和管理的。
 
 ![过滤POI](/help/assets/filter_poi.png)
 
-1. 使用您的Adobe ID登录到位置服务UI。
+1. 使用您的Adobe ID登录到Places Service UI。
 1. 在右上方，单击筛选图标。
 1. 可以通过以下方式之一过滤POI:
 
@@ -61,6 +61,7 @@ Geoffences是一种POI类型，它在数据库中使用以下键定义：
 | ID | 分配给每个POI的唯一标识符 | 是 |
 | 名称 | 为POI提供友好名称。 | 是 |
 | 库 | 必须为每个POI分配一个组织库。 | 是 |
+| 半径 | POI的半径（以米为单位）。 | 是 |
 | 图标 | 协助实现POI的可视化。 | 是（已指定默认值） |
 | Color（颜色） | 协助实现POI的可视化。 | 是（已指定默认值） |
 | 类别 | 为所有库中的所有POI分配通用的类别框架。 | 否 |

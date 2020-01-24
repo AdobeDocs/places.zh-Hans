@@ -2,7 +2,7 @@
 title: Places Monitor API参考
 description: 地点监视器的API列表。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -139,7 +139,7 @@ PlacesMonitor.start();
 >
 >要开始监控，位置服务必须具有必要的授权：
 >
->* 如果尚未向应用程序提供对位置服务的授权，则对 `start` API的第一调用请求使用为应用程序配置的位置服务的授权。
+>* 如果尚未向应用程序提供对Places service的授权，则对 `start` API的第一次调用请求授权使用为应用程序配置的Places Service。
 >* 根据设备的功能，如果已提供授权，地点监视器会根据当前设置跟踪用户的位置 `ACPPlacesMonitorMode`。 默认情况下，监视器使用 `ACPPlacesMonitorModeSignificantChanges`。
 
 
@@ -245,7 +245,7 @@ PlacesMonitor.updateLocation();
 
 ## 应用程序位置权限
 
-您可以使用此API设置用户被提示并授权用于位置服务的位置权限类型。
+您可以使用此API设置用户被提示并授权用于Places service的位置权限类型。
 
 ### SetLocationPermission(Android)
 
@@ -317,17 +317,17 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 * `ACPPlacesRequestAuthorizationLevelWhenInUse`
 
-   在应用程序使用过程中请求用户使用位置服务的权限。 用户提示包含app Info. `NSLocationWhenInUseUsageDescription` plist文件中键的文本，调用此方法时需要该键的存在。 有关详细信息，请参 [阅有关requestWhenInUseAuthorization的Apple文档](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)。
+   在应用程序使用过程中请求用户使用Places service的权限。 用户提示包含app Info. `NSLocationWhenInUseUsageDescription` plist文件中键的文本，调用此方法时需要该键的存在。 有关详细信息，请参 [阅有关requestWhenInUseAuthorization的Apple文档](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)。
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
-   使用此枚举可请求位置服务，即使应用程序处于后台也是如此。 您必须在应 `NSLocationAlwaysUsageDescription` 用程 `NSLocationWhenInUseUsageDescription` 序的Info.plist中包含和键。 这些键定义将在用户提示期间显示的文本。 有关详细信息，请参阅 [Apple的requestAlwaysAuthorization文档](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
+   使用此枚举可请求Places Service，即使应用程序处于后台也是如此。 您必须在应 `NSLocationAlwaysUsageDescription` 用程 `NSLocationWhenInUseUsageDescription` 序的Info.plist中包含和键。 这些键定义将在用户提示期间显示的文本。 有关详细信息，请参阅 [Apple的requestAlwaysAuthorization文档](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
 
 `ACPPlacesRequestAuthorizationLevelAlways` 是默认的请求授权值。
 
 >[!IMPORTANT]
 >
->授权使用该权限的应 `ACPPlacesRequestAuthorizationLevelWhenInUse` 用程序将无法触发在后台发生的区域的进入／退出事件。
+>授权使用权限的应用程序 `ACPPlacesRequestAuthorizationLevelWhenInUse` 不会在后台发生的区域触发进入／退出事件。
 
 以下是此API的语法和示例代码：
 

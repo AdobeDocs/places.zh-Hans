@@ -2,12 +2,12 @@
 title: 创建库
 description: 使用Places REST API创建库。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 创建库
+# 创建库 {#create-a-library}
 
 允许您创建库的POST方法。
 

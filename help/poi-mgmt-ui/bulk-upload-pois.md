@@ -2,7 +2,7 @@
 title: 批量上传POI
 description: 本节提供有关如何批量上传POI的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -47,15 +47,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ### 列值
 
-在位置服务UI中使用以下列的值：
+以下列的值在Places Service UI中使用：
 
-* color，它用作PIN的颜色，该颜色表示位置服务UI映射中POI的位置。
+* color，它用作PIN的颜色，该颜色表示POI在Places Service UI映射中的位置。
    * 有效值为“”、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56Bb和#3DC8DE和“”。
-   * 如果该值留空，则位置服务UI使用蓝色作为默认颜色。
+   * 如果该值留空，则Places Service UI使用蓝色作为默认颜色。
 
       这些值对应于蓝色(#3E76D0)、紫色(#AA99E8)、富士基亚(#DC2ABA)、橙色(#FC685B)、浅橙色(#FC962E)、黄色(#F6C436)、浅绿色(#BECE5D)、绿色(#61B56B)和浅蓝色(#3DC8DE)。
 
-* 图标，用作PIN上的图标，该图标表示POI在位置服务UI映射上的位置
+* 图标，它用作PIN上的图标，该图标表示POI在Places Service UI映射上的位置。
 
    * 有效值为“”、商店、酒店、汽车、火车、船、体育场、娱乐公园、锚、烧杯、钟、标书、书籍、箱包、公文包、浏览、笔刷、建筑、计算器、照相机、钟、教育、手电筒、跟踪、游戏、女性、礼物、锤子、心、家、钥匙、启动、灯、邮筒、销、促销、丝带、购物车、星目标，茶壶，拇指向下，拇指向上，陷阱，奖杯，扳手。
 

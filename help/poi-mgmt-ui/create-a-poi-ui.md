@@ -1,8 +1,8 @@
 ---
 title: 创建目标点 (POI)
-description: 使用Places UI创建POI。
+description: 使用Places Service UI创建POI。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 兴趣点(POI)是地图上对您的组织或公司至关重要的位置或点。 酒店可包括咖啡馆、餐馆、零售场所、体育场等场所。 公司可以定义兴趣点，以帮助用户在进入一个特定兴趣点的地理围栏区域时个性化移动体验。 除了个性化的体验，公司还可以创建兴趣点来帮助他们分析和更好地了解位置流量模式。 大型零售连锁企业可能会选择为其所有商店位置创建POI，以分析具有移动应用程序的用户并访问商店位置。
 
-1. 使用您的Adobe ID登录到位置服务。
+1. 使用您的Adobe ID登录到Places Service UI。
 1. 在右上方，单击 **[!UICONTROL New]**。
 1. 键入POI的名称。
 1. 输入或选择半径。

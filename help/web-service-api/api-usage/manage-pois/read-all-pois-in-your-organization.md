@@ -2,12 +2,12 @@
 title: 阅读您组织中的所有POI
 description: 使用Places REST API阅读组织中的所有POI。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 阅读您组织中的所有POI
+# 阅读您组织中的所有POI {#read-all-pois-org}
 
 一种GET方法，可返回组织中的所有POI。
 

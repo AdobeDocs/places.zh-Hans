@@ -2,7 +2,7 @@
 title: 概述
 description: 了解和使用查询API。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -20,7 +20,7 @@ GET https://query.places.adobe.com/placesedgequery
 
 通过以下输入，服务会返回最接近呼叫者的POI列表：
 
-* 调用者的位置\(latitude, longitude\)。
+* 拨叫者的位置（经纬度）。
 * 要包含在搜索中的POI库的ID。
 * 要返回的最大POI数。  默认值为 100。
 

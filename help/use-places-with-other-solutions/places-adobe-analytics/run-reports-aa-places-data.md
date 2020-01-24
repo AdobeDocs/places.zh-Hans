@@ -2,7 +2,7 @@
 title: 将位置上下文添加到Analytics请求
 description: 本节提供有关如何向Analytics请求添加位置上下文的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -11,9 +11,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->本文档假定您已在应用程序中实施了Adobe Places。 有关实施Adobe Places的更多信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本文档假定您已在应用程序中实施了Places Service。 有关实施Places service的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places发送进入和退出事件后，您可以在Experience Platform Launch中创建规则，并将Places数据附加到所有Adobe Analytics事件。 要创建此类型的规则，请在启动项中选择您的属性，然后完成以下步骤：
+在Places service发送进入和退出事件后，您可以在Experience Platform Launch中创建规则，并将Places service数据附加到所有Adobe Analytics事件。 要创建此类型的规则，请在启动项中选择您的属性，然后完成以下步骤：
 
 ## 1.创建规则
 
@@ -27,7 +27,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 为您的规则指定一个有意义的名称，以便在您的规则列表中轻松识别该规则。
 
-   在此示例中，该规则被命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
+   在此示例中，该规则被命名 **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**。
 
 1. 在部分 **[!UICONTROL Events]**下，单击**[!UICONTROL Add]**。
 
@@ -50,7 +50,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 在部分 **[!UICONTROL Conditions]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTORL  Mobile Core]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Mobile Core]**。
 
 1. 从下 **[!UICONTROL Condition Type]**拉列表中，选择**[!UICONTROL Carrier Name]**。
 

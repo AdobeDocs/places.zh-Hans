@@ -2,12 +2,12 @@
 title: 创建目标点 (POI)
 description: 使用Places REST API创建POI。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 创建目标点 (POI)
+# 创建目标点 (POI){#create-a-poi}
 
 允许您创建POI的POST方法。
 

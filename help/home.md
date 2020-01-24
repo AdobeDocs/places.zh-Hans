@@ -2,7 +2,7 @@
 title: 地点服务
 description: '放置服务是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
+source-git-commit: 0341e1c818bf61bee01e02c91a67f184c7778c0d
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
 
 ![“地点服务”](/help/assets/LocationHeader.png)
 
-位置是了解和吸引移动用户的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。
+位置是了解和与移动用户互动的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。
 
 Places Service（以前称为Adobe Experience Platform Location Service）是一项地理位置服务，它通过使用丰富且易于使用的SDK界面以及灵活的兴趣点数据库(POI)，使具有位置感知的移动应用程序能够了解位置上下文。
 

@@ -1,16 +1,16 @@
 ---
-product: Places Service, powered by Adobe Experience Platform
+product: Places Service
 audience: end-user
-user-guide-title: Places Service, powered by Adobe Experience Platform
+user-guide-title: Places Service
 translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
 
 ---
 
 
-# Places Service，由Adobe Experience platform帮助提供支持 {#using}
+# 地点服务 {#using}
 
-+ [Places Service，由Adobe Experience Platform提供支持，概述](home.md)
++ [地点服务概述](home.md)
 + [发行说明](release-notes.md)
 + [入门指南](getting-started.md)
 + [获取对Places service的访问权限](places-gain-access.md)

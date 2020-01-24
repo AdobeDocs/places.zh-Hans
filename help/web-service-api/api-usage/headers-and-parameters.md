@@ -1,15 +1,15 @@
 ---
 title: 标题和参数
-description: Places REST API中可用的标题和参数。
+description: Places Service REST API中可用的标题和参数。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 标题和参数 {#headers-and-parameters}
 
-以下是Places REST API中可用的标题和参数的详细信息：
+以下是有关Places Service REST API中可用的标题和参数的详细信息：
 
 ## 支持的标题
 

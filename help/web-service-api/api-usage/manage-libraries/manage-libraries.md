@@ -1,14 +1,14 @@
 ---
 title: 管理库
-description: 管理Places REST API库。
+description: 管理Places Service REST API库。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 # 管理库概述 {#manage-libraries}
 
-您可以使用Places REST API完成以下任务：
+您可以使用Places Service REST API完成以下任务：
 
 * [创建库](/help/web-service-api/api-usage/manage-libraries/create-a-library.md)
 * [阅读库](/help/web-service-api/api-usage/manage-libraries/read-a-library.md)

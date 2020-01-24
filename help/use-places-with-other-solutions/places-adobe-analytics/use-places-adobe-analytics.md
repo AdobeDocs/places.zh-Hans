@@ -2,7 +2,7 @@
 title: 将POI进入和退出数据发送到Analytics
 description: 本节提供有关如何将POI进入和退出数据发送到Analytics的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->本节假定您已在应用程序中实施了地点。 有关实施Places的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本节假定您已在应用程序中实施了Places Service。 有关实施Places service的详细信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places发送进入和退出事件后，您可以在Experience Platform Launch中创建规则，将Places数据发送到Adobe Analytics。 要创建此类型的规则，请在启动项中选择您的属性，然后完成以下步骤：
+在Places service发送进入和退出事件后，您可以在Experience Platform Launch中创建规则以将Places service数据发送到Adobe Analytics。 要创建此类型的规则，请在启动项中选择您的属性，然后完成以下步骤：
 
 ## 1.创建规则
 
@@ -33,7 +33,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. In the **[!UICONTROL Events]**section, click**[!UICONTROL Add]**.
 
-1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places Service]**。
 
 1. 从下 **[!UICONTROL Event Type]**拉列表中，选择**[!UICONTROL Enter POI]**。
 
@@ -52,7 +52,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 在部分 **[!UICONTROL Conditions]**下，单击**[!UICONTROL Add]**。
 
-1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places]**。
+1. 从下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places Service]**。
 
 1. 从下 **[!UICONTROL Condition Type]**拉列表中，选择**[!UICONTROL Name]**。
 

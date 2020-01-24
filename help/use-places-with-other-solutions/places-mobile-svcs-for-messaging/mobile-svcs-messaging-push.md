@@ -1,21 +1,21 @@
 ---
 title: 推送通知
-description: 本节将向您介绍如何将地点与推送通知一起使用。
+description: 本节将向您介绍如何将Places service与推送通知结合使用。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 推送通知
 
-Mobile services允许您向Adobe Analytics区段发送推送通知。 在位置服务中，您可以使用受众与POI的历史交互来为您的推送消息细分受众。 例如，您可以向过去30天内在某家商店中的用户发送消息。
+Mobile services允许您向Adobe Analytics区段发送推送通知。 在Places service中，您可以使用受众与POI的历史交互来为您的推送消息细分受众。 例如，您可以向过去30天内在某家商店中的用户发送消息。
 
 在开始之前，请确保您已完成以下任务：
 
-* 位置服务数据已由Adobe Analytics处理。
+* 地点服务数据已由Adobe Analytics处理。
 
-   这意味着您的移动应用程序已成功将位置服务数据发送到报表包，并且该数据可用于分段。
+   这意味着您的移动应用程序已成功将Places service数据发送到报表包中，并且该数据可用于分段。
 
 * Mobile services中的推送通知渠道已设置。
 

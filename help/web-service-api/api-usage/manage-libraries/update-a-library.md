@@ -2,12 +2,12 @@
 title: 更新库
 description: 使用Places REST API更新库。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 更新库
+# 更新库 {#update-a-library}
 
 允许您更新库的PUT方法。
 

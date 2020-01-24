@@ -1,15 +1,15 @@
 ---
 title: 使用您自己的显示器
-description: 您还可以使用监视服务，并通过使用Places扩展API与Places集成。
+description: 您还可以使用监视服务，并通过使用Places service扩展API与Places service集成。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 使用您自己的显示器 {#using-your-monitor}
 
-您还可以使用监视服务，并通过使用Places扩展API与Places集成。
+您还可以使用监视服务，并通过使用Places扩展API与Places service集成。
 
 ## 注册地理围栏
 

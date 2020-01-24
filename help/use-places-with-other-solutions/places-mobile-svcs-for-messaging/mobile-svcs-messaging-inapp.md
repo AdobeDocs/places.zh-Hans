@@ -1,15 +1,15 @@
 ---
 title: 应用程序内通知
-description: 本节将向您介绍如何将地点与应用程序内消息传递结合使用。
+description: 本节将向您介绍如何将Places service与应用程序内消息传递结合使用。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# 应用程序内通知(#places-push-messaging)
+# 应用程序内通知 {#places-push-messaging}
 
-以下信息向您显示如何配置应用程序内消息以从“地点”事件触发。
+以下信息显示如何配置App内消息以从Places service事件触发。
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 ##  Experience Platform Launch 中的规则
 
-您可以创建启动规则，这些规则将要用作应用程序内消息触发规则一部分的数据发送到Analytics。 您可以根据用例，将Launch规则中“地点”扩展中的数据用作事件和／或条件。
+您可以创建Experience Platform Launch规则，这些规则将要用作应用程序内消息触发规则的一部分的数据发送到Analytics。 您可以根据用例将Experience Platform Launch规则中“地点”扩展中的数据用作事件和／或条件。
 
 * 使用位置数据作为触发事件。
 
@@ -43,7 +43,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 * 将位置数据用作触发事件的条件。
 
-   例如，如果您在位置服务中为不同POI的天气创建了自定义元数据标记，则可以将该元数据用作规则条件的参数。 虽然可以将此条件与前面所述的POI条目事件一起使用，但也可以将该条件用作任何事件的上下文。
+   例如，如果您在Places service中为不同POI的天气创建了自定义元数据标记，则可以将该元数据用作您的“规则”条件的参数。 虽然可以将此条件与前面所述的POI条目事件一起使用，但也可以将该条件用作任何事件的上下文。
 
 在使用正确的事件和条件参数设置规则后，通过配置将数据发送到Analytics的操作来完成规则配置。
 
@@ -70,7 +70,7 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
 ## 在Mobile services中创建应用程序内消息
 
-作为触发器参数的一部分，您可以通过以下方式之一使用位置服务中的数据为消息创建受众：
+作为触发器参数的一部分，您可以通过以下方式之一使用Places service中的数据为消息创建受众：
 
 * 使用特定于位置的操作，如进入或退出。
 * 使用作为上下文数据发送的POI元数据缩小受众的目标范围。
@@ -81,6 +81,6 @@ Mobile services允许您使用发送到Analytics的位置数据作为应用程�
 
    ![触发参数](/help/assets/trigger-parameters.png)
 
-* Mobile services中“触发器”和“ *特征* ”页面的“地点”标题中的参数不处理来自位置服务的数据。
+* Mobile services中“触发器”和“特 *征* ”页中的“地点服务”标题中的参数不处理来自Places service的数据。
 
-   这些参数仅适用于在Mobile services中创建的传统Places数据库。
+   这些参数仅适用于在Mobile services中创建的传统Places service数据库。

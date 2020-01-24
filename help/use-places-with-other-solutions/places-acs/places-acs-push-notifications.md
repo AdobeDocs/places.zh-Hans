@@ -1,15 +1,15 @@
 ---
-title: 推送通知
-description: 本节提供有关如何在Campaign standard中将地点与推送通知一起使用的信息。
+title: 通过Places service推送通知
+description: 本节提供有关如何在Campaign standard中将Places service与推送通知结合使用的信息。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
 
-# 通过位置服务推送通知 {#push-notifications}
+# 通过Places service推送通知 {#push-notifications}
 
-在本指南中，我们将介绍如何使用历史地理位置信息来定位通过Adobe Campaign standard提供的推送通知。
+在本节中，您将学习如何使用历史地理位置信息来定位通过Adobe Campaign standard提供的推送通知。
 
 ## 先决条件
 
@@ -20,36 +20,36 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * 将 [Adobe Experience Platform Mobile SDK集成到您的应用程序](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) 。
 * 将 [Adobe Campaign Standard Extension添加到您的移动应用程序配置中](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) 。
 
-* [在Places POI管理界面中创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md) 。
+* [在Places Service](/help/poi-mgmt-ui/create-a-poi-ui.md) POI管理界面中创建POI。
 
 * 启用并安装 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 
 ## 在Experience Platform Launch中创建数据元素
 
-在验证位置服务的地点和地点监视器扩展是否在您的应用程序中正常工作后，请在Experience Platform Launch中创建数据元素。 数据元素允许您读取通过Mobile SDK事件中心提供的扩展提供的信息，并充当别名，从客户端应用程序检索数据。 要从Places扩展检索数据并将Places信息发送到Campaign，您需要创建一些数据元素。
+在验证“地点”扩展和“地点监视器”扩展在您的应用程序中是否正常工作后，您需要在Experience Platform Launch中创建数据元素。 数据元素允许您读取通过Mobile SDK事件中心提供的扩展提供的信息，并充当别名，从客户端应用程序检索数据。 要从Places扩展检索数据并将Places service信息发送到Campaign，您需要创建一些数据元素。
 
 要创建数据元素，请执行以下操作：
 
 1. 在Experience Platform Launch移动属性中，单击选项卡， **[!UICONTROL Data Elements]**然后单击“添**[!UICONTROLA&#x200B;加数据元素”]**。
-1. 在下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places]**。
+1. 在下 **[!UICONTROL Extension]**拉列表中，选择**[!UICONTROL Places Service]**。
 1. 从下 **[!UICONTROL Data Element Type]**拉列表中，选择**[!UICONTROL Name]**。
 1. 在右侧窗格中，您可以选择 **[!UICONTROL Current POI]**检索用户当前所在的POI的名称。
 
-   **[!UICONTROL Last Entered]**检索用户上次输入的POI的名称，并**[!UICONTROL Last Exited]** 提供用户上次离开的POI的名称。 在此示例中，我们将选 **[!UICONTROL Last Entered]**择并键入数据元素的名称，如并**[!UICONTROL Last Entered POI Name]** 单击 **[!UICONTROL Save]**。
+   **[!UICONTROL Last Entered]**检索用户上次输入的POI的名称，并**[!UICONTROL Last Exited]** 提供用户上次离开的POI的名称。 在此示例中，我们选 **[!UICONTROL Last Entered]**择并键入数据元素的名称，如并**[!UICONTROL Last Entered POI Name]** 单击 **[!UICONTROL Save]**。
 
    ![“Campaign Standard中的推送消息”](/help/assets/ACS_Push1.png)
 
 1. Repeat the steps 1-4 above and create data elements for *Last Entered POI Latitude*, *Last Entered POI Longitude*, and *Last Entered POI Radius*.
 
-除了位置服务的数据元素之外，请确保为App ID和 *Experience Cloud ID创建Mobile Core**数据元素*。
+除了Places service的数据元素之外，请确保为App ID和 *Experience Cloud ID创建Mobile Core**数据元素*。
 
 ## 创建规则以将位置数据发送到Adobe Campaign Standard
 
 Experience Platform Launch中的规则允许您基于事件触发器创建复杂的多解决方案工作流。 利用规则，您可以创建新规则或修改现有规则，并将更新动态部署到移动应用程序。 在以下示例中，当用户进入一个地理围栏的POI时，将触发该规则。 触发规则后，将向Campaign Standard发送更新，以根据Experience Cloud ID为特定用户记录特定POI的条目。
 
-1. 在Launch移动属性中，单击选 **[!UICONTROL Rules]**项卡上的**[!UICONTROL Add Rule]**。
-1. 在部分 **[!UICONTROL Events]**下，单击并**[!UICONTROL +]** 选择 **[!UICONTROL Places]**作为扩展名。
+1. 在您的Experience Platform Launch移动属性中，单击 **[!UICONTROL Rules]**选项卡**[!UICONTROL Add Rule]**。
+1. 在部分 **[!UICONTROL Events]**下，单击并**[!UICONTROL +]** 选择 **[!UICONTROL Places Service]**作为扩展名。
 1. For the **[!UICONTROL Event Type]**, select**[!UICONTROL Enter POI]**.
 1. 将规则命名为，例如， **用户输入POI**。
 1. 单击 **[!UICONTROL Keep Changes]**。
@@ -85,10 +85,8 @@ Experience Platform Launch中的规则允许您基于事件触发器创建复杂
 
 >[!IMPORTANT]
 >
->* 设置Slack web挂钩作为附加操作，以验证是否正在触发条目以及是否正在收集正确的数据，这可能会很有帮助。
-
-
->* 请记住将最近的更改发布到您的应用程序，以确保将规则和所有数据元素作为配置的一部分进行部署。 发布后，您应再次启动移动应用程序以获取最新配置更新。
+>* 将Slack web挂接设置为其他操作，以验证是否正在触发条目以及是否正在收集正确的数据，这可能会很有帮助。
+>* 请记住将最近的更改发布到您的应用程序，以确保将规则和所有数据元素作为配置的一部分进行部署。 发布后，再次启动移动应用程序以获取最新的配置更新。
 
 
 ## 使用位置数据定位营销活动消息
@@ -117,9 +115,10 @@ Experience Platform Launch中的规则允许您基于事件触发器创建复杂
 1. 再次在顶部运行计数，以查看受众规模的变化。
 
    如果看不到计数更新，则可能已输入POI名称，其中没有设备触发了条目。 在这种情况下，使用Slack web挂钩将变得很有价值，因为您可以看到来自各种测试设备的POI条目列表。
+
 1. 您可以拖出其他POI位置过滤器，以在消息中包含多个POI。
 1. Click **[!UICONTROL Next]**to finish creating the push notification for delivery.
 
-   ![“ACS中的推送消息3”](/help/assets/ACS_push3.html)
+   ![“ACS中的推送消息3”](/help/assets/ACS_push3.png)
 
-将位置服务与Adobe Campaign standard结合使用，为您提供了一个功能强大的工具，根据地理围栏条目和退出情况将消息细分和定向给用户。 此集成可帮助您构建更个性化的情境式使用案例。
+将Places service与Adobe Campaign standard结合使用，为您提供了一个功能强大的工具，可根据地域围栏条目和退出情况将消息细分和定向给用户。 此集成可帮助您构建更个性化的情境式使用案例。

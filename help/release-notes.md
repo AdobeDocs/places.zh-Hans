@@ -1,8 +1,8 @@
 ---
 title: 发行说明
-description: Adobe Experience Platform Location service的发行说明。
+description: Places service的发行说明。
 translation-type: tm+mt
-source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
    * **Android**
 
-      * 添加了新的API, `setAuthorizationStatus`用于设置位置服务的设备授权状态。 该值将存储并用于“地点”共享状态。
+      * 添加了新的API, `setAuthorizationStatus`用于设置Places services的设备授权状态。 该值将存储并用于“地点”共享状态。
 
 
 ## 2019 年 12 月 3 日
@@ -24,7 +24,7 @@ source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
    * **iOS**
 
-      * 添加了新的API, `setAuthorizationStatus`用于设置位置服务的设备授权状态。 该值将存储并用于“地点”共享状态。
+      * 添加了新的API, `setAuthorizationStatus`用于设置Places services的设备授权状态。 该值将存储并用于“地点”共享状态。
 
 ## 2019 年 11 月 22 日
 
@@ -211,13 +211,13 @@ iOS的地点监视器的初始版本。
 
 ### 测试版
 
-这是Places的第一个版本，这是一套工具，允许客户使用真实的位置数据丰富其用户的体验。 在第一个版本中，我们的主要用例是使移动应用程序能够检索自定义位置数据并通过Adobe Experience Platform Launch对该数据执行操作。
+这是Places service的第一个版本，这是一套工具，允许客户使用真实的位置数据丰富其用户的体验。 在第一个版本中，我们的主要用例是使移动应用程序能够检索自定义位置数据并通过Adobe Experience Platform Launch对该数据执行操作。
 
 ### 主要功能
 
 以下是此版本的主要功能：
 
-#### 位置服务UI
+#### Places Service UI
 
 我们发布了管理UI，您可以在其中查看和管理您的兴趣点(POI)。 您还可以将POI组织到库中。 除了标准元数据（如城市、州／省和类别）之外，我们还支持向POI添加自定义元数据的功能。
 
@@ -226,7 +226,7 @@ iOS的地点监视器的初始版本。
 
 #### 地点扩展
 
-使用Places Extension，您可以将Places库添加到移动应用程序并对其POI执行操作。 使用Experience Platform Launch中的规则构建器，您可以触发用户进入和退出POI时触发的操作。
+使用Places Extension，您可以将Places service库添加到移动应用程序并对其POI执行操作。 使用Experience Platform Launch中的规则构建器，您可以触发用户进入和退出POI时触发的操作。
 
 在“地点”扩展中：
 
@@ -252,4 +252,4 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### Analytics 集成
 
-将更新Analytics扩展，以在用户在POI（被动调用）中时自动将位置上下文数据从Places数据库添加到所有传出Analytics调用。 此更新还允许创建规则，以在POI进入或退出（活动呼叫）时直接触发Analytics跟踪调用。
+将更新Analytics扩展，以在用户处于POI（被动调用）中时自动将位置上下文数据从Places service数据库添加到所有传出Analytics调用。 此更新还允许创建规则，以在POI进入或退出（活动呼叫）时直接触发Analytics跟踪调用。

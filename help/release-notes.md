@@ -2,12 +2,21 @@
 title: 发行说明
 description: Places service的发行说明。
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
 ---
 
 
 # 发行说明 {#release-notes}
+
+## 2020 年 1 月 27 日
+
+* **PlacesMonitor 2.2.0**
+
+   * **Android**
+
+      * 调用新的Places API以在应用程序启动时和应用程序运行时的授权更改时收集位置授权状态。
+      * 添加了setRequestLocationPermission API和已弃用的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
 
@@ -17,6 +26,13 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
       * 添加了新的API, `setAuthorizationStatus`用于设置Places services的设备授权状态。 该值将存储并用于“地点”共享状态。
 
+## 2019 年 12 月 4 日
+
+* **PlacesMonitor 2.1.2**
+
+   * **iOS**
+
+      * 调用Places API以在设备发生更改时从设备收集CLAuthorizationStatus。
 
 ## 2019 年 12 月 3 日
 
@@ -25,6 +41,14 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
    * **iOS**
 
       * 添加了新的API, `setAuthorizationStatus`用于设置Places services的设备授权状态。 该值将存储并用于“地点”共享状态。
+
+## 2019 年 11 月 25 日
+
+* **PlacesMonitor 2.1.1**
+
+   * **iOS**
+
+      * 修复了使用多个窗格项目选项的Cocoapods项目的导入语句。
 
 ## 2019 年 11 月 22 日
 

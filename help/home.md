@@ -2,14 +2,14 @@
 title: 地点服务
 description: '放置服务是了解移动用户参与度的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。 '
 translation-type: tm+mt
-source-git-commit: 0341e1c818bf61bee01e02c91a67f184c7778c0d
+source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
 
 ---
 
 
 # 地点服务 {#home}
 
-![“地点服务”](/help/assets/LocationHeader.png)
+![“地点服务”](/help/assets/places-service-header.png)
 
 位置是了解和与移动用户互动的重要环境。 通过使用此环境，移动App开发人员可以增强App设计并使其成为更个性化、更具吸引力的体验。
 

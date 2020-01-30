@@ -2,7 +2,7 @@
 title: 发行说明
 description: Places service的发行说明。
 translation-type: tm+mt
-source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
+source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
 ---
 
@@ -170,7 +170,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 * 修复了在首次启动后，有时由于网络状况不佳而导致“地点”事件丢失的问题。
 * 修复了在快速连续处理POI条目事件时，通过规则引擎进行的令牌替换有时会引用错误POI的问题。
 
-## 2019年5月30日（地点）
+## 2019 年 5 月 30 日
 
 **Android Places Monitor 1.0.1**
 
@@ -185,7 +185,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 * 将UI中允许的最小半径增加到10米。
 * 修复了如果删除字段中的所有数字，radius字段将重置回20米的问题。
 
-## 2019年5月17日（地点）
+## 2019 年 5 月 17 日
 
 此版本中进行了以下更新：
 

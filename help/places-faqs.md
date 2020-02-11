@@ -2,7 +2,7 @@
 title: 常见问题解答
 description: 本主题提供了有关某些常见问题的其他信息。
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 8691dbf061ac020a60d3880fe16951dcc79040cb
 
 ---
 
@@ -22,3 +22,16 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 当地点监视器(SDK)获取附近POI的新列表时，它会为每个POI向操作系统注册一个区域。 操作系统现在负责在设备跨越一个被监视区域的边界（进入或退出）时通知SDK。 SDK仅在操作系统通知SDK该事件已发生时触发退出事件。 此通知的主要原因是位置数据的时间敏感性。
 
 如果设备离开区域时操作系统无法传送退出事件，则SDK更安全地只忽略退出事件。 如果SDK制作退出事件，而该事件未由操作系统触发，则可能会在设备接近POI的时间段之外，对退出事件进行充分处理。
+
+## POI数量
+
+在Places Service POI管理界面中，客户可以在特定库中添加多达15万个兴趣点。 客户可以根据需要定义多个库来细分POI组。
+
+## 关于位置变化和活动区域监控的几点注意事项
+
+注册授权应用程序后，立即开始监控地理区域。 但是，不要期望立即收到事件，因为只有边界交叉才会生成事件。 尤其是，如果注册时用户的位置已经在该区域内，位置管理器不会自动生成活动。 相反，应用程序必须等待用户跨越区域边界，才能生成事件并将其发送到委托。
+
+在指定要监视的区域集时要谨慎。 区域是共享的系统资源，系统范围内可用区域的总数有限。 因此，核心位置限制为单个应用程序可同时监视的区域数为20。 要绕过此限制工作，请考虑仅在用户附近注册这些区域。
+
+[请参阅Apple开发人员站点上的其他信息] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)
+

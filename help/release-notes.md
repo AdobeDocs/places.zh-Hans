@@ -2,12 +2,25 @@
 title: 发行说明
 description: Places service的发行说明。
 translation-type: tm+mt
-source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
+source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ---
 
 
 # 发行说明 {#release-notes}
+
+## 2020 年 2 月 20 日
+
+* **ACPPlaces 1.3.1(iOS)**
+
+   * 现在，Places Extension向核心SDK中的活动中心报告版本信息。
+   * 设备POI会员资格信息现在的默认有效时间为收集后一小时。 有关详细信息，请 [参阅修改地点会员资格的生效时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+
+
+* **Places 1.4.1(Android)**
+
+   * 现在，Places Extension向核心SDK中的活动中心报告版本信息。
+   * 设备POI会员资格信息现在的默认有效时间为收集后一小时。 有关详细信息，请 [参阅修改地点会员资格的生效时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 2020 年 1 月 27 日
 
@@ -20,7 +33,7 @@ source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
 ## 2020 年 1 月 9 日
 
-* **ACPPlaces 1.4.0**
+* **地点1.4.0**
 
    * **Android**
 

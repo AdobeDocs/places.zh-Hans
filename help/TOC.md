@@ -2,21 +2,25 @@
 product: Places Service
 audience: end-user
 user-guide-title: Places Service
+user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
+source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 14%
 
 ---
 
 
-# 地点服务 {#using}
+# Places Service {#using}
 
-+ [地点服务概述](home.md)
++ [Places服务概述](home.md)
 + [发行说明](release-notes.md)
 + [入门指南](getting-started.md)
-+ [获取对Places service的访问权限](places-gain-access.md)
++ [获取对Places Service的访问权限](places-gain-access.md)
 + Places Service UI {#poi-mgmt-ui}
    + [Places Service UI概述](poi-mgmt-ui/poi-mgmt-ui-overview.md)
-   + [创建目标点 (POI)](poi-mgmt-ui/create-a-poi-ui.md)
+   + [创建POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [管理以前创建的POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [在POI中使用元数据的策略](poi-mgmt-ui/metadata-with-pois.md)
    + [批量上传POI](poi-mgmt-ui/bulk-upload-pois.md)
@@ -27,7 +31,7 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
    + API使用 {#api-usage}
       + [API使用概述](web-service-api/api-usage/api-usage-overview.md)
       + [标题和参数](web-service-api/api-usage/headers-and-parameters.md)
-      + Manage libraries {#manage-libraries}
+      + 管理库 {#manage-libraries}
          + [管理库概述](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [创建库](web-service-api/api-usage/manage-libraries/create-a-library.md)
          + [阅读库](web-service-api/api-usage/manage-libraries/read-a-library.md)
@@ -38,7 +42,7 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
          + [获取图书馆的排名](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
       + 管理目标点 {#manage-pois}
          + [管理POI概述](web-service-api/api-usage/manage-pois/manage-pois.md)
-         + [创建目标点 (POI)](web-service-api/api-usage/manage-pois/create-a-poi.md)
+         + [创建POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
          + [阅读POI](web-service-api/api-usage/manage-pois/read-a-poi.md)
          + [更新POI](web-service-api/api-usage/manage-pois/update-a-poi.md)
          + [删除POI](web-service-api/api-usage/manage-pois/delete-a-poi.md)
@@ -50,38 +54,38 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
             + [更新多个POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [删除多个POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [查询API](web-service-api/api-usage/query-apis.md)
-+ 移动SDK的扩展 {#places-ext-aep-sdks}
++ 移动SDK扩展 {#places-ext-aep-sdks}
    + Places 扩展 {#places-extension}
       + [Places 扩展](places-ext-aep-sdks/places-extension/places-extension.md)
       + [Places API参考](places-ext-aep-sdks/places-extension/places-api-reference.md)
-      + [地点活动引用](places-ext-aep-sdks/places-extension/places-event-ref.md)
-      + [自定义地点对象](places-ext-aep-sdks/places-extension/cust-places-objects.md)
-   + Places Monitor扩展 {#places-monitor-extension}
-      + [Places Monitor扩展](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
+      + [地点事件参考](places-ext-aep-sdks/places-extension/places-event-ref.md)
+      + [自定义位置对象](places-ext-aep-sdks/places-extension/cust-places-objects.md)
+   + 地点监视器扩展 {#places-monitor-extension}
+      + [地点监视器扩展](places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
       + [使用地点监视器扩展](places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.md)
       + [Places Monitor API参考](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
-+ [将Places service与您自己的监控解决方案结合使用](using-your-own-monitor.md)
-+ [使用Places Service，无需主动区域监控](use-places-without-active-monitoring.md)
-+ 将Places service用作Experience Platform启动工作流程的一部分 {#use-places-launch-workflow}
-   + [将Places service用作Experience Platform启动工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
++ [将Places Service与您自己的监控解决方案结合使用](using-your-own-monitor.md)
++ [使用无活动区域监控的场所服务](use-places-without-active-monitoring.md)
++ 将Places Service用作Experience Platform启动工作流程的一部分 {#use-places-launch-workflow}
+   + [将Places Service用作Experience Platform启动工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定义数据元素](use-places-launch-workflow/define-data-elements.md)
    + [创建进入和退出规则](use-places-launch-workflow/create-rule-places-property.md)
-+ 将Places service与其他Adobe解决方案结合使用 {#use-places-with-other-solutions}
++ 将Places服务与其他Adobe解决方案结合使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [将Places服务与Adobe Analytics结合使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [将POI进入和退出数据发送到Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [将位置上下文添加到Analytics请求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [向Analytics请求添加位置上下文](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Analytics Workspace中位置数据的报告](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [推送通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [应用程序内通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
-      + [将Places Service与Adobe Campaign Standard结合使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
+      + [将Places服务与Adobe Campaign标准结合使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [推送通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [应用程序内消息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [将Places Service与Adobe Target结合使用](use-places-with-other-solutions/places-target/places-target.md)
-+ Testing and validation {#places-testing-validation}
+      + [将Places服务与Adobe目标结合使用](use-places-with-other-solutions/places-target/places-target.md)
++ 测试和验证 {#places-testing-validation}
    + [测试和验证Places服务](places-testing-validation/test-validate-places.md)
 + [常见问题解答](places-faqs.md)

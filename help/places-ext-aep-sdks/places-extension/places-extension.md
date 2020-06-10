@@ -1,28 +1,31 @@
 ---
 title: Places 扩展
-description: “地点”扩展允许您根据用户的位置采取行动。
+description: Places扩展允许您根据用户的位置进行操作。
 translation-type: tm+mt
-source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
+source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 5%
 
 ---
 
 
 # Places 扩展 {#places-extension}
 
-“地点”扩展允许您根据用户的位置采取行动。 此扩展是Places Query Service API的接口。 通过侦听包含GPS坐标和地理区域事件的事件，此扩展将调度由规则引擎处理的新事件。 Places扩展还检索并提供从API检索的应用程序数据的最近POI的列表。 由API返回的区域存储在缓存和持久化中，这允许有限的脱机处理。
+Places扩展允许您根据用户的位置进行操作。 此扩展是Places查询服务API的接口。 通过侦听包含GPS坐标和地理区域事件的事件，此扩展将派送由规则引擎处理的新事件。 Places扩展还检索并提供从API检索的应用程序数据的最近POI的列表。 API返回的区域存储在缓存和持久性中，这允许有限的脱机处理。
 
 ## 在Adobe Experience Platform Launch中安装Places扩展
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. 在选项 **[!UICONTROL Catalog]** 卡上，找到扩 **[!UICONTROL Places]** 展名并单击 **[!UICONTROL Install]**。
-1. 选择要在此属性中使用的地点库。 这些库将在您的应用程序中访问。
+1. 在选项卡 **[!UICONTROL Catalog]** 上，找到该 **[!UICONTROL Places]** 扩展，然后单击 **[!UICONTROL Install]**。
+1. 选择要在此属性中使用的Places库。 这些库将可在您的应用程序中访问。
 1. 单击 **[!UICONTROL Save]**。
 
-   单击时， **[!UICONTROL Save]** Experience Platform SDK会在您选择的库中搜索Places Services中的POI。 在您构建应用程序时，库下载中不包括POI数据，但基于位置的POI子集在运行时下载到最终用户的设备，并基于用户的GPS坐标。
+   当您单击 **[!UICONTROL Save]**&#x200B;时，Experience Platform SDK会在您选择的库中搜索Places Services中的POI。 在您构建应用程序时，库下载中不包括POI数据，但在运行时将基于位置的POI子集下载到最终用户的设备，并基于用户的GPS坐标。
 
 1. 完成发布过程以更新SDK配置。
 
-   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
+   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/publish/overview.html)。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -30,11 +33,15 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ## 将Places扩展添加到您的应用程序 {#add-places-to-app}
 
-您可以将Places扩展添加到Android和iOS应用程序。
+您可以将Places扩展添加到Android和iOS应用程序。 向iOS或Android应用程序添加Places的步骤如下所示。 Cordova和React Native也提供Places。 要在使用其中一个平台进行开发时向应用程序添加地点，请参阅随附的链接：
+
+**科尔多瓦**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+
+**反应本机ACPPlace**: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
 
 ### Android
 
-要使用Java将Places扩展添加到应用程序，请执行以下操作：
+要使用Java将Places扩展添加到您的应用程序，请执行以下操作：
 
 1. 使用应用程序的Gradle文件将Places扩展添加到您的项目。
 
@@ -43,7 +50,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-1. 在应用程序的主活动中导入“地点”扩展。
+1. 在应用程序的主活动中导入Places扩展。
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -54,16 +61,16 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 要使用Objective-C或Swift将Places扩展添加到您的应用程序，请执行以下操作：
 
-1. 将Places和 [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) Libraries添加到项目。 您需要将以下窗格添加到您的 `Podfile`:
+1. 将Places和Mobile Core [库添加](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 到您的项目中。 您需要将以下窗格添加到您的 `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您不使用Cocoapod，则可以从Github上的发布页面手动包含Mobile Core和 [Places库](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
+   或者，如果您不使用Cocoapods，则可以在Github上的发布页面手动包含Mobile Core和 [Places库](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
 
-1. 更新您的Cocopad:
+1. 更新您的Cocoapod:
 
    ```objective-c
    pod update
@@ -85,9 +92,9 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
    import ACPPlaces
    ```
 
-### 使用Mobile Core注册Places扩展 {#register-places-mobile-core}
+### 使用移动核心注册Places扩展 {#register-places-mobile-core}
 
-您需要在Android和iOS中使用Mobile core注册Places扩展。
+您需要在Android和iOS中用Mobile Core注册Places扩展。
 
 #### Android
 
@@ -137,13 +144,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ### 修改地点会员资格停留时间 {#places-ttl}
 
-位置数据可能会很快变得陈旧，尤其是当设备未接收后台位置更新时。
+位置数据可能会很快变得陈旧，尤其是当设备未收到后台位置更新时。
 
-通过设置配置设置，控制设备上放置会员资格数据的 `places.membershipttl` 实时时间。 传入的值表示“地点”状态对设备保持有效的秒数。
+通过设置配置设置，控制设备上放置成员资格数据的 `places.membershipttl` 实时时间。 传入的值表示位置状态对设备保持有效的秒数。
 
 #### Android
 
-在调用之前，在 `MobileCore.start()` 使用必要的更改更新配置的回调中 `lifecycleStart`:
+在更新配置的回 `MobileCore.start()` 调中，在调用配置之前使用必要的更改 `lifecycleStart`:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -177,7 +184,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-在方法回调的第一行 `ACPCore`中 `start:` ，调用 `updateConfiguration:`
+在方法回调的第一 `ACPCore`行 `start:` 上，调用 `updateConfiguration:`
 
 **Objective-C**
 
@@ -219,10 +226,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## 配置密钥
 
-要在运行时以编程方式更新SDK配置，请使用以下信息更改Places扩展配置值。 有关详细信息，请参 [阅配置API参考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
+要在运行时以编程方式更新SDK配置，请使用以下信息更改您的Places扩展配置值。 有关详细信息，请参 [阅配置API参考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
 
 | 键 | 必需 | 描述 |
 | :--- | :--- | :--- |
-| `places.libraries` | 是 | 为移动应用程序放置扩展库。 它指定移动应用程序支持的库ID和库名称。 |
-| `places.endpoint` | 是 | 默认的Places Query service端点，用于获取有关库和POI的信息。 |
+| `places.libraries` | 是 | 用于移动应用程序的Places扩展库。 它指定移动应用程序支持的库ID和库名称。 |
+| `places.endpoint` | 是 | 默认的Places查询服务端点，用于获取有关库和POI的信息。 |
 | `places.membershipttl` | 否 | 默认值为3600（一小时内的秒）。 指示设备的“放置”会员资格信息将保持有效的时间（以秒为单位）。 |

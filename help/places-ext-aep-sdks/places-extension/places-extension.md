@@ -2,9 +2,9 @@
 title: Places 扩展
 description: Places扩展允许您根据用户的位置进行操作。
 translation-type: tm+mt
-source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 5%
 
 ---
@@ -14,18 +14,18 @@ ht-degree: 5%
 
 Places扩展允许您根据用户的位置进行操作。 此扩展是Places查询服务API的接口。 通过侦听包含GPS坐标和地理区域事件的事件，此扩展将派送由规则引擎处理的新事件。 Places扩展还检索并提供从API检索的应用程序数据的最近POI的列表。 API返回的区域存储在缓存和持久性中，这允许有限的脱机处理。
 
-## 在Adobe Experience Platform Launch中安装Places扩展
+## 在Adobe Experience Platform启动中安装Places扩展
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在选项卡 **[!UICONTROL Catalog]** 上，找到该 **[!UICONTROL Places]** 扩展，然后单击 **[!UICONTROL Install]**。
 1. 选择要在此属性中使用的Places库。 这些库将可在您的应用程序中访问。
 1. 单击 **[!UICONTROL Save]**。
 
-   当您单击 **[!UICONTROL Save]**&#x200B;时，Experience Platform SDK会在您选择的库中搜索Places Services中的POI。 在您构建应用程序时，库下载中不包括POI数据，但在运行时将基于位置的POI子集下载到最终用户的设备，并基于用户的GPS坐标。
+   单击时， **[!UICONTROL Save]** Experience PlatformSDK会在您选择的库中搜索Places Services中的POI。 在您构建应用程序时，库下载中不包括POI数据，但在运行时将基于位置的POI子集下载到最终用户的设备，并基于用户的GPS坐标。
 
 1. 完成发布过程以更新SDK配置。
 
-   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/publish/overview.html)。
+   有关在Experience Platform Launch中发布的更多信息，请参 [阅发布](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/publish/overview.html)。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -35,9 +35,9 @@ Places扩展允许您根据用户的位置进行操作。 此扩展是Places查�
 
 您可以将Places扩展添加到Android和iOS应用程序。 向iOS或Android应用程序添加Places的步骤如下所示。 Cordova和React Native也提供Places。 要在使用其中一个平台进行开发时向应用程序添加地点，请参阅随附的链接：
 
-**科尔多瓦**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+**[Cordova Places插件](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
-**反应本机ACPPlace**: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
+**[React Native Places插件](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
 
 ### Android
 

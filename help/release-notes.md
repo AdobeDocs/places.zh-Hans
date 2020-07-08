@@ -2,9 +2,9 @@
 title: 发行说明
 description: Places Service的发行说明。
 translation-type: tm+mt
-source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1503'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,23 @@ ht-degree: 3%
 
 # 发行说明 {#release-notes}
 
-## 2020年5月6日
+## 2020 年 7 月 8 日
+
+* **地点和地点监视器扩展**
+
+   * 已为React Native Applications添加了Places和Places Monitor [扩展](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * 已为Cordova应用程序添加了Places and Places Monitor [扩展](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * 有关详细信息，请参阅： [使用Places Extension](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+
+
+## 2020 年 5 月 12 日
+
+* **Places Service**
+
+   * 使用“导入POI”按钮从CSV文件批量导入POI
+   * 选择多个POI并批量编辑或添加元数据值
+
+## 2020 年 5 月 6 日
 
 * **PlacesMonitor 2.2.1**
 
@@ -20,7 +36,7 @@ ht-degree: 3%
 
       * 改进的日志记录
 
-## 2020年5月5日
+## 2020 年 5 月 5 日
 
 
 * **PlacesMonitor 2.1.3**
@@ -213,7 +229,7 @@ ht-degree: 3%
 
 修复了“位置”UI中的以下问题：
 
-* 更新了Places中的解决方案切换程序，使其与Experience Cloud的其余部分保持一致。
+* 更新了“位置”中的解决方案切换程序，使其与Experience Cloud的其余部分保持一致。
 * 修复了在未进行排名更改的情况下，会保存排名的问题。
 * 将UI中允许的最小半径增加到10米。
 * 修复了删除字段中的所有数字时radius字段重置回20米的问题。
@@ -268,7 +284,7 @@ iOS地点监视器的初始版本。
 
 ### 测试版
 
-这是Places Service的第一个版本，这是一套工具，允许客户利用真实的位置数据丰富其用户的体验。 对于第一个版本，我们的主要用例是使移动应用程序能够检索自定义位置数据并通过Adobe Experience Platform Launch对该数据执行操作。
+这是Places Service的第一个版本，这是一套工具，允许客户利用真实的位置数据丰富其用户的体验。 对于第一个版本，我们的主要用例是使移动应用程序能够检索自定义位置数据并通过Adobe Experience Platform启动对该数据执行操作。
 
 ### 主要功能
 
@@ -309,4 +325,4 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### Analytics 集成
 
-当用户处于POI（被动调用）中时，将更新Analytics扩展以自动将位置上下文数据从您的Places Service数据库添加到所有传出Analytics调用。 此更新还允许创建规则，以在POI进入或退出（活动呼叫）时直接触发Analytics跟踪呼叫。
+Analytics扩展正在更新，当用户处于POI（被动呼叫）时，将位置上下文数据从您的Places Service数据库自动添加到所有传出的Analytics呼叫。 此更新还允许创建规则以在POI进入或退出（活动呼叫）时直接触发Analytics跟踪呼叫。

@@ -2,9 +2,9 @@
 title: Places 扩展
 description: Places扩展允许您根据用户的位置进行操作。
 translation-type: tm+mt
-source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
+source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 5%
 
 ---
@@ -33,11 +33,16 @@ Places扩展允许您根据用户的位置进行操作。 此扩展是Places查�
 
 ## 将Places扩展添加到您的应用程序 {#add-places-to-app}
 
-您可以将Places扩展添加到Android和iOS应用程序。 向iOS或Android应用程序添加Places的步骤如下所示。 Cordova和React Native也提供Places。 要在使用其中一个平台进行开发时向应用程序添加地点，请参阅随附的链接：
+您可以将Places扩展添加到Android和iOS应用程序。 向iOS或Android应用程序添加Places的步骤如下所示。 Places扩展还可用于以下平台。 要在使用其中一个平台进行开发时向应用程序添加地点，请参阅随附的链接：
 
 **[Cordova Places插件](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
 **[React Native Places插件](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+
+**[Fullign Places插件](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Xamarin Places插件](https://github.com/adobe/xamarin-acpcore)**
+
 
 ### Android
 

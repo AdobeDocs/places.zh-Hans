@@ -1,27 +1,30 @@
 ---
-title: '获取对Places service的访问权限 '
-description: 本节提供有关如何将用户添加到Places service和Experience Platform Launch的信息，以便用户能够访问Places Service。
+title: '获取对Places Service的访问权限 '
+description: 本节提供有关如何将用户添加到Places服务和Experience Platform Launch的信息，以便用户能够访问Places服务。
 translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+source-git-commit: 26538602a73e806a4822705c7a3aa44d76351030
+workflow-type: tm+mt
+source-wordcount: '1079'
+ht-degree: 7%
 
 ---
 
-# 获取对Places service的访问权限 {#adding-user-launch-places}
+# 获取对Places Service的访问权限 {#adding-user-launch-places}
 
-您可以从 [Adobe Experience Cloud主页上的快速访问菜单访问Places Service](https://experience.adobe.com)。
-如果您的用户ID具有访问权限，您将看到“地点服务”图标，如下所示：
+您可以从Adobe Experience Cloud家的快速访问菜单访问Places [服务](https://experience.adobe.com)。
+如果您的用户ID具有访问权限，您将看到Places Service图标，如下所示：
 
-![快速访问菜单](/help/assets/quick-access.png)
+![快速访问菜单](/help/assets/quickaccess.png)
 
-您还可以通过Adobe Experience Platform菜单访问Places Service:
+您还可以从Adobe Experience Platform菜单访问Places Service:
 
-![“体验平台”菜单](/help/assets/exp-platform-menu-sm.png)
+![Experience Platform菜单](/help/assets/solutionaccessmenu.png)
 
-如果这两个菜单中都未显示Places Service，请与组织中的管理员联系，以将您的用户ID添加到Admin Console中的Places Core Service。
+如果您在其中任一菜单中都未看到“放置服务”，请联系您组织中的管理员，将您的用户ID添加到Admin Console中的“放置核心服务”。
 
-## 将用户添加到Places Service and Experience Platform Launch
+## 将用户添加到Places服务和Experience Platform Launch
 
-要允许用户访问 [Experience Platform Launch UI](https://launch.adobe.com)，他们需要以用户身份添加到Admin Console中的Places Core Service。 要允许用户访问Experience Platform Launch、配置移动属性以及使用Adobe Experience Platform SDK的地点，需要将他们添加到Admin Console中的Experience Platform Launch中，并为其授予以下Experience Platform Launch权限：
+要允许用户访 [问Experience Platform LaunchUI](https://launch.adobe.com)，他们需要以用户身份添加到Admin Console中的Places Core Service。 要允许用户访问Experience Platform Launch、配置移动属性以及使用Adobe Experience PlatformSDK中的地点，需要将他们添加到Admin Console中的Experience Platform Launch并授予以下Experience Platform Launch权限：
 
 * 所有产权：
    * 开发
@@ -29,66 +32,66 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
    * 发布
    * 管理扩展
    * 管理环境
-* 根据公司权限管理属性权限
+* 管理公司权限下的属性权限
 
-如果这是您第一次添加用户，请完成以下步骤，将用户添加到Experience Platform Launch和Places Service。 如果您之前已经添加了用户，则可能会显示多个配置文件，因此请确保您选择了正确的配置文件。
+如果这是您第一次添加用户，请完成以下步骤，将用户添加到Experience Platform Launch和位置服务。 如果您以前已经添加了用户，则可能会显示多个用户档案，因此请确保您选择了正确的用户档案。
 
 >[!IMPORTANT]
 >
 >只有组织管理员才能访问Admin Console并添加用户。
 
-### 1.验证是否配置了Places Service和Experience Platform Launch
+### 1.验证是否已设置Places服务和Experience Platform Launch
 
-1. 登录您的Experience cloud组织。
-1. 在右上方，单击Experience Cloud Shell切换程序。
+1. 登录您的Experience Cloud组织。
+1. 在右上角，单击Experience Cloud外壳切换器。
 
    ![外壳切换器](/help/assets/places_shell_switcher1.png)
 
-1. 在 **[!UICONTROL Platform]**下，单击**[!UICONTROL Administration]**。
+1. 在 **[!UICONTROL Platform]** 下，单击 **[!UICONTROL Administration]**。
 
    如果列表中未 **显示** “管理”，则您不是管理员。 要完成此过程，必须与组织管理员联系。
 
-1. 在Experience cloud管理页面的卡片上，单 **[!UICONTROL Admin Console]**击该页面**[!UICONTROL Take me there]**。
+1. 在“Experience Cloud管理”页面的卡片 **[!UICONTROL Admin Console]** 上，单击 **[!UICONTROL Take me there]**。
 
-1. 在管理控制台中，如果您有权访问多个组织，请确认在页面的右上方选择了正确的组织。
+1. 在该Admin Console中，如果您有权访问多个组织，请验证在页面的右上方选择了正确的组织。
 
-   这是您向其添加用户的组织。 如果尚未选择正确的组织，请单击该组织，然后从下拉列表中选择该组织。
+   这是您将向其添加用户的组织。 如果尚未选择正确的组织，请单击该组织，然后从下拉列表中选择该组织。
 
    >[!IMPORTANT]
    >
    >如果您无权访问某个组织，则表示您无权访问该组织。
 
-1. 验证显示的 **[!UICONTROL Adobe Experience Platform Launch]**和**[!UICONTROL Places Core Services]** 卡。
+1. 验证是否显示 **[!UICONTROL Adobe Experience Platform Launch]** 和 **[!UICONTROL Places Core Services]** 的卡。
 
    ![](/help/assets/places_provisioned1.png)
 
-   如果显示了这些设置，则表示已为您的组织配置了Places Service and Experience Platform Launch。 如果未显示，则需要为您的组织配置这些组件。
+   如果显示了这些内容，则已为您的组织设置了地点服务和Experience Platform Launch。 如果未显示，则需要为您的组织设置这些设置。
 
 
-### 2.设置配置文件并添加权限
+### 2.设置用户档案并添加权限
 
-1. 设置Experience Platform Launch配置文件，该配置文件允许已添加到该配置文件的用户将Experience Platform Launch及其移动属性与Experience Platform SDK一起使用。
+1. 设置Experience Platform Launch用户档案，允许被添加到用户档案的用户将Experience Platform Launch及其移动属性与Experience PlatformSDK一起使用。
 
    a.在菜单栏中，单击 **[!UICONTROL Product]**。
 
    b.在左窗格的产品列表中，单击 **[!UICONTROL Adobe Experience Platform Launch]**。
 
-   * Experience Platform启动配置文件显示在右侧。
-   * Experience Platform Launch有一个默认的配置文 *件，名为Launch -（组织名称）* 。
+   * Experience Platform Launch用户档案显示在右侧。
+   * Experience Platform Launch有一个默认的用户档案, *称为启动项-（组织名称）* 。
 
-      如果您之前已将用户添加到Experience Platform Launch，则可能会看到列出多个配置文件。
+      如果您以前将用户添加到Experience Platform Launch，您可能会看到列出多个用户档案。
 
-1. 选择正确的配置文件：
+1. 选择正确的用户档案:
 
-   a.单击默认配置文件的名称。
+   a.单击默认用户档案的名称。
 
-   b.单击选 **[!UICONTROL Permissions]**项卡。
+   b. Click the **[!UICONTROL Permissions]** tab.
 
-   c.单击 **[!UICONTROL Edit]**旁边的**[!UICONTROL Property Rights]**。
+   c.单击 **[!UICONTROL Edit]** 旁 **[!UICONTROL Property Rights]**&#x200B;边。
 
    d.在左窗格中，单击 **[!UICONTROL + Add all]**。
 
-   此步骤会将所有可用权限移动到包含的权限列表。
+   此步骤将所有可用权限移动到包含的权限列表。
 
    e.单击 **[!UICONTROL Company Rights]**。
 
@@ -98,37 +101,38 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 >[!IMPORTANT]
 >
->对于Places Service，存在默认配置文件，但您不必添加任何权限。
+>对于Places Service，存在默认用户档案，但您不必添加任何权限。
 
-您已成功地将权限添加到您创建的配置文件。
+您已成功将权限添加到您创建的用户档案。
 
-### 3.将用户或开发人员添加到您的Places Service and Experience Platform Launch配置文件
+### 3.将用户或开发人员添加到您的Places服务和Experience Platform Launch用户档案
 
-您可以将用户和／或开发人员添加到您的Places Service和Experience Platform Launch配置文件。
+您可以将用户和／或开发人员添加到您的Places服务和Experience Platform Launch用户档案。
 
 ### 添加用户
 
-要将用户添加到您的Places Service and Experience Platform启动配置文件，请执行以下操作：
+将用户添加到您的Places服务和Experience Platform Launch用户档案:
 
-1. 将用户添加到Experience Platform启动配置文件。
+1. 将用户添加到Experience Platform Launch用户档案。
 
    a.在菜单栏中，单击 **[!UICONTROL Overview]**。
 
-   b.在卡 **[!UICONTROL Adobe Experience Platform Launch]**上验证以下内容：
+   b.在卡 **[!UICONTROL Adobe Experience Platform Launch]** 上验证以下内容：
 
-   * 卡的底部显示两个点。
-   * 左边的圆点是黑色的。
+   * 卡底部显示两个点。
+   * 左边的圆点是黑色。
 
-      如果右侧的圆点为黑色，则只能添加开发人员。 要添加用户，请单击左侧的点。
+      如果右侧的点为黑色，则只能添加开发人员。 要添加用户，请单击左侧的点。
    c.单击 **[!UICONTROL + Add Users]**。
 
    d.输入用户的Adobe ID。
 
    e.完成以下步骤之一：
 
-   * 如果要添加新用户，请单 **[!UICONTROL New user]**击，然后输入用户的名和姓。
+   * 如果要添加新用户，请单 **[!UICONTROL New user]**&#x200B;击，然后输入用户的名和姓。
    * 如果要添加现有用户，请单击显示的用户名。
-   f.在下拉 **[!UICONTROL Please select a profile for this product]**列表中，选择您之前编辑的配置文件。
+
+   f.在下 **[!UICONTROL Please select a profile for this product]** 拉列表中，选择您之前编辑的用户档案。
 
    g.单击 **[!UICONTROL Save]**。
 
@@ -136,34 +140,36 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
    >[!TIP]
    >
-   >目前，所有Places service用户都具有相同的权限，因此您无需编辑权限。
+   >当前，所有Places Service用户具有相同的权限，因此您无需编辑权限。
 
-   a.在卡 **[!UICONTROL Places Core Services]**上验证以下内容：
+   a.在卡 **[!UICONTROL Places Core Services]** 上验证以下内容：
 
-   * 卡的底部显示两个点。
-   * 左边的圆点是黑色的。
+   * 卡底部显示两个点。
+   * 左边的圆点是黑色。
+
    b.单击 **[!UICONTROL + Assign Users]**。
 
    c.输入用户的Adobe ID。
 
    d.完成以下步骤之一：
 
-   * 如果要添加新用户，请单 **[!UICONTROL New user]**击并输入该用户的名和姓。
+   * 如果要添加新用户，请单 **[!UICONTROL New user]**&#x200B;击，然后输入用户的名和姓。
    * 如果要添加现有用户，请单击显示的用户名。
-   e.在下拉 **[!UICONTROL Please select a profile for this product]**列表中，选择地点配置文件。
+
+   e.在下 **[!UICONTROL Please select a profile for this product]** 拉列表中，选择“地点”用户档案。
 
    f.单击 **[!UICONTROL Save]**。
 
 ### 添加开发人员
 
-对于需要访问Web服务API的用户，您需要将他们添加为开发人员。
+对于还需要访问Web服务API的用户，您需要将其添加为开发人员。
 
 要添加开发人员，请执行以下操作：
 
-1. 在卡 **[!UICONTROL Places Core Services]**上验证以下内容：
+1. 在卡 **[!UICONTROL Places Core Services]** 上验证以下内容：
 
-   * 卡的底部显示两个点。
-   * 单击右侧的圆点，以 **[!UICONTROL Assign Developers]**便显示在卡的底部。
+   * 卡底部显示两个点。
+   * 单击右侧的点，以 **[!UICONTROL Assign Developers]** 便显示在卡的底部。
 
 1. 单击 **[!UICONTROL + Assign Developers]**。
 
@@ -171,10 +177,10 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 1. 完成以下步骤之一：
 
-   * 如果要添加新用户，请单 **[!UICONTROL New user]**击并输入用户的名和姓。
+   * 如果要添加新用户，请单 **[!UICONTROL New user]** 击并输入用户的名和姓。
    * 如果要添加现有用户，请单击显示的用户名。
 
-1. 在下拉 **[!UICONTROL Please select a profile for this product]**列表中，选择Places service配置文件。
+1. 在下 **[!UICONTROL Please select a profile for this product]** 拉列表中，选择“Places Service”用户档案。
 
 1. 单击&#x200B;**保存**。
 

@@ -1,13 +1,13 @@
 ---
 product: Places Service
 audience: end-user
-user-guide-title: Places Service
+user-guide-title: 地点服务指南
 user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 14%
+source-wordcount: '298'
+ht-degree: 13%
 
 ---
 
@@ -66,13 +66,13 @@ ht-degree: 14%
       + [Places Monitor API参考](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [将Places Service与您自己的监控解决方案结合使用](using-your-own-monitor.md)
 + [使用无活动区域监控的场所服务](use-places-without-active-monitoring.md)
-+ 将Places Service用作Experience Platform启动工作流程的一部分 {#use-places-launch-workflow}
-   + [将Places Service用作Experience Platform启动工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
++ 将Places Service用作Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
+   + [将Places Service用作Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定义数据元素](use-places-launch-workflow/define-data-elements.md)
    + [创建进入和退出规则](use-places-launch-workflow/create-rule-places-property.md)
 + 将Places服务与其他Adobe解决方案结合使用 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [将Places服务与Adobe Analytics结合使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
+      + [与Adobe Analytics一起使用Places服务](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [将POI进入和退出数据发送到Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [向Analytics请求添加位置上下文](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Analytics Workspace中位置数据的报告](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -81,11 +81,11 @@ ht-degree: 14%
       + [推送通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [应用程序内通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
-      + [将Places服务与Adobe Campaign标准结合使用](use-places-with-other-solutions/places-acs/places-acs-overview.md)
+      + [与Adobe Campaign Standard一起使用Places服务](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [推送通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [应用程序内消息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [将Places服务与Adobe目标结合使用](use-places-with-other-solutions/places-target/places-target.md)
+      + [与Adobe Target一起使用Places服务](use-places-with-other-solutions/places-target/places-target.md)
 + 测试和验证 {#places-testing-validation}
    + [测试和验证Places服务](places-testing-validation/test-validate-places.md)
 + [常见问题解答](places-faqs.md)

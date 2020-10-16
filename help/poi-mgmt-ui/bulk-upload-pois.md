@@ -2,9 +2,9 @@
 title: 批量上传POI
 description: 本节提供有关如何批量上传POI的信息。
 translation-type: tm+mt
-source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ Places **Service中的** “导入POI”按钮可用于使用CSV文件批量上�
 
 ![批量导入屏幕](/help/assets/Bulk-import.png)
 
-显示批量导入和批量编辑过程的视频如下：
+请观看此视频，其中显示批量导入和批量编辑的过程：
 
->[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+<!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
+
+[放置服务批量导入和编辑POI](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python API脚本
 
@@ -66,7 +68,7 @@ Places **Service中的** “导入POI”按钮可用于使用CSV文件批量上�
    * 有效值为“”、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56b、#3DC8DE和“”。
    * 如果该值留空，则Places Service UI使用蓝色作为默认颜色。
 
-      这些值对应于蓝色(#3E76D0)、紫色(#AA99E8)、富基亚(#DC2ABA)、橙色(#FC685B)、浅橙色(#FC962E)、黄色(#F6C436)、浅绿色#BECE5D)、绿色(#61B56B)和浅蓝色(#3DC8DE)。
+      这些值对应于蓝色(#3E76D0)、紫色(#AA99E8)、富斯基亚(#DC2ABA)、橙色(#FC685B)、浅橙色(#FC962E)、黄色(#F6C436)、浅绿色#BECE5D)、绿色(#61B56B)和浅蓝色(#3DC8DE)。
 
 * 图标，它用作pin上的图标，该图标表示POI在Places Service UI映射中的位置。
 
@@ -85,7 +87,7 @@ Places **Service中的** “导入POI”按钮可用于使用CSV文件批量上�
 1. 将文件从git [repo下载](https://github.com/adobe/places-scripts) 到本地目录。
 1. 在文本编辑器中，打开文 `config.py` 件并完成以下任务:
 
-   a. 将以下变量值编辑为字符串：
+   a.将以下变量值编辑为字符串：
 
    * `csv_file_path`
 
@@ -93,7 +95,7 @@ Places **Service中的** “导入POI”按钮可用于使用CSV文件批量上�
 
    * `access_code`
 
-      这是您从调用Adobe IMS获得的访问代码。 有关如何获取此访问代码的信息，请参阅集成 *概述和先决条件中*[的用户访问先决条件](/help/web-service-api/adobe-i-o-integration.md)。
+      这是您从呼叫AdobeIMS中获取的访问代码。 有关如何获取此访问代码的信息，请参阅集成 *概述和先决条件中*[的用户访问先决条件](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `org_id`
 
@@ -101,8 +103,8 @@ Places **Service中的** “导入POI”按钮可用于使用CSV文件批量上�
 
    * `api_key`
 
-      这是您从Adobe I/O Places集成获得的Places REST API密钥。 有关如何获取API密钥的信息，请参阅集成概 *述和先决条件中*[的用户访问先决条件](/help/web-service-api/adobe-i-o-integration.md)。
-   b. 保存更改。
+      这是您从AdobeI/O Places集成获取的Places REST API密钥。 有关如何获取API密钥的信息，请参阅集成概 *述和先决条件中*[的用户访问先决条件](/help/web-service-api/adobe-i-o-integration.md)。
+   b.保存更改。
 
 1. 在终端窗口中，导航到目 `…/places-scripts/import/` 录。
 1. 输 `python ./places_import.py` 入并按 **[!UICONTROL enter]** ()**[!UICONTROL return]**&#x200B;键。

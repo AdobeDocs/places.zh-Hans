@@ -1,9 +1,16 @@
 ---
-source-git-commit: acbe79b1a66cb8a439f3cb223d3006128aaca457
+source-git-commit: ca711e5f9d05ff01ab87a39377b09fad258fbb90
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '517'
+ht-degree: 82%
 
 ---
-# 撰写文章
+# 贡献文章
+
+| EXL-PR | EXL | 预览 | 激活 | 发布日期 | 帮助 |
+|--- |--- |--- |--- |--- |--- |
+| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/places/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 我们欢迎来自文档团队之外的社区成员和 Adobe 员工的参与内容撰写。
 
@@ -50,7 +57,7 @@ If you submit a pull request with significant changes to documentation and code 
 此存储库中的所有文章都使用 GitHub Flavored Markdown。如果您不熟悉 Markdown，请参阅：
 
 * [Markdown 基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [可打印 Markdown 速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [可打印的 Markdown 速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 标签
 

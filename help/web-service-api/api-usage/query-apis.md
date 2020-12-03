@@ -3,6 +3,9 @@ title: 概述
 description: 了解和使用查询API。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 # 查询API
 
-一种GET方法，它允许您查询最接近呼叫者的POI。
+一种GET方法，允许您查询最接近呼叫者的POI。
 
 ## 请求
 
@@ -18,22 +21,22 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 GET https://query.places.adobe.com/placesedgequery
 ```
 
-通过以下输入，服务会返回最接近呼叫者的POI列表：
+通过以下输入，服务返回最接近呼叫者的POI的列表:
 
-* 拨叫者的位置（经纬度）。
+* 呼叫者的位置（经纬度）。
 * 要包含在搜索中的POI库的ID。
 * 要返回的最大POI数。  默认值为 100。
 
-   呼叫者与POI之间的距离定义为从呼叫者到POI地理围栏边缘的距离。 在响应中，包含呼叫者的POI将被标为有呼叫者。
+   呼叫者与POI之间的距离定义为从呼叫者到POI地序边缘的距离。 在响应中，包含呼叫者的POI将被标记为有呼叫者。
 
-参数将作为以下查询参数提供：
+参数作为以下查询参数提供：
 
 * (**Required**) `latitude`
 
-   拨叫者的纬度，必须介于-85到85之间。
+   呼叫者的纬度，必须介于-85和85之间。
 * (**Required**) `longitude`
 
-   调用者的经度，它必须介于-180和180之间。
+   调用者的经度，必须介于-180和180之间。
 
 * (**可选**) `limit`
 
@@ -106,7 +109,7 @@ GET https://query.places.adobe.com/placesedgequery
 }
 ```
 
-下面的POI `places.pois` 按从呼叫者到POI边缘的距离排序。 POI下包 `places.userWithin` 含调用者，这些POI按排名排序，然后按增加radius排序。
+下面的 `places.pois` POI按呼叫者到POI边缘的距离排序。 下的POI `places.userWithin` 包含调用者，这些POI按排名排序，然后按增加radius排序。
 
 ## 示例调用
 

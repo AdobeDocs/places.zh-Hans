@@ -1,8 +1,11 @@
 ---
 title: API使用概述
-description: 本节提供有关Places service可用的REST API的信息。
+description: 本节提供有关Places Service可用的REST API的信息。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '38'
+ht-degree: 0%
 
 ---
 

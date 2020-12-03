@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Places扩展允许您根据用户的位置进行操作。 此扩展是Places查询服务API的接口。 通过侦听包含GPS坐标和地理区域事件的事件，此扩展将派送由规则引擎处理的新事件。 Places扩展还检索并提供从API检索的应用程序数据的最近POI的列表。 API返回的区域存储在缓存和持久性中，这允许有限的脱机处理。
 
-## 在Adobe Experience Platform启动中安装Places扩展
+## 在Adobe Experience Platform Launch安装Places扩展
 
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在选项卡 **[!UICONTROL Catalog]** 上，找到该 **[!UICONTROL Places]** 扩展，然后单击 **[!UICONTROL Install]**。

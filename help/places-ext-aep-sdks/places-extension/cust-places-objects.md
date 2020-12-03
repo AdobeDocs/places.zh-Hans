@@ -1,12 +1,15 @@
 ---
-title: 自定义地点对象
+title: 自定义位置对象
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '28'
+ht-degree: 7%
 
 ---
 
 
-# 自定义地点对象 {#places-objects}
+# 自定义位置对象 {#places-objects}
 
 以下是将与Places API一起使用的自定义本机类：
 
@@ -14,7 +17,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ### ACPPlacesPoi
 
-定义如下：
+以下定义：
 
 ```text
 /**

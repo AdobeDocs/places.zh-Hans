@@ -3,13 +3,16 @@ title: 删除库
 description: 使用Places REST API删除库。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 
 
 # 删除库 {#delete-a-library}
 
-允许您删除库的DELETE方法。
+一种DELETE方法，可让您删除库。
 
 ## 请求
 
@@ -43,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->用实际值替 `<lIBRARYID>`换 `<API KEY>`、 `<TOKEN>`和 `<ORGID>`等变量。
+>将变量(如 `<lIBRARYID>`、 `<API KEY>`、 `<TOKEN>`和) `<ORGID>`替换为实际值。
 

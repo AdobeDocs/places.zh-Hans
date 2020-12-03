@@ -1,15 +1,18 @@
 ---
-title: 创建目标点 (POI)
+title: 创建POI
 description: 使用Places REST API创建POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 
 
-# 创建目标点 (POI){#create-a-poi}
+# 创建POI {#create-a-poi}
 
-允许您创建POI的POST方法。
+一种POST方法，可让您创建POI。
 
 ## 请求
 
@@ -94,4 +97,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->切记用 `<API KEY>`实际 `<TOKEN>`值替换、、 `<SINGLEPOIDATA>` 、和。
+>切记用 `<API KEY>`实 `<TOKEN>`际值替换、、 `<SINGLEPOIDATA>` 和。

@@ -3,13 +3,16 @@ title: 删除POI
 description: 使用Places REST API删除POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '44'
+ht-degree: 6%
 
 ---
 
 
 # 删除POI {#delete-a-poi}
 
-允许删除POI的DELETE方法。
+一种DELETE方法，可让您删除POI。
 
 ## 请求
 
@@ -43,5 +46,5 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->将 `<POIID>`、 `<API KEY>``<TOKEN>`和替换 `<ORGID>` 为实际值。
+>用实 `<POIID>`际 `<API KEY>`值替 `<TOKEN>`换、 `<ORGID>` 和、和。
 

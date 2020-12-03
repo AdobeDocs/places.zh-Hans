@@ -3,13 +3,16 @@ title: 更新POI
 description: 使用Places REST API更新POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 6%
 
 ---
 
 
 # 更新POI {#update-a-poi}
 
-允许您更新POI的PUT方法。
+一种PUT方法，可让您更新POI。
 
 ## 请求
 
@@ -45,4 +48,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->将 `<POIID>`、 `<API KEY>`、 `<TOKEN>`和 `<ORGID>`替换为实 `<SINGLEPOIDATA>` 际值。
+>用实 `<POIID>`际 `<API KEY>`值替 `<TOKEN>`换、、 `<ORGID>`和 `<SINGLEPOIDATA>` 、和。

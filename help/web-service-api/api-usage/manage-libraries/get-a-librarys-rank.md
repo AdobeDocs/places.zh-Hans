@@ -1,15 +1,18 @@
 ---
 title: 获取图书馆的排名
-description: 使用Places REST API获取库的排名。
+description: 使用Places REST API获取库排名。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 7%
 
 ---
 
 
 # 获取图书馆的排名 {#get-library-rank}
 
-允许您对库进行排名的GET方法。
+允许对库进行排序的GET方法。
 
 ## 请求
 
@@ -39,5 +42,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->用实际值替 `<API KEY>`换 `<TOKEN>`、 `<ORGID>` 和等变量。
+>将变量(如 `<API KEY>`、 `<TOKEN>`和) `<ORGID>` 替换为实际值。
 

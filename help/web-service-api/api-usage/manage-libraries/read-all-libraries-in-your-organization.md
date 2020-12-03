@@ -3,13 +3,16 @@ title: 阅读组织中的所有库
 description: 使用Places REST API阅读组织中的所有库。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 5%
 
 ---
 
 
 # 阅读组织中的所有库 {#read-all-lib-in-org}
 
-一种GET方法，它返回单位中所有库的详细信息。
+一种GET方法，它返回组织中所有库的详细信息。
 
 ## 请求
 
@@ -39,4 +42,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-ap
 
 >[!IMPORTANT]
 >
->将变量(如 `<API KEY>`和) `<TOKEN>,` 替换 `<ORGID>` 为实际值。
+>将变量(如 `<API KEY>`和 `<TOKEN>,` ) `<ORGID>` 替换为实际值。

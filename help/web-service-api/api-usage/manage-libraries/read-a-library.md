@@ -3,6 +3,9 @@ title: 阅读库
 description: 使用Places REST API阅读库。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 6%
 
 ---
 
@@ -89,5 +92,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->将 `<LIBRARYID>`、 `<API KEY>``<TOKEN>`和替换 `<ORGID>` 为实际值。
+>用实 `<LIBRARYID>`际 `<API KEY>`值替 `<TOKEN>`换、 `<ORGID>` 和、和。
 

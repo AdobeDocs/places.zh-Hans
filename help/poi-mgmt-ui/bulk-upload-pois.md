@@ -103,7 +103,7 @@ Places **Service中的** “导入POI”按钮可用于使用CSV文件批量上�
 
    * `api_key`
 
-      这是您从AdobeI/O Places集成获取的Places REST API密钥。 有关如何获取API密钥的信息，请参阅集成概 *述和先决条件中*[的用户访问先决条件](/help/web-service-api/adobe-i-o-integration.md)。
+      这是您从您的Adobe I/O地集成获取的Places REST API密钥。 有关如何获取API密钥的信息，请参阅集成概 *述和先决条件中*[的用户访问先决条件](/help/web-service-api/adobe-i-o-integration.md)。
    b.保存更改。
 
 1. 在终端窗口中，导航到目 `…/places-scripts/import/` 录。

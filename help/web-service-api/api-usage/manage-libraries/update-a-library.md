@@ -3,13 +3,16 @@ title: 更新库
 description: 使用Places REST API更新库。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 6%
 
 ---
 
 
 # 更新库 {#update-a-library}
 
-允许您更新库的PUT方法。
+一种PUT方法，可让您更新库。
 
 ## 请求
 
@@ -45,5 +48,5 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->用实际值替 `<lIBRARYID>`换 `<API KEY>`、 `<TOKEN>`和 `<ORGID>` 等变量。
+>将变量(如 `<lIBRARYID>`、 `<API KEY>`、 `<TOKEN>`和)替 `<ORGID>` 换为实际值。
 

@@ -3,23 +3,26 @@ title: Places API参考
 description: 有关Places中API引用的信息。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 32%
 
 ---
 
 
 # Places API参考 {#places-api-reference}
 
-以下是有关Places扩展中API引用的信息：
+以下是有关Places扩展中的API引用的信息：
 
 ## 处理区域事件
 
-当设备跨越应用程序的某个预定义地点服务区域边界时，区域和事件类型将传递到SDK以进行处理。
+当设备跨应用程序的某个预定义地点服务区域边界时，该区域和事件类型将传递给SDK进行处理。
 
 ### ProcessGeofence(Android)
 
 处理所 `Geofence` 提供的区域事件 `transitionType`。
 
-传递 `transitionType` 自 `GeofencingEvent.getGeofenceTransition()`。 当前 `Geofence.GEOFENCE_TRANSITION_ENTER` 和 `Geofence.GEOFENCE_TRANSITION_EXIT` 受支持。
+传 `transitionType` 递 `GeofencingEvent.getGeofenceTransition()`。 当前 `Geofence.GEOFENCE_TRANSITION_ENTER` 支持 `Geofence.GEOFENCE_TRANSITION_EXIT` 并且受支持。
 
 **语法**
 
@@ -31,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **示例**
 
-在注册用于接收Android `IntentService` 地理围栏事件的方法中调用此方法。
+在已注册用于接 `IntentService` 收Android地理科学事件的方法中调用此方法。
 
 以下是此方法的代码示例：
 
@@ -82,9 +85,9 @@ public class GeofenceTransitionsIntentService extends IntentService {
 }
 ```
 
-### ProcessGeofercingEvent(Android)
+### ProcessGeoficingEvent(Android)
 
-同时 `Geofences` 处理所 `GeofencingEvent` 有内容。
+同时 `Geofences` 处 `GeofencingEvent` 理所有内容。
 
 **语法**
 
@@ -94,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **示例**
 
-在注册用于接收Android地 `IntentService` 理科学事件的您中调用此方法
+在已注册用于接 `IntentService` 收Android地理科学事件的中调用此方法
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -111,11 +114,11 @@ public class GeofenceTransitionsIntentService extends IntentService {
 }
 ```
 
-## 检索附近的目标点
+## 检索附近的兴趣点
 
-返回回调中附近POI的有序列表。 如果生成的网络调用出现问题，此方法的重载版本将返回错误代码。
+在回调中返回附近POI的有序列表。 如果生成的网络调用出错，此方法的重载版本将返回错误代码。
 
-### GetEncorredPointsOfInterest(Android)
+### GetEnxorderPointsOfInterest(Android)
 
 以下是此方法的语法：
 
@@ -162,7 +165,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 );
 ```
 
-### GetEncorredPointsOfInterest(iOS)
+### GetEnxorderPointsOfInterest(iOS)
 
 **语法**
 
@@ -202,7 +205,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 
 ## 检索当前设备关注点
 
-请求设备当前已知位于其中的POI列表，并在回调中返回它们。
+请求设备当前已知位于的列表POI，并在回调中返回它们。
 
 ### GetCurrentPointsOfInterest(Android)
 
@@ -252,11 +255,11 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 ## 获取设备的位置
 
-请求设备的位置（如之前所知），由“地点”扩展。
+请求设备的位置（如以前所知），由“位置”扩展。
 
 >[!TIP]
 >
->地点扩展只了解通过呼叫向其提供的位置 `GetNearbyPointsOfInterest`。
+>地点扩展只知道通过呼叫提供给它的位置 `GetNearbyPointsOfInterest`。
 
 
 ### GetLastKnownLocation(Android)
@@ -383,7 +386,7 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 提供的状态存储在“地点”共享状态中，仅供参考。
 调用此方法不会影响此设备的实际位置授权状态。
 
-当设备授权状态发生更改时，将 `locationManager:didChangeAuthorizationStatus:` 调用您的 `CLLocationManagerDelegate` 方法。 从此方法中，您应将新值传 `CLAuthorizationStatus` 递给ACPPlaces `setAuthorizationStatus:` API。
+当设备授权状态发生更改时， `locationManager:didChangeAuthorizationStatus:` 将调用您 `CLLocationManagerDelegate` 的方法。 从此方法中，您应将新值 `CLAuthorizationStatus` 传递给ACPPlaces `setAuthorizationStatus:` API。
 
 **语法**
 

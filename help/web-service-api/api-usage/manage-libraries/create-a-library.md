@@ -3,13 +3,16 @@ title: 创建库
 description: 使用Places REST API创建库。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 18%
 
 ---
 
 
 # 创建库 {#create-a-library}
 
-允许您创建库的POST方法。
+用于创建库的POST方法。
 
 ## 请求
 
@@ -45,5 +48,5 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->用实际值替 `<API KEY>`换 `<TOKEN>`、 `<ORGID>` 和等变量。
+>将变量(如 `<API KEY>`、 `<TOKEN>`和) `<ORGID>` 替换为实际值。
 

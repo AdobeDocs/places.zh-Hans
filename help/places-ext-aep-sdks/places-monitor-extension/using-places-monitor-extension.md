@@ -31,8 +31,7 @@ Places Monitor扩展没有配置任务。
 
 下面介绍如何将Places Monitor扩展添加到Android或iOS应用程序。
 
-对Places Monitor扩展的其他平台支持包括：
-**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+对Places Monitor扩展的其他平台支持包括：**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
 
 **[React Native Places Monitor](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
 
@@ -169,7 +168,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 **Java**
 
-对于所有版本的Android，要声明您的应用程序需要位置权限，请在 `<uses-permission>` 应用程序清单中添加元素，作为顶级元素的子 `<manifest>` 项。 对于目标API级别29及更高版本的Android应用程序，要允许应用程序访问后台位置，请包含ACCESS_BACKGROUND_LOCATION权限。
+对于所有版本的Android，要声明您的应用程序需要位置权限，请在 `<uses-permission>` 应用程序清单中添加元素，作为顶级元素的子 `<manifest>` 项。 对于目标API级别29及更高版本的Android应用程序，要允许应用程序在后台访问位置，请包含ACCESS_BACKGROUND_LOCATION权限。
 
 ```java
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">

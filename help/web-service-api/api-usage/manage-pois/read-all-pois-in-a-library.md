@@ -3,6 +3,9 @@ title: 阅读图书馆中的所有POI
 description: 使用Places REST API阅读库中的所有POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 5%
 
 ---
 
@@ -165,5 +168,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->将“”、 `<API KEY>`、 `<TOKEN>`和 `<ORGID>` 替换为实际值。
+>将“、 `<API KEY>`、 `<TOKEN>`和 `<ORGID>` 替换为实际值。
 

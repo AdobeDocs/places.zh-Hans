@@ -18,7 +18,7 @@ ht-degree: 3%
 
    * 已为React Native Applications添加了Places和Places Monitor [扩展](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
    * 已为Cordova应用程序添加了Places and Places Monitor [扩展](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * 有关详细信息，请参阅： [使用Places Extension](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * 有关详细信息，请参阅： [使用Places Extension](https://docs.adobe.com/content/help/zh-Hans/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 2020 年 5 月 12 日
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ## 2020 年 5 月 6 日
 
-* **PlacesMonitor 2.2.1**
+* **PlacesMonitor 2.1.1**
 
    * **Android**
 
@@ -108,7 +108,7 @@ ht-degree: 3%
       * 监视器现在可识别Android设备的启动，并根据设备的当前位置在操作系统中重新注册地理围栏（如果需要）。
       * 修复了有时导致入口／出口事件被丢弃的竞态条件。
 
-## 2019 年 10 月 9 日
+## 2019年10月9日
 
 * **PlacesMonitor 2.1.0**
 
@@ -258,7 +258,7 @@ Places Monitor for Android的初始版本。
 * 为getNearByPlaces引入了一个新的API，它有一个errorCallback，用一个errorCode调用，它指示错误的原因。
 * 现在，Places扩展将事件排队，直到获得配置。
 * 增加了对环境感知配置的支持。
-* 错误修复： 更正了区域进出事件的键
+* 错误修复：更正了区域进出事件的键
 * 上一个已知位置的存储现在正确遵守用户的隐私状态
 
 
@@ -284,7 +284,7 @@ iOS地点监视器的初始版本。
 
 ### 测试版
 
-这是Places Service的第一个版本，这是一套工具，允许客户利用真实的位置数据丰富其用户的体验。 对于第一个版本，我们的主要用例是使移动应用程序能够检索自定义位置数据并通过Adobe Experience Platform启动对该数据执行操作。
+这是Places Service的第一个版本，这是一套工具，允许客户利用真实的位置数据丰富其用户的体验。 对于第一个版本，我们的主要用例是使移动应用程序能够检索自定义位置数据并通过Adobe Experience Platform Launch对该数据采取行动。
 
 ### 主要功能
 
@@ -325,4 +325,4 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### Analytics 集成
 
-Analytics扩展正在更新，当用户处于POI（被动呼叫）时，将位置上下文数据从您的Places Service数据库自动添加到所有传出的Analytics呼叫。 此更新还允许创建规则以在POI进入或退出（活动呼叫）时直接触发Analytics跟踪呼叫。
+当用户处于POI（被动调用）中时，将更新Analytics扩展以自动将位置上下文数据从您的Places Service数据库添加到所有传出Analytics调用。 此更新还允许创建规则，以在POI进入或退出（活动呼叫）时直接触发Analytics跟踪呼叫。

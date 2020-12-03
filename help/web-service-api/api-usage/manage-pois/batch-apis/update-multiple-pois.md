@@ -3,13 +3,16 @@ title: 更新多个POI
 description: 使用批处理API更新多个POI。
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
 
 # 更新多个POI {#update-multiple-pois}
 
-允许您更新多个POI的POST方法。
+一种POST方法，可让您更新多个POI。
 
 ## 请求
 
@@ -45,11 +48,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchUpdate' 
 
 >[!IMPORTANT]
 >
->用实 `<API KEY>`际 `<TOKEN>`值替 `<ORGID>`换、 `<PATHTOBATCHUPDATEJSONFILE>` 替换和替换。
+>用实 `<API KEY>`际 `<TOKEN>`值 `<ORGID>`替换、 `<PATHTOBATCHUPDATEJSONFILE>` 替换和替换。
 
 ## 示例JSON文件
 
-以下是 `batchUpdate` API的示例JSON文件：
+以下是API的示例JSON文 `batchUpdate` 件：
 
 ```text
 updates":[{"id":"31a49d5c-c6ad-46ae-b88d-a6912a8a6b2f","name":"Updated POI 1","description":"1","location":{"type":"Point","coordinates":[0.0000000,0.0000000]},"radius":25.0,"country":"Ghana","state":"Ghana","city":"Accra","street":"","category":"cafe","icon":"nice","color":"red","metadata":{"region":"Equator"},"lib_id":"42b4d03c-672c-4deb-83e0-134ef070c2af"},{"id":"6a78a729-7973-4373-9199-36da18cc5b8c","name":"Updated POI 2","description":"2","location":{"type":"Point","coordinates":[0.0250000,0.0250000]},"radius":50.0,"country":"Ghana","state":"Ghana","city":"Accra","street":"","category":"cafe","icon":"nice","color":"red","metadata":{"region":"Equator"},"lib_id":"42b4d03c-672c-4deb-83e0-134ef070c2af"},{"id":"74eaa3da-2464-4298-9b6d-5376fa7ea00f","name":"Updated POI 3","description":"3","location":{"type":"Point","coordinates":[0.0500000,0.0500000]},"radius":100.0,"country":"Ghana","state":"Ghana","city":"Accra","street":"","category":"cafe","icon":"nice","color":"red","metadata":{"region":"Equator"},"lib_id":"42b4d03c-672c-4deb-83e0-134ef070c2af"}]}

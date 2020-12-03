@@ -3,6 +3,9 @@ title: 阅读POI
 description: 使用Places REST API阅读POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 6%
 
 ---
 
@@ -67,5 +70,5 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->将 `<POIID>`、 `<API KEY>``<TOKEN>`和替换 `<ORIGIN>` 为实际值。
+>用实 `<POIID>`际 `<API KEY>`值替 `<TOKEN>`换、 `<ORIGIN>` 和、和。
 

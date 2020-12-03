@@ -3,6 +3,9 @@ title: 删除多个POI
 description: 使用批处理API删除多个POI。
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
@@ -10,7 +13,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 # 删除多个POI {#delete-multiple-pois}
 
-允许您删除多个POI的POST方法。
+一种POST方法，可让您删除多个POI。
 
 ## 请求
 
@@ -46,11 +49,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchDelete' 
 
 >[!IMPORTANT]
 >
->用实 `<API KEY>`际 `<TOKEN>`值替 `<ORGID>`换、 `<PATHTOBATCHDELETEJSONFILE>` 替换和替换。
+>用实 `<API KEY>`际 `<TOKEN>`值 `<ORGID>`替换、 `<PATHTOBATCHDELETEJSONFILE>` 替换和替换。
 
 ## 示例JSON文件
 
-以下是 `batchDelete` API的示例JSON文件：
+以下是API的示例JSON文 `batchDelete` 件：
 
 ```text
 {​"ids":["31a49d5c-c6ad-46ae-b88d-a6912a8a6b2f","6a78a729-7973-4373-9199-36da18cc5b8c","74eaa3da-2464-4298-9b6d-5376fa7ea00f"]​}

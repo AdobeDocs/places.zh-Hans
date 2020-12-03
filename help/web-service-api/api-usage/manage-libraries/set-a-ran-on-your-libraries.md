@@ -3,13 +3,16 @@ title: 在库上设置排名
 description: 使用Places REST API在库上设置排名。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
 
 # 在库上设置排名 {#set-rank-on-libraries}
 
-一种PUT方法，它允许您在所有库上设置排名顺序。
+一种PUT方法，允许您在所有库上设置排名顺序。
 
 ## 请求
 
@@ -45,5 +48,5 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->用实际值替 `<API KEY>`换 `<TOKEN>`、 `<ORGID>` 和等变量。
+>将变量(如 `<API KEY>`、 `<TOKEN>`和) `<ORGID>` 替换为实际值。
 

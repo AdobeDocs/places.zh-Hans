@@ -1,19 +1,22 @@
 ---
 title: 使用您自己的显示器
-description: 您还可以使用监视服务，并通过使用Places service扩展API与Places service集成。
+description: 您还可以使用监控服务，并通过使用Places Service Extension API与Places Service集成。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
 
 # 使用您自己的显示器 {#using-your-monitor}
 
-您还可以使用监视服务，并通过使用Places扩展API与Places service集成。
+您还可以使用监控服务，并通过使用Places扩展API与Places Service集成。
 
 ## 注册地理围栏
 
-如果您决定使用监视服务，请完成以下步骤，在您当前位置周围注册POI的地理位置：
+如果您决定使用监视服务，请完成以下步骤，在您当前的位置注册POI的地理位置：
 
 ### iOS
 
@@ -31,7 +34,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
    }
    ```
 
-1. 从获取的对象中提取信 `ACPPlacesPOI` 息并开始监控这些POI。
+1. 从获取的对象中提取信 `ACPPlacesPOI` 息，并监控这些POI。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -55,9 +58,9 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ### Android
 
-1. 将从Google play服务或Android位置服务获取的位置更新传递到Places Extension。
+1. 将从Google Play服务或Android位置服务获取的位置更新传递到Places Extension。
 
-1. 使用 `getNearbyPointsOfInterest` Places Extension API获取当前位 `PlacesPoi` 置周围的对象列表。
+1. 使用 `getNearbyPointsOfInterest` Places Extension API获取当前位置 `PlacesPoi` 周围对象的列表。
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -75,7 +78,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
    };
    ```
 
-1. 从获取的对象中提取数 `PlacesPOI` 据并开始监控这些POI。
+1. 从获取的对象中提取数 `PlacesPOI` 据并监视这些POI的开始。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -104,13 +107,13 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 >[!IMPORTANT]
 >
->您应该少调用API，或仅在用户位置发生显着变化时调用。
+>您应少调用API，或仅在用户位置发生重大更改时调用。
 
 ## 发布地理科学事件
 
 ### iOS
 
-在iOS中，调用委 `processGeofenceEvent` 托中的Places API `CLLocationManager` 。 此API会通知您用户是已进入还是退出特定区域。
+在iOS中，调用 `processGeofenceEvent` 委托中的Places `CLLocationManager` API。 此API将通知您用户是已进入还是退出特定区域。
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -124,7 +127,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ### Android
 
-在Android中，在Geofence广播 `processGeofence` 接收器中调用方法以及相应的转换事件。 您可能希望整理收到的地理围栏列表，以防止重复的登入／退出。
+在Android中，在Geofence广 `processGeofence` 播接收器中调用方法以及相应的过渡事件。 您可能希望管理收到的列表，以防止重复进入／退出。
 
 ```java
 void onGeofenceReceived(final Intent intent) {

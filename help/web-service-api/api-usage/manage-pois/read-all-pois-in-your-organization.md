@@ -3,13 +3,16 @@ title: 阅读您组织中的所有POI
 description: 使用Places REST API阅读组织中的所有POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 5%
 
 ---
 
 
 # 阅读您组织中的所有POI {#read-all-pois-org}
 
-一种GET方法，可返回组织中的所有POI。
+一种GET方法，它返回组织中的所有POI。
 
 ## 请求
 
@@ -39,4 +42,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key
 
 >[!IMPORTANT]
 >
->将 `<API KEY>`和 `<TOKEN>`替换为 `<ORGID>` 实际值。
+>用实 `<API KEY>`际 `<TOKEN>`值替 `<ORGID>` 换、替换和。

@@ -60,7 +60,7 @@ Experience Platform Launch中的规则允许您根据事件触发器创建复杂
 
    此部分允许您过滤或限制此规则何时触发。
 
-1. 在部分 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL +]**。
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL +]**.
 1. 在下 **[!UICONTROL Extension]** 拉列表中，选 **[!UICONTROL Mobile Core]** 择，在下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Send Postback]**。
 1. 在中 **[!UICONTROL URL]**，您需要构建Campaign Standard位置端点。
 

@@ -1,16 +1,12 @@
 ---
-source-git-commit: ca711e5f9d05ff01ab87a39377b09fad258fbb90
+source-git-commit: 8688bd4a613b71f205909588bd2a3391e1cc8793
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 82%
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 # 贡献文章
-
-| EXL-PR | EXL | 预览 | 激活 | 发布日期 | 帮助 |
-|--- |--- |--- |--- |--- |--- |
-| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/places/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 我们欢迎来自文档团队之外的社区成员和 Adobe 员工的参与内容撰写。
 
@@ -42,7 +38,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Adobe 员工做出的主要更改
 
-如果您是来自 [!UICONTROL Adobe Experience Cloud] 解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，那么您应当使用位于 `https://git.corp.adobe.com/AdobeDocs` 的专用存储库。请参阅 [内部协作指南](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)。
+如果您是来自 [!UICONTROL Adobe Experience Cloud] 解决方案产品团队的技术文档撰稿人、项目经理或开发人员，并且您的工作就是撰写或创作技术文章，那么您应当使用位于 `https://git.corp.adobe.com/AdobeDocs` 的专用存储库。请参阅[内部协作指南](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html)。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 

@@ -1,10 +1,9 @@
 ---
-product: Places Service
 audience: end-user
 user-guide-title: Places Service 指南
 user-guide-description: Places Service 是一种地理位置服务，它使具有位置感知的移动应用程序能够了解位置上下文。
 translation-type: tm+mt
-source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
+source-git-commit: 12283d11829ee70a808bc11d2bc1241cb1770ac3
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 19%
@@ -16,7 +15,7 @@ ht-degree: 19%
 
 + [地点服务概述](home.md)
 + [发行说明](release-notes.md)
-+ [入门指南](getting-started.md)
++ [快速入门](getting-started.md)
 + [访问Places Service](places-gain-access.md)
 + 放置服务UI {#poi-mgmt-ui}
    + [Places Service UI概述](poi-mgmt-ui/poi-mgmt-ui-overview.md)

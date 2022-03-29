@@ -4,8 +4,8 @@ description: Places扩展允许您根据用户的位置执行操作。
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您没有使用Cocoapods，则可以手动包含我们的 [版本页](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在Github上。
+   或者，如果您未使用Cocoapods，则可以手动从我们的 [版本页](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在Github上。
 
 1. 更新您的Cocoapods:
 
@@ -96,9 +96,9 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
    import ACPPlaces
    ```
 
-### 使用Mobile Core注册Places扩展 {#register-places-mobile-core}
+### 在Mobile Core中注册Places扩展 {#register-places-mobile-core}
 
-您需要在Android和iOS中使用移动核心注册Places扩展。
+您需要在Android和iOS中在Mobile Core中注册Places扩展。
 
 #### Android
 

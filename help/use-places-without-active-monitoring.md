@@ -1,45 +1,44 @@
 ---
-title: 使用无活动区域监控的场所服务
-description: 本节提供有关如何使用Places Service而不进行活动区域监视的信息。
-translation-type: tm+mt
-source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+title: 使用Places Service，而不进行活动区域监控
+description: 本节提供有关如何在不进行活动区域监控的情况下使用Places Service的信息。
+exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '748'
 ht-degree: 1%
 
 ---
 
+# 使用Places Service，而不进行活动区域监控 {#use-places-without-active-monitoring}
 
-# 使用无活动区域监控的场所服务 {#use-places-without-active-monitoring}
-
-您的应用程序的使用案例可能不需要活动区域监控。 Places Service仍可用于将用户位置数据集成到其他Experience Platform产品中。
+您的应用程序的用例可能不需要进行活动区域监控。 Places Service仍可用于将用户的位置数据与其他Experience Platform产品集成。
 
 ## 先决条件
 
-开发者将使用目标平台操作系统提供的API收集设备位置。
+开发人员将使用目标平台操作系统提供的API收集设备的位置。
 
 >[!TIP]
 >
->如果应用程序的用例需要活动区域监视，请参 [阅使用地点监视器扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+>如果您的应用程序用例需要活动区域监控，请参阅 [将Places Service与您自己的监控解决方案结合使用](/help/using-your-own-monitor.md).
 
-要使用Places Service，而不对活动区域进行监视，请执行以下操作：
+要使用Places Service，而不进行活动区域监控，请执行以下操作：
 
 ## 1.收集用户的位置
 
-应用程序开发人员必须使用Google Play Services(Android) `CoreLocation.framework` 提供的(iOS)或API `Location` 来收集设备的当前位置。
+应用程序开发人员必须使用 `CoreLocation.framework` (iOS)或 `Location` 由Google Play服务(Android)提供的API。
 
-有关详细信息，请参阅以下文档：
+有关更多信息，请参阅以下文档：
 
 - [CoreLocation](https://developer.apple.com/documentation/corelocation) (Apple)
-- [Google Play Services中的位置](https://developer.android.com/training/location) API(Google)
+- [Google Play服务中的位置API](https://developer.android.com/training/location) (Google)
 
-## 2.从SDK检索附近的兴趣点
+## 2.从SDK中检索附近的目标点
 
-获得用户位置后，可将其传递给SDK，以返回附近POI的列表。
+获取用户位置后，可以将其传递到SDK，以返回附近POI的列表。
 
 ### Android
 
-以下是Android中的一个实现示例，它使用 [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5):
+以下是Android中使用 [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5):
 
 ```java
 public class LocationBroadcastReceiver extends BroadcastReceiver {
@@ -85,7 +84,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-以下是iOS的示例实现。 该代码显示以下 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) 方法的实现 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
+以下是iOS的实施示例。 该代码显示了 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) 方法 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc):
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -101,7 +100,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Swift
 
-以下是iOS的示例实现。 该代码显示以下 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) 方法的实现 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
+以下是iOS的实施示例。 该代码显示了 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) 方法 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager):
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -115,31 +114,31 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3.将地点数据附加到Analytics请求
+## 3.将Places数据附加到Analytics请求
 
-通过调用 `getNearbyPointsOfInterest` API,Places SDK将通过Launch中的数据元素提供与设备相关的所有POI数据。 通过使 [用“附加数据](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) ”规则，可以将Places数据自动添加到将来的Analytics请求中。 这样，在收集设备位置时，无需对Analytics进行一次性调用。
+通过调用 `getNearbyPointsOfInterest` API中，Places SDK将通过Launch中的数据元素，使与设备相关的所有POI数据都可用。 通过使用 [附加数据](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 规则中，可以将Places数据自动添加到将来对Analytics的请求中。 这样，在收集设备位置时便无需对Analytics进行一次性调用。
 
-请参 [阅将位置上下文添加到分析请求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) ，进一步了解此主题。
+请参阅 [将位置上下文添加到Analytics请求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) 以了解有关此主题的更多信息。
 
-## 可选——当用户在POI中时触发输入事件
+## 可选 — 当用户位于POI中时触发登入事件
 
 >[!TIP]
 >
->捕获Places数据的建议方法是将Places数 [据附加到您的Analytics请求中](#attach-places-data-to-your-analytics-requests)。
+>捕获Places数据的推荐方法是 [将Places数据附加到Analytics请求](#attach-places-data-to-your-analytics-requests).
 >
->如果用例需要由 [SDK触发](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) ，则需要手动完成，如下所述。
+>如果用例需要 [区域登入事件](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) 要由SDK触发，需要手动完成，如下所述。
 
-API返回的列表 `getNearbyPointsOfInterest` 包含 [自定义对象](places-ext-aep-sdks/places-extension/cust-places-objects.md) ，这些对象指示用户当前是否在POI中。 如果用户在POI中，您可以让SDK触发该区域的条目事件。
+返回的列表 `getNearbyPointsOfInterest` API包含 [自定义对象](places-ext-aep-sdks/places-extension/cust-places-objects.md) 指示用户当前是否在POI内。 如果用户在POI中，您可以让SDK触发该区域的登入事件。
 
 >[!IMPORTANT]
 >
->要防止您的应用程序在一次访问中触发多个进入事件，请保留用户已输入的列表。 在处理来自SDK的附近POI的响应时，仅当该区域不在您的列表中时，才触发输入事件。
+>要防止您的应用程序在一次访问中触发多个条目事件，请保留您知道用户在哪些地区进入的列表。 在处理来自SDK的附近POI的响应时，仅当该区域不在您的列表中时，才会触发登入事件。
 >
->在以下代码示例 `NSUserDefaults` 中，(iOS `SharedPreferences` )和(Android)用于管理区域列表:
+>在以下代码示例中， `NSUserDefaults` (iOS和 `SharedPreferences` (Android)用于管理区域列表：
 
 ### Android
 
-以下代码示例显示了对回调中提供的结果的 `getNearbyPointsOfInterest`处理， `List<PlacesPOI>`
+以下代码示例显示了对的回调中提供的结果的处理 `getNearbyPointsOfInterest`, a `List<PlacesPOI>`:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -177,7 +176,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Objective-C
 
-以下代码示例显示了对回调中提供的结果的 `getNearbyPointsOfInterest:limit:callback:errorCallback:`处理 `NSArray<ACPPlacesPoi *> *`:
+以下代码示例显示了对的回调中提供的结果的处理 `getNearbyPointsOfInterest:limit:callback:errorCallback:`, `NSArray<ACPPlacesPoi *> *`:
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -211,7 +210,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Swift
 
-以下代码示例显示了对回调中提供的结果的 `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`处理 `[ACPPlacesPoi]`:
+以下代码示例显示了对的回调中提供的结果的处理 `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`, `[ACPPlacesPoi]`:
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -240,15 +239,15 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-## 完整的示例实施
+## 完成实施示例
 
-下面的代码示例向您显示如何检索设备的当前位置、触发必要的输入事件，以及确保一次访问时不会获得同一位置的多个条目。
+以下代码示例向您展示了如何检索设备的当前位置、触发必要的登入事件，以及确保在一次访问中不会获得同一位置的多个条目。
 
-此代码示例包括在用户 [在POI中时触发输入事件的可选步骤](#trigger-entry-events-when-the-user-is-in-a-poi)。
+此代码示例包含的可选步骤为 [当用户位于POI中时触发条目事件](#trigger-entry-events-when-the-user-is-in-a-poi).
 
 >[!IMPORTANT]
 >
->这些片段只 **是示** 例。 开发人员必须确定他们希望如何实现该功能，并且决策应考虑目标操作系统建议的最佳实践。
+>这些片段是 **仅** 示例。 开发人员必须确定要如何实施该功能，并且决策时应考虑目标操作系统建议的最佳实践。
 
 ### Android
 
@@ -411,6 +410,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-除了在SDK中触发Places Service Entry事件外，由于触发条目事件，定义POI的所有数据都可由SDK的其余部分通过 `data elements` Experience Platform Launch使用。 利用Experience Platform Launch `rules`，您可以将Places Service数据动态附加到SDK处理的传入事件。 例如，您可以附加用户所在POI的元数据，并将数据作为上下文数据发送到Analytics。
+除了触发SDK中的Places Service条目事件之外，由于触发条目事件，SDK的其余部分还可以通过使用定义POI的所有数据 `data elements` Experience Platform Launch。 与Experience Platform Launch `rules`，您可以将Places Service数据动态附加到SDK处理的传入事件。 例如，您可以附加用户所在POI的元数据，并将该数据作为上下文数据发送到Analytics。
 
-有关详细信息，请参 [阅将Places Service与其他Adobe解决方案结合使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)。
+有关更多信息，请参阅 [将Places Service与其他Adobe解决方案结合使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).

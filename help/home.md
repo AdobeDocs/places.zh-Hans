@@ -2,9 +2,9 @@
 title: Places Service
 description: Places Service是了解移动用户参与度的重要上下文。 通过使用此上下文，移动设备应用程序开发人员可以增强应用程序设计，并使其成为更加个性化和引人入胜的体验。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: c13da9ea3dc0cd574f2f9a496405867f7d36eae0
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '673'
 ht-degree: 10%
 
 ---
@@ -51,10 +51,6 @@ Places Service包含以下组件：
 * **启动规则**
 
    地理智能的Launch规则，允许您通过登入和退出事件触发操作。 规则还允许您在条件中使用地理属性来个性化体验。
-
-* **Places Monitor扩展**
-
-   多平台Mobile SDK，可嵌入到您的移动设备应用程序中，以自动监控用户的位置更改并触发Places规则。 有关更多信息，请参阅 [Places Monitor扩展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## 术语
 

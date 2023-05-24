@@ -1,46 +1,45 @@
 ---
-title: 将POI进入和退出数据发送到Analytics
-description: 本节提供有关如何将POI进入和退出数据发送到Analytics的信息。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: 将POI登入和退出数据发送到Analytics
+description: 本节提供了有关如何将POI登入和退出数据发送到Analytics的信息。
+exl-id: 69e96261-4902-47dd-a930-a8f3d19c179c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 2%
+source-wordcount: '432'
+ht-degree: 3%
 
 ---
 
-
-# 将POI进入和退出数据发送到Analytics {#places-data-analytics}
+# 将POI登入和退出数据发送到Analytics {#places-data-analytics}
 
 
 >[!IMPORTANT]
 >
->本节假定您已在应用程序中实施Places Service。 有关实施Places Service的详细信息，请参 [阅Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本节假设您在应用程序中实施了Places服务。 有关实施Places服务的更多信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-在Places Service发送进入和退出事件后，您可以在Experience Platform Launch中创建规则以将Places Service数据发送到Adobe Analytics。 要创建此类型的规则，请在启动项中选择您的属性，然后完成以下步骤：
+在Places服务发送进入和退出事件后，您可以在Experience Platform Launch中创建规则以将Places服务数据发送到Adobe Analytics。 要创建此类型的规则，请在Launch中选择您的资产并完成以下步骤：
 
 ## 1.创建规则
 
-1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
+1. 在 **[!UICONTROL 规则]** 选项卡，单击 **[!UICONTROL 创建新规则]**.
 
    请牢记以下信息：
 
-   * 如果此属性没有现有规则， **[!UICONTROL Create New Rule]** 则按钮将位于屏幕中间。
-   * 如果您的属性有规 **[!UICONTROL Create New Rule]** 则，则按钮将位于屏幕右上方。
+   * 如果您没有此资产的现有规则，则 **[!UICONTROL 创建新规则]** 按钮将位于屏幕中间。
+   * 如果您的资产有规则，则 **[!UICONTROL 创建新规则]** 按钮将位于屏幕的右上方。
 
 ## 2.选择事件
 
-1. 为规则键入有意义的名称。
+1. 为您的规则键入一个有意义的名称。
 
-   这样，规则在您的规则列表中就很容易识别。 在此示例中，将命名规则 **[!UICONTROL Send Data to Analytics]**。
+   这样，规则便可以在规则列表中轻松识别。 在此示例中，将规则命名为 **[!UICONTROL 将数据发送到Analytics]**.
 
-1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 事件]** 部分，单击 **[!UICONTROL 添加]**.
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places Service]**。
+1. 从 **[!UICONTROL 扩展]** 下拉列表，选择 **[!UICONTROL Places Service]**.
 
-1. 从下 **[!UICONTROL Event Type]** 拉列表中，选择 **[!UICONTROL Enter POI]**。
+1. 从 **[!UICONTROL 事件类型]** 下拉列表，选择 **[!UICONTROL 输入POI]**.
 
-1. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**.
 
    ![&quot;选择事件&quot;](/help/assets/pt-selectEvent.png)
 
@@ -49,47 +48,47 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->完成此步骤，将条件添加到规则。 否则，跳到以 *下定义操作* 。
+>完成此步骤可将条件添加到规则中。 否则，请跳至 *定义操作* 下面的。
 
-在此示例中，创建了一个条件，该条件仅在当前POI的名称等于时使规则触发 **[!UICONTROL My POI]**。
+在此示例中，创建了一个条件，该条件导致规则仅在当前POI的名称等于时触发 **[!UICONTROL 我的POI]**.
 
-1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 条件]** 部分，单击 **[!UICONTROL 添加]**.
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Places Service]**。
+1. 从 **[!UICONTROL 扩展]** 下拉列表，选择 **[!UICONTROL Places Service]**.
 
-1. 从下 **[!UICONTROL Condition Type]** 拉列表中，选择 **[!UICONTROL Name]**。
+1. 从 **[!UICONTROL 完成情况类型]** 下拉列表，选择 **[!UICONTROL 名称]**.
 
-1. 在右侧窗格的文本字段中，输入 **[!UICONTROL My POI]**。
+1. 在右侧窗格的文本字段中，输入 **[!UICONTROL 我的POI]**.
 
-1. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**.
 
-   ![&quot;设置条件&quot;](/help/assets/pt-setCondition.png)
+   ![&quot;set a condition&quot;](/help/assets/pt-setCondition.png)
 
 
 ## 4.定义活动
 
-1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 操作]** 部分，单击 **[!UICONTROL 添加]**.
 
-1. 从下 **[!UICONTROL Extension]** 拉列表中，选择 **[!UICONTROL Adobe Analytics]**。
+1. 从 **[!UICONTROL 扩展]** 下拉列表，选择 **[!UICONTROL Adobe Analytics]**.
 
-1. 从下 **[!UICONTROL Action Type]** 拉列表中，选择 **[!UICONTROL Track]**。
+1. 从 **[!UICONTROL 操作类型]** 下拉列表，选择 **[!UICONTROL Track]**.
 
 1. 在右侧窗格中，添加要发送到Analytics的操作或状态。
 
-   您还可以选择向此请求添加任何其他上下文数据。 请记住，您可以使用数据元素从SDK动态获取此数据。
+   您还可以选择将任何其他上下文数据添加到此请求。 请记住，您可以使用数据元素从SDK动态获取此数据。
 
-1. 单击 **[!UICONTROL Keep Changes]**。
+1. 单击 **[!UICONTROL Keep Changes]**.
 
-   在以下示例中，将向 `TrackAction` Analytics发送一个调用，其附加上下文数据 `poi.name` 与触发此条目事件的POI的名称相等：
+   在以下示例中， `TrackAction` 调用被发送到Analytics，其中包含的其他上下文数据 `poi.name` 等于触发此进入事件的POI的名称：
 
-   ![&quot;设置操作&quot;](/help/assets/pt-setAction.png)
+   ![&quot;set an action&quot;](/help/assets/pt-setAction.png)
 
-## 5.保存规则并重新构建您的属性
+## 5.保存规则并重建您的资产
 
-完成配置后，请验证您的规则是否与下图类似：
+完成配置后，请验证规则是否如下所示：
 
 ![&quot;已创建规则&quot;](/help/assets/pt-ruleComplete.png)
 
-1. 单击 **[!UICONTROL Save]**
+1. 单击&#x200B;**[!UICONTROL 保存]**
 
-1. 重新构建您的启动属性并将其部署到正确环境。
+1. 重新构建Launch资产，并将其部署到正确的环境。

@@ -1,18 +1,17 @@
 ---
 title: 更新POI
-description: 使用Places REST API更新POI。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+description: 使用地标REST API更新POI。
+exl-id: f155d1d3-88a3-47bc-bffe-a35842a639e2
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
-
 # 更新POI {#update-a-poi}
 
-一种PUT方法，可让您更新POI。
+允许您更新POI的PUT方法。
 
 ## 请求
 
@@ -20,13 +19,13 @@ ht-degree: 6%
 PUT https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## 标题
+## 标头
 
 ```text
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## 身体
+## 正文
 
 ```text
 {  "id": "string",  "name": "string",  "description": "string",  "location": {    "type": Point",    "coordinates": [<LONGITUDE>, <LATITUDE>]  },  "radius": 0,  "country": "string",  "state": "string",  "city": "string",  "street": "string",  "category": "string",  "icon": "string",  "color": "string",  "metadata": {          "brand": "string",          "owndership": "string"          },  "lib_id": "{libraryID}"}
@@ -40,7 +39,7 @@ PUT https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 
 ## CURL命令
 
-使用以下CURL命令测试此API:
+使用以下CURL命令测试此API：
 
 ```text
 curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '<SINGLEPOIDATA>' -H "Content-Type: application/json"
@@ -48,4 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->用实 `<POIID>`际 `<API KEY>`值替 `<TOKEN>`换、、 `<ORGID>`和 `<SINGLEPOIDATA>` 、和。
+>Replace `<POIID>`， `<API KEY>`， `<TOKEN>`， `<ORGID>`、和 `<SINGLEPOIDATA>` 具有实际值。

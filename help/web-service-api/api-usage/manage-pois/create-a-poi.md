@@ -1,18 +1,17 @@
 ---
 title: 创建POI
 description: 使用Places REST API创建POI。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 6%
+ht-degree: 10%
 
 ---
 
-
 # 创建POI {#create-a-poi}
 
-一种POST方法，可让您创建POI。
+允许您创建POI的POST方法。
 
 ## 请求
 
@@ -20,7 +19,7 @@ ht-degree: 6%
 POST https://api-places.adobe.io/places/placesapi/v1/pois
 ```
 
-## 标题
+## 标头
 
 ```text
 -H' Content-Type: application/json'  
@@ -30,7 +29,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 -H 'Accept-Language: en-US'
 ```
 
-## 身体
+## 正文
 
 ```text
 {
@@ -89,7 +88,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 
 ## CURL命令
 
-使用以下CURL命令测试此API:
+使用以下CURL命令测试此API：
 
 ```text
 curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>' -d '<SINGLEPOIDATA>' -H "Content-Type: application/json"
@@ -97,4 +96,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->切记用 `<API KEY>`实 `<TOKEN>`际值替换、、 `<SINGLEPOIDATA>` 和。
+>记住要替换 `<API KEY>`， `<TOKEN>`， &#39;，&#39;和 `<SINGLEPOIDATA>` 具有实际值。

@@ -1,16 +1,15 @@
 ---
-title: 在库上设置排名
-description: 使用Places REST API在库上设置排名。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: 在库中设置排名
+description: 使用Places REST API在库中设置排名。
+exl-id: c922bddc-1587-4da8-acb4-c2d69ce11808
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
-
-# 在库上设置排名 {#set-rank-on-libraries}
+# 在库中设置排名 {#set-rank-on-libraries}
 
 一种PUT方法，允许您在所有库上设置排名顺序。
 
@@ -18,7 +17,7 @@ ht-degree: 5%
 
 `PUT https://api-places-dev.adobe.io/places/placesapi/v1/libraries/rank`
 
-## 标题
+## 标头
 
 ```-H Content-Type: application/json'
 -H 'Authorization: Bearer <TOKEN>`  
@@ -48,5 +47,4 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->将变量(如 `<API KEY>`、 `<TOKEN>`和) `<ORGID>` 替换为实际值。
-
+>替换变量，例如 `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 具有实际值。

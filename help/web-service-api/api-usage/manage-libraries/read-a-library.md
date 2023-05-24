@@ -1,17 +1,15 @@
 ---
-title: 阅读库
-description: 使用Places REST API阅读库。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: 读取库
+description: 使用Places REST API读取库。
+exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-
-
-# 阅读库 {#read-a-library}
+# 读取库 {#read-a-library}
 
 返回库详细信息的GET方法。
 
@@ -21,7 +19,7 @@ ht-degree: 6%
 GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 ```
 
-## 标题
+## 标头
 
 ```text
 -H' Content-Type: application/json'  
@@ -84,7 +82,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 
 ## CURL命令
 
-使用以下CURL命令测试API:
+使用以下CURL命令测试API：
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -92,5 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->用实 `<LIBRARYID>`际 `<API KEY>`值替 `<TOKEN>`换、 `<ORGID>` 和、和。
-
+>Replace `<LIBRARYID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 具有实际值。

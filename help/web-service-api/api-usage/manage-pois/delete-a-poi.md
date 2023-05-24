@@ -1,18 +1,17 @@
 ---
 title: 删除POI
 description: 使用Places REST API删除POI。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 0325eb3b-f9b2-4b21-bed8-e318e8072a69
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '44'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
-
 # 删除POI {#delete-a-poi}
 
-一种DELETE方法，可让您删除POI。
+允许您删除POI的DELETE方法。
 
 ## 请求
 
@@ -20,7 +19,7 @@ ht-degree: 6%
 DELETE https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## 标题
+## 标头
 
 ```text
 -H' Content-Type: application/json'  
@@ -38,7 +37,7 @@ If successful a Status of "204 No Content" is returned.
 
 ## CURL命令
 
-使用以下CURL命令测试API:
+使用以下CURL命令测试API：
 
 ```text
 curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -46,5 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->用实 `<POIID>`际 `<API KEY>`值替 `<TOKEN>`换、 `<ORGID>` 和、和。
-
+>Replace `<POIID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 具有实际值。

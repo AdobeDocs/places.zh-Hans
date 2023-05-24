@@ -1,16 +1,15 @@
 ---
-title: 阅读POI
-description: 使用Places REST API阅读POI。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: 读取POI
+description: 使用Places REST API读取POI。
+exl-id: 19eb73c4-5101-47a9-8c79-bc4790ecf472
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-
-# 阅读POI {#read-a-poi}
+# 读取POI {#read-a-poi}
 
 返回POI详细信息的GET方法。
 
@@ -20,7 +19,7 @@ ht-degree: 6%
 GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## 标题
+## 标头
 
 ```text
 -H' Content-Type: application/json'  
@@ -62,7 +61,7 @@ GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 
 ## CURL命令
 
-使用以下CURL命令测试API:
+使用以下CURL命令测试API：
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -70,5 +69,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->用实 `<POIID>`际 `<API KEY>`值替 `<TOKEN>`换、 `<ORIGIN>` 和、和。
-
+>Replace `<POIID>`， `<API KEY>`， `<TOKEN>`、和 `<ORIGIN>` 具有实际值。

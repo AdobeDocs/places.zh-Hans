@@ -1,43 +1,42 @@
 ---
 title: 管理现有POI
-description: 在Places Service UI中，您可以编辑、删除或过滤现有POI。
-translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+description: 在Places服务UI中，您可以编辑、删除或筛选现有POI。
+exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '407'
 ht-degree: 6%
 
 ---
 
-
 # 管理现有POI {#managing-existing-pois}
 
-POI和库是使用Places UI在Places数据库中创建和管理的。
+通过使用Places UI，可在Places数据库中创建和管理POI和库。
 
 ## 编辑POI
 
-1. 使用您的Adobe ID登录到地点。
-1. 使用您的Adobe ID登录Places Service。
-1. 在右上方，单击与项目符号列表类似的图标。
+1. 使用您的Adobe ID登录Places。
+1. 使用您的Adobe ID登录Places服务。
+1. 单击右上方的项目符号列表图标。
 1. 找到要编辑的POI。
-1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL View Details]**。
-1. 更新信息并单击 **[!UICONTROL Save]**。
+1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL 查看详细信息]**.
+1. 更新信息并单击 **[!UICONTROL 保存]**.
 
 ## 删除POI
 
-1. 使用您的Adobe ID登录到地点。
-1. 使用您的Adobe ID登录Places Service。
-1. 在右上方，单击与项目符号列表类似的图标。
+1. 使用您的Adobe ID登录Places。
+1. 使用您的Adobe ID登录Places服务。
+1. 单击右上方的项目符号列表图标。
 1. 找到要删除的POI。
-1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL Delete]**。
+1. 单击 **[!UICONTROL ...]** 并选择 **[!UICONTROL 删除]**.
 
-## 按城市、州／省、国家／地区或元数据过滤POI
+## 按城市、州/省、国家/地区或元数据筛选POI
 
 ![筛选POI](/help/assets/filter_poi.png)
 
-1. 使用您的Adobe ID登录到Places Service UI。
-1. 在右上方，单击筛选图标。
-1. 可以通过以下方式之一过滤POI:
+1. 使用您的Adobe ID登录Places服务UI。
+1. 单击右上方的筛选图标。
+1. 您可以通过以下方式之一过滤POI：
 
    * 按库：
 
@@ -45,33 +44,33 @@ POI和库是使用Places UI在Places数据库中创建和管理的。
 
    * 按属性：
 
-      a.在属性下拉列表中，选 **[!UICONTROL Country]**&#x200B;择、 **[!UICONTROL State]**&#x200B;或 **[!UICONTROL City]**。
+      a.在属性下拉列表中，选择 **[!UICONTROL 国家/地区]**， **[!UICONTROL 状态]**，或 **[!UICONTROL 城市]**.
 
-      b.在下一行中，输入一个值。
+      b.在下一行，输入一个值。
 
-      例如，您可以选择 **[!UICONTROL State]** 并键入 **[!UICONTROL California]**。
+      例如，您可以选择 **[!UICONTROL 状态]** 和类型 **[!UICONTROL 加利福尼亚]**.
 
-   * 元数据：
+   * 使用元数据：
 
       a.输入键和值。
 
 ## 定义地理围栏POI
 
-Geofences是一种POI类型，在数据库中使用以下键定义：
+地理围栏是一种POI，它是在数据库中根据以下键定义的：
 
-| 按键 | 描述 | 必需? |
+| 键 | 描述 | 必需？ |
 | :--- | :--- | :--- |
 | ID | 分配给每个POI的唯一标识符 | 是 |
-| 名称 | 给POI的友好名称。 | 是 |
+| 名称 | 为POI指定的友好名称。 | 是 |
 | 库 | 必须为每个POI分配一个组织库。 | 是 |
 | 半径 | POI的半径（以米为单位）。 | 是 |
-| 图标 | 帮助实现POI的可视化。 | 是（已指定默认值） |
-| 颜色 | 帮助实现POI的可视化。 | 是（已指定默认值） |
-| 类别 | 为所有库中的所有POI指定通用的类别框架。 | 否 |
+| 图标 | 协助实现POI的可视化。 | 是（分配的默认值） |
+| 颜色 | 协助实现POI的可视化。 | 是（分配的默认值） |
+| 类别 | 分配在所有库中的所有POI中通用的类别的通用框架。 | 否 |
 | 地址 | 街道地址. | 否 |
 | 城市 | POI市。 | 否 |
-| 州／地区 | POI的州或地区。 | 否 |
-| 国家/地区 | POI的国家／地区。 | 否 |
+| 州/省/地区 | POI所在州或地区。 | 否 |
+| 国家/地区 | 目标点所在的国家/地区。 | 否 |
 | 纬度 | POI中心的纬度坐标。 | 是 |
 | 经度 | POI中心的经度坐标。 | 是 |
-| 元数据 | 可分配给POI的自定义密钥和值对。 此元数据允许您跨库将POI分组，以便每个工作流在下游工作流中使用规则和过滤器，如当某人输入POI时使用“类型=竞争对手”，发送推送通知，从而简化了将来的。 | 否 |
+| 元数据 | 可分配给POI的自定义键值对。 此元数据允许您跨库为每个库分组POI，以便在下游工作流中使用规则和过滤器，例如当有人使用“类型=竞争对手”输入POI时发送推送通知，从而简化未来的工作流。 | 否 |

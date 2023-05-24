@@ -1,6 +1,6 @@
 ---
 title: 快速入门
-description: Places Service快速入门。
+description: Places服务快速入门。
 exl-id: 1f0ac226-4993-495b-9d07-1e0ada7f19a7
 source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # 快速入门 {#getting-started}
 
-以下是一个用于获取Places Services概述的有用视频：
+以下是一段有用视频，概要介绍了Places服务：
 
 <!--
 Test of different youtube link for exl
@@ -19,22 +19,22 @@ Test of different youtube link for exl
 
 >[!VIDEO](https://video.tv.adobe.com/v/41647)
 
-## 使用Places Service
+## 使用Places服务
 
 要使用Places Service，请完成以下任务：
 
-### 1.确保您的用户已配置为使用Places Service
+### 1.确保已配置您的用户以使用Places服务
 
 Places Service产品上下文适用于所有Experience Cloud组织。
 
-* 确保在Admin Console的Places Service和Experience Platform Launch产品上下文下以用户身份列出。
+* 确保您在Admin Console中的Places服务和Experience Platform Launch产品上下文下被列为用户。
 
-   有关更多信息，请参阅 *将用户添加到Experience Platform Launch和位置服务* in [常见问题解答](/help/places-gain-access.md).
+   有关更多信息，请参阅 *向Experience Platform Launch和地标服务添加用户* 在 [常见问题解答](/help/places-gain-access.md).
 
 
-### 2.创建POI
+### 2.创建目标点(POI)
 
-目标点(POI)是您为组织创建的地理围栏，您可以通过以下方式之一创建目标点：
+目标点(POI)是您为组织创建的地理围栏，您可以通过以下方式之一创建POI：
 
 * 使用Places Service用户界面。
 
@@ -53,8 +53,8 @@ Places Service产品上下文适用于所有Experience Cloud组织。
 
 ### 4. （可选）实施区域监控解决方案
 
-如果您计划进行活动区域监控，则需要直接使用操作系统进行实施。 有关更多信息，请参阅以下文档：
+如果您计划执行主动区域监控，则需要直接使用操作系统实施。 有关更多信息，请参阅以下文档：
 
-* iOS - [CoreLocation文档](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
+* IOS - [CoreLocation文档](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)
 
 * Android - [位置文档](https://developer.android.com/training/location/geofencing)

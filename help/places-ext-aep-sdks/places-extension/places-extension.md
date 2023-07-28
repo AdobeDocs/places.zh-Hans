@@ -2,29 +2,29 @@
 title: Places 扩展
 description: Places扩展允许您根据用户的位置执行操作。
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '697'
 ht-degree: 5%
 
 ---
 
 # Places 扩展 {#places-extension}
 
-Places扩展允许您根据用户的位置执行操作。 此扩展是Places查询服务API的接口。 通过侦听包含GPS坐标和地理围栏区域事件的事件，此扩展可调度由规则引擎处理的新事件。 Places扩展还会检索并交付一个列表，其中包含从API检索的应用程序数据的最接近POI。 API返回的区域存储在缓存和持久性中，从而允许进行有限的离线处理。
+Places扩展允许您根据用户的位置执行操作。 此扩展是到Places查询服务API的接口。 通过侦听包含GPS坐标和地理围栏区域事件的事件，此扩展可调度由规则引擎处理的新事件。 Places扩展还会检索并提供从API检索的应用程序数据的最接近POI的列表。 API返回的区域存储在缓存和持久性中，允许进行有限的离线处理。
 
 ## 在Adobe Experience Platform Launch中安装Places扩展
 
 1. 在Experience Platform Launch中，单击 **[!UICONTROL 扩展]** 选项卡。
-1. 在 **[!UICONTROL 目录]** 选项卡，找到 **[!UICONTROL Places]** 扩展上，然后单击 **[!UICONTROL 安装]**.
-1. 选择要在此资产中使用的Places库。 这些是可在您的应用程序中访问的库。
+1. 在 **[!UICONTROL 目录]** 选项卡，找到 **[!UICONTROL 地标]** 扩展上，然后单击 **[!UICONTROL 安装]**.
+1. 选择要在此属性中使用的Places库。 这些是可在应用程序中访问的库。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-   当您单击 **[!UICONTROL 保存]**&#x200B;时，Experience PlatformSDK会在Places服务中搜索您所选库中的POI。 在构建应用程序时，POI数据不会包含在库的下载中，但基于位置的POI子集会在运行时下载到最终用户设备，并根据用户的GPS坐标进行下载。
+   当您单击 **[!UICONTROL 保存]**，Experience PlatformSDK将在Places服务中搜索您选择的库中的POI。 在构建应用程序时，POI数据不会包含在库的下载中，但运行时基于位置的POI子集会下载到最终用户的设备，并且会根据用户的GPS坐标进行下载。
 
 1. 完成发布过程以更新SDK配置。
 
-   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://docs.adobe.com/content/help/zh-Hans/launch/using/reference/publish/overview.html).
+   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### 配置Places扩展 {#configure-places-extension}
 
@@ -32,7 +32,7 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
 
 ## 将Places扩展添加到您的应用程序 {#add-places-to-app}
 
-您可以将Places扩展添加到您的Android和iOS应用程序。 下面显示了将地标添加到iOS或Android应用程序的步骤。 Places扩展也可用于以下平台。 有关在使用以下平台之一进行开发时向应用程序添加地标的信息，请参阅随附的链接：
+您可以将Places扩展添加到Android和iOS应用程序。 下面显示了将地标添加到iOS或Android应用程序的步骤。 Places扩展也可用于以下平台。 有关在使用以下平台之一进行开发时向应用程序添加地标的信息，请参阅随附的链接：
 
 **[Cordova Places插件](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
@@ -45,9 +45,9 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
 
 ### Android
 
-要使用Java将Places扩展添加到您的应用程序中，请执行以下操作：
+要使用Java将Places扩展添加到应用程序，请执行以下操作：
 
-1. 使用应用程序的Gradle文件将Places扩展添加到项目中。
+1. 使用应用程序的Gradle文件将Places扩展添加到您的项目中。
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -63,7 +63,7 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
 
 ### iOS
 
-要使用Objective-C或Swift将Places扩展添加到您的应用程序，请执行以下操作：
+要使用Objective-C或Swift将Places扩展添加到您的应用程序中，请执行以下操作：
 
 1. 添加地标和 [移动核心](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 库添加到您的项目。 您需要将以下pod添加到您的 `Podfile`：
 
@@ -72,7 +72,7 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您未使用Cocoapods，则可以手动包含来自以下各项的Mobile Core和Places库： [版本页面](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在Github上。
+   或者，如果您没有使用Cocoapods，则可以手动将移动核心和Places库包含到我们的 [版本页面](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在Github上。
 
 1. 更新您的Cocoapods：
 
@@ -102,7 +102,7 @@ Places扩展允许您根据用户的位置执行操作。 此扩展是Places查�
 
 #### Android
 
-在您的应用程序的 `OnCreate` 方法注册Places扩展：
+在您应用程序的 `OnCreate` 方法注册Places扩展：
 
 ```java
 public class PlacesTestApp extends Application {
@@ -124,7 +124,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-在您的应用程序的 `application:didFinishLaunchingWithOptions:` 方法，使用您的其他SDK注册调用注册Places扩展：
+在您应用程序的 `application:didFinishLaunchingWithOptions:` 方法，在其他SDK注册调用中注册Places扩展：
 
 **Objective-C**
 
@@ -150,7 +150,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 位置数据可能会很快过时，尤其是当设备未收到后台位置更新时。
 
-通过设置Places成员资格数据在设备上的生存时间 `places.membershipttl` 配置设置。 传入的值表示Places状态对设备保持有效的秒数。
+通过设置，控制Places成员资格数据在设备上的生存时间 `places.membershipttl` 配置设置。 传入的值表示Places状态对设备保持有效的秒数。
 
 #### Android
 
@@ -234,6 +234,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 | 键 | 必需 | 描述 |
 | :--- | :--- | :--- |
-| `places.libraries` | 是 | 适用于移动设备应用程序的Places扩展库。 它指定库ID和移动设备应用程序支持的库的名称。 |
-| `places.endpoint` | 是 | 默认Places查询服务端点，用于获取有关库和POI的信息。 |
-| `places.membershipttl` | 否 | 默认值为3600（一小时中的秒）。 指示设备的Places成员资格信息将保持有效的时间（以秒为单位）。 |
+| `places.libraries` | 是 | 适用于移动设备应用程序的Places扩展库。 它指定库ID以及移动设备应用程序支持的库的名称。 |
+| `places.endpoint` | 是 | 默认的Places查询服务端点，用于获取有关库和POI的信息。 |
+| `places.membershipttl` | 否 | 默认值为3600（一小时中的秒）。 指示设备的Places成员资格信息将保持有效的时间（秒）。 |

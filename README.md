@@ -1,7 +1,7 @@
 ---
-source-git-commit: c79135bed83932095df42869017ed2cc20be6e22
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '433'
 ht-degree: 98%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## 关于您对 Adobe 内容的贡献
 
-请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您的参与方式取决于您的身份以及您想提供的更改类型：
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 
 要提交请求，请单击文章中的&#x200B;**记录问题**&#x200B;链接，这会在 GitHub 中打开一个问题。指定标题和说明，然后单击&#x200B;**提交新问题**。
 
-要请求进行细微的更新，请单击文章中的&#x200B;**编辑此页面**&#x200B;链接，这会在 GitHub 中打开来源文章。使用 GitHub UI 进行更新。有关更多信息，请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+要请求进行细微的更新，请单击文章中的&#x200B;**编辑此页面**&#x200B;链接，这会在 GitHub 中打开来源文章。使用 GitHub UI 进行更新。有关更多信息，请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 您对本存储库中文档和代码示例提交的细微更正或说明均受 Adobe 使用条款的约束。
 
@@ -45,7 +45,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社区参与者可以使用 GitHub UI 进行基本编辑或创建存储库分支，以做出主要更改。
 
-有关详细信息，请参阅 [Adobe Docs 参与者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+有关详细信息，请参阅 [Adobe Docs 参与者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hans)。
 
 ## 如何使用 Markdown 格式化您的主题
 
@@ -54,9 +54,9 @@ If you submit a pull request with significant changes to documentation and code 
 * [Markdown 基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [可打印的 Markdown 速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
-## 标签
+## 标记
 
-在公共存储库中，会为拉取请求分配自动标签，以便帮助我们管理拉取请求工作流，以及帮助您了解拉取请求的处理进展：
+在公共存储库中，会为拉取请求分配自动标记，以便帮助我们管理拉取请求工作流，以及帮助您了解拉取请求的处理进展：
 
 * **已发送给作者的更改**：已通知作者拉取请求处于待处理状态。
 * **准备合并**：等待我们的拉取请求审核工作组进行审核。

@@ -2,9 +2,9 @@
 title: 应用程序内通知
 description: 此部分将向您展示如何将Places服务与应用程序内消息传送结合使用。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 应用程序内消息
 
-Mobile Services允许您使用发送到Analytics的位置数据作为应用程序内消息的触发事件和/或条件。 如果从SDK触发应用程序内消息，并且无需等待Analytics处理数据，则一旦触发即可实时显示消息。
+Mobile Services允许您使用发送到Analytics的位置数据作为应用程序内消息的触发事件和/或条件。 如果从SDK触发应用程序内消息，而无需等待Analytics处理数据，则一旦触发即可实时显示消息。
 
 ### 本地通知消息
 
@@ -29,23 +29,23 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 * 警报
 * 本地通知消息
 
-这些类型是应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉类似于推送通知，因为它们会在应用程序处于后台时显示。 这些通知还会在应用程序处于后台时，在用户进入或退出您的POI时交付实时通知。
+这些类型是应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉类似于推送通知，因为它们会在应用程序处于后台时显示。 当应用程序处于后台时，这些通知还会在用户进入或退出您的POI时交付实时通知。
 
 ### 先决条件
 
-在开始之前，您已了解如何在Mobile Services中发送和创建应用程序内消息以及触发器如何工作。 有关更多信息，请参阅 [创建应用程序内消息。](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
+在开始之前，您已了解如何在Mobile Services中发送和创建应用程序内消息以及触发器工作方式。 有关更多信息，请参阅 [创建应用程序内消息。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
 
 ##  Experience Platform Launch 中的规则
 
-您可以创建Experience Platform Launch规则，以将要用作应用程序内消息触发器规则一部分的数据发送到Analytics。 您可以将Experience Platform Launch规则中Places扩展的数据用作事件和/或条件，具体取决于您的用例。
+您可以创建Experience Platform Launch规则，将您希望能够用作应用程序内消息触发器规则一部分的数据发送到Analytics。 您可以将Places扩展中的数据用作Experience Platform Launch规则中的事件和/或条件，具体取决于您的用例。
 
 * 使用位置数据作为触发事件。
 
-   例如，您可以在用户输入POI时将数据发送到Analytics。
+  例如，您可以在用户输入POI时将数据发送到Analytics。
 
 * 将位置数据用作触发事件的条件。
 
-   例如，如果您在Places服务中为不同POI的天气创建了自定义元数据标记，则可以将该元数据用作规则条件的参数。 虽然您可以将此条件与前面描述的POI进入事件一起使用，但也可以将该条件用作任何事件的上下文。
+  例如，如果您在Places服务中为不同POI的天气创建了自定义元数据标记，则可以将该元数据用作规则条件的参数。 虽然可以将此条件与前面描述的POI进入事件一起使用，但也可以将该条件用作任何事件的上下文。
 
 使用正确的事件和条件参数设置规则后，通过配置操作以将数据发送到Analytics来完成规则配置。
 
@@ -54,7 +54,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 要创建操作，请执行以下操作：
 
 1. 选择 **[!UICONTROL Adobe Analytics]** 扩展。
-1. 在 **[!UICONTROL 操作类型]** 下拉列表，选择 **[!UICONTROL 曲目。]**
+1. 在 **[!UICONTROL 操作类型]** 下拉列表，选择 **[!UICONTROL 跟踪。]**
 1. 键入操作的名称。
 1. 在右侧窗格中，位于 **[!UICONTROL 上下文数据]**，选择键值对以设置将发送到Analytics的上下文数据。
 
@@ -62,7 +62,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
 >[!TIP]
 >
->可以将Analytics处理规则设置为选取此上下文数据。 有关更多信息，请参阅[处理规则](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)。在以下示例中 *创建操作*，该操作将发送 `poiname` 作为上下文，用于描述发送到Analytics的POI进入事件。
+>可以将Analytics处理规则设置为选取此上下文数据。 有关更多信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。在以下示例中 *创建操作*，则该操作将发送 `poiname` 作为上下文，用于描述发送到Analytics的POI进入事件。
 
 ![创建操作](/help/assets/configure-action.png)
 
@@ -77,12 +77,12 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 * 使用特定于位置的操作，如登入或退出。
 * 使用作为上下文数据发送的POI元数据来缩小受众目标范围。
 
-   此选项可与特定于位置的操作（如条目）一起使用，也可以用作其他事件（如启动项或按钮单击）的上下文。
+  此选项可与特定于位置的操作（如条目）一起使用，也可以用作其他事件（如启动项或按钮单击）的上下文。
 
-   以下示例介绍了如何配置应用程序内消息，以欢迎用户进入具有以下特征的POI **[!UICONTROL Adobe]** 在名称中：
+  以下示例介绍了如何配置应用程序内消息，以欢迎用户输入的POI具有 **[!UICONTROL Adobe]** 在名称中：
 
-   ![触发器参数](/help/assets/trigger-parameters.png)
+  ![触发器参数](/help/assets/trigger-parameters.png)
 
-* 中的Places服务标题中的参数 *触发器和特征* Mobile Services中的页面不适用于Places服务中的数据。
+* 中的Places服务标题中的参数 *触发器和特征* Mobile Services中的页面不能处理来自Places服务的数据。
 
-   这些参数仅适用于在Mobile Services中创建的旧版Places Service数据库。
+  这些参数仅适用于在Mobile Services中创建的旧版Places服务数据库。

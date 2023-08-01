@@ -1,27 +1,28 @@
 ---
-title: Places API引用
+title: Places API参考
 description: 有关Places中API引用的信息。
+feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 32%
 
 ---
 
-# Places API引用 {#places-api-reference}
+# Places API参考 {#places-api-reference}
 
 以下是有关Places扩展中的API引用的信息：
 
 ## 处理区域事件
 
-当设备跨越应用程序预定义的Places Service区域边界之一时，该区域和事件类型将传递到SDK进行处理。
+当设备跨越应用程序预定义的Places服务区域边界之一时，该区域和事件类型将传递到SDK进行处理。
 
-### ProcessGeofence (Android)
+### 进程地理围栏(Android)
 
 进程a `Geofence` 提供的的区域事件 `transitionType`.
 
-传递 `transitionType` 起始日期 `GeofencingEvent.getGeofenceTransition()`. 当前 `Geofence.GEOFENCE_TRANSITION_ENTER` 和 `Geofence.GEOFENCE_TRANSITION_EXIT` 受支持。
+传递 `transitionType` 从 `GeofencingEvent.getGeofenceTransition()`. 当前 `Geofence.GEOFENCE_TRANSITION_ENTER` 和 `Geofence.GEOFENCE_TRANSITION_EXIT` 受支持。
 
 **语法**
 
@@ -33,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **示例**
 
-在中调用此方法 `IntentService` 注册以接收Android地理围栏事件。
+在您的中调用此方法 `IntentService` 注册以接收Android地理围栏事件。
 
 以下是此方法的代码示例：
 
@@ -96,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **示例**
 
-在中调用此方法 `IntentService` 注册以接收Android地理围栏事件
+在您的中调用此方法 `IntentService` 注册以接收Android地理围栏事件的用户
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -115,7 +116,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ## 检索附近的目标点
 
-返回回调中附近POI的有序列表。 如果生成的网络调用出错，则此方法的重载版本将返回错误代码。
+返回回调中附近POI的有序列表。 如果生成的网络调用出错，则此方法的多载版本将返回错误代码。
 
 ### GetNeartherPointsOfInterest (Android)
 
@@ -254,7 +255,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 ## 获取设备的位置
 
-请求Places扩展以前称为的设备位置。
+请求Places扩展以前所知的设备位置。
 
 >[!TIP]
 >
@@ -385,7 +386,7 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 提供的状态存储在Places共享状态中，仅供参考。
 调用此方法不会影响此设备的实际位置授权状态。
 
-当设备授权状态更改时， `locationManager:didChangeAuthorizationStatus:` 方法 `CLLocationManagerDelegate` 将会调用。 在此方法中，您应该传递新的 `CLAuthorizationStatus` acplaces的值 `setAuthorizationStatus:` API。
+当设备授权状态发生变化时， `locationManager:didChangeAuthorizationStatus:` 方法 `CLLocationManagerDelegate` 将调用。 在此方法中，您应该传递新的 `CLAuthorizationStatus` ACPlaces的值 `setAuthorizationStatus:` API。
 
 **语法**
 

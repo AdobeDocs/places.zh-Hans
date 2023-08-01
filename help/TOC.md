@@ -2,7 +2,8 @@
 audience: end-user
 user-guide-title: Places Service 指南
 user-guide-description: Places Service 是一种地理位置服务，它使具有位置感知的移动应用程序能够了解位置上下文。
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+feature: Places
+source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 20%
@@ -17,7 +18,7 @@ ht-degree: 20%
 + [快速入门](getting-started.md)
 + [获取对Places服务的访问权限](places-gain-access.md)
 + Places Service UI {#poi-mgmt-ui}
-   + [Places Service UI概述](poi-mgmt-ui/poi-mgmt-ui-overview.md)
+   + [Places服务UI概述](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [创建POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [管理以前创建的POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [将元数据与POI一起使用的策略](poi-mgmt-ui/metadata-with-pois.md)
@@ -28,7 +29,7 @@ ht-degree: 20%
    + [集成先决条件](web-service-api/adobe-i-o-integration.md)
    + API使用情况 {#api-usage}
       + [API使用情况概述](web-service-api/api-usage/api-usage-overview.md)
-      + [标头和参数](web-service-api/api-usage/headers-and-parameters.md)
+      + [标题和参数](web-service-api/api-usage/headers-and-parameters.md)
       + 管理库 {#manage-libraries}
          + [管理库概述](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [创建库](web-service-api/api-usage/manage-libraries/create-a-library.md)
@@ -37,13 +38,13 @@ ht-degree: 20%
          + [删除库](web-service-api/api-usage/manage-libraries/delete-a-library.md)
          + [读取组织中的所有库](web-service-api/api-usage/manage-libraries/read-all-libraries-in-your-organization.md)
          + [在库中设置排名](web-service-api/api-usage/manage-libraries/set-a-ran-on-your-libraries.md)
-         + [获取库排名](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
+         + [获取库的排名](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
       + 管理目标点 {#manage-pois}
          + [管理POI概述](web-service-api/api-usage/manage-pois/manage-pois.md)
          + [创建POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
          + [读取POI](web-service-api/api-usage/manage-pois/read-a-poi.md)
          + [更新POI](web-service-api/api-usage/manage-pois/update-a-poi.md)
-         + [删除POI](web-service-api/api-usage/manage-pois/delete-a-poi.md)
+         + [删除目标点(POI)](web-service-api/api-usage/manage-pois/delete-a-poi.md)
          + [读取库中的所有POI](web-service-api/api-usage/manage-pois/read-all-pois-in-a-library.md)
          + [读取您组织中的所有POI](web-service-api/api-usage/manage-pois/read-all-pois-in-your-organization.md)
          + 批处理API {#batch-apis}
@@ -52,14 +53,14 @@ ht-degree: 20%
             + [更新多个POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [删除多个POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [查询API](web-service-api/api-usage/query-apis.md)
-+ Mobile SDK的扩展 {#places-ext-aep-sdks}
++ 移动SDK的扩展 {#places-ext-aep-sdks}
    + Places 扩展 {#places-extension}
       + [Places 扩展](places-ext-aep-sdks/places-extension/places-extension.md)
-      + [Places API引用](places-ext-aep-sdks/places-extension/places-api-reference.md)
+      + [Places API参考](places-ext-aep-sdks/places-extension/places-api-reference.md)
       + [地标事件引用](places-ext-aep-sdks/places-extension/places-event-ref.md)
       + [自定义Places对象](places-ext-aep-sdks/places-extension/cust-places-objects.md)
 + [将Places Service与您自己的监控解决方案结合使用](using-your-own-monitor.md)
-+ [不使用活动区域监视使用Places服务](use-places-without-active-monitoring.md)
++ [不使用活动区域监视的Places服务](use-places-without-active-monitoring.md)
 + 将Places服务用作Experience Platform Launch工作流的一部分 {#use-places-launch-workflow}
    + [将Places服务用作Experience Platform Launch工作流的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定义数据元素](use-places-launch-workflow/define-data-elements.md)
@@ -69,7 +70,7 @@ ht-degree: 20%
       + [将Places服务与Adobe Analytics结合使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [将POI登入和退出数据发送到Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [将位置上下文添加到Analytics请求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
-      + [报告Analytics Workspace中的位置数据](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
+      + [在Analytics Workspace中报告位置数据](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [推送通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)

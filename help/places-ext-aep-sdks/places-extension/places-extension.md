@@ -3,107 +3,111 @@ title: Places 扩展
 description: Places扩展允许您根据用户的位置执行操作。
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 5%
+source-wordcount: '37'
+ht-degree: 10%
 
 ---
 
 # Places 扩展 {#places-extension}
 
-Places扩展允许您根据用户的位置执行操作。 此扩展是到Places查询服务API的接口。 通过侦听包含GPS坐标和地理围栏区域事件的事件，此扩展可调度由规则引擎处理的新事件。 Places扩展还会检索并提供从API检索的应用程序数据的最接近POI的列表。 API返回的区域存储在缓存和持久性中，允许进行有限的离线处理。
+导航到Adobe开发人员门户，查看相关文档 [Places SDK扩展](https://developer.adobe.com/client-sdks/documentation/places/).
 
-## 在Adobe Experience Platform Launch中安装Places扩展
+<!-- 
 
-1. 在Experience Platform Launch中，单击 **[!UICONTROL 扩展]** 选项卡。
-1. 在 **[!UICONTROL 目录]** 选项卡，找到 **[!UICONTROL 地标]** 扩展上，然后单击 **[!UICONTROL 安装]**.
-1. 选择要在此属性中使用的Places库。 这些是可在应用程序中访问的库。
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+The Places extension allows you to act based on the location of your users. This extension is the interface to the Places Query Service APIs. By listening for events that contain GPS coordinates and geofence region events, this extension dispatches new events that are processed by the Rules Engine. The Places extension also retrieves and delivers a list of the nearest POI for the app data that retrieves from the APIs. The regions returned by the APIs are stored in cache and persistence, which allows limited offline processing.
 
-   当您单击 **[!UICONTROL 保存]**，Experience PlatformSDK将在Places服务中搜索您选择的库中的POI。 在构建应用程序时，POI数据不会包含在库的下载中，但运行时基于位置的POI子集会下载到最终用户的设备，并且会根据用户的GPS坐标进行下载。
+## Install the Places extension in Adobe Experience Platform Launch
 
-1. 完成发布过程以更新SDK配置。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. On the **[!UICONTROL Catalog]** tab, locate the **[!UICONTROL Places]** extension, and click **[!UICONTROL Install]**.
+1. Select the Places libraries you want to use in this property. These are the libraries that will be accessible in your app.
+1. Click **[!UICONTROL Save]**.
 
-   有关在Experience Platform Launch中发布的更多信息，请参阅 [发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+    When you click **[!UICONTROL Save]**, the Experience Platform SDK searches the Places Services for POIs in the libraries that you selected. The POI data is not included in the download of the library when you build the app, but a location-based subset of POIs is downloaded to the end user's device at runtime and is based on the user's GPS coordinates.
 
-### 配置Places扩展 {#configure-places-extension}
+1. Complete the publishing process to update the SDK configuration.
 
-![](/help/assets/places-extension.png)
+   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
-## 将Places扩展添加到您的应用程序 {#add-places-to-app}
+### Configure the Places extension {#configure-places-extension}
 
-您可以将Places扩展添加到Android和iOS应用程序。 下面显示了将地标添加到iOS或Android应用程序的步骤。 Places扩展也可用于以下平台。 有关在使用以下平台之一进行开发时向应用程序添加地标的信息，请参阅随附的链接：
+  ![](/help/assets/places-extension.png)
 
-**[Cordova Places插件](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
+## Add the Places extension to your app {#add-places-to-app}
 
-**[React Native Places插件](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+You can add the Places extension to your Android and iOS apps. The steps to add Places to your iOS or Android application can be seen below. Places extensions are also available for the following platforms below. For adding Places to your application when developing with one of these platforms see the accompanying links:
 
-**[Flutter Places插件](https://github.com/adobe/flutter-acpplaces_monitor)**
+**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)** 
 
-**[Xamarin Places插件](https://github.com/adobe/xamarin-acpcore)**
+**[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)** 
+
+**[Flutter Places Plugin](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Xamarin Places Plugin](https://github.com/adobe/xamarin-acpcore)**
 
 
 ### Android
 
-要使用Java将Places扩展添加到应用程序，请执行以下操作：
+To add the Places extension to your app by using Java:
 
-1. 使用应用程序的Gradle文件将Places扩展添加到您的项目中。
+1. Add the Places extension to your project using your app's gradle file.
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-1. 在应用程序的主活动中导入Places扩展。
+1. Import the Places extension in your application's main activity.
 
-   ```java
-   import com.adobe.marketing.mobile.Places;
-   ```
+    ```java
+    import com.adobe.marketing.mobile.Places;
+    ```
 
 
 ### iOS
 
-要使用Objective-C或Swift将Places扩展添加到您的应用程序中，请执行以下操作：
+To add Places extension to your app by using Objective-C or Swift:
 
-1. 添加地标和 [移动核心](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 库添加到您的项目。 您需要将以下pod添加到您的 `Podfile`：
+1. Add the Places and [Mobile Core](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) libraries to your project. You will need to add the following pods to your `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您没有使用Cocoapods，则可以手动将移动核心和Places库包含到我们的 [版本页面](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在Github上。
+   Alternatively, if you are not using Cocoapods, you can manually include the Mobile Core and the Places libraries from our [releases page](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) on Github.
 
-1. 更新您的Cocoapods：
+1. Update your Cocoapods:
 
    ```objective-c
    pod update
    ```
 
-1. 打开Xcode，然后在AppDelegate类中，导入Core和Places标头：
+1. Open Xcode, and in your AppDelegate class, import the Core and the Places headers:
 
-   **Objective-C**
+    **Objective-C**
 
-   ```objective-c
-   #import "ACPCore.h"
-   #import "ACPPlaces.h"
-   ```
+    ```objective-c
+    #import "ACPCore.h"
+    #import "ACPPlaces.h"
+    ```
 
-   **Swift**
+    **Swift**
 
-   ```swift
-   import ACPCore
-   import ACPPlaces
-   ```
+    ```swift
+    import ACPCore
+    import ACPPlaces
+    ```
 
-### 在移动核心中注册Places扩展 {#register-places-mobile-core}
+### Register the Places extension with Mobile Core {#register-places-mobile-core}
 
-您需要在Android和iOS中通过Mobile Core注册Places扩展。
+You need to register the Places extension with Mobile Core in Android and iOS.
 
 #### Android
 
-在您应用程序的 `OnCreate` 方法注册Places扩展：
+In your App's `OnCreate` method register the Places extensions:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -125,7 +129,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-在您应用程序的 `application:didFinishLaunchingWithOptions:` 方法，在其他SDK注册调用中注册Places扩展：
+In your App's `application:didFinishLaunchingWithOptions:` method, register the Places extension with your other SDK registration calls:
 
 **Objective-C**
 
@@ -147,15 +151,15 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-### 修改Places成员资格生存时间 {#places-ttl}
+### Modifying Places membership time-to-live {#places-ttl}
 
-位置数据可能会很快过时，尤其是当设备未收到后台位置更新时。
+Location data can quickly become stale, especially if the device is not receiving background location updates.
 
-通过设置，控制Places成员资格数据在设备上的生存时间 `places.membershipttl` 配置设置。 传入的值表示Places状态对设备保持有效的秒数。
+Control the time-to-live for Places membership data on the device by setting the `places.membershipttl` configuration setting. The value passed in represents the number of seconds that the Places state will remain valid for the device.
 
 #### Android
 
-回调内部 `MobileCore.start()` 在调用之前使用必要的更改更新配置 `lifecycleStart`：
+Inside the callback of `MobileCore.start()` update the configuration with the necessary changes prior to calling `lifecycleStart`:
 
 ```java
 public class PlacesTestApp extends Application {
@@ -189,7 +193,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-在回调的第一行 `ACPCore`的 `start:` 方法，调用 `updateConfiguration:`
+On the first line in the callback of `ACPCore`'s `start:` method, call `updateConfiguration:`
 
 **Objective-C**
 
@@ -229,12 +233,14 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-## 配置键
+## Configuration keys
 
-要在运行时以编程方式更新SDK配置，请使用以下信息更改Places扩展配置值。 有关更多信息，请参阅 [配置API参考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
+To update the SDK configuration programmatically at runtime, use the following information to change your Places extension configuration values. For more information, see [Configuration API Reference](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
 
-| 键 | 必需 | 描述 |
+| Key | Required | Description |
 | :--- | :--- | :--- |
-| `places.libraries` | 是 | 适用于移动设备应用程序的Places扩展库。 它指定库ID以及移动设备应用程序支持的库的名称。 |
-| `places.endpoint` | 是 | 默认的Places查询服务端点，用于获取有关库和POI的信息。 |
-| `places.membershipttl` | 否 | 默认值为3600（一小时中的秒）。 指示设备的Places成员资格信息将保持有效的时间（秒）。 |
+| `places.libraries` | Yes | The Places extension libraries for the mobile app. It specifies the library ID and the name of the library that the mobile app supports. |
+| `places.endpoint` | Yes | The default Places Query Service endpoint, which is used to get information about libraries and POIs. |
+| `places.membershipttl` | No | Default value of 3600 (seconds in an hour). Indicates how long, in seconds, Places membership information for the device will remain valid. |
+
+-->

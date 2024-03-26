@@ -2,10 +2,10 @@
 title: Places Service
 description: Places Service是了解移动用户参与的重要上下文。 通过使用此上下文，移动应用程序开发人员可以增强应用程序设计，并使其成为更加个性化和引人入胜的体验。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 10%
+source-wordcount: '663'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +44,7 @@ Places Service包含以下组件：
 
   在地图上可视化POI以了解空间上下文并添加/编辑POI及其自定义元数据。
 
-* **Places 扩展**
+* **Places扩展**
 
   多平台移动API接口，用于集成移动应用程序中的位置上下文。 有关SDK的更多信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
@@ -85,3 +85,4 @@ Places Service包含以下组件：
 * 此 **EXPERIENCE CLOUDID** 服务提供通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
 
   有关更多信息，请参阅[概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)。
+

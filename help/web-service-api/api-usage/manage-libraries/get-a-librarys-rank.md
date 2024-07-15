@@ -1,17 +1,17 @@
 ---
-title: 获取库排名
+title: 获取库的排名
 description: 使用Places REST API获取库的排名。
 exl-id: c0abedd0-5ff4-4a01-9f8d-e3d17ea53a97
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '41'
-ht-degree: 9%
+ht-degree: 4%
 
 ---
 
-# 获取库排名 {#get-library-rank}
+# 获取库的排名 {#get-library-rank}
 
-一种GET方法，可用于对库进行排名。
+一种允许您对库进行排名的GET方法。
 
 ## 请求
 
@@ -41,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->替换变量，例如 `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 具有实际值。
+>将变量（如`<API KEY>`、`<TOKEN>`和`<ORGID>`）替换为实际值。

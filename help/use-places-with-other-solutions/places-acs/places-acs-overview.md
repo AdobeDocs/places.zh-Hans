@@ -13,5 +13,5 @@ ht-degree: 0%
 
 在将Places服务与Campaign Standard结合使用时，可以使用以下消息类型：
 
-* [使用Places服务的推送通知](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
-* [使用Places服务的应用程序内消息传送](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
+* [使用Places服务推送通知](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
+* [使用Places服务的应用程序内消息传递](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)

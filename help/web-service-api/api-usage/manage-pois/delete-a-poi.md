@@ -1,17 +1,17 @@
 ---
-title: 删除POI
+title: 删除目标点(POI)
 description: 使用Places REST API删除POI。
 exl-id: 0325eb3b-f9b2-4b21-bed8-e318e8072a69
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '44'
-ht-degree: 9%
+ht-degree: 4%
 
 ---
 
-# 删除POI {#delete-a-poi}
+# 删除目标点(POI) {#delete-a-poi}
 
-允许您删除POI的DELETE方法。
+一种DELETE方法，可让您删除POI。
 
 ## 请求
 
@@ -45,4 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->Replace `<POIID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 具有实际值。
+>将`<POIID>`、`<API KEY>`、`<TOKEN>`和`<ORGID>`替换为实际值。

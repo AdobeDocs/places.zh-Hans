@@ -5,7 +5,7 @@ exl-id: f170b722-e6f4-42a2-b3a6-1bf56965eb17
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
@@ -47,11 +47,11 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois/batchDelete' 
 
 >[!IMPORTANT]
 >
->Replace `<API KEY>`， `<TOKEN>`， `<ORGID>`、和 `<PATHTOBATCHDELETEJSONFILE>` 实数值。
+>将`<API KEY>`、`<TOKEN>`、`<ORGID>`和`<PATHTOBATCHDELETEJSONFILE>`替换为实值。
 
 ## 示例JSON文件
 
-以下是的示例JSON文件 `batchDelete` API：
+以下是`batchDelete` API的示例JSON文件：
 
 ```text
 {​"ids":["31a49d5c-c6ad-46ae-b88d-a6912a8a6b2f","6a78a729-7973-4373-9199-36da18cc5b8c","74eaa3da-2464-4298-9b6d-5376fa7ea00f"]​}

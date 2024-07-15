@@ -5,13 +5,13 @@ exl-id: 3384e1f2-9626-498d-85f7-84569d869c2c
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 6%
+ht-degree: 3%
 
 ---
 
 # 读取组织中的所有库 {#read-all-lib-in-org}
 
-返回组织中所有库详细信息的GET方法。
+一种GET方法，可返回组织中所有库的详细信息。
 
 ## 请求
 
@@ -41,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-ap
 
 >[!IMPORTANT]
 >
->替换变量，例如 `<API KEY>`， `<TOKEN>,` 和 `<ORGID>` 具有实际值。
+>将变量（如`<API KEY>`、`<TOKEN>,`和`<ORGID>`）替换为实际值。

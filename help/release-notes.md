@@ -4,7 +4,7 @@ description: Places服务的发行说明。
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 2%
 
 * **Places和Places监视器扩展**
 
-   * 已为添加Places和Places监视器扩展 [React本机应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * 已为添加Places和Places监视器扩展 [Cordova应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * 有关更多信息，请参阅： [使用Places扩展](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * 已为[React Native应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)添加Places和Places监视器扩展
+   * 已为[Cordova应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)添加Places和Places监视器扩展
+   * 有关详细信息，请参阅：[使用Places扩展](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 2020年5月12日
 
-* **Places Service**
+* **地标服务**
 
    * 使用“导入POI”按钮从CSV文件批量导入POI
    * 选择多个POI并批量编辑或添加元数据值
@@ -44,20 +44,20 @@ ht-degree: 2%
 
       * 改进了日志记录
 
-## 2020 年 2 月 20 日
+## 2020年2月20日
 
 * **ACPPlaces 1.3.1 (iOS)**
 
    * Places扩展现在会向核心SDK中的事件中心报告版本信息。
-   * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关更多信息，请参阅 [修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
-* **Places 1.4.1 (Android)**
+* **位置1.4.1 (Android)**
 
    * Places扩展现在会向核心SDK中的事件中心报告版本信息。
-   * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关更多信息，请参阅 [修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
-## 2020 年 1 月 27 日
+## 2020年1月27日
 
 * **PlacesMonitor 2.2.0**
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 
    * **Android**
 
-      * 添加了一个新的API， `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
+      * 添加了一个新的API `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
 
 ## 2019年12月4日
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
    * **iOS**
 
-      * 添加了一个新的API， `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
+      * 添加了一个新的API `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
 
 ## 2019 年 11 月 25 日
 
@@ -104,7 +104,7 @@ ht-degree: 2%
 
    * **Android**
 
-      * 监视器现在可以识别Android设备的启动，并根据需要，根据设备的当前位置在操作系统中再次注册地理围栏。
+      * 监视器现在可以识别Android设备的引导，并根据需要，根据设备的当前位置在操作系统中再次注册地理围栏。
       * 修复了有时会丢弃登入/退出事件的争用情况。
 
 ## 2019年10月9日
@@ -113,12 +113,12 @@ ht-degree: 2%
 
    * **iOS**
 
-      * 添加了一个新的API， `setRequestAuthorizationLevel`，以设置将提示用户的位置授权请求的类型。
+      * 添加了一个新的API `setRequestAuthorizationLevel`，用于设置将提示用户的位置授权请求的类型。
 
 
    * **Android**
 
-      * 添加了一个新的API， `setLocationPermission`，以设置将提示用户的位置权限请求的类型。
+      * 添加了一个新的API `setLocationPermission`，用于设置将提示用户的位置权限请求的类型。
       * Places监视器现在支持Android 10。
 
 ## 2019 年 8 月 8 日
@@ -150,7 +150,7 @@ ht-degree: 2%
 
 ### 监控Launch扩展2.0.0
 
-* 更新了Places监视器2.0的Android和iOS安装说明。
+* 更新了Places Monitor 2.0的Android和iOS安装说明。
 
 ## 2019 年 7 月 31 日
 
@@ -166,9 +166,9 @@ ht-degree: 2%
 
   新API： `public static void stop (final boolean clearData);`
 
-* 更新了 `getNearbyPointsOfInterest` API可以更有效地处理错误场景。
+* 更新了`getNearbyPointsOfInterest` API的使用，以更有效地处理错误场景。
 
-## 2019 年 7 月 25 日
+## 2019年7月25日
 
 此版本中进行了以下更新：
 
@@ -176,11 +176,11 @@ ht-degree: 2%
 
 * 要清除设备中的所有Places数据，
 
-  在ACPPlacesMonitor中，替换了现有API `+ (void) stop;` 替换为`+ (void) stop: (BOOL) clearData;`.
+  在ACPPlacesMonitor中，将现有API `+ (void) stop;`替换为`+ (void) stop: (BOOL) clearData;`。
 
-* 更新了ACPlaces的使用 `getNearbyPointsOfInterest` API可以更有效地处理错误场景。
+* 更新了使用ACPPlaces `getNearbyPointsOfInterest` API来更有效地处理错误方案。
 
-## 2019 年 7 月 22 日
+## 2019年7月22
 
 此版本中进行了以下更新：
 
@@ -188,8 +188,8 @@ ht-degree: 2%
 
 * 添加了一个新API，可从共享状态、应用程序内内存和共享首选项中清除所有与Places相关的数据。
 * 修复了在应用程序启动期间共享状态未更新的问题。
-* 修复了以下错误 `getNearbyPointsOfInterest` callback正在返回错误代码 `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` 无网络连接。
-* `getNearbyPointsOfInterest` API（没有errorCallback）将具有 `successCallback` 如果检索附近的目标点时出错，请使用空的poi列表调用。
+* 修复了`getNearbyPointsOfInterest`回调在无互联网上返回错误代码`SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR`的错误。
+* `getNearbyPointsOfInterest` API（不带errorCallback）将在检索附近目标点时出错，使用空的poi列表调用`successCallback`。
 
 ## 2019年7月19
 
@@ -197,7 +197,7 @@ ht-degree: 2%
 
 **iOS Places 1.2.0**
 
-添加了一个新的API，可从共享状态、应用程序内内存和以下位置清除所有与Places相关的数据 `NSUserDefaults`.
+添加了一个新的API，可从共享状态、应用程序内内存和`NSUserDefaults`中清除所有与Places相关的数据。
 
 ## 2019年6月25日
 
@@ -213,18 +213,18 @@ ht-degree: 2%
 
 **iOS Places 1.1.0**
 
-* 添加了新API，以便在检索附近位置时返回错误代码。
+* 添加了一个新的API，以便在检索附近地标时出现错误时返回错误代码。
 * 当隐私状态更改为选择禁用时，现在将从设备中擦除所有与Places相关的数据。
 * 修复了在首次启动后，有时由于网络条件恶劣而导致Places事件丢失的问题。
 * 修复了在快速连续处理POI条目事件时，通过规则引擎进行的令牌替换有时引用不正确的POI的问题。
 
-## 2019 年 5 月 30 日
+## 2019年5月30
 
 **Android Places监视器1.0.1**
 
 * 修复了在启动Places监视时阻止POI进入事件的问题。
 
-## 2019 年 5 月 28 日
+## 2019年5月28日
 
 修复了Places UI中的以下问题：
 
@@ -281,7 +281,7 @@ Places监视器可管理操作系统级别的位置API，并直接与Places扩�
 
 ## 2019 年 2 月 28 日
 
-### 测试版
+### Beta版本
 
 这是Places Service的第一个版本，通过这套工具，客户可以使用真实的位置数据丰富其用户体验。 对于第一个版本，我们的主要用例是使移动设备应用程序能够检索自定义位置数据，并通过Adobe Experience Platform Launch处理这些数据。
 
@@ -293,8 +293,8 @@ Places监视器可管理操作系统级别的位置API，并直接与Places扩�
 
 我们发布了一个管理UI，您可以在其中查看和管理目标点(POI)。 您还可以将POI组织到库中。 除了标准元数据（如城市、州和类别）之外，我们还支持将自定义元数据添加到POI的功能。
 
-* 要查看用户界面，请转到 [https://places.adobe.com](https://places.adobe.com).
-* 要开始使用UI，请参阅 [快速入门](/help/getting-started.md).
+* 若要查看UI，请转到[https://places.adobe.com](https://places.adobe.com)。
+* 要开始使用UI，请参阅[快速入门](/help/getting-started.md)。
 
 #### Places扩展
 
@@ -306,7 +306,7 @@ Places监视器可管理操作系统级别的位置API，并直接与Places扩�
 * 在POI进入或退出时触发的规则事件。
 * 创建指向用户当前POI的数据元素。
 
-有关Places扩展的更多信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+有关Places扩展的详细信息，请参阅[Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 #### Places API
 
@@ -318,7 +318,7 @@ Places监视器可管理操作系统级别的位置API，并直接与Places扩�
 
   您可以使用提供的Python实用程序完成批量导入。
 
-有关Places API的更多信息，请参阅 [Web服务API](/help/web-service-api/places-web-services.md).
+有关Places API的详细信息，请参阅[Web服务API](/help/web-service-api/places-web-services.md)。
 
 ### 即将推出
 

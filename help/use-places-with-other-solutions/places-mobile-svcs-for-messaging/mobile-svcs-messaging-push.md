@@ -4,8 +4,8 @@ description: 此部分将向您展示如何将Places服务与推送通知结合�
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '216'
+ht-degree: 10%
 
 ---
 
@@ -21,18 +21,18 @@ Mobile Services允许您将推送通知发送至Adobe Analytics区段。 在Plac
 
 * 设置Mobile Services中的推送通知渠道。
 
-  有关更多信息，请参阅[创建推送消息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)。
+  有关更多信息，请参阅[创建推送消息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=zh-Hans)。
 
 * 了解如何在Mobile Services中向Analytics区段发送推送通知。
 
-  有关更多信息，请参阅[创建推送消息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)。
+  有关更多信息，请参阅[创建推送消息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=zh-Hans)。
 
 ## 发送通知
 
-在 **[!UICONTROL 受众]** 选项卡 *创建推送通知* 工作流，您可以通过以下方式之一为此消息创建受众：
+在&#x200B;*创建推送通知*&#x200B;工作流的&#x200B;**[!UICONTROL 受众]**&#x200B;选项卡上，您可以通过以下方式之一为此消息创建受众：
 
-* 在 **[!UICONTROL Analytics区段]** 从下拉列表中，选择之前创建的Adobe Analytics区段。
+* 在&#x200B;**[!UICONTROL Analytics区段]**&#x200B;下拉列表中选择之前创建的Adobe Analytics区段。
 
-* 在 **[!UICONTROL 自定义区段]** 部分，使用可用的自定义区段参数构建受众。
+* 在&#x200B;**[!UICONTROL 自定义区段]**&#x200B;部分中，使用可用的自定义区段参数构建受众。
 
 ![设置推送消息](/help/assets/push-set-up.png)

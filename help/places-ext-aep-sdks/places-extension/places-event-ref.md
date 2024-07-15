@@ -5,8 +5,8 @@ feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
 source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 28%
+source-wordcount: '247'
+ht-degree: 13%
 
 ---
 
@@ -46,8 +46,8 @@ ht-degree: 28%
 
 | 键 | 值类型 | 必需 | 默认值 | 描述 |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | 多次 | true | 不适用 | 保存搜索附近POI的中心位置的纬度值。 |
-| longitude | 多次 | true | 不适用 | 保存搜索附近POI的中心的经度值。 |
+| latitude | double | true | 不适用 | 保存搜索附近POI的中心位置的纬度值。 |
+| 经度 | double | true | 不适用 | 保存搜索附近POI的中心的经度值。 |
 | 半径 | 整数 | false | 不适用 | 搜索附近POI时使用的半径（以米为单位）。 |
 | count | 整数 | false | 10 | 在生成的响应事件中返回的最大POI数。 |
 

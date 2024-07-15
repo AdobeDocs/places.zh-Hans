@@ -1,11 +1,11 @@
 ---
 title: 更新POI
-description: 使用地标REST API更新POI。
+description: 使用Places REST API更新POI。
 exl-id: f155d1d3-88a3-47bc-bffe-a35842a639e2
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 11%
+ht-degree: 6%
 
 ---
 
@@ -47,4 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Replace `<POIID>`， `<API KEY>`， `<TOKEN>`， `<ORGID>`、和 `<SINGLEPOIDATA>` 具有实际值。
+>将`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`和`<SINGLEPOIDATA>`替换为实际值。

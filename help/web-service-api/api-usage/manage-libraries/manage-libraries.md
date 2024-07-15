@@ -19,4 +19,4 @@ ht-degree: 5%
 * [删除库](/help/web-service-api/api-usage/manage-libraries/delete-a-library.md)
 * [读取组织中的所有库](/help/web-service-api/api-usage/manage-libraries/read-all-libraries-in-your-organization.md)
 * [在库中设置排名](/help/web-service-api/api-usage/manage-libraries/set-a-ran-on-your-libraries.md)
-* [获取库排名](/help/web-service-api/api-usage/manage-libraries/delete-a-library.md)
+* [获取库的排名](/help/web-service-api/api-usage/manage-libraries/delete-a-library.md)

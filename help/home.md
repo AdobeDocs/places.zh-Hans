@@ -27,7 +27,7 @@ Places Service允许您实现以下目标：
 
 以下是您可以使用地标的一些方式：
 
-* 当有人进入POI时发送实时通知， *“嘿……欢迎来到体育场。”*
+* 当有人进入POI时发送实时通知，*&quot;嘿……欢迎来到体育场。”*
 * 分析您自己的商店与竞争对手商店的客流量。
 * 通过使用具有位置上下文的受众配置文件根据离线行为对受众进行分段。
 * 在相关时定位具有店内体验的用户。
@@ -38,17 +38,17 @@ Places Service包含以下组件：
 
 * **Web服务**
 
-  您可以使用Places REST API创建和管理POI。 有关REST API的更多信息，请参阅 [管理库](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) 和 [管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+  您可以使用Places REST API创建和管理POI。 有关REST API的详细信息，请参阅[管理库](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)和[管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
-* **POI管理界面**
+* **POI管理接口**
 
   在地图上可视化POI以了解空间上下文并添加/编辑POI及其自定义元数据。
 
 * **Places扩展**
 
-  多平台移动API接口，用于集成移动应用程序中的位置上下文。 有关SDK的更多信息，请参阅 [Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+  多平台移动API接口，用于集成移动应用程序中的位置上下文。 有关SDK的更多信息，请参阅[Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-* **Launch规则**
+* **启动规则**
 
   地理智能Launch规则，允许您通过进入和退出事件触发操作。 这些规则还允许您在条件中使用地理属性来个性化体验。
 
@@ -56,21 +56,21 @@ Places Service包含以下组件：
 
 以下是本文档中使用的一些常用术语：
 
-* A **目标点(POI)** 是您的组织感兴趣的地理位置。
+* **目标点(POI)**&#x200B;是您的组织感兴趣的地理位置。
 
   您可以使用名称、半径、地址、类别和元数据标记等属性来定义POI。
 
-* A **地理围栏** 是一种POI。
+* **地理围栏**&#x200B;是POI类型。
 
   此POI类型是由纬度和经度坐标定义的虚拟地理边界。
 
-* A **beacon** 是一种POI。
+* **信标**&#x200B;是POI类型。
 
   此POI类型是一种通过发出低功耗蓝牙信号来表示位置的物理设备。 未来版本中将提供Beacons支持。
 
 * **库**&#x200B;是 POI 集合，POI 经过分组，可以轻松地将规则与一组 POI 关联起来，而不是一个 POI。
 
-* An **扩展** 是在移动应用程序中集成Places SDK所需的Experience Platform Launch扩展。
+* **扩展**&#x200B;是在移动应用程序中集成Places SDK所需的Experience Platform Launch扩展。
 
   与其他Mobile SDK一起使用以将位置上下文添加到体验的扩展。
 
@@ -80,9 +80,9 @@ Places Service包含以下组件：
 
 * **orgID** 是在 Adobe Experience Platform 中代表您组织的 ID。
 
-  有关更多信息，请参阅 [查找您的组织ID](https://forums.adobe.com/thread/2339895).
+  有关详细信息，请参阅[查找您的组织ID](https://forums.adobe.com/thread/2339895)。
 
-* 此 **EXPERIENCE CLOUDID** 服务提供通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
+* **Experience CloudID**&#x200B;服务提供了一个通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
 
   有关更多信息，请参阅[概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)。
 

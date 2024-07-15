@@ -1,11 +1,11 @@
 ---
 title: 概述
-description: 了解和使用查询API。
+description: 了解并使用查询API。
 exl-id: cc61a49c-1cf2-407f-b81a-3d38fcb622cc
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 2%
+source-wordcount: '222'
+ht-degree: 3%
 
 ---
 
@@ -25,24 +25,24 @@ GET https://query.places.adobe.com/placesedgequery
 * 要包含在搜索中的POI库的ID。
 * 要返回的最大POI数。  默认值为 100。
 
-   主叫方和POI之间的距离定义为从主叫方到POI地理围栏边缘的距离。 在响应中，包含来电者的POI将标记为拥有来电者。
+  主叫方和POI之间的距离定义为从主叫方到POI地理围栏边缘的距离。 在响应中，包含呼叫者的POI将标记为具有呼叫者。
 
 参数作为以下查询参数提供：
 
-* (**必需**) `latitude`
+* （**必需**） `latitude`
 
-   呼叫者的纬度，必须介于–85和85之间。
-* (**必需**) `longitude`
+  呼叫者的纬度，必须介于–85和85之间。
+* （**必需**） `longitude`
 
-   调用方的经度，必须介于–180和180之间。
+  调用方的经度，必须介于–180和180之间。
 
-* (**可选**) `limit`
+* （**可选**） `limit`
 
-   要返回的最大POI数。
+  要返回的最大POI数。
 
-* (**必需**) `library`
+* （**必需**） `library`
 
-   要查询的库的ID。 要查询多个库，请确保在查询中包含库参数的多个副本。
+  要查询的库的ID。 要查询多个库，请确保在查询中包含库参数的多个副本。
 
 以下是成功返回的JSON格式示例：
 
@@ -107,7 +107,7 @@ GET https://query.places.adobe.com/placesedgequery
 }
 ```
 
-POI位于 `places.pois` 按调用方到POI边缘的距离排序。 POI位于 `places.userWithin` 包含调用方，这些POI先按排名排序，然后按半径递增。
+`places.pois`下的POI按调用方到POI边缘的距离排序。 `places.userWithin`下的POI包含调用方，这些POI先按等级排序，然后按半径递增。
 
 ## 示例调用
 

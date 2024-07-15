@@ -18,11 +18,11 @@ ht-degree: 32%
 
 当设备跨越应用程序预定义的Places服务区域边界之一时，该区域和事件类型将传递到SDK进行处理。
 
-### 进程地理围栏(Android)
+### 流程地理围栏(Android)
 
-进程a `Geofence` 提供的的区域事件 `transitionType`.
+为提供的`transitionType`处理`Geofence`区域事件。
 
-传递 `transitionType` 从 `GeofencingEvent.getGeofenceTransition()`. 当前 `Geofence.GEOFENCE_TRANSITION_ENTER` 和 `Geofence.GEOFENCE_TRANSITION_EXIT` 受支持。
+从`GeofencingEvent.getGeofenceTransition()`传递`transitionType`。 当前支持`Geofence.GEOFENCE_TRANSITION_ENTER`和`Geofence.GEOFENCE_TRANSITION_EXIT`。
 
 **语法**
 
@@ -34,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **示例**
 
-在您的中调用此方法 `IntentService` 注册以接收Android地理围栏事件。
+在注册接收Android地理围栏事件的`IntentService`中调用此方法。
 
 以下是此方法的代码示例：
 
@@ -60,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-此方法应在 `CLLocationManager` 委派，用于告知用户是否已进入或退出特定区域。
+应在`CLLocationManager`委托中调用此方法，此方法可告知用户是否已进入或退出特定区域。
 
 **语法**
 
@@ -87,7 +87,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessGeofencingEvent (Android)
 
-全部处理 `Geofences` 在 `GeofencingEvent` 同时。
+同时处理`GeofencingEvent`中的所有`Geofences`。
 
 **语法**
 
@@ -97,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **示例**
 
-在您的中调用此方法 `IntentService` 注册以接收Android地理围栏事件的用户
+在注册用于接收Android地理围栏事件的`IntentService`中调用此方法
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -118,7 +118,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 返回回调中附近POI的有序列表。 如果生成的网络调用出错，则此方法的多载版本将返回错误代码。
 
-### GetNeartherPointsOfInterest (Android)
+### GetInnearlyPointsOfInterest (Android)
 
 以下是此方法的语法：
 
@@ -259,7 +259,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 >[!TIP]
 >
->Places扩展仅知道通过调用向其提供的位置 `GetNearbyPointsOfInterest`.
+>Places扩展仅知道通过调用`GetNearbyPointsOfInterest`向其提供的位置。
 
 
 ### GetLastKnownLocation (Android)
@@ -354,7 +354,7 @@ Places.clear();
 
 ### setAuthorizationStatus (Android)
 
-*从Places v1.4.0开始提供*
+从Places v1.4.0 *开始提供*
 
 在Places扩展中设置授权状态。
 
@@ -379,14 +379,14 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 ### setAuthorizationStatus (iOS)
 
-*从ACPPlaces v1.3.0开始提供*
+*从ACPPlaces v1.3.0*&#x200B;开始提供
 
 在Places扩展中设置授权状态。
 
 提供的状态存储在Places共享状态中，仅供参考。
 调用此方法不会影响此设备的实际位置授权状态。
 
-当设备授权状态发生变化时， `locationManager:didChangeAuthorizationStatus:` 方法 `CLLocationManagerDelegate` 将调用。 在此方法中，您应该传递新的 `CLAuthorizationStatus` ACPlaces的值 `setAuthorizationStatus:` API。
+当设备授权状态更改时，将调用`CLLocationManagerDelegate`的`locationManager:didChangeAuthorizationStatus:`方法。 在此方法中，您应将新的`CLAuthorizationStatus`值传递到ACPPlaces `setAuthorizationStatus:` API。
 
 **语法**
 

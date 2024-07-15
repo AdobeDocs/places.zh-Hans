@@ -1,6 +1,6 @@
 ---
 title: 使用您自己的监视器
-description: 您还可以使用监控服务，并通过使用Places服务扩展API与Places服务集成。
+description: 您还可以使用监视服务，并通过使用Places服务扩展API与Places服务集成。
 exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # 使用您自己的监视器 {#using-your-monitor}
 
-您还可以使用监控服务，并通过使用Places扩展API与Places服务集成。
+您还可以使用监视服务，并通过使用Places扩展API与Places服务集成。
 
 ## 注册地理围栏
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 1. 将从iOS的核心位置服务获取的位置更新传递到Places扩展。
 
-1. 使用 `getNearbyPointsOfInterest` 放置扩展API以获取数组 `ACPPlacesPoi` 当前位置周围的对象。
+1. 使用`getNearbyPointsOfInterest` Places扩展API获取当前位置周围`ACPPlacesPoi`对象的数组。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -33,7 +33,7 @@ ht-degree: 1%
    }
    ```
 
-1. 从获取的信息中提取信息 `ACPPlacesPOI` 对象并开始监视这些POI。
+1. 从获取的`ACPPlacesPOI`对象中提取信息并开始监视这些POI。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 1. 将从Google Play服务或Android位置服务获取的位置更新传递到Places扩展。
 
-1. 使用 `getNearbyPointsOfInterest` Places扩展API可获取 `PlacesPoi` 当前位置周围的对象。
+1. 使用`getNearbyPointsOfInterest` Places扩展API获取当前位置周围`PlacesPoi`对象的列表。
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -77,7 +77,7 @@ ht-degree: 1%
    };
    ```
 
-1. 从获取的数据中提取数据 `PlacesPOI` 对象并开始监视这些POI。
+1. 从获取的`PlacesPOI`对象中提取数据并开始监视这些POI。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -102,7 +102,7 @@ ht-degree: 1%
    ```
 
 
-调用 `getNearbyPointsOfInterest` API会导致网络调用，以获取当前位置周围的位置。
+调用`getNearbyPointsOfInterest` API会导致网络调用，获取当前位置周围的位置。
 
 >[!IMPORTANT]
 >
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 ### iOS
 
-在iOS中，调用 `processGeofenceEvent` 将API放入 `CLLocationManager` 委派。 此API会通知您用户是否已进入或退出特定区域。
+在iOS中，调用`CLLocationManager`委托中的`processGeofenceEvent` Places API。 此API会通知您用户是否已进入或退出特定区域。
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -126,7 +126,7 @@ ht-degree: 1%
 
 ### Android
 
-在Android中，调用 `processGeofence` 方法，以及地理围栏广播接收器中的相应过渡事件。 您可能希望组织收到的地理围栏列表，以防止重复进入/退出。
+在Android中，调用`processGeofence`方法以及在地理围栏广播接收器中的相应过渡事件。 您可能希望策划收到的地理围栏列表，以防止重复进入/退出。
 
 ```java
 void onGeofenceReceived(final Intent intent) {

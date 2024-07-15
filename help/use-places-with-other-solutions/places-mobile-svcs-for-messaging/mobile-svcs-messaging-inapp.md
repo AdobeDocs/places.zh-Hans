@@ -4,8 +4,8 @@ description: 此部分将向您展示如何将Places服务与应用程序内消�
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 3%
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
@@ -33,9 +33,9 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
 ### 先决条件
 
-在开始之前，您已了解如何在Mobile Services中发送和创建应用程序内消息以及触发器工作方式。 有关更多信息，请参阅 [创建应用程序内消息。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
+在开始之前，您已了解如何在Mobile Services中发送和创建应用程序内消息以及触发器工作方式。 有关详细信息，请参阅[创建应用程序内消息。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=zh-Hans)
 
-##  Experience Platform Launch 中的规则
+## Experience Platform Launch中的规则
 
 您可以创建Experience Platform Launch规则，将您希望能够用作应用程序内消息触发器规则一部分的数据发送到Analytics。 您可以将Places扩展中的数据用作Experience Platform Launch规则中的事件和/或条件，具体取决于您的用例。
 
@@ -53,16 +53,16 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
 要创建操作，请执行以下操作：
 
-1. 选择 **[!UICONTROL Adobe Analytics]** 扩展。
-1. 在 **[!UICONTROL 操作类型]** 下拉列表，选择 **[!UICONTROL 跟踪。]**
+1. 选择&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;扩展。
+1. 在&#x200B;**[!UICONTROL 操作类型]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 跟踪。]**
 1. 键入操作的名称。
-1. 在右侧窗格中，位于 **[!UICONTROL 上下文数据]**，选择键值对以设置将发送到Analytics的上下文数据。
+1. 在右侧窗格的&#x200B;**[!UICONTROL 上下文数据]**&#x200B;中，选择键值对以设置将发送到Analytics的上下文数据。
 
-例如，您可以选择 `poiname` 作为键和 `{%%Last Entered POI Name}` 作为值。
+例如，您可以选择`poiname`作为键，`{%%Last Entered POI Name}`作为值。
 
 >[!TIP]
 >
->可以将Analytics处理规则设置为选取此上下文数据。 有关更多信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。在以下示例中 *创建操作*，则该操作将发送 `poiname` 作为上下文，用于描述发送到Analytics的POI进入事件。
+>可以将Analytics处理规则设置为选取此上下文数据。 有关详细信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。 在&#x200B;*创建操作*&#x200B;中的示例中，该操作将发送`poiname`作为上下文，以描述发送到Analytics的POI进入事件。
 
 ![创建操作](/help/assets/configure-action.png)
 
@@ -79,10 +79,10 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
   此选项可与特定于位置的操作（如条目）一起使用，也可以用作其他事件（如启动项或按钮单击）的上下文。
 
-  以下示例介绍了如何配置应用程序内消息，以欢迎用户输入的POI具有 **[!UICONTROL Adobe]** 在名称中：
+  以下是如何配置应用程序内消息的示例，以欢迎输入名称中包含&#x200B;**[!UICONTROL Adobe]**&#x200B;的POI的用户：
 
   ![触发器参数](/help/assets/trigger-parameters.png)
 
-* 中的Places服务标题中的参数 *触发器和特征* Mobile Services中的页面不能处理来自Places服务的数据。
+* Mobile Services中&#x200B;*触发器和特征*&#x200B;页面的Places服务标题中的参数不适用于Places服务中的数据。
 
   这些参数仅适用于在Mobile Services中创建的旧版Places服务数据库。

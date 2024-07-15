@@ -5,13 +5,13 @@ exl-id: 155cc6e6-9254-4389-bb02-e526d15908f4
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 22%
+ht-degree: 18%
 
 ---
 
 # 创建库 {#create-a-library}
 
-一种POST方法，可用于创建库。
+一种POST方法，可让您创建库。
 
 ## 请求
 
@@ -47,4 +47,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/libraries' -H 'x-a
 
 >[!IMPORTANT]
 >
->替换变量，例如 `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 具有实际值。
+>将变量（如`<API KEY>`、`<TOKEN>`和`<ORGID>`）替换为实际值。

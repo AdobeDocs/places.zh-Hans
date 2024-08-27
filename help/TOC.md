@@ -1,7 +1,7 @@
 ---
 audience: end-user
 user-guide-title: Places Service 指南
-user-guide-description: Places Service 是一种地理位置服务，它使具有位置感知的移动应用程序能够了解位置上下文。
+user-guide-description: Places Service 是一种地理位置服务，它使具有位置感知的移动设备应用程序能够了解位置上下文。
 feature: Places
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt

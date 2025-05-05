@@ -17,7 +17,7 @@ ht-degree: 2%
 Test of different youtube link for exl
 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/41647)
+>[!VIDEO](https://video.tv.adobe.com/v/3455124?captions=chi_hans)
 
 ## 使用Places Service
 

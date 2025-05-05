@@ -62,7 +62,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
 >[!TIP]
 >
->可以将Analytics处理规则设置为选取此上下文数据。 有关详细信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。 在&#x200B;*创建操作*&#x200B;中的示例中，该操作将发送`poiname`作为上下文，以描述发送到Analytics的POI进入事件。
+>可以将Analytics处理规则设置为选取此上下文数据。 有关详细信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hans)。 在&#x200B;*创建操作*&#x200B;中的示例中，该操作将发送`poiname`作为上下文，以描述发送到Analytics的POI进入事件。
 
 ![创建操作](/help/assets/configure-action.png)
 

@@ -54,7 +54,7 @@ Places SDK将维护以下状态：
 
 >[!CAUTION]
 >
->此示例假设您已经创建了包含美国所有咖啡馆的 POI 库。有关创建POI和库的更多信息，请参阅[创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多个库](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中创建库*。
+>此示例假设您已经创建了包含美国所有咖啡馆的 POI 库。有关创建POI和库的更多信息，请参阅[创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多个库](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hans)中创建库*。
 
 以下过程是创建规则的示例，该规则会在您进入旧金山的咖啡店时将帖子发送回Slack。
 
@@ -124,7 +124,7 @@ Places SDK将维护以下状态：
 
 ### Publish规则
 
-1. 要激活规则，您必须发布它。 有关在Experience Platform Launch中发布规则的详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
+1. 要激活规则，您必须发布它。 有关在Experience Platform Launch中发布规则的详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
 
 ### 在进入和退出之外思考
 

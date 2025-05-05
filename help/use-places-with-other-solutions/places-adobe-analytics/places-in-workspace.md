@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. Adobe Analytics用户是管理员，有权访问处理规则。
 
-   有关处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。
+   有关处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hans)。
 
 1. 在Launch属性中，已为您所需的Places服务变量创建数据元素。
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ## 2.创建Analytics变量
 
-要映射上下文数据（在步骤1中发送），必须首先为Analytics报表包创建变量。 有关在Analytics中创建变量的更多信息，请参阅[转化变量(eVar)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html)。
+要映射上下文数据（在步骤1中发送），必须首先为Analytics报表包创建变量。 有关在Analytics中创建变量的更多信息，请参阅[转化变量(eVar)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=zh-Hans)。
 
 在此示例中，已创建转化变量&#x200B;**[!UICONTROL Evar2]**，并将其命名为&#x200B;**[!UICONTROL Places POI名称]**。 需要为要在报表中公开的每个位置变量创建其他变量。
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 ## 3.创建处理规则
 
-将上下文数据（步骤1）映射到Analytics变量（步骤2）时需要此步骤。 有关创建处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。
+将上下文数据（步骤1）映射到Analytics变量（步骤2）时需要此步骤。 有关创建处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hans)。
 
 在此示例中，已创建处理规则以将上下文数据值&#x200B;**[!UICONTROL poi.name]**&#x200B;映射到&#x200B;**[!UICONTROL Places POI名称(eVar2)]**。 需要为创建的每个位置变量创建其他处理规则。
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 ## 4.在Workspace中生成报表
 
-此步骤显示Analytics Workspace中的基本报表，用于查看在第1-3步中收集的数据。 有关如何使用Analytics Workspace的更多信息，请参阅[Analytics Workspace概述](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)。
+此步骤显示Analytics Workspace中的基本报表，用于查看在第1-3步中收集的数据。 有关如何使用Analytics Workspace的更多信息，请参阅[Analytics Workspace概述](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)。
 
 在此示例中，报表具有以下设置：
 

@@ -57,11 +57,11 @@ ht-degree: 18%
    + [Places扩展](places-ext-aep-sdks/places-extension/places-extension.md)
 + [将Places Service与您自己的监控解决方案结合使用](using-your-own-monitor.md)
 + [不使用活动区域监视的Places服务](use-places-without-active-monitoring.md)
-+ 将Places服务用作Experience Platform Launch工作流{#use-places-launch-workflow}的一部分
++ 将Places服务用作Experience Platform Launch工作流的一部分{#use-places-launch-workflow}
    + [将Places服务用作Experience Platform Launch工作流的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定义数据元素](use-places-launch-workflow/define-data-elements.md)
    + [创建登入和退出规则](use-places-launch-workflow/create-rule-places-property.md)
-+ 将Places服务与其他Adobe解决方案{#use-places-with-other-solutions}一起使用
++ 将Places服务与其他Adobe解决方案一起使用{#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [将Places服务与Adobe Analytics结合使用](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [将POI登入和退出数据发送到Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)

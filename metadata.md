@@ -36,7 +36,7 @@ metadata.md 文件包括可传递给存储库中用户指南 TOC.md 文件的存
 | tutorials-title | 教程不合适时鲜少使用 |
 | tutorials-url | 指向视频教程的链接 -- helpx 教程或 KT 教程 |
 | mini-toc-levels | 确定右侧边栏中显示的标题级别数量。默认为 2 |
-| git-repo | https://github.com/AdobeDocs/places.en |
+| git-repo | https://github.com/AdobeDocs/places.zh-Hans |
 | index | 对于软启动，请设置 index=no |
 
 在 TOC.md 文件中

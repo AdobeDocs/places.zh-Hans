@@ -1,18 +1,20 @@
 ---
 cloud: Experience Cloud
 product: places service
-solution: Data Collection
+solution: Data Collection, Experience Platform
+landing-page-name: mobile
+landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/cn/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=zh-Hans
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/zh-hans#recommended/solutions/experience-platform
+tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.zh-Hans
 index: true
-source-git-commit: b63808d2a3fc8d25a6a3db3048c2bf059ea0bdaa
+source-git-commit: 896a596bfbfb8c97c55263fc3596d957e4ac52c7
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 98%
@@ -36,7 +38,7 @@ metadata.md 文件包括可传递给存储库中用户指南 TOC.md 文件的存
 | tutorials-title | 教程不合适时鲜少使用 |
 | tutorials-url | 指向视频教程的链接 -- helpx 教程或 KT 教程 |
 | mini-toc-levels | 确定右侧边栏中显示的标题级别数量。默认为 2 |
-| git-repo | https://github.com/AdobeDocs/places.zh-Hans |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | index | 对于软启动，请设置 index=no |
 
 在 TOC.md 文件中

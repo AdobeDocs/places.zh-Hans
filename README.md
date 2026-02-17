@@ -9,4 +9,4 @@ ht-degree: 0%
 
 此存储库已迁移到GitHub云：
 
-<https://github.com/Adobe-Enterprise-Docs/places.en>
+<https://github.com/Adobe-Enterprise-Docs/places.zh-Hans>

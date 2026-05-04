@@ -2,9 +2,14 @@
 title: Places Service
 description: Places Service是了解移动用户参与的重要上下文。 通过使用此上下文，移动应用程序开发人员可以增强应用程序设计，并使其成为更加个性化和引人入胜的体验。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
+TQID: https://experienceleague.adobe.com/4kI1AuV2l-qfC3mOrcsoG9NDRcOPJBdkWPmKkQuDIJk
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: 684
 ht-degree: 9%
 
 ---
@@ -13,7 +18,7 @@ ht-degree: 9%
 
 位置是了解移动用户并与之互动的重要上下文。 通过使用此上下文，移动应用程序开发人员可以增强应用程序设计，并使其成为更加个性化和引人入胜的体验。
 
-Places Service(以前称为Adobe Experience Platform位置服务)是一种地理位置服务，通过此服务，具有位置感知功能的移动设备应用程序可以使用丰富且易于使用的SDK接口(灵活的关注点(POI)数据库随附)，了解位置背景信息。
+Places Service以前称为Adobe Experience Platform位置服务，它是一种地理位置服务，通过此服务，具有位置感知功能的移动设备应用程序可借助丰富且易于使用的SDK接口(灵活的关注点(POI)数据库随附)，了解位置背景信息。
 
 Places Service允许您实现以下目标：
 
@@ -27,7 +32,7 @@ Places Service允许您实现以下目标：
 
 以下是您可以使用地标的一些方式：
 
-* 当有人进入POI时发送实时通知，*&quot;嘿……欢迎来到体育场。”*
+* 当有人进入POI时发送实时通知，*“嘿……欢迎来到体育场。”*
 * 分析您自己的商店与竞争对手商店的客流量。
 * 通过使用具有位置上下文的受众配置文件根据离线行为对受众进行分段。
 * 在相关时定位具有店内体验的用户。
@@ -82,7 +87,7 @@ Places Service包含以下组件：
 
   有关详细信息，请参阅[查找您的组织ID](https://forums.adobe.com/thread/2339895)。
 
-* **Experience CloudID**&#x200B;服务提供了一个通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
+* **Experience Cloud ID**&#x200B;服务提供了一个通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
 
   有关更多信息，请参阅[概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hans)。
 

@@ -1,10 +1,15 @@
 ---
 title: 使用Places服务推送通知
-description: 本节提供了有关如何在Campaign Standard中使用Places服务及推送通知的信息。
+description: 本节提供了有关如何在Campaign Standard中将Places服务与推送通知结合使用的信息。
 exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+TQID: https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: 1026
 ht-degree: 1%
 
 ---
@@ -29,7 +34,7 @@ ht-degree: 1%
 
 ## 在Experience Platform Launch中创建数据元素
 
-验证Places扩展和区域监视解决方案([CoreLocation文档](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) for iOS或[Android位置文档](https://developer.android.com/training/location/geofencing))在应用程序中是否正确工作后，您需要在Experience Platform Launch中创建数据元素。 数据元素允许您读取通过Mobile SDK事件中心访问的扩展提供的信息，并充当别名以从客户端应用程序中检索数据。 要从Places扩展检索数据并将Places Service信息发送到Campaign，您需要创建几个数据元素。
+验证Places扩展和区域监视解决方案（[CoreLocation文档](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions) for iOS或[Android位置文档](https://developer.android.com/training/location/geofencing)）在应用程序中是否正确工作后，您需要在Experience Platform Launch中创建数据元素。 数据元素允许您读取通过Mobile SDK事件中心访问的扩展提供的信息，并充当别名以从客户端应用程序中检索数据。 要从Places扩展检索数据并将Places Service信息发送到Campaign，您需要创建几个数据元素。
 
 要创建数据元素，请执行以下操作：
 
@@ -44,11 +49,11 @@ ht-degree: 1%
 
 1. 重复上述步骤1 - 4并为&#x200B;*上次进入的POI纬度*、*上次进入的POI经度*&#x200B;和&#x200B;*上次进入的POI半径*&#x200B;创建数据元素。
 
-除了Places服务的数据元素之外，请确保为&#x200B;*应用程序ID*&#x200B;和&#x200B;*Experience CloudID*&#x200B;创建移动核心数据元素。
+除了Places服务的数据元素之外，请确保为&#x200B;*应用程序ID*&#x200B;和&#x200B;*Experience Cloud ID*&#x200B;创建移动核心数据元素。
 
 ## 创建规则以将位置数据发送到Adobe Campaign Standard
 
-Experience Platform Launch中的规则允许您根据事件触发器创建复杂的多解决方案工作流。 通过规则，您可以创建新规则或修改现有规则，并将更新动态部署到移动应用程序。 在以下示例中，当用户输入受地域保护的POI时，将触发规则。 触发规则后，将向Campaign Standard发送更新，以根据Experience CloudID将条目记录到特定用户的特定POI。
+Experience Platform Launch中的规则允许您根据事件触发器创建复杂的多解决方案工作流。 通过规则，您可以创建新规则或修改现有规则，并将更新动态部署到移动应用程序。 在以下示例中，当用户输入受地域保护的POI时，将触发规则。 触发规则后，系统会向Campaign Standard发送更新，以根据Experience Cloud ID记录特定用户进入特定POI的次数。
 
 1. 在Experience Platform Launch移动属性的&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡上，单击&#x200B;**[!UICONTROL 添加规则]**。
 1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;部分下，单击&#x200B;**[!UICONTROL +]**&#x200B;并选择&#x200B;**[!UICONTROL Places服务]**&#x200B;作为扩展。
@@ -87,7 +92,7 @@ Experience Platform Launch中的规则允许您根据事件触发器创建复杂
 
 >[!IMPORTANT]
 >
->* 将SlackWeb挂接设置为附加操作以验证是否正在触发条目以及是否正在收集正确的数据可能会很有帮助。
+>* 将Slack Web挂接设置为附加操作以验证是否正在触发条目以及是否正在收集正确的数据可能会很有帮助。
 >* 请记住将最近的更改发布到您的应用程序，以确保该规则和所有数据元素都作为配置的一部分进行部署。 发布后，请再次启动移动应用程序以获取最新的配置更新。
 
 ## 使用位置数据定位Campaign消息
@@ -115,7 +120,7 @@ Experience Platform Launch中的规则允许您根据事件触发器创建复杂
 1. 单击&#x200B;**[!UICONTROL 确认]**。
 1. 在顶部再次运行该计数以查看受众规模变化。
 
-   如果未看到计数更新，则可能是输入的POI名称没有设备触发了输入。 在这种情况下，具有SlackWeb挂接变得很有用，因为您可以看到来自各种测试设备的POI条目列表。
+   如果未看到计数更新，则可能是输入的POI名称没有设备触发了输入。 在这种情况下，具有Slack Web挂接变得很有用，因为您可以看到来自各种测试设备的POI条目列表。
 
 1. 您可以拖出其他POI位置筛选器以在消息中包含多个POI。
 1. 单击&#x200B;**[!UICONTROL 下一步]**&#x200B;以完成创建要交付的推送通知。

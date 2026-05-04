@@ -2,9 +2,14 @@
 title: 为Places Service属性创建规则
 description: Places SDK可跟踪当前位置，监控当前位置周围配置的POI，并跟踪这些POI的进入和退出事件。
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: 939
 ht-degree: 12%
 
 ---
@@ -25,14 +30,14 @@ ht-degree: 12%
 
 Places Service提供了以下事件，您可以在其上运行规则：
 
-* **输入POI**，当您的客户进入您配置的POI时，Places SDK会触发该设置。
+* **进入POI**，当您的客户进入您配置的POI时，由Places SDK触发。
 * **退出POI**，当您的客户退出您配置的POI时，由Places SDK触发。
 
 ### Places服务条件
 
 条件定义了与事件关联的数据或该实例上扩展的共享状态必须满足哪些标准才能执行操作。 例如，您可以设置一个条件，以仅对旧金山市的咖啡店的条目触发操作。
 
-Places SDK将维护以下状态：
+Places SDK维护以下状态：
 
 * 当前POI，是指您的客户当前所在的POI。
 * 上次退出的POI，是指您的客户退出的最新POI。
@@ -54,7 +59,7 @@ Places SDK将维护以下状态：
 
 >[!CAUTION]
 >
->此示例假设您已经创建了包含美国所有咖啡馆的 POI 库。有关创建POI和库的更多信息，请参阅[创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多个库](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hans)中创建库*。
+>此示例假设您已经创建了包含美国所有咖啡馆的 POI 库。 有关创建POI和库的更多信息，请参阅[创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多个库](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中创建库*。
 
 以下过程是创建规则的示例，该规则会在您进入旧金山的咖啡店时将帖子发送回Slack。
 
@@ -62,7 +67,7 @@ Places SDK将维护以下状态：
 
 * **事件**： Places进入事件。
 * **条件**：**当前 POI** 的城市是旧金山
-* **操作**：发送回发，以Slack客户输入的咖啡馆名称。
+* **操作**：向Slack发送回发，其中包含客户输入的咖啡馆名称。
 
 ### 先决条件
 
@@ -110,24 +115,24 @@ Places SDK将维护以下状态：
 1. 在&#x200B;**[!UICONTROL 扩展]**&#x200B;下拉列表中，保留默认的&#x200B;**[!UICONTROL 移动核心]**&#x200B;选项。
 1. 选择操作类型，例如&#x200B;**[!UICONTROL 发送回发]**。
 
-   a.在&#x200B;**[!UICONTROL URL]**&#x200B;中，键入Slack的回发URL，例如`https://hooks.slack.com/services/`。
+   答： 在&#x200B;**[!UICONTROL URL]**&#x200B;中，键入Slack的回发URL，例如`https://hooks.slack.com/services/`。
 
-   b.要发送帖子正文，请选中&#x200B;**[!UICONTROL 添加Post正文]**&#x200B;复选框。
+   b. 若要发送帖子正文，请选中&#x200B;**[!UICONTROL 添加帖子正文]**&#x200B;复选框。
 
-   c.在&#x200B;**[!UICONTROL Post正文]**&#x200B;中，添加帖子正文，例如： `{ "text": "A customer has entered" }`
+   c. 在&#x200B;**[!UICONTROL 帖子正文]**&#x200B;中，添加帖子正文，例如： `{ "text": "A customer has entered" }`
 
-   c.键入内容类型，例如&#x200B;**[!UICONTROL application/json]**。
+   c. 键入内容类型，例如&#x200B;**[!UICONTROL application/json]**。
 
-   d.选择一个超时值，例如&#x200B;**[!UICONTROL 5]**。
+   d. 选择一个超时值，例如&#x200B;**[!UICONTROL 5]**。
 
 1. 单击&#x200B;**[!UICONTROL 保留更改]**。
 
-### Publish规则
+### 发布规则
 
-1. 要激活规则，您必须发布它。 有关在Experience Platform Launch中发布规则的详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
+1. 要激活规则，您必须发布它。 有关在Experience Platform Launch中发布规则的更多信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 ### 在进入和退出之外思考
 
-使用Places服务地理围栏进入和退出来触发Experience Platform Launch中的规则具有惊人的强大功能，但您也可以使用位置数据作为触发其他事件的条件。 例如，您可以根据应用程序内的特定trackAction调用事件，准备好触发移动设备核心跟踪操作事件触发器。 根据此事件，您可以在执行操作之前为事件设置其他位置条件。 例如，在发生`trackAction`购买事件时打开应用程序内调查，但如果用户的当前位置包含特定的Places服务元数据，则&#x200B;**仅**。
+在Experience Platform Launch中使用Places服务地理围栏进入和退出来触发规则的功能非常强大，但您也可以使用位置数据作为触发其他事件的条件。 例如，您可以根据应用程序内的特定trackAction调用事件，准备好触发移动设备核心跟踪操作事件触发器。 根据此事件，您可以在执行操作之前为事件设置其他位置条件。 例如，在发生`trackAction`购买事件时打开应用程序内调查，但如果用户的当前位置包含特定的Places服务元数据，则&#x200B;**仅**。
 
 ![创建条件](/help/assets/places-condition.png)

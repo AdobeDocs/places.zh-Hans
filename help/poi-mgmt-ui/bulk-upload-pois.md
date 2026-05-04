@@ -2,9 +2,14 @@
 title: 批量上传POI
 description: 本节提供有关如何批量上传POI的信息。
 exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2: id: bef6f891-2e8a-425e-8f99-7ddf22070daaid: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: 854
 ht-degree: 0%
 
 ---
@@ -19,7 +24,7 @@ Places服务中的&#x200B;**导入POI**&#x200B;按钮可用于使用CSV文件批
 
 <!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
 
-[Places服务批量导入和编辑POI](https://www.youtube.com/watch?v=75qVtirsXhg)
+[放置服务批量导入和编辑POI](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python API脚本
 
@@ -33,7 +38,7 @@ Places服务中的&#x200B;**导入POI**&#x200B;按钮可用于使用CSV文件批
 >
 >此信息还包含在[Git存储库](https://github.com/adobe/places-scripts)的自述文件中。
 
-## CSV 文件
+## CSV文件
 
 示例.csv文件`places_sample.csv`是此包的一部分，并包含所需的标头和示例数据行。 这些标头全部为小写，对应于Places数据库中使用的保留元数据键。 您添加到.csv文件中的列将作为键/值对添加到POI数据库的每个POI的单独元数据部分中，并且标头值将用作键。
 
@@ -86,7 +91,7 @@ Places服务中的&#x200B;**导入POI**&#x200B;按钮可用于使用CSV文件批
 1. 将文件从[Git存储库](https://github.com/adobe/places-scripts)下载到您的本地目录。
 1. 在文本编辑器中，打开`config.py`文件并完成以下任务：
 
-   a.将以下变量值编辑为字符串：
+   答： 将以下变量值编辑为字符串：
 
    * `csv_file_path`
 
@@ -98,13 +103,13 @@ Places服务中的&#x200B;**导入POI**&#x200B;按钮可用于使用CSV文件批
 
    * `org_id`
 
-     要将POI导入到的Experience CloudorgID。 有关如何获取组织ID的信息，请参阅[集成概述和先决条件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*用户访问的先决条件*。
+     要将POI导入到的Experience Cloud orgID。 有关如何获取组织ID的信息，请参阅[集成概述和先决条件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*用户访问的先决条件*。
 
    * `api_key`
 
-     这是从Adobe I/OPlaces集成获得的Places REST API密钥。 有关如何获取API密钥的信息，请参阅[集成概述和先决条件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*用户访问的先决条件*。
+     这是从您的Adobe I/O Places集成中获取的Places REST API密钥。 有关如何获取API密钥的信息，请参阅[集成概述和先决条件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*用户访问的先决条件*。
 
-   b.保存更改。
+   b. 保存更改。
 
 1. 在终端窗口中，导航到`…/places-scripts/import/`目录。
 1. 输入`python ./places_import.py`并按&#x200B;**[!UICONTROL enter]** (**[!UICONTROL return]**)键。

@@ -2,10 +2,15 @@
 title: 获取对Places服务的访问权限
 description: 此部分提供有关如何向Places服务和Experience Platform Launch添加用户，以便用户能够访问Places服务的信息。
 exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
-source-git-commit: c9058e9b70c2ef97151078f43913963471730bd2
+TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: b64298cc-90cc-46b7-8917-ee391f1c7516id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f5efb499-54f9-432b-ac5c-599dbac103afid: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 0%
+source-wordcount: 919
+ht-degree: 1%
 
 ---
 
@@ -23,7 +28,7 @@ Places服务现在可在数据收集UI中使用。 您可以通过[Adobe Experie
 
 ![数据收集左侧面板](/help/assets/places_in_data_collection.png)
 
-如果您未在此位置看到Places服务，请联系您组织中的管理员，以在Admin Console中将您的用户ID添加到Adobe Experience Platform。
+如果您未在此位置看到Places服务，请联系您组织中的管理员，以将您的用户ID添加到Admin Console中的Adobe Experience Platform。
 
 ## 添加用户以访问Places服务和Experience Adobe Experience Platform数据收集
 
@@ -42,20 +47,20 @@ Places现已包含在Adobe Experience Platform中。 要允许用户访问[Place
 
 >[!IMPORTANT]
 >
->只有组织管理员可以访问该Admin Console并添加用户。
+>只有组织管理员才能访问Admin Console并添加用户。
 
-### 1.验证是否已配置Adobe Experience Platform和Adobe Experience Platform数据收集
+### &#x200B;1. 验证是否已配置Adobe Experience Platform和Adobe Experience Platform数据收集
 
 1. 登录到您的Experience Cloud组织[Adobe Experience Cloud主页](https://experience.adobe.com)。
-1. 单击右上角的Experience Cloud外壳切换器以显示下拉菜单。
+1. 单击右上角的Experience Cloud shell切换器以显示下拉菜单。
 
    ![外壳切换器](/help/assets/places_shell_switcher1.png)
 
-1. 单击列表底部的&#x200B;**[!UICONTROL Admin Console]**。 (也可以在“快速访问”部分中找到指向&#x200B;**[!UICONTROL Admin Console]**&#x200B;的链接)。
+1. 单击列表底部的&#x200B;**[!UICONTROL Admin Console]**。 （也可以在“快速访问”部分中找到指向&#x200B;**[!UICONTROL Admin Console]**&#x200B;的链接）。
 
-   如果您未在列表中看到&#x200B;**[!UICONTROL Admin Console]**，则表明您不是管理员。 必须联系组织管理员才能完成此过程。
+   如果您在列表中未看到&#x200B;**[!UICONTROL Admin Console]**，则表明您不是管理员。 必须联系组织管理员才能完成此过程。
 
-1. 在Admin Console中，如果您有权访问多个组织，请验证是否在该页的右上角选择了正确的组织。
+1. 在Admin Console中，如果您有权访问多个组织，请确认在页面的右上角选择了正确的组织。
 
    这是要将用户添加到其中的组织。 如果未选择正确的组织，请单击该组织，然后从下拉列表中选择正确的组织。
 
@@ -70,7 +75,7 @@ Places现已包含在Adobe Experience Platform中。 要允许用户访问[Place
    这2个产品会自动配置给所有组织，因此它们应该都会存在。
 
 
-### 2.将用户添加到这些产品
+### &#x200B;2. 将用户添加到这些产品
 
 #### 添加用户以提供对Places服务UI的访问权限
 

@@ -2,9 +2,14 @@
 title: 使用Places服务的应用程序内消息
 description: 本节提供了有关如何在Campaign Standard中将推送消息与Campaign Standard中的应用程序内消息结合使用的信息。
 exl-id: c80727b8-20c9-4ca0-9f2c-20ec646bb7fa
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+TQID: https://experienceleague.adobe.com/H2gW4nvnx8Es33S8nCt52OIUsNOY5SG1SZVJPw0BFFg
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2: id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: 415
 ht-degree: 0%
 
 ---
@@ -24,7 +29,7 @@ ht-degree: 0%
 
 * [在Places服务POI管理界面中创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)。
 
-* 在您的移动应用程序中安装和配置[Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)和区域监视解决方案([CoreLocation文档](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)(适用于iOS)，或[Android位置文档](https://developer.android.com/training/location/geofencing))。
+* 在您的移动应用程序中安装和配置[Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)和区域监视解决方案([CoreLocation文档](https://developer.apple.com/documentation/corelocation/monitoring_the_user_s_proximity_to_geographic_regions)（适用于iOS），或[Android位置文档](https://developer.android.com/training/location/geofencing))。
 
 ## 根据地理围栏进入或退出发送应用程序内消息
 
@@ -52,4 +57,4 @@ ht-degree: 0%
 
 <!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
 
-带有Campaign消息的[Adobe Experience Platform位置服务](https://www.youtube.com/watch?v=ikiTTQw9c-o)
+[带有Campaign消息传递的Adobe Experience Platform位置服务](https://www.youtube.com/watch?v=ikiTTQw9c-o)

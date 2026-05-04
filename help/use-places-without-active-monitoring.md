@@ -2,9 +2,32 @@
 title: 不使用活动区域监视的Places服务
 description: 本节提供有关如何在没有活动区域监视的情况下使用Places服务的信息。
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
-source-git-commit: 33cbef9b3226be3f013fe82d619b82e093a9752a
+TQID: https://experienceleague.adobe.com/xUmdMOa5CvDZSxKFeyse-3vHsUwvm2s04-sIG0FnnCs
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: b572b7ff-a413-4173-b2b4-d7d3874f1b9b
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+  - id: ee602049-8a18-43df-9299-a689a025a371
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: 786
 ht-degree: 0%
 
 ---
@@ -23,7 +46,7 @@ ht-degree: 0%
 
 要在不使用活动区域监视的情况下使用Places服务，请执行以下操作：
 
-## 1.收集用户的位置
+## &#x200B;1. 收集用户的位置
 
 应用程序开发人员必须使用Google Play Services (Android)提供的`CoreLocation.framework` (iOS)或`Location` API来收集设备的当前位置。
 
@@ -32,13 +55,13 @@ ht-degree: 0%
 - [CoreLocation](https://developer.apple.com/documentation/corelocation) (Apple)
 - Google Play Services中的[位置API](https://developer.android.com/training/location) (Google)
 
-## 2.从SDK检索附近的目标点
+## &#x200B;2. 从SDK检索附近的目标点
 
-获取用户的位置后，您可以将其传递到SDK以返回附近POI的列表。
+获取用户的位置后，您可以将其传递到SDK以取回附近POI的列表。
 
 ### Android
 
-以下是Android中使用[`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..索引#5)的示例实现：
+以下是Android中使用[`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5)的示例实现：
 
 ```java
 public class LocationBroadcastReceiver extends BroadcastReceiver {
@@ -114,7 +137,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3.将Places数据附加到您的Analytics请求
+## &#x200B;3. 将Places数据附加到您的Analytics请求
 
 通过调用`getNearbyPointsOfInterest` API，Places SDK将通过Launch中的数据元素提供与设备相关的所有POI数据。 通过使用[附加数据](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data)规则，可以将Places数据自动添加到将来向Analytics发出的请求中。 这样一来，在收集设备位置时，便无需一次性调用Analytics。
 
@@ -126,13 +149,13 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 >
 >捕获Places数据的推荐方法是[将Places数据附加到您的Analytics请求](#attach-places-data-to-your-analytics-requests)。
 >
->如果用例要求由SDK触发[区域进入事件](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)，则需要手动完成，如下所述。
+>如果用例要求由SDK触发[region entry event](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)，则需要手动完成，如下所示。
 
 `getNearbyPointsOfInterest` API返回的列表包含[自定义对象](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)，用于指示用户当前是否在POI内。 如果用户处于POI中，您可以让SDK触发该区域的进入事件。
 
 >[!IMPORTANT]
 >
->要防止应用程序在一次访问中触发多个进入事件，请保留您知道用户已进入的地区的列表。 处理来自SDK的附近POI的响应时，仅当区域不在您的列表中时才会触发进入事件。
+>要防止应用程序在一次访问中触发多个进入事件，请保留您知道用户已进入的地区的列表。 处理来自SDK的附近POI的响应时，仅当该地区不在您的列表中时才会触发进入事件。
 >
 >在以下代码示例中，`NSUserDefaults` (iOS)和`SharedPreferences` (Android)用于管理区域列表：
 
@@ -410,6 +433,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-除了在SDK中触发Places Service进入事件之外，由于触发了进入事件，因此SDK的其余部分也可以通过Experience Platform Launch中的`data elements`使用定义您的POI的所有数据。 使用Experience Platform Launch`rules`，您可以将Places服务数据动态附加到SDK处理的传入事件。 例如，您可以附加用户所在的POI的元数据，然后将该数据作为上下文数据发送到Analytics。
+由于触发了进入事件，因此除了在SDK中触发Places Service进入事件之外，SDK的其他人还可以通过Experience Platform Launch中的`data elements`使用定义您的POI的所有数据。 使用Experience Platform Launch `rules`，您可以将Places服务数据动态附加到SDK处理的传入事件。 例如，您可以附加用户所在的POI的元数据，然后将该数据作为上下文数据发送到Analytics。
 
-有关详细信息，请参阅[将Places服务与其他Adobe解决方案一起使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)。
+有关详细信息，请参阅[将Places服务与其他Adobe解决方案结合使用](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)。

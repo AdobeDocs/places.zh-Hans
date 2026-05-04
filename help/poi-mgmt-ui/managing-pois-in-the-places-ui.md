@@ -2,10 +2,22 @@
 title: 管理现有POI
 description: 在Places服务UI中，您可以编辑、删除或过滤现有POI。
 exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/2VnBQ5-flpx5cyeK3n5b3AOKqnt7RVkdqFBXYa9O5Ys
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 5%
+source-wordcount: 408
+ht-degree: 6%
 
 ---
 
@@ -40,19 +52,19 @@ ht-degree: 5%
 
    * 按库：
 
-     a.选择库。
+     答： 选择库。
 
    * 按属性：
 
-     a.在“属性”下拉列表中，选择&#x200B;**[!UICONTROL 国家/地区]**、**[!UICONTROL 省/州]**&#x200B;或&#x200B;**[!UICONTROL 城市]**。
+     答： 在“属性”下拉列表中，选择&#x200B;**[!UICONTROL 国家/地区]**、**[!UICONTROL 省/州]**&#x200B;或&#x200B;**[!UICONTROL 城市]**。
 
-     b.在下一行中，输入一个值。
+     b. 在下一行中，输入一个值。
 
      例如，您可以选择&#x200B;**[!UICONTROL 州]**&#x200B;并键入&#x200B;**[!UICONTROL 加利福尼亚]**。
 
    * 包含元数据：
 
-     a.输入键和值。
+     答： 输入键和值。
 
 ## 定义地理围栏POI
 

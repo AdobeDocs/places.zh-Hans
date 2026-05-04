@@ -2,10 +2,24 @@
 title: 将Places服务与Mobile Services结合使用进行消息传递
 description: 此部分将向您展示如何将Places服务与Mobile Services结合使用来进行消息传送。
 exl-id: dfa6b8bb-6bf2-44eb-8bfc-87294807ec3b
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/-axuli6p-QHthMkucGLCcgyHCqrwudXmif-dZwpGli4
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: 359
+ht-degree: 3%
 
 ---
 
@@ -35,7 +49,7 @@ ht-degree: 1%
 
   有关详细信息，请参阅[规则引擎](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)。
 
-* Experience Platform Launch数据元素是从将在Rules引擎中使用的Places扩展数据创建的。
+* Experience Platform Launch数据元素是从将在规则引擎中使用的Places扩展数据创建的。
 
   有关详细信息，请参阅[数据元素](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine#data-elements)。
 

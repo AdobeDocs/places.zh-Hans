@@ -2,16 +2,26 @@
 title: Web服务API概述
 description: Places Service是一组服务，可让Adobe客户更轻松地在正确的时间和正确的地点向正确的人员水合Adobe Experience Cloud和Adobe Experience Platform解决方案中的位置数据和正确体验。
 exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/jP7iQH7X85UZROjsa3XzuN0bJZjjKffODFGGji7XZfQ
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: 336
 ht-degree: 0%
 
 ---
 
 # Web服务API概述 {#places-web-services-api}
 
-Places Service是一组服务，可让Adobe客户更轻松地在正确的时间和正确的地点向正确的人员水合Adobe Cloud Platform和Adobe Experience Platform解决方案中的位置数据和正确体验。
+Places Service是一组服务，可让Adobe客户更轻松地在正确的时间和正确的地点将Adobe Cloud Platform和Adobe Experience Platform解决方案与位置数据和正确体验水合到正确的人手中。
 
 Web服务API允许您执行以下操作：
 

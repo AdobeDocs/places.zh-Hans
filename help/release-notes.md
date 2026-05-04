@@ -2,10 +2,28 @@
 title: 发行说明
 description: Places服务的发行说明。
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 2%
+source-wordcount: 1612
+ht-degree: 3%
 
 ---
 
@@ -48,13 +66,13 @@ ht-degree: 2%
 
 * **ACPPlaces 1.3.1 (iOS)**
 
-   * Places扩展现在会向核心SDK中的事件中心报告版本信息。
+   * Places扩展现在向核心SDK中的事件中心报告版本信息。
    * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **位置1.4.1 (Android)**
 
-   * Places扩展现在会向核心SDK中的事件中心报告版本信息。
+   * Places扩展现在向核心SDK中的事件中心报告版本信息。
    * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 2020年1月27日
@@ -168,7 +186,7 @@ ht-degree: 2%
 
 * 更新了`getNearbyPointsOfInterest` API的使用，以更有效地处理错误场景。
 
-## 2019年7月25日
+## 2019 年 7 月 25 日
 
 此版本中进行了以下更新：
 
@@ -218,13 +236,13 @@ ht-degree: 2%
 * 修复了在首次启动后，有时由于网络条件恶劣而导致Places事件丢失的问题。
 * 修复了在快速连续处理POI条目事件时，通过规则引擎进行的令牌替换有时引用不正确的POI的问题。
 
-## 2019年5月30
+## 2019 年 5 月 30 日
 
 **Android Places监视器1.0.1**
 
 * 修复了在启动Places监视时阻止POI进入事件的问题。
 
-## 2019年5月28日
+## 2019 年 5 月 28 日
 
 修复了Places UI中的以下问题：
 
@@ -298,7 +316,7 @@ Places监视器可管理操作系统级别的位置API，并直接与Places扩�
 
 #### Places扩展
 
-使用Places扩展，您可以将Places服务库添加到移动设备应用程序中，并根据其POI执行操作。 在Experience Platform Launch中使用规则生成器，您可以触发要在用户进入和退出POI时触发的操作。
+使用Places扩展，您可以将Places服务库添加到移动设备应用程序中，并根据其POI执行操作。 通过使用Experience Platform Launch中的规则生成器，您可以触发要在用户进入和退出POI时触发的操作。
 
 在Places扩展中：
 

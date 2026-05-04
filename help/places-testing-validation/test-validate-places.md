@@ -2,18 +2,42 @@
 title: 测试和验证Places服务
 description: 本节提供有关如何测试和验证Places服务的信息。
 exl-id: 8dad6619-566b-4aea-b29c-a89192a66441
-source-git-commit: 2b5c53887c9ed0f2a672c377121a39537ee58f01
+TQID: https://experienceleague.adobe.com/nO4tOQW9rp3zjkHT6aJ5IcXHcD9heOaRAJiEchiz1Fk
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 1%
+source-wordcount: 1748
+ht-degree: 2%
 
 ---
 
-# Recommendations将测试Places服务 {#test-validate-loc-svc}
+# 测试地标服务的推荐 {#test-validate-loc-svc}
 
 全球有许多客户和组织将定义POI，因此采用某种方法模拟和测试Places服务与您的应用程序之间的交互非常重要。 此信息可帮助您了解如何测试和验证根据定义的POI和用户的当前位置正确触发的Places服务条目和退出。
 
-由于环境变量可能是位置信号和精度的一个因素，因此我们建议您首先通过使用开发人员工具和模拟的位置条目在本地工作来建立基准结果。 目标是验证所有位置事件是否均可正常工作。 正确验证位置事件后，可以测试解决方案集成（例如Analytics、Target和Campaign）。 为了帮助进行测试活动，您应该使用回发设置SlackWebhook，并在单独的开发环境中加载GPX文件。
+由于环境变量可能是位置信号和精度的一个因素，因此我们建议您首先通过使用开发人员工具和模拟的位置条目在本地工作来建立基准结果。 目标是验证所有位置事件是否均可正常工作。 正确验证位置事件后，可以测试解决方案集成（例如Analytics、Target和Campaign）。 为了帮助进行测试活动，您应该使用回发设置Slack Webhook，并在单独的开发环境中加载GPX文件。
 
 >[!IMPORTANT]
 >
@@ -24,21 +48,21 @@ ht-degree: 1%
 | 1 | 确认已为Android输入正确的清单键以授予对跟踪位置的访问权限。 | 已确认 |
 | 1a | 确认在iOS中配置了位置更新。 另外，请确保在iOS中设置了适当的plist键以请求用户跟踪位置的权限。 | 已确认 |
 | 2 | 确认为iOS设置了哪个监视模式。 连续模式允许更高的准确性和持久性，但同时也更严重地耗尽电池寿命。 | 重大变更或持续性 |
-| 3 | 如果使用多个POI库，请确认已在Places扩展中选择了相应的库以进行Experience Platform Launch。 | 已确认 |
+| 3 | 如果使用多个POI库，请确认已在Experience Platform Launch的Places扩展中选择了相应的库。 | 已确认 |
 | 4 | 确认最新版本的Mobile Core和Places扩展已通过Gradle或CocoaPods与应用程序捆绑在一起。 | 已确认 — 有关最新更新的详细信息，请参阅[发行说明。](/help/release-notes.md) |
 | 5 | 确认为测试配置了正确的环境。 Launch环境ID应与您的Launch开发环境匹配。 | 已确认 |
 | 6 | 为要测试的每个POI创建GPX文件。 GPX文件可在本地开发环境中用于模拟位置条目。 有关创建和使用GPX文件的信息，请参阅以下内容：用于iOS模拟器的<br>[GPX文件[已关闭]](https://stackoverflow.com/questions/17292783/gpx-files-for-ios-simulator)<br>[https://mapstogpx.com/mobiledev.php](https://mapstogpx.com/mobiledev.php)<br>[移动设备应用程序中的位置测试](https://qacumtester.wordpress.com/2014/02/27/location-testing-in-mobile-apps/) | GPX文件会在应用程序项目中创建和加载。 |
 | 7 | 您无需执行任何其他操作，即可从Android Studio或Xcode启动应用程序，并查看相应的警报以请求访问跟踪位置。 单击&#x200B;*始终允许*&#x200B;权限。<br><br>我们建议您使用连接到计算机的真实设备，而不是使用设备模拟器。 | 在通过IDE加载的应用程序上应显示位置请求提示 |
-| 8 | 接受“位置”权限后。 Places SDK将检索设备的当前位置，并且区域监控代码应开始监控来自当前位置的20个最近的POI | 请参阅表下的日志示例。 |
+| 8 | 接受“位置”权限后。 Places SDK将检索设备的当前位置，而区域监控代码应开始监控来自当前位置的20个最近的POI | 请参阅表下的日志示例。 |
 | 9 | 在Xcode或Android Studio中的不同位置之间切换应会为特定POI生成登入事件。 进入POI时应遵循以下日志。 | 请参阅表下的日志示例。 |
-| 10 | 在区域监视器找到附近的POI后，应通过发送位置ping进行测试。 在Launch中，创建一个新规则，该规则使用Places扩展根据地理围栏条目进行触发。 然后，使用移动核心创建新操作以发送回发。 创建SlackWebhook应用程序有助于您查看位置条目和退出点。 有关创建SlackWebhook应用的信息，请参阅[使用传入Webhook发送消息。](https://api.slack.com/messaging/webhooks) |  |
+| 10 | 在区域监视器找到附近的POI后，应通过发送位置ping进行测试。 在Launch中，创建一个新规则，该规则使用Places扩展根据地理围栏条目进行触发。 然后，使用移动核心创建新操作以发送回发。 创建Slack Webhook应用程序有助于您查看位置条目和退出点。 有关创建Slack Webhook应用的信息，请参阅[使用传入Webhook发送消息。](https://api.slack.com/messaging/webhooks) |  |
 | 10安 | 在Launch中，请确保为Places扩展添加了数据元素，包括： <br>当前POI名称<br>当前POI纬度<br>当前POI经度<br>上次输入的名称<br>上次输入的经度<br>上次输入的经度<br>上次退出的名称<br>上次退出的经度<br>上次退出的经度<br>时间戳 |  |
 | 10b | 使用事件=地标→输入POI创建新规则 |  |
 | 10c | 创建一个操作= Mobile Core → Postback |  |
-| 10天 | 使用您的Slack应用程序的Webhook URL，例如https://hooks.slack.com/services/TKN5FKS68/BNFP7SVD...... |  |
+| 10天 | 使用Slack应用程序的Webhook URL，例如https://hooks.slack.com/services/TKN5FKS68/BNFP7SVD...... |  |
 | 10e | 帖子正文将类似于： `{text: User is in POI -  {%%Last Entered POI Name%%} in {%%Last Entered POI City%%} additional information: Radius:{%%Last Entered POI Radius%%} Timestamp: {%%timestamp%%}}`。 <br>请确保您使用在此处创建的特定数据元素。 |  |
 | 10f | 确保您在Launch中发布所有新数据元素和规则更改。 （您应在Launch界面的右上角选择一个工作开发库。） |  |
-| 11 | 通过在开发人员IDE中的GPX位置之间切换来再次启动并测试应用程序。 | 现在，当您在开发环境中选择其他位置时，应该会看到Slack通知，其中显示每个POI的条目。 |
+| 11 | 通过在开发人员IDE中的GPX位置之间切换来再次启动并测试应用程序。 | 现在，当您在开发环境中选择不同的位置时，应该会看到Slack通知，其中显示每个POI的条目。 |
 |  | **快速摘要点**<br>&#x200B;所有这些测试都可以本地执行，而无需转到特定的POI位置。 验证测试有助于确保您的应用程序已正确配置并且已获得位置的正确权限。 <br><br>此验证还让您确信定义的POI可与您的区域监视实施一起正常工作。  执行此步骤后，我们将开始在Campaign中测试消息传送，以了解是否根据POI进入和退出显示正确的消息。 |  |
 |  | **正在使用Places服务测试Adobe Campaign Standard应用程序内消息传送。** |  |
 | 12 | 在主Campaign仪表板上，配置新的应用程序内消息（类型=广播） |  |
@@ -61,7 +85,7 @@ ht-degree: 1%
 | 16f | 对于显示类型，请选择&#x200B;**[!UICONTROL 本地通知]**。 |  |
 | 16g | 准备/确认并部署应用程序内消息。 |  |
 | 17 | 在开发人员环境中，连接您的设备并按生成上的&#x200B;**[!UICONTROL 播放]**。 建立该位置后，请将该应用程序置于后台，然后继续在Xcode或Android Studio中切换位置。 您仍然应该会看到指示位置更改的控制台读出，并且您还应该会看到根据触发器中设置的标准显示的本地通知。 （可能会有1 - 2秒的延迟。） | 预期的结果是每次满足匹配条件时都显示本地通知。 |
-|  | **摘要点** <br>在此阶段，我们应该会看到本地环境中的POI条目。 我们还应该看到来自Campaign的基于POI工作的消息。 如果失败，则检查Slack通知是否未发出。 如果没有Slack消息，请检查应用程序控制台，因为可能尚未记录新的位置条目。 如果结果成功，那么我们可以相当肯定地确认应用程序是否正常运行以及Places Service和Campaign消息服务是否也正常工作。 |  |
+|  | **摘要点** <br>在此阶段，我们应该会看到本地环境中的POI条目。 我们还应该看到来自Campaign的基于POI工作的消息。 如果失败，请检查Slack通知是否未发出。 如果没有Slack消息，请检查应用程序控制台，因为可能尚未记录新的位置条目。 如果结果成功，那么我们可以相当肯定地确认应用程序是否正常运行以及Places Service和Campaign消息服务是否也正常工作。 |  |
 |  | **现场测试** <br>在位置上测试时应该不会发生太大变化。 保持Slack回发处于活动状态应该有助于了解设备是否正在获得位置的进入和退出。 |  |
 | 18 | 使用设备进行测试，首先禁用wifi和移动电话，然后在POI区域中启用一次。 | 如果失败，请记下是否在Slack中获取地理围栏条目和通知。 Slack通知的时间戳是什么？ |
 | 19 | 在仅启用手机网络并关闭wifi的情况下执行测试。 |  |

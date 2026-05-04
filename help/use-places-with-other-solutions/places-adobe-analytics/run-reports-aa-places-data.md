@@ -2,10 +2,22 @@
 title: 将位置上下文添加到Analytics请求
 description: 本节提供了有关如何将位置上下文添加到Analytics请求的信息。
 exl-id: bee7b6e3-a75b-4a07-b6e2-f93ce33aa042
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/NR-CowJgzUBMVWcbV-EvdyBDsiwLi72yxM-Vjx5oNwk
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 1%
+source-wordcount: 512
+ht-degree: 2%
 
 ---
 
@@ -15,9 +27,9 @@ ht-degree: 1%
 >
 >本文档假设您在应用程序中实施了Places服务。 有关实施Places服务的详细信息，请参阅[Places扩展](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places服务发送进入和退出事件后，您可以在Experience Platform Launch中创建规则，并将您的Places服务数据附加到所有Adobe Analytics事件。 要创建此类型的规则，请在Launch中选择您的资产，并完成以下步骤：
+在Places服务发送进入和退出事件后，您可以在Experience Platform Launch中创建规则，并将Places服务数据附加到所有Adobe Analytics事件。 要创建此类型的规则，请在Launch中选择您的资产，并完成以下步骤：
 
-## 1.创建规则
+## &#x200B;1. 创建规则
 
 1. 在&#x200B;**[!UICONTROL 规则]**&#x200B;选项卡上，单击&#x200B;**[!UICONTROL 创建新规则]**。
 
@@ -42,7 +54,7 @@ ht-degree: 1%
 ![“创建事件”](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
-## 3.添加条件
+## &#x200B;3. 添加条件
 
 >[!IMPORTANT]
 >
@@ -62,7 +74,7 @@ ht-degree: 1%
 
 ![&quot;创建条件&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
-## 4.定义活动
+## &#x200B;4. 定义操作
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分下，单击&#x200B;**[!UICONTROL 添加]**。
 
@@ -80,7 +92,7 @@ ht-degree: 1%
 
 ![“创建操作”](/help/assets/ad-setAction_use-analytics-data.png)
 
-## 5.保存规则并重新构建您的资产
+## &#x200B;5. 保存规则并重新构建您的资产
 
 完成配置后，请验证您的规则是否类似于以下图像：
 

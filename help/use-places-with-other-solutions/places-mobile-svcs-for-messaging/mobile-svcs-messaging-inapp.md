@@ -2,9 +2,23 @@
 title: 应用程序内通知
 description: 此部分将向您展示如何将Places服务与应用程序内消息传送结合使用。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/Z39ybIytDRlCbkMthWjvk5F-oexy0C9gtqgK1mmyMxM
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: 689
 ht-degree: 2%
 
 ---
@@ -19,7 +33,7 @@ ht-degree: 2%
 
 ## 应用程序内消息
 
-Mobile Services允许您使用发送到Analytics的位置数据作为应用程序内消息的触发事件和/或条件。 如果从SDK触发应用程序内消息，而无需等待Analytics处理数据，则一旦触发即可实时显示消息。
+Mobile Services允许您使用发送到Analytics的位置数据作为应用程序内消息的触发事件和/或条件。 如果从SDK触发应用程序内消息，而无需等待Analytics处理数据，则触发后，这些消息即可实时显示。
 
 ### 本地通知消息
 
@@ -29,7 +43,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 * 警报
 * 本地通知消息
 
-这些类型是应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉类似于推送通知，因为它们会在应用程序处于后台时显示。 当应用程序处于后台时，这些通知还会在用户进入或退出您的POI时交付实时通知。
+这些类型属于应用程序内消息，因为它们由SDK触发。 本地通知的外观和感觉类似于推送通知，因为它们会在应用程序处于后台时显示。 当应用程序处于后台时，这些通知还会在用户进入或退出您的POI时交付实时通知。
 
 ### 先决条件
 
@@ -37,7 +51,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
 ## Experience Platform Launch中的规则
 
-您可以创建Experience Platform Launch规则，将您希望能够用作应用程序内消息触发器规则一部分的数据发送到Analytics。 您可以将Places扩展中的数据用作Experience Platform Launch规则中的事件和/或条件，具体取决于您的用例。
+您可以创建Experience Platform Launch规则，以将要用作应用程序内消息触发器规则一部分的数据发送到Analytics。 您可以将Experience Platform Launch规则中Places扩展的数据用作事件和/或条件，具体取决于您的用例。
 
 * 使用位置数据作为触发事件。
 
@@ -79,7 +93,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
   此选项可与特定于位置的操作（如条目）一起使用，也可以用作其他事件（如启动项或按钮单击）的上下文。
 
-  以下是如何配置应用程序内消息的示例，以欢迎输入名称中包含&#x200B;**[!UICONTROL Adobe]**&#x200B;的POI的用户：
+  以下是如何配置应用程序内消息的示例，以欢迎用户输入名称中包含&#x200B;**[!UICONTROL Adobe]**&#x200B;的POI：
 
   ![触发器参数](/help/assets/trigger-parameters.png)
 

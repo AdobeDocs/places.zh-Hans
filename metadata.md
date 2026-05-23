@@ -10,12 +10,12 @@ landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/cn/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=zh-Hans
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
-git-repo: https://github.com/AdobeDocs/places.en
+tutorials-url: https://experienceleague.adobe.com/zh-hans#recommended/solutions/experience-platform
+git-repo: https://github.com/AdobeDocs/places.zh-Hans
 index: true
 source-git-commit: 11476e8f3f542ce81aa16b6b0b016dbec16db57c
 workflow-type: tm+mt
@@ -41,7 +41,7 @@ metadata.md 文件包含存储库级别的元数据，这些元数据会被传�
 | tutorials-title | 教程不合适时很少使用 |
 | tutorials-url | 指向视频教程的链接 – helpx 教程或 KT 教程 |
 | mini-toc-levels | 确定右边栏中显示的标题层级数。 默认值为 2 |
-| git-repo | https://github.com/AdobeDocs/places.en |
+| git-repo | https://github.com/AdobeDocs/places.zh-Hans |
 | index | 对于软启动，请设置index=no |
 
 在 TOC.md 文件中

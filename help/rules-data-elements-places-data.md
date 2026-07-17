@@ -13,7 +13,7 @@ ht-degree: 35%
 
 ## 规则
 
-Experience Platform Launch 是一个基于规则的系统，用于查询用户交互和关联的数据。 当满足规则中描述的条件时，该规则将触发您标识的扩展、脚本或 HTML。 您可以构建规则，把能够将不同产品统一起来的营销和广告技术的数据和功能集成到一个解决方案中。 有关规则的更多信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)和[创建规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#create-a-rule)。
+Experience Platform Launch 是一个基于规则的系统，用于查询用户交互和关联的数据。 当满足规则中描述的条件时，该规则将触发您标识的扩展、脚本或 HTML。 您可以构建规则，把能够将不同产品统一起来的营销和广告技术的数据和功能集成到一个解决方案中。 有关规则的更多信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)和[创建规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans#create-a-rule)。
 
 ## 数据元素
 
@@ -21,5 +21,5 @@ Experience Platform Launch 是一个基于规则的系统，用于查询用户�
 
 数据元素是一个变量，此变量的值可以映射到查询字符串、URL、Cookie值、JavaScript变量等。 在Experience Platform Launch中，您可以通过其变量名称引用此值。 数据元素的集合将成为可用来构建规则（事件、条件和操作）的已定义数据的字典，该数据字典将在Experience Platform Launch中共享，并可与Places扩展一起使用。
 
-有关数据元素的更多信息，请参阅[数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html)和[创建数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)。
+有关数据元素的更多信息，请参阅[数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hans)和[创建数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hans#create-a-data-element)。
 

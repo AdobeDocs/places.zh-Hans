@@ -3,29 +3,10 @@ title: 测试和验证Places服务
 description: 本节提供有关如何测试和验证Places服务的信息。
 exl-id: 8dad6619-566b-4aea-b29c-a89192a66441
 TQID: https://experienceleague.adobe.com/nO4tOQW9rp3zjkHT6aJ5IcXHcD9heOaRAJiEchiz1Fk
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
-  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: d5ef99fa-df0c-4153-bf94-105ad0724167id: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7id: ed0d8d0e-04b9-4326-be72-a0fbca265377id: f7c7de77-382f-4f48-8b36-61a170f06d3did: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 1748
@@ -67,7 +48,7 @@ ht-degree: 2%
 |  | **正在使用Places服务测试Adobe Campaign Standard应用程序内消息传送。** |  |
 | 12 | 在主Campaign仪表板上，配置新的应用程序内消息（类型=广播） |  |
 | 12安 | 在触发器中，选择&#x200B;**Places事件类型 — 条目作为触发器**。 |  |
-| 12b | 选择&#x200B;**[!UICONTROL Places自定义元数据]**&#x200B;作为附加筛选器 — 使用POI类型=上次输入的POI。<br>我们使用&#x200B;**[!UICONTROL 上次输入的]**&#x200B;作为POI类型，因为在大多数情况下，**[!UICONTROL 上次输入的]**&#x200B;将与&#x200B;**[!UICONTROL 当前的POI]**&#x200B;相同。 <br><br>**[!UICONTROL 当前POI &#x200B;]**&#x200B;只应在存在重叠POI地理围栏的情况下使用。 在这种情况下，这些POI需要排名，然后&#x200B;**[!UICONTROL &#x200B;当前POI &#x200B;]**&#x200B;将显示用户当前可能位于的2个或3个地理围栏中的排名最前的POI。 |  |
+| 12b | 选择&#x200B;**[!UICONTROL Places自定义元数据]**&#x200B;作为附加筛选器 — 使用POI类型=上次输入的POI。<br>我们使用&#x200B;**[!UICONTROL 上次输入的]**&#x200B;作为POI类型，因为在大多数情况下，**[!UICONTROL 上次输入的]**&#x200B;将与&#x200B;**[!UICONTROL 当前的POI]**&#x200B;相同。 <br><br>**[!UICONTROL 当前POI ]**只应在存在重叠POI地理围栏的情况下使用。 在这种情况下，这些POI需要排名，然后**[!UICONTROL &#x200B;当前POI ]**将显示用户当前可能位于的2个或3个地理围栏中的排名最前的POI。 |  |
 | 12c | 选择自定义元数据键，以帮助您缩小接收消息的POI范围。 |  |
 | 12天 | 对于频率和持续时间，请仅保留一或两天，这样如果您不喜欢该标准，则可以在更短的时间内使触发器过期。 |  |
 | 12e | 对于Always/Once或Until点进，请选择&#x200B;*ALWAYS*，以便您可以跨多个位置进行测试。 | 当您模拟符合相应元数据标准的位置更改时，将始终显示应用程序内消息。 |

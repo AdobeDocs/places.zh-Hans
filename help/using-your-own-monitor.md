@@ -2,7 +2,7 @@
 title: 使用您自己的监视器
 description: 您还可以使用监视服务，并通过使用Places服务扩展API与Places服务集成。
 exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
-source-git-commit: 'null'
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%

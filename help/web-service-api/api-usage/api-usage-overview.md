@@ -6,9 +6,7 @@ source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
-
 ---
-
 # API使用情况概述 {#api-usage-overview}
 
 要使用Places REST API管理POI和库，请参阅以下部分：

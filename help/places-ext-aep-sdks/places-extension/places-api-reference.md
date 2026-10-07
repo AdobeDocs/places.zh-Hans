@@ -3,20 +3,24 @@ title: Places API参考
 description: 有关Places中API引用的信息。
 feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '589'
 ht-degree: 32%
-
 ---
-
 # Places API参考 {#places-api-reference}
 
 以下是有关Places扩展中的API引用的信息：
 
 ## 处理区域事件
 
-当设备跨越应用程序预定义的Places服务区域边界之一时，该区域和事件类型将传递到SDK进行处理。
+当设备跨越应用程序预定义的Places Service区域边界之一时，该区域和事件类型将传递到SDK进行处理。
 
 ### 流程地理围栏(Android)
 

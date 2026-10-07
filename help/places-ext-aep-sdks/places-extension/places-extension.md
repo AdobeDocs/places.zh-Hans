@@ -5,14 +5,12 @@ feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
-
+source-wordcount: '38'
+ht-degree: 10%
 ---
-
 # Places 扩展 {#places-extension}
 
-导航到Adobe开发人员门户以查看有关[Places SDK扩展](https://developer.adobe.com/client-sdks/documentation/places/)的文档。
+导航到Adobe开发人员门户以查看[Places SDK扩展](https://developer.adobe.com/client-sdks/documentation/places/)的文档。
 
 <!-- 
 
@@ -29,7 +27,7 @@ The Places extension allows you to act based on the location of your users. This
 
 1. Complete the publishing process to update the SDK configuration.
 
-   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans).
+   For more information about publishing in Experience Platform Launch, see [Publishing](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
 
 ### Configure the Places extension {#configure-places-extension}
 

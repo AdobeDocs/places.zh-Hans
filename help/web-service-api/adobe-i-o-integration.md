@@ -4,11 +4,9 @@ description: 有关创建Adobe Developer API项目的信息。
 exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
 source-git-commit: 3d477c6133b74a7e6380d0db1af5125aaa844035
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # Places API访问概述和先决条件 {#developer-prereqs}
 
 此信息向您展示了如何在Adobe Developer Console中创建项目并生成要在Places API请求中使用的访问令牌。

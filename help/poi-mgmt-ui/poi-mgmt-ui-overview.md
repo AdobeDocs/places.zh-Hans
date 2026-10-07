@@ -6,9 +6,7 @@ source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
-
 ---
-
 # Places服务UI概述 {#management-ui-overview}
 
 通过使用Places服务UI，可在Places服务数据库中创建和管理POI和库。

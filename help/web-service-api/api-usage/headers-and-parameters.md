@@ -2,13 +2,14 @@
 title: 标题和参数
 description: Places服务REST API中可用的标头和参数。
 exl-id: 3c7e76de-f0ff-4966-a3ec-7f64d819c140
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 19%
-
 ---
-
 # 标题和参数 {#headers-and-parameters}
 
 以下是Places服务REST API中可用的标头和参数的详细信息：
@@ -20,12 +21,12 @@ ht-degree: 19%
 | `Authorization` | 您的持有者令牌 | 全部 |  |
 | `x-api-key` | 您的API密钥 | 全部 | `19776964b4cde49e08d8f62e5824f777b` |
 | `x-gw-ims-org-id` | 您的组织ID | 全部 | `18FB61145BAC2FFB0A494777@AdobeOrg` |
-| `Content-Type` | 发送或接收内容的格式 | PUT、POST | `application/json` |
+| `Content-Type` | 发送或接收内容的格式 | PUT，发布 | `application/json` |
 | `Accept-Language` | 用于错误消息的语言 | 可选 | `en-US` |
 
 ## 库参数
 
-| 参数 | 描述 | 类型 | 限制 | 请求或响应 | 示例 |
+| 参数 | 说明 | 类型 | 限制 | 请求或响应 | 示例 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `id` | 库的ID | 已指定 | 不适用 | 响应 | `"id": "b2488788-2d2a-462b-b1a2-305272777dda"` |
 | `name` | 库的名称 | 字符串 | 256 个字符 | 两者，在请求中必需 | `"name": "Amazing Places"` |
@@ -36,7 +37,7 @@ ht-degree: 19%
 
 ## POI参数
 
-| 参数 | 描述 | 类型 | 限制 | 请求或响应 | 示例 |
+| 参数 | 说明 | 类型 | 限制 | 请求或响应 | 示例 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `data` | Poi数据 | poi详细信息数组 | 不适用 | 两者 |  |
 | `id` | POI ID | 已指定 | 不适用 | 响应 | `"id": "1455462b-7f9c-4220-9f42-5bbce777a0d1"` |

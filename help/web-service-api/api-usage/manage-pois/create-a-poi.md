@@ -2,13 +2,14 @@
 title: 创建POI
 description: 使用Places REST API创建POI。
 exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 6%
-
 ---
-
 # 创建POI {#create-a-poi}
 
 允许您创建POI的POST方法。

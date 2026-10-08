@@ -5,26 +5,35 @@ exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
 TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+    internal-label: Admin Console
 feature_v2:
   - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: b64298cc-90cc-46b7-8917-ee391f1c7516
+    internal-label: Data collection UI
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
   - id: f5efb499-54f9-432b-ac5c-599dbac103af
+    internal-label: Data management
   - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data management
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 919
+source-wordcount: '919'
 ht-degree: 1%
-
 ---
-
 # 获取对Places服务的访问权限 {#adding-user-launch-places}
 
 Places服务现在可在数据收集UI中使用。 您可以通过[Adobe Experience Cloud主页](https://experience.adobe.com)上的快速访问菜单访问数据收集。
@@ -46,12 +55,12 @@ Places服务现在可在数据收集UI中使用。 您可以通过[Adobe Experie
 Places现已包含在Adobe Experience Platform中。 要允许用户访问[Places服务](https://experience.adobe.com/#/data-collection/places)，需要将这些用户作为用户添加到Admin Console中的Adobe Experience Platform。 要允许用户通过配置移动资产所需的权限来访问Experience Platform数据收集，并将地标与Adobe Experience Platform SDK结合使用，还需将他们添加到Admin Console中的Adobe Experience Platform数据收集，并为其授予Adobe Experience Platform数据收集的以下权限：
 
 * “资产权限”下的所有权限：
-   * 审批
-   * 开发
-   * 编辑属性
-   * 管理环境
-   * 管理扩展
-   * 发布
+  * 审批
+  * 开发
+  * 编辑属性
+  * 管理环境
+  * 管理扩展
+  * 发布
 * “公司权限”下的“管理资产”权限
 
 如果这是您首次添加用户，请完成以下步骤以将用户添加到Adobe Experience Platform数据收集和Adobe Experience Platform。 如果您以前添加过用户，则可能会显示多个配置文件，因此请确保您选择了正确的配置文件。
@@ -63,7 +72,7 @@ Places现已包含在Adobe Experience Platform中。 要允许用户访问[Place
 ### &#x200B;1. 验证是否已配置Adobe Experience Platform和Adobe Experience Platform数据收集
 
 1. 登录到您的Experience Cloud组织[Adobe Experience Cloud主页](https://experience.adobe.com)。
-1. 单击右上角的Experience Cloud shell切换器以显示下拉菜单。
+1. 单击右上角的Experience Cloud Shell切换器以显示下拉菜单。
 
    ![外壳切换器](/help/assets/places_shell_switcher1.png)
 
@@ -110,4 +119,4 @@ Places现已包含在Adobe Experience Platform中。 要允许用户访问[Place
 3. 在配置文件中，单击&#x200B;**开发人员**&#x200B;选项卡
 4. 单击蓝色的&#x200B;**添加开发人员**&#x200B;按钮，将用户的AdobeID和名称填写到该用户，然后单击“保存”以完成添加。
 
-完成上述步骤后，用户将收到一封电子邮件，通知他们有权访问&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;和&#x200B;**[!UICONTROL Adobe Experience Platform数据收集]**。 然后，他们可以登录到该组织的[Adobe Experience Cloud](https://experience.adobe.com)并访问Places服务和数据收集。 如果您还完成了步骤&#x200B;**[!UICONTROL 添加开发人员]**，用户也可以登录[Adobe Developer Console](https://developer.adobe.com/console/home)以创建将提供对Places服务REST API的访问权限的项目。
+完成上述步骤后，用户将收到一封电子邮件，通知他们有权访问&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;和&#x200B;**[!UICONTROL Adobe Experience Platform数据收集]**。 然后，他们可以登录此组织的[Adobe Experience Cloud](https://experience.adobe.com)，并访问Places服务和数据收集。 如果您还完成了步骤&#x200B;**[!UICONTROL 添加开发人员]**，用户也可以登录[Adobe Developer Console](https://developer.adobe.com/console/home)以创建将提供对Places服务REST API的访问权限的项目。

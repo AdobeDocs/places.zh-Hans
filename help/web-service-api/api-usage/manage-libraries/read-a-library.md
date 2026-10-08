@@ -2,13 +2,14 @@
 title: 读取库
 description: 使用Places REST API读取库。
 exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 4%
-
 ---
-
 # 读取库 {#read-a-library}
 
 返回库详细信息的GET方法。

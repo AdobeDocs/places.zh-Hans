@@ -5,139 +5,150 @@ exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
 TQID: https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+    internal-label: APIs
   - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+    internal-label: SDKs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Privacy
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 1612
+source-wordcount: '1612'
 ht-degree: 3%
-
 ---
-
 # 发行说明 {#release-notes}
 
 ## 2020 年 7 月 8 日
 
 * **Places和Places监视器扩展**
 
-   * 已为[React Native应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)添加Places和Places监视器扩展
-   * 已为[Cordova应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)添加Places和Places监视器扩展
-   * 有关详细信息，请参阅：[使用Places扩展](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+  * 已为[React Native应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)添加Places和Places监视器扩展
+  * 已为[Cordova应用程序](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)添加Places和Places监视器扩展
+  * 有关详细信息，请参阅：[使用Places扩展](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 2020年5月12日
 
 * **地标服务**
 
-   * 使用“导入POI”按钮从CSV文件批量导入POI
-   * 选择多个POI并批量编辑或添加元数据值
+  * 使用“导入POI”按钮从CSV文件批量导入POI
+  * 选择多个POI并批量编辑或添加元数据值
 
 ## 2020年5月6日
 
 * **PlacesMonitor 2.2.1**
 
-   * **Android**
+  * **Android**
 
-      * 改进了日志记录
+    * 改进了日志记录
 
 ## 2020年5月5日
 
 
 * **PlacesMonitor 2.1.3**
 
-   * **iOS**
+  * **iOS**
 
-      * 改进了日志记录
+    * 改进了日志记录
 
 ## 2020年2月20日
 
 * **ACPPlaces 1.3.1 (iOS)**
 
-   * Places扩展现在向核心SDK中的事件中心报告版本信息。
-   * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+  * Places扩展现在向核心SDK中的事件中心报告版本信息。
+  * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **位置1.4.1 (Android)**
 
-   * Places扩展现在向核心SDK中的事件中心报告版本信息。
-   * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+  * Places扩展现在向核心SDK中的事件中心报告版本信息。
+  * 设备POI成员资格信息的默认生存时间是从收集时间算起的一小时。 有关详细信息，请参阅[修改Places成员资格生存时间](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 2020年1月27日
 
 * **PlacesMonitor 2.2.0**
 
-   * **Android**
+  * **Android**
 
-      * 调用新的Places API以在应用程序启动和应用程序运行时授权更改时收集位置授权状态。
-      * 添加了setRequestLocationPermission API和已弃用的setLocationPermission API。
+    * 调用新的Places API以在应用程序启动和应用程序运行时授权更改时收集位置授权状态。
+    * 添加了setRequestLocationPermission API和已弃用的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
 
 * **位置1.4.0**
 
-   * **Android**
+  * **Android**
 
-      * 添加了一个新的API `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
+    * 添加了一个新的API `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
 
 ## 2019年12月4日
 
 * **PlacesMonitor 2.1.2**
 
-   * **iOS**
+  * **iOS**
 
-      * 调用Places API以在设备更改时从设备收集CLAuthorizationStatus。
+    * 调用Places API以在设备更改时从设备收集CLAuthorizationStatus。
 
 ## 2019年12月3日
 
 * **ACPPlaces 1.3.0**
 
-   * **iOS**
+  * **iOS**
 
-      * 添加了一个新的API `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
+    * 添加了一个新的API `setAuthorizationStatus`，以设置Places服务的设备授权状态。 该值在Places共享状态下存储和使用。
 
 ## 2019 年 11 月 25 日
 
 * **PlacesMonitor 2.1.1**
 
-   * **iOS**
+  * **iOS**
 
-      * 修复了使用多个面板项目选项的Cocoapods项目的导入语句。
+    * 修复了使用多个面板项目选项的Cocoapods项目的导入语句。
 
 ## 2019年11月22
 
 * **PlacesMonitor 2.1.1**
 
-   * **Android**
+  * **Android**
 
-      * 监视器现在可以识别Android设备的引导，并根据需要，根据设备的当前位置在操作系统中再次注册地理围栏。
-      * 修复了有时会丢弃登入/退出事件的争用情况。
+    * 监视器现在可以识别Android设备的引导，并根据需要，根据设备的当前位置在操作系统中再次注册地理围栏。
+    * 修复了有时会丢弃登入/退出事件的争用情况。
 
 ## 2019年10月9日
 
 * **PlacesMonitor 2.1.0**
 
-   * **iOS**
+  * **iOS**
 
-      * 添加了一个新的API `setRequestAuthorizationLevel`，用于设置将提示用户的位置授权请求的类型。
+    * 添加了一个新的API `setRequestAuthorizationLevel`，用于设置将提示用户的位置授权请求的类型。
 
 
-   * **Android**
+  * **Android**
 
-      * 添加了一个新的API `setLocationPermission`，用于设置将提示用户的位置权限请求的类型。
-      * Places监视器现在支持Android 10。
+    * 添加了一个新的API `setLocationPermission`，用于设置将提示用户的位置权限请求的类型。
+    * Places监视器现在支持Android 10。
 
 ## 2019 年 8 月 8 日
 
@@ -246,7 +257,7 @@ ht-degree: 3%
 
 修复了Places UI中的以下问题：
 
-* 更新了“位置”中的解决方案切换器，以与Experience Cloud的其余部分保持一致。
+* 更新了“位置”中的解决方案切换器，以便与Experience Cloud的其余部分保持一致。
 * 修复了在未进行任何排名更改的情况下保存排名的问题。
 * 将UI中允许的最小半径增加到10米。
 * 修复了以下问题：如果您删除字段中的所有数字，则半径字段会重置回20米。

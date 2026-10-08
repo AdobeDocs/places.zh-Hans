@@ -2,7 +2,10 @@
 title: Adobe Developer项目概述
 description: 有关创建Adobe Developer API项目的信息。
 exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
-source-git-commit: 3d477c6133b74a7e6380d0db1af5125aaa844035
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 1%

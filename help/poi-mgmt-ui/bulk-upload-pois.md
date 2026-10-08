@@ -5,24 +5,31 @@ exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
 TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 feature_v2:
   - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+    internal-label: APIs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # 批量上传POI {#bulk-upload-pois}
 
 Places服务中的&#x200B;**导入POI**&#x200B;按钮可用于使用CSV文件批量上传新的POI。 提供了一个电子表格模板示例，用于显示需要哪些数据列以及如何添加可选的自定义元数据。
@@ -78,20 +85,20 @@ Places服务中的&#x200B;**导入POI**&#x200B;按钮可用于使用CSV文件批
 以下列的值在Places服务UI中使用：
 
 * 颜色，用作Places服务UI映射中POI位置的pin的颜色。
-   * 有效值为“”、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56B和#3DC8DE以及“”。
-   * 如果该值留空，则Places服务UI使用蓝色作为默认颜色。
+  * 有效值为“”、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56B和#3DC8DE以及“”。
+  * 如果该值留空，则Places服务UI使用蓝色作为默认颜色。
 
-     这些值分别对应于蓝色(#3E76D0)、紫色(#AA99E8)、紫色(#DC2ABA)、橙色(#FC685B)、浅橙色(#FC962E)、黄色(#F6C436)、浅绿色(#BECE5D)、绿色(#61B56B)和浅蓝色(#3DC8DE)。
+    这些值分别对应于蓝色(#3E76D0)、紫色(#AA99E8)、紫色(#DC2ABA)、橙色(#FC685B)、浅橙色(#FC962E)、黄色(#F6C436)、浅绿色(#BECE5D)、绿色(#61B56B)和浅蓝色(#3DC8DE)。
 
 * 图标，用作Places服务UI映射中POI位置的pin上的图标。
 
-   * 有效值为“”、商店、旅馆、汽车、飞机、火车、船、体育场、游乐园、锚点、烧杯、铃、出价、书、盒、公文包、浏览、刷子、建筑物、计算器、相机、时钟、教育、手电筒、关注、游戏、女性、男性、礼物、锤子、心、家、钥匙、发射、灯泡、邮箱、钱、图钉、促销、彩带、购物车、星星、目标、茶壶、thumbDown、thumbUp、陷阱、奖杯、扳手。
+  * 有效值为“”、商店、旅馆、汽车、飞机、火车、船、体育场、游乐园、锚点、烧杯、铃、出价、书、盒、公文包、浏览、刷子、建筑物、计算器、相机、时钟、教育、手电筒、关注、游戏、女性、男性、礼物、锤子、心、家、钥匙、发射、灯泡、邮箱、钱、图钉、促销、彩带、购物车、星星、目标、茶壶、thumbDown、thumbUp、陷阱、奖杯、扳手。
 
-     图标值按如下图所示的顺序列出：
+    图标值按如下图所示的顺序列出：
 
-     UI中的![图标](/help/assets/UI_icons.png)
+    UI中的![图标](/help/assets/UI_icons.png)
 
-   * 如果将该值留空，则UI使用星形作为默认图标。
+  * 如果将该值留空，则UI使用星形作为默认图标。
 
 * 未提及的列可留空。
 

@@ -5,25 +5,30 @@ exl-id: 2fb999b4-854a-430f-bb89-4c786d1a89cc
 TQID: https://experienceleague.adobe.com/PP7P3aOL3EKSEPJWedHtfyHRzbCueMtNS-J7Ao4mawo
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+    internal-label: Adobe Sign
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 434
+source-wordcount: '434'
 ht-degree: 14%
-
 ---
-
 # 管理库 {#manage-libraries-places-ui}
 
-库是POI的集合。 在一个库中，最多可以有150,000个POI，并且每个Experience Cloud组织最多可以有100个库。
+库是POI的集合。 一个库最多可以有150,000个POI，每个Experience Cloud组织最多可以有100个库。
 
 根据对组织最有用的内容，可以通过多种方式将POI整理到库中。 某些客户可能倾向于为每个移动设备应用程序创建单独的库，而其他客户可能使用库对特定类型的POI进行分组，例如咖啡馆、公园、酒店等。 例如，一家大型娱乐公司可能有一家图书馆，其中一家图书馆包含其户外场所，另一家图书馆则包含其零售店。 一个市政府可能有一个包含市内所有建筑的图书馆，另一个包含市内所有公园的图书馆。
 

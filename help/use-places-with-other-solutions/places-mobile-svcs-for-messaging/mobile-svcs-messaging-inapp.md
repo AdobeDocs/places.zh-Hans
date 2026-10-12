@@ -2,7 +2,7 @@
 title: 应用程序内通知
 description: 此部分将向您展示如何将Places服务与应用程序内消息传送结合使用。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
-TQID: https://experienceleague.adobe.com/Z39ybIytDRlCbkMthWjvk5F-oexy0C9gtqgK1mmyMxM
+TQID: 'https://experienceleague.adobe.com/Z39ybIytDRlCbkMthWjvk5F-oexy0C9gtqgK1mmyMxM'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -16,8 +16,7 @@ product_v2:
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
@@ -25,7 +24,7 @@ topic_v2:
     internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 2%
@@ -83,7 +82,7 @@ Mobile Services允许您使用发送到Analytics的位置数据作为应用程�
 
 >[!TIP]
 >
->可以将Analytics处理规则设置为选取此上下文数据。 有关详细信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hans)。 在&#x200B;*创建操作*&#x200B;中的示例中，该操作将发送`poiname`作为上下文，以描述发送到Analytics的POI进入事件。
+>可以将Analytics处理规则设置为选取此上下文数据。 有关详细信息，请参阅[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。 在&#x200B;*创建操作*&#x200B;中的示例中，该操作将发送`poiname`作为上下文，以描述发送到Analytics的POI进入事件。
 
 ![创建操作](/help/assets/configure-action.png)
 

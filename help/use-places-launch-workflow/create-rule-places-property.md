@@ -2,7 +2,7 @@
 title: 为Places Service属性创建规则
 description: Places SDK可跟踪当前位置，监控当前位置周围配置的POI，并跟踪这些POI的进入和退出事件。
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
+TQID: 'https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -12,18 +12,18 @@ product_v2:
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
+subfeature_v2:
   - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
-    internal-label: Data elements
+    internal-label: Data collection tags data elements
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 12%
@@ -73,7 +73,7 @@ Places SDK维护以下状态：
 
 >[!CAUTION]
 >
->此示例假设您已经创建了包含美国所有咖啡馆的 POI 库。 有关创建POI和库的更多信息，请参阅[创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多个库](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hans)中创建库*。
+>此示例假设您已经创建了包含美国所有咖啡馆的 POI 库。 有关创建POI和库的更多信息，请参阅[创建POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多个库](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中创建库*。
 
 以下过程是创建规则的示例，该规则会在您进入旧金山的咖啡店时将帖子发送回Slack。
 
@@ -143,7 +143,7 @@ Places SDK维护以下状态：
 
 ### 发布规则
 
-1. 要激活规则，您必须发布它。 有关在Experience Platform Launch中发布规则的更多信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
+1. 要激活规则，您必须发布它。 有关在Experience Platform Launch中发布规则的更多信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 ### 在进入和退出之外思考
 

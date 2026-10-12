@@ -2,7 +2,7 @@
 title: 在Analytics Workspace中报告位置数据
 description: 本节介绍如何在Analytics Workspace中报告位置数据。
 exl-id: 45ca3c80-71b7-41de-9b00-645504061935
-TQID: https://experienceleague.adobe.com/Xym9Ko8czyd3wYWVo22sQoK6gk-VvftGVHfIDUys06E
+TQID: 'https://experienceleague.adobe.com/Xym9Ko8czyd3wYWVo22sQoK6gk-VvftGVHfIDUys06E'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -13,13 +13,8 @@ product_v2:
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
     internal-label: Reports
-  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
-    internal-label: Reporting
-  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
-    internal-label: Implementation
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
@@ -29,7 +24,7 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 4%
@@ -48,7 +43,7 @@ ht-degree: 4%
 
 1. Adobe Analytics用户是管理员，有权访问处理规则。
 
-   有关处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hans)。
+   有关处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。
 
 1. 在Launch属性中，已为您所需的Places服务变量创建数据元素。
 
@@ -69,7 +64,7 @@ ht-degree: 4%
 
 ## &#x200B;2. 创建Analytics变量
 
-要映射上下文数据（在步骤1中发送），必须首先为Analytics报表包创建变量。 有关在Analytics中创建变量的更多信息，请参阅[转化变量(eVar)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=zh-Hans)。
+要映射上下文数据（在步骤1中发送），必须首先为Analytics报表包创建变量。 有关在Analytics中创建变量的更多信息，请参阅[转化变量(eVar)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html)。
 
 在此示例中，已创建转化变量&#x200B;**[!UICONTROL Evar2]**，并将其命名为&#x200B;**[!UICONTROL Places POI名称]**。 需要为要在报表中公开的每个位置变量创建其他变量。
 
@@ -77,7 +72,7 @@ ht-degree: 4%
 
 ## &#x200B;3. 创建处理规则
 
-将上下文数据（步骤1）映射到Analytics变量（步骤2）时需要此步骤。 有关创建处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hans)。
+将上下文数据（步骤1）映射到Analytics变量（步骤2）时需要此步骤。 有关创建处理规则的更多信息，请参阅[处理规则概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。
 
 在此示例中，创建了一个处理规则以将上下文数据值&#x200B;**[!UICONTROL poi.name]**&#x200B;映射到&#x200B;**[!UICONTROL Places POI名称(eVar2)]**。 需要为创建的每个位置变量创建其他处理规则。
 
@@ -85,7 +80,7 @@ ht-degree: 4%
 
 ## &#x200B;4. 在Workspace中生成报表
 
-此步骤显示Analytics Workspace中的基本报表，用于查看在第1-3步中收集的数据。 有关如何使用Analytics Workspace的更多信息，请参阅[Analytics Workspace概述](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)。
+此步骤显示Analytics Workspace中的基本报表，用于查看在第1-3步中收集的数据。 有关如何使用Analytics Workspace的更多信息，请参阅[Analytics Workspace概述](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)。
 
 在此示例中，报表具有以下设置：
 

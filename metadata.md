@@ -4,26 +4,25 @@ product: places service
 solution: Data Collection, Experience Platform
 product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: "Experience Platform"
 usetq: true
 landing-page-name: mobile
 landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/cn/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=zh-Hans
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/zh-hans#recommended/solutions/experience-platform
-git-repo: https://github.com/AdobeDocs/places.zh-Hans
+tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
+git-repo: https://github.com/AdobeDocs/places.en
 index: true
 source-git-commit: 11476e8f3f542ce81aa16b6b0b016dbec16db57c
 workflow-type: tm+mt
-source-wordcount: 167
-ht-degree: 80%
-
+source-wordcount: '163'
+ht-degree: 82%
 ---
-
 
 <!-- We need better links for Getting Started and Tutorials. We can do this after we hit stage -->
 
@@ -41,7 +40,7 @@ metadata.md 文件包含存储库级别的元数据，这些元数据会被传�
 | tutorials-title | 教程不合适时很少使用 |
 | tutorials-url | 指向视频教程的链接 – helpx 教程或 KT 教程 |
 | mini-toc-levels | 确定右边栏中显示的标题层级数。 默认值为 2 |
-| git-repo | https://github.com/AdobeDocs/places.zh-Hans |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | index | 对于软启动，请设置index=no |
 
 在 TOC.md 文件中
